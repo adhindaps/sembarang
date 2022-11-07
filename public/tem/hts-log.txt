@@ -1,0 +1,27 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 07 Nov 2022 10:33:36 at https://validthemes.live/themeforest/examin/index-3.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F  -%F  -%l "en, *" https://validthemes.live/themeforest/examin/index-3.html -O1 "D:\TEMPLATE WEB\tem" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/fonts/glyphicons-halflings-regular.eot (from https://validthemes.live/themeforest/examin/assets/css/bootstrap.min.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/fonts/glyphicons-halflings-regular.eot? (from https://validthemes.live/themeforest/examin/assets/css/bootstrap.min.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/fonts/glyphicons-halflings-regular.woff2 (from https://validthemes.live/themeforest/examin/assets/css/bootstrap.min.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/fonts/glyphicons-halflings-regular.woff (from https://validthemes.live/themeforest/examin/assets/css/bootstrap.min.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/fonts/glyphicons-halflings-regular.ttf (from https://validthemes.live/themeforest/examin/assets/css/bootstrap.min.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/fonts/glyphicons-halflings-regular.svg (from https://validthemes.live/themeforest/examin/assets/css/bootstrap.min.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/fonts/fa-brands-400.svg (from https://validthemes.live/themeforest/examin/assets/css/font-awesome.min.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/fonts/fa-regular-400.svg (from https://validthemes.live/themeforest/examin/assets/css/font-awesome.min.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/fonts/fa-solid-900.svg (from https://validthemes.live/themeforest/examin/assets/css/font-awesome.min.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/fonts/Flaticon.eot (from https://validthemes.live/themeforest/examin/assets/css/flaticon-set.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/fonts/Flaticon.eot? (from https://validthemes.live/themeforest/examin/assets/css/flaticon-set.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/css/Flaticon.svg (from https://validthemes.live/themeforest/examin/assets/css/flaticon-set.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/css/ElegantIcons.svg (from https://validthemes.live/themeforest/examin/assets/css/elegant-icons.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/css/owl.video.play.png (from https://validthemes.live/themeforest/examin/assets/css/owl.carousel.min.css)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/js/typed.js (from https://validthemes.live/themeforest/examin/index.html)
+10:35:31	Error: 	"Not Found" (404) at link https://validthemes.live/themeforest/examin/assets/js/YTPlayer.min.js (from https://validthemes.live/themeforest/examin/index.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 56 seconds : 234 links scanned, 217 files written (15225292 bytes overall) [12229143 bytes received at 105423 bytes/sec], 3794207 bytes transferred using HTTP compression in 77 files, ratio 18%, 16.7 requests per connection
+(16 errors, 0 warnings, 0 messages)

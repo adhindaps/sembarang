@@ -131,4 +131,3 @@
     </body>
 </html>
 
-{{ asset('tem/acep/themeforest/examin/') }}

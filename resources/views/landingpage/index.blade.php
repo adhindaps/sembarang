@@ -662,7 +662,7 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="{{ asset('tem/acep/themeforest/examin/assets/img/courses/7.jpg') }}" alt="Thumb">
+                                    <img src="{{ asset('tem/acep/themeforest/examin/') }}assets/img/courses/7.jpg" alt="Thumb">
                                 </a>
                                 <div class="price">Price: $124</div>
                             </div>
@@ -707,14 +707,14 @@
                         <div class="item">
                             <div class="thumb">
                                 <a href="#">
-                                    <img src="{{ asset('tem/acep/themeforest/examin/assets/img/courses/6.jpg') }}" alt="Thumb">
+                                    <img src="{{ asset('tem/acep/themeforest/examin/') }}assets/img/courses/6.jpg" alt="Thumb">
                                 </a>
                                 <div class="price">Price: Free</div>
                             </div>
                             <div class="info">
                                 <div class="author-info">
                                     <div class="thumb">
-                                        <a href="#"><img src="{{ asset('tem/acep/themeforest/examin/assets/img/team/8.jpg') }}" alt="Thumb"></a>
+                                        <a href="#"><img src="{{ asset('tem/acep/themeforest/examin/') }}assets/img/team/8.jpg" alt="Thumb"></a>
                                     </div>
                                     <div class="others">
                                         <a href="#">Drunal Trula</a>
@@ -833,7 +833,7 @@
                         <!-- Single Item -->
                         <div class="advisor-item">
                             <div class="info-box">
-                                <img src="{{ asset('tem/acep/themeforest/examin/assets/img/advisor/1.jpg') }}" alt="Thumb">  
+                                <img src="{{ asset('tem/acep/themeforest/examin/') }}assets/img/advisor/1.jpg" alt="Thumb">  
                                 <div class="info-title">
                                     <h4>Professon. Nuri Paul</h4>
                                     <span>Chemistry specialist</span>
@@ -873,7 +873,7 @@
                         <!-- Single Item -->
                         <div class="advisor-item">
                             <div class="info-box">
-                                <img src="{{ asset('tem/acep/themeforest/examin/assets/img/advisor/2.jpg') }}" alt="Thumb">  
+                                <img src="{{ asset('tem/acep/themeforest/examin/') }}assets/img/advisor/2.jpg" alt="Thumb">  
                                 <div class="info-title">
                                     <h4>John Babu</h4>
                                     <span>Interactive Designer</span>
@@ -913,7 +913,7 @@
                         <!-- Single Item -->
                         <div class="advisor-item">
                             <div class="info-box">
-                                <img src="{{ asset('tem/acep/themeforest/examin/assets/img/advisor/3.jpg') }}" alt="Thumb">  
+                                <img src="{{ asset('tem/acep/themeforest/examin/') }}" alt="Thumb">  
                                 <div class="info-title">
                                     <h4>Mridul Druva</h4>
                                     <span>Creative developer</span>

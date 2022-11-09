@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="admin/assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="foto/smklogo.jpg">
     <title>Admin-SMK DLANGGU</title>
     <!-- Custom CSS -->
     <link href="{{ asset('admin/assets/extra-libs/c3/c3.min.css') }}" rel="stylesheet">
@@ -57,18 +57,18 @@
                         <a href="index.html">
                             <b class="logo-icon">
                                 <!-- Dark Logo icon -->
-                                <img src="{{ asset('admin/assets/images/logo-icon.png') }}" alt="homepage" class="dark-logo" />
+                                <img src="foto/smk.jpeg" height="100" width="230" alt="homepage" class="dark-logo" />
                                 <!-- Light Logo icon -->
-                                <img src="{{ asset('admin/assets/images/logo-icon.png') }}" alt="homepage" class="light-logo" />
+                                <img src="foto/smk.jpeg" alt="homepage" class="light-logo" />
                             </b>
                             <!--End Logo icon -->
                             <!-- Logo text -->
-                            <span class="logo-text">
+                            {{-- <span class="logo-text">
                                 <!-- dark Logo text -->
                                 <img src="{{ asset('admin/assets/images/logo-text.png') }}" alt="homepage" class="dark-logo" />
                                 <!-- Light Logo text -->
                                 <img src="{{ asset('admin/assets/images/logo-light-text.png') }}" class="light-logo" alt="homepage" />
-                            </span>
+                            </span> --}}
                         </a>
                     </div>
                     <!-- ============================================================== -->
@@ -121,10 +121,10 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <img src="{{ asset('admin/assets/images/users/profile-pic.jpg') }}" alt="user" class="rounded-circle"
+                                <img src="foto/smklogo.jpg" alt="user" class="rounded-circle"
                                     width="40">
                                 <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span
-                                        class="text-dark">Jason Doe</span> <i data-feather="chevron-down"
+                                        class="text-dark">Admin</span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
@@ -171,7 +171,7 @@
                     <ul id="sidebarnav">
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/dashboard"
                                 aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
-                                    class="hide-menu">Dashboard</span></a></li>
+                                    class="hide-menu">Beranda</span></a></li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Tentang Sekolah</span></li>
 
@@ -201,7 +201,7 @@
                                             class="hide-menu"> Data Karyawan
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-checkbox-radio.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="/siswapres" class="sidebar-link"><span
                                             class="hide-menu"> Data Siswa Berprestasi
                                         </span></a>
                                 </li>
@@ -227,11 +227,9 @@
                                             class="hide-menu">ANIMASI</span></a></li>
                                 <li class="sidebar-item"><a href="ui-progressbar.html" class="sidebar-link"><span
                                             class="hide-menu">TKJ</span></a></li>
-                                <li class="sidebar-item"><a href="ui-typography.html" class="sidebar-link"><span
-                                            class="hide-menu">Typography</span></a></li>
+                                
                                 <li class="sidebar-item"><a href="ui-bootstrap.html" class="sidebar-link"><span
-                                            class="hide-menu">Bootstrap
-                                            UI</span></a></li>
+                                            class="hide-menu">Multimedia</span></a></li>
                                
                             </ul>
                         </li>
@@ -240,7 +238,7 @@
                                     class="hide-menu">Cards
                                 </span></a>
                         </li>
-                        <li class="list-divider"></li>
+                        {{-- <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Authentication</span></li>
 
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="authentication-login1.html"
@@ -252,7 +250,7 @@
                                 href="authentication-register1.html" aria-expanded="false"><i data-feather="lock"
                                     class="feather-icon"></i><span class="hide-menu">Register
                                 </span></a>
-                        </li>
+                        </li> --}}
 
                         <li class="list-divider"></li>
                         
@@ -309,6 +307,10 @@
     <!--Custom JavaScript -->
     <script src="{{ asset('admin/dist/js/custom.min.js') }}"></script>
     <!--This page JavaScript -->
+    
+    <!--This page plugins -->
+    <script src="{{  asset('admin/assets/extra-libs/datatables.net/js/jquery.dataTables.min.js')  }}"></script>
+    <script src="{{ asset('admin/dist/js/pages/datatable/datatable-basic.init.js') }}"></script>
     <script src="{{ asset('admin/assets/extra-libs/c3/d3.min.js') }}"></script>
     <script src="{{ asset('admin/assets/extra-libs/c3/c3.min.js') }}"></script>
     <script src="{{ asset('admin/assets/libs/chartist/dist/chartist.min.js') }}"></script>

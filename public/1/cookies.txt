@@ -1,0 +1,11 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+angfuzsoft.com	TRUE	/	FALSE	1999999999	apbct_site_landing_ts	1667979035
+angfuzsoft.com	TRUE	/	FALSE	1999999999	apbct_site_referer	http%3A%2F%2Fangfuzsoft.com%2Fhtml%2Facadu%2Fdemo%2Findex-6.html
+angfuzsoft.com	TRUE	/	FALSE	1999999999	apbct_timestamp	1667979155
+angfuzsoft.com	TRUE	/	FALSE	1999999999	apbct_prev_referer	http%3A%2F%2Fangfuzsoft.com%2Fhtml%2Facadu%2Fdemo%2Fwishlist.html
+angfuzsoft.com	TRUE	/	FALSE	1999999999	apbct_page_hits	5
+angfuzsoft.com	TRUE	/	FALSE	1999999999	apbct_cookies_test	%257B%2522cookies_names%2522%253A%255B%2522apbct_timestamp%2522%252C%2522apbct_prev_referer%2522%252C%2522apbct_site_landing_ts%2522%252C%2522apbct_page_hits%2522%255D%252C%2522check_value%2522%253A%252272f6f9e3f4d182615ddbb35c8c21bbe0%2522%257D
+angfuzsoft.com	TRUE	/	FALSE	1999999999	apbct_urls	%7B%22angfuzsoft.com%2Fhtml%2Facadu%2Fdemo%2Fshop.html%22%3A%5B1667979035%5D%2C%22angfuzsoft.com%2Fhtml%2Facadu%2Fdemo%2Fcourse%22%3A%5B1667979045%5D%2C%22angfuzsoft.com%2Fhtml%2Facadu%2Fdemo%2Fservice.html%22%3A%5B1667979055%5D%2C%22angfuzsoft.com%2Fhtml%2Facadu%2Fdemo%2Fshop-detailis.html%22%3A%5B1667979147%5D%2C%22angfuzsoft.com%2Fhtml%2Facadu%2Fdemo%2Fshop-details.html%22%3A%5B1667979155%5D%7D
+angfuzsoft.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+

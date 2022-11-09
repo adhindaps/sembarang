@@ -1,0 +1,45 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 09 Nov 2022 14:24:15 at https://angfuzsoft.com/html/acadu/demo/index-6.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://angfuzsoft.com/html/acadu/demo/index-6.html -O1 "D:\template\sembarang2" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:24:43	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://angfuzsoft.com/html/acadu/demo/index-6.html (from primary/primary)
+14:30:27	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://angfuzsoft.com/html/acadu/demo/assets/css/style.css (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:28	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/index.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:29	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/assets/img/logo.svg (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:29	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/index-2.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:29	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/index-3.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:30	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/index-4.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:30	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/index-5.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:30	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/index-7.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:30	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/index-8.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:31	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/course.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:32	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/video-course.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:32	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/course-details.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:33	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/team.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:33	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/team-details.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:33	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/shop.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:34	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/about.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:35	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/about-2.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:35	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/blog.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:39	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/blog-details.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:40	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/event.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:41	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/event-details.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:42	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/gallery.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:42	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/contact.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:43	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/cart.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:43	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/wishlist.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:44	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/error.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:44	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/course (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:30:44	Warning: 	Retry after error -4 (Connect Error) at link https://angfuzsoft.com/html/acadu/demo/assets/img/hero/hero_img_2_1.png (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:32:11	Error: 	"Not Found" (404) at link https://angfuzsoft.com/html/acadu/demo/shop.html (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:32:39	Error: 	"Not Found" (404) at link https://angfuzsoft.com/html/acadu/demo/course (from https://angfuzsoft.com/html/acadu/demo/index-6.html)
+14:32:41	Error: 	"Not Found" (404) at link https://angfuzsoft.com/html/acadu/demo/service.html (from https://angfuzsoft.com/html/acadu/demo/index.html)
+14:32:41	Error: 	"Not Found" (404) at link https://angfuzsoft.com/html/acadu/demo/shop-detailis.html (from https://angfuzsoft.com/html/acadu/demo/cart.html)
+14:32:41	Error: 	"Not Found" (404) at link https://angfuzsoft.com/html/acadu/demo/shop-details.html (from https://angfuzsoft.com/html/acadu/demo/wishlist.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 8 minutes 31 seconds : 383 links scanned, 348 files written (19890910 bytes overall) [15798313 bytes received at 30916 bytes/sec], 7829983 bytes transferred using HTTP compression in 60 files, ratio 37%, 5.2 requests per connection
+(5 errors, 29 warnings, 0 messages)

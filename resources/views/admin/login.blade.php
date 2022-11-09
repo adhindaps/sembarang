@@ -49,19 +49,21 @@
                       
                         <h2 class="mt-3 text-center">Masuk</h2>
                         <p class="text-center">Masukkan alamat email dan kata sandi Anda untuk mengakses panel admin.</p>
-                        <form class="mt-4">
+                        {{-- <form class="mt-4"> --}}
+                            <form method="post" action="{{ route('postlogin') }}" >
+                                {{  csrf_field() }}
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label class="text-dark" for="uname">Username</label>
-                                        <input class="form-control" id="uname" type="text"
+                                        <label class="text-dark" for="email">Username</label>
+                                        <input class="form-control" id="email" type="text"
                                             placeholder="enter your username">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label class="text-dark" for="pwd">Password</label>
-                                        <input class="form-control" id="pwd" type="password"
+                                        <label class="text-dark" for="password">Password</label>
+                                        <input class="form-control" id="password" type="password"
                                             placeholder="enter your password">
                                     </div>
                                 </div>
@@ -72,6 +74,7 @@
                                     Don't have an account? <a href="#" class="text-danger">Sign Up</a>
                                 </div>
                             </div>
+                            
                         </form>
                     </div>
                 </div>

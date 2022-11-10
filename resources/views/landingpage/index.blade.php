@@ -1,423 +1,14 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 <!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:24:45 GMT -->
-<head>
-	<meta charset="utf-8">
-	<meta content="ie=edge" http-equiv="x-ua-compatible">
-	<title>SMKN 1 Dlanggu</title>
-	<meta content="Angfuzsoft" name="author">
-	<meta content="Acadu - Online Courses & Education HTML Template" name="description">
-	<meta content="Acadu - Online Courses & Education HTML Template" name="keywords">
-	<meta content="INDEX,FOLLOW" name="robots">
-	<meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-57x57.png')}}" rel="apple-touch-icon" sizes="57x57">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-60x60.png')}}" rel="apple-touch-icon" sizes="60x60">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-72x72.png')}}" rel="apple-touch-icon" sizes="72x72">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-76x76.png')}}" rel="apple-touch-icon" sizes="76x76">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-114x114.png')}}" rel="apple-touch-icon" sizes="114x114">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-120x120.png')}}" rel="apple-touch-icon" sizes="120x120">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-144x144.png')}}" rel="apple-touch-icon" sizes="144x144">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-152x152.png')}}" rel="apple-touch-icon" sizes="152x152">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-180x180.png')}}" rel="apple-touch-icon" sizes="180x180">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/android-icon-192x192.png')}}" rel="icon" sizes="192x192" type="image/png">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/favicon-32x32.png')}}" rel="icon" sizes="32x32" type="image/png">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/favicon-96x96.png')}}" rel="icon" sizes="96x96" type="image/png">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/favicon-16x16.png')}}" rel="icon" sizes="16x16" type="image/png">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/manifest.json')}}" rel="manifest">
-	<meta content="#ffffff" name="msapplication-TileColor">
-	<meta content="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/ms-icon-144x144.png')}}" name="msapplication-TileImage">
-	<meta content="#ffffff" name="theme-color">
-	<link href="https://fonts.googleapis.com/" rel="preconnect">
-	<link href="https://fonts.gstatic.com/" rel="preconnect">
-	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700&amp;display=swap" rel="stylesheet">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/css/app.min.css')}}" rel="stylesheet">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/css/fontawesome.min.css')}}" rel="stylesheet">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/css/style.css')}}" rel="stylesheet">
-</head>
+@include('landingpage.layout.head')
 <body>
-	<div class="preloader">
-		<button class="as-btn style3 preloaderCls">Cancel Preloader</button>
-		<div class="preloader-inner">
-			<span class="loader"></span>
-		</div>
-	</div>
-	<div class="popup-search-box d-none d-lg-block">
-		<button class="searchClose"><i class="fal fa-times"></i></button>
-		<form action="#">
-			<input placeholder="What are you looking for?" type="text"> <button type="submit"><i class="fal fa-search"></i></button>
-		</form>
-	</div>
-	<div class="as-menu-wrapper">
-		<div class="as-menu-area text-center">
-			<button class="as-menu-toggle"><i class="fal fa-times"></i></button>
-			<div class="mobile-logo">
-				<a href="index.html"><img alt="Acadu" src="{{asset ('1/yeye/html/acadu/demo/assets/img/logo.svg')}}"></a>
-			</div>
-			<div class="as-mobile-menu">
-				<ul>
-					<li class="menu-item-has-children">
-						<a href="index.html">Beranda</a>
-					</li>
-					<li class="menu-item-has-children">
-						<a href="#">Bidang Keahlian</a>
-						<ul class="sub-menu">
-                            <li>
-								<a href="course-details.html">Sija</a>
-							</li>
-							<li>
-								<a href="course.html">Rekayasa Perangkat Lunak</a>
-							</li>
-							<li>
-								<a href="video-course.html">Multimedia</a>
-							</li>
-							<li>
-								<a href="course-details.html">Teknik Komputer dan Jaringan</a>
-							</li>
-                            <li>
-								<a href="course-details.html">Animasi</a>
-							</li>
-                            <li>
-								<a href="course-details.html">Tata Boga</a>
-							</li>
-                            <li>
-								<a href="course-details.html">Perhotelan</a>
-							</li>
-						</ul>
-					</li>
-					<li class="menu-item-has-children">
-						<a href="#">Teachers</a>
-						<ul class="sub-menu">
-							<li>
-								<a href="team.html">Teachers</a>
-							</li>
-							<li>
-								<a href="team-details.html">Teacher Details</a>
-							</li>
-						</ul>
-					</li>
-					<li class="menu-item-has-children mega-menu-wrap">
-						<a href="#">Halaman</a>
-						<ul class="mega-menu">
-							<li>
-								<a href="shop.html">Halaman 1 1</a>
-								<ul>
-									<li>
-										<a href="index.html">Home One</a>
-									</li>
-									<li>
-										<a href="index-2.html">Home Two</a>
-									</li>
-									<li>
-										<a href="index-3.html">Home Three</a>
-									</li>
-									<li>
-										<a href="index-4.html">Home Four</a>
-									</li>
-									<li>
-										<a href="index-5.html">Home Five</a>
-									</li>
-									<li>
-										<a href="index-6.html">Home Six</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Pagelist 2</a>
-								<ul>
-									<li>
-										<a href="index-7.html">Home Seven</a>
-									</li>
-									<li>
-										<a href="index-8.html">Home Eight</a>
-									</li>
-									<li>
-										<a href="about.html">About Us</a>
-									</li>
-									<li>
-										<a href="about-2.html">About Us Two</a>
-									</li>
-									<li>
-										<a href="team.html">Teachers</a>
-									</li>
-									<li>
-										<a href="team-details.html">Teachers Details</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Pagelist 3</a>
-								<ul>
-									<li>
-										<a href="blog.html">Blog</a>
-									</li>
-									<li>
-										<a href="blog-details.html">Blog Details</a>
-									</li>
-									<li>
-										<a href="course.html">Courses</a>
-									</li>
-									<li>
-										<a href="video-course.html">Video Courses</a>
-									</li>
-									<li>
-										<a href="course-details.html">Course Details</a>
-									</li>
-									<li>
-										<a href="event.html">Event</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Pagelist 4</a>
-								<ul>
-									<li>
-										<a href="event-details.html">Event Details</a>
-									</li>
-									<li>
-										<a href="gallery.html">Gallery</a>
-									</li>
-									<li>
-										<a href="contact.html">Contact Us</a>
-									</li>
-									<li>
-										<a href="cart.html">Shopping Cart</a>
-									</li>
-									<li>
-										<a href="wishlist.html">Wishlist</a>
-									</li>
-									<li>
-										<a href="error.html">Error Page</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li class="menu-item-has-children">
-						<a href="#">Blog</a>
-						<ul class="sub-menu">
-							<li>
-								<a href="blog.html">Blog</a>
-							</li>
-							<li>
-								<a href="blog-details.html">Blog Details</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<header class="as-header header-layout2">
-		<div class="header-top">
-			<div class="container">
-				<div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
-					<div class="col-auto d-none d-lg-block">
-						<div class="header-links">
-							<ul>
-								<li>
-									<i class="fas fa-envelope"></i><b>Email Us:</b> <a href="mailto:info@acadu.com">info@acadu.com</a>
-								</li>
-								<li>
-									<i class="fas fa-phone"></i><b>Hotline:</b> <a href="tel:+256214203215">256 214 203 215</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-auto">
-						<div class="header-links">
-							<ul>
-								<li>
-									<div class="header-social">
-										<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-									</div>
-								</li>
-								<li>
-									<i class="fas fa-user"></i><a href="contact.html">Login / Register</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="sticky-wrapper">
-			<div class="sticky-active">
-				<div class="menu-area">
-					<div class="container">
-						<div class="row align-items-center justify-content-between">
-							<div class="col-auto">
-								<div class="header-logo">
-									<a href="index.html"><img alt="Acadu" src="{{asset ('1/yeye/html/acadu/demo/assets/img/logo.svg')}}"></a>
-								</div>
-							</div>
-							<div class="col-auto">
-								<div class="row align-items-center">
-									<div class="col-auto">
-										<nav class="main-menu d-none d-lg-inline-block">
-											<ul>
-												<li class="menu-item-has-children">
-													<a href="index.html">Beranda</a>
-												</li>
-												<li class="menu-item-has-children">
-													<a href="#">Tentang Kami</a>
-													<ul class="sub-menu">
-														<li>
-															<a href="course.html">Courses</a>
-														</li>
-														<li>
-															<a href="video-course.html">Video Courses</a>
-														</li>
-														<li>
-															<a href="course-details.html">Course Details</a>
-														</li>
-													</ul>
-												</li>
-												<li class="menu-item-has-children">
-													<a href="#">Program</a>
-													<ul class="sub-menu">
-														<li>
-															<a href="team.html">Teachers</a>
-														</li>
-														<li>
-															<a href="team-details.html">Teacher Details</a>
-														</li>
-													</ul>
-												</li>
-												<li class="menu-item-has-children mega-menu-wrap">
-													<a href="#">Pages</a>
-													<ul class="mega-menu">
-														<li>
-															<a href="shop.html">Pagelist 1</a>
-															<ul>
-																<li>
-																	<a href="index.html">Home One</a>
-																</li>
-																<li>
-																	<a href="index-2.html">Home Two</a>
-																</li>
-																<li>
-																	<a href="index-3.html">Home Three</a>
-																</li>
-																<li>
-																	<a href="index-4.html">Home Four</a>
-																</li>
-																<li>
-																	<a href="index-5.html">Home Five</a>
-																</li>
-																<li>
-																	<a href="index-6.html">Home Six</a>
-																</li>
-															</ul>
-														</li>
-														<li>
-															<a href="#">Pagelist 2</a>
-															<ul>
-																<li>
-																	<a href="index-7.html">Home Seven</a>
-																</li>
-																<li>
-																	<a href="index-8.html">Home Eight</a>
-																</li>
-																<li>
-																	<a href="about.html">About Us</a>
-																</li>
-																<li>
-																	<a href="about-2.html">About Us Two</a>
-																</li>
-																<li>
-																	<a href="team.html">Teachers</a>
-																</li>
-																<li>
-																	<a href="team-details.html">Teachers Details</a>
-																</li>
-															</ul>
-														</li>
-														<li>
-															<a href="#">Pagelist 3</a>
-															<ul>
-																<li>
-																	<a href="blog.html">Blog</a>
-																</li>
-																<li>
-																	<a href="blog-details.html">Blog Details</a>
-																</li>
-																<li>
-																	<a href="course.html">Courses</a>
-																</li>
-																<li>
-																	<a href="video-course.html">Video Courses</a>
-																</li>
-																<li>
-																	<a href="course-details.html">Course Details</a>
-																</li>
-																<li>
-																	<a href="event.html">Event</a>
-																</li>
-															</ul>
-														</li>
-														<li>
-															<a href="#">Pagelist 4</a>
-															<ul>
-																<li>
-																	<a href="event-details.html">Event Details</a>
-																</li>
-																<li>
-																	<a href="gallery.html">Gallery</a>
-																</li>
-																<li>
-																	<a href="contact.html">Contact Us</a>
-																</li>
-																<li>
-																	<a href="cart.html">Shopping Cart</a>
-																</li>
-																<li>
-																	<a href="wishlist.html">Wishlist</a>
-																</li>
-																<li>
-																	<a href="error.html">Error Page</a>
-																</li>
-															</ul>
-														</li>
-													</ul>
-												</li>
-												<li class="menu-item-has-children">
-													<a href="#">Blog</a>
-													<ul class="sub-menu">
-														<li>
-															<a href="blog.html">Blog</a>
-														</li>
-														<li>
-															<a href="blog-details.html">Blog Details</a>
-														</li>
-													</ul>
-												</li>
-												<li>
-													<a href="contact.html">Contact</a>
-												</li>
-											</ul>
-										</nav><button class="as-menu-toggle d-inline-block d-lg-none" type="button"><i class="far fa-bars"></i></button>
-									</div>
-									<div class="col-auto d-none d-xxl-block">
-										<div class="header-button">
-											<button class="simple-icon searchBoxToggler" type="button"><i class="far fa-search"></i></button> <a class="as-btn ml-15" href="contact.html">Become Teacher<i class="fas fa-arrow-right ms-2"></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+	@include('landingpage.layout.header')
 	<div class="as-hero-wrapper hero-2">
 		<div class="container z-index-common">
 			<div class="hero-style2">
 				<h1 class="big-title hero-title">Let’s Started</h1>
-				<h2 class="hero-title">Learning Skills & Upgrade Your Life</h2>
+				<h2 class="hero-title">SMK N 1 DLANGGU</h2>
 				<div class="checklist">
 					<ul>
 						<li>Experts Advisors</li>
@@ -426,7 +17,8 @@
 					</ul>
 				</div>
 				<div class="btn-group">
-					<a class="as-btn" href="course.html">Get Started<i class="fas fa-long-arrow-right ms-2"></i></a> <a class="as-btn style5" href="course.html">Our Courses<i class="fas fa-long-arrow-right ms-2"></i></a>
+					<a class="as-btn" href="course.html">Get Started<i class="fas fa-long-arrow-right ms-2"></i></a>
+					 <a class="as-btn style5" href="course.html">Our Courses<i class="fas fa-long-arrow-right ms-2"></i></a>
 				</div>
 			</div>
 		</div>
@@ -445,7 +37,7 @@
 		<div class="container">
 			<div class="title-area text-center text-md-start">
 				<span class="sub-title">Our Course Categories</span>
-				<h2 class="sec-title fw-medium">Explore Top Categories</h2>
+				<h2 class="sec-title fw-medium">EXTRAKULIKULER </h2>
 			</div>
 			<div class="row gy-50">
 				<div class="col-sm-6 col-xl-4">
@@ -509,13 +101,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-4 mb-40 mb-xl-0">
-					<div class="img-box3"><img alt="About" class="w-100" src="{{asset ('1/yeye/html/acadu/demo/assets/img/normal/about_2_1.jpg')}}"></div>
+					<div class="img-box3"><img alt="About" class="w-100" src="mpls/1.jpg" height="100"></div>
 				</div>
 				<div class="col-xxl-7 col-xl-8 align-self-end">
 					<div class="about-content">
 						<div class="title-area mb-40">
 							<span class="sub-title">More About Us</span>
-							<h2 class="fs-40 fw-medium mt-n2">We are innovative educational institution to the creation of the student</h2>
+							<h2 class="fs-40 fw-medium mt-n2">Kami adalah lembaga pendidikan inovatif untuk penciptaan siswa</h2>
 						</div>
 						<p class="mt-n2 mb-30 mb-xl-5">Compellingly procrastinate equity invested markets with efficient process improvements. Collaboratively actualize mission-critical partnerships with integrated portals. Authoritatively optimize low-risk high-yield metrics and plug-and-play potentialities.</p>
 						<div class="counter-grid-wrap">
@@ -757,9 +349,11 @@
 	<section class="" data-pos-for="#team-sec" data-sec-pos="bottom-half">
 		<div class="container">
 			<div class="video-box">
-				<div class="overlay"></div><img alt="video" src="{{asset ('1/yeye/html/acadu/demo/assets/img/normal/video_1.jpg')}}">
+				<div class="overlay"></div><img alt="video" src="foto/g.jpeg" width="2000">
 				<div class="video-content">
-					<h2 class="video-title">Get Instant Access to The Free Self Development Course</h2><a class="icon-btn popup-video" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"><i class="fas fa-play"></i></a> <span class="video-text">WATCH THE COURSE</span>
+					<h2 class="video-title">VIDEO PROFILE SMKN 1 DLANGGU</h2>
+					<a class="icon-btn popup-video" href="https://www.youtube.com/watch?v=4C-XHxX7l4A">
+						<i class="fas fa-play"></i></a> <span class="video-text">PERHATIKAN</span>
 				</div>
 			</div>
 		</div>
@@ -829,18 +423,18 @@
 		<div class="container">
 			<div class="title-area text-center">
 				<span class="sub-title">Our Students Testimonials</span>
-				<h2 class="sec-title fw-medium">People Who Already Love Us</h2>
+				<h2 class="sec-title fw-medium">Bekerjasama </h2>
 			</div>
 			<div class="row as-carousel" data-dots="true" data-lg-slide-show="1" data-ml-dots="true" data-slide-show="2" data-xl-dots="true">
 				<div class="col-lg-6">
 					<div class="testi-box">
 						<div class="testi-box_content">
-							<div class="testi-box_img"><img alt="Avater" src="{{asset ('1/yeye/html/acadu/demo/assets/img/testimonial/testi_2_1.jpg')}}"></div>
+							<div class="testi-box_img"><img alt="Avater" src="foto/axio.webp" width="200"></div>
 							<p class="testi-box_text">“Quickly maximize visionary solutions after mission critical action items productivate premium portals for impactful -services stinctively negotiate enabled niche markets via growth strategies”</p>
 						</div>
 						<div class="testi-box_bottom">
 							<div>
-								<h3 class="testi-box_name">Vlademir Hilton</h3><span class="testi-box_desig">IT Student</span>
+								<h3 class="testi-box_name">Axioo Class Program</h3><span class="testi-box_desig"></span>
 							</div>
 							<div class="testi-box_review">
 								<i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
@@ -851,12 +445,12 @@
 				<div class="col-lg-6">
 					<div class="testi-box">
 						<div class="testi-box_content">
-							<div class="testi-box_img"><img alt="Avater" src="{{asset ('1/yeye/html/acadu/demo/assets/img/testimonial/testi_2_2.jpg')}}"></div>
+							<div class="testi-box_img"><img alt="Avater" src="foto/mikrotik.png"></div>
 							<p class="testi-box_text">“Markets maximize visionary solutions after mission critical action items productivate premium portals for impactful -services stinctively negotiate enabled niche markets via growth strategies”</p>
 						</div>
 						<div class="testi-box_bottom">
 							<div>
-								<h3 class="testi-box_name">David Milton</h3><span class="testi-box_desig">CSE Student</span>
+								<h3 class="testi-box_name">Mikrotik</h3><span class="testi-box_desig"></span>
 							</div>
 							<div class="testi-box_review">
 								<i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
@@ -867,12 +461,28 @@
 				<div class="col-lg-6">
 					<div class="testi-box">
 						<div class="testi-box_content">
-							<div class="testi-box_img"><img alt="Avater" src="{{asset ('1/yeye/html/acadu/demo/assets/img/testimonial/testi_2_3.jpg')}}"></div>
+							<div class="testi-box_img"><img alt="Avater" src="foto/JTV.webp"></div>
+							<p class="testi-box_text">“Markets maximize visionary solutions after mission critical action items productivate premium portals for impactful -services stinctively negotiate enabled niche markets via growth strategies”</p>
+						</div>
+						<div class="testi-box_bottom">
+							<div>
+								<h3 class="testi-box_name">JTV</h3><span class="testi-box_desig"></span>
+							</div>
+							<div class="testi-box_review">
+								<i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="testi-box">
+						<div class="testi-box_content">
+							<div class="testi-box_img"><img alt="Avater" src="foto/aston.webp"></div>
 							<p class="testi-box_text">“Mission maximize visionary solutions after mission critical action items productivate premium portals for impactful -services stinctively negotiate enabled niche markets via growth strategies”</p>
 						</div>
 						<div class="testi-box_bottom">
 							<div>
-								<h3 class="testi-box_name">Abraham Khalil</h3><span class="testi-box_desig">GS Student</span>
+								<h3 class="testi-box_name">Aston Hotel</h3><span class="testi-box_desig"></span>
 							</div>
 							<div class="testi-box_review">
 								<i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
@@ -910,8 +520,8 @@
 	<section class="space bg-smoke">
 		<div class="container">
 			<div class="title-area text-center">
-				<span class="sub-title">Latest News & Blog</span>
-				<h2 class="sec-title fw-medium">Get Every Single Updates</h2>
+				<span class="sub-title">BERITA & BLOG TERBARU</span>
+				<h2 class="sec-title fw-medium">Dapatkan Setiap Pembaruan</h2>
 			</div>
 			<div class="row slider-shadow as-carousel" data-lg-slide-show="2" data-md-slide-show="2" data-slide-show="3" data-sm-slide-show="1">
 				<div class="col-md-6 col-xl-4">
@@ -998,133 +608,7 @@
 			</div>
 		</div>
 	</div>
-	<footer class="footer-wrapper footer-layout2">
-		<div class="widget-area">
-			<div class="container">
-				<div class="row justify-content-between">
-					<div class="col-md-6 col-xl-3">
-						<div class="widget footer-widget style2">
-							<div class="as-widget-about">
-								<div class="about-logo">
-									<a href="index.html"><img alt="Acadu" src="{{asset ('1/yeye/html/acadu/demo/assets/img/logo-white2.svg')}}"></a>
-								</div>
-								<p class="about-text">Globally deploy synergistic opportunities after state of techno create information without iterate impactful internal organi sources through life time circle.</p>
-								<div class="as-social">
-									<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-xl-auto">
-						<div class="widget widget_nav_menu footer-widget style2">
-							<h3 class="widget_title">Company</h3>
-							<div class="menu-all-pages-container">
-								<ul class="menu">
-									<li>
-										<a href="about.html">About Us</a>
-									</li>
-									<li>
-										<a href="course.html">Resource Center</a>
-									</li>
-									<li>
-										<a href="course.html">Careers</a>
-									</li>
-									<li>
-										<a href="team.html">Instructor</a>
-									</li>
-									<li>
-										<a href="contact.html">Become A Teacher</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-xl-auto">
-						<div class="widget widget_nav_menu footer-widget style2">
-							<h3 class="widget_title">Courses</h3>
-							<div class="menu-all-pages-container">
-								<ul class="menu">
-									<li>
-										<a href="course.html">Health Course</a>
-									</li>
-									<li>
-										<a href="course.html">Development</a>
-									</li>
-									<li>
-										<a href="course.html">Web Design</a>
-									</li>
-									<li>
-										<a href="course.html">SEO Optimize</a>
-									</li>
-									<li>
-										<a href="course.html">Marketing</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-xl-auto">
-						<div class="widget widget_nav_menu footer-widget style2">
-							<h3 class="widget_title">Resourses</h3>
-							<div class="menu-all-pages-container">
-								<ul class="menu">
-									<li>
-										<a href="about.html">Community</a>
-									</li>
-									<li>
-										<a href="contact.html">Support</a>
-									</li>
-									<li>
-										<a href="course.html">Video Guides</a>
-									</li>
-									<li>
-										<a href="course.html">Documentation</a>
-									</li>
-									<li>
-										<a href="contact.html">Security</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-xl-3">
-						<div class="widget footer-widget style2">
-							<h3 class="widget_title">Get in touch!</h3>
-							<form class="newsletter-widget">
-								<p class="footer-text">Every Single Updates and Notifications</p>
-								<div class="form-group">
-									<input class="form-control" placeholder="Enter Email" required="" type="email"> <i class="fal fa-envelope"></i>
-								</div><button class="as-btn shadow-none" type="submit">Subscribe</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="copyright-wrap">
-			<div class="container">
-				<div class="row justify-content-between align-items-center">
-					<div class="col-lg-auto d-none d-lg-block">
-						<div class="footer-links">
-							<ul>
-								<li>
-									<a href="about.html">Terms of Use</a>
-								</li>
-								<li>
-									<a href="about.html">Privacy Environmental Policy</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-auto">
-						<p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2022 <a href="https://themeforest.net/user/angfuz_soft">Angfuzsoft</a>. All Rights Reserved.</p>
-					</div>
-				</div>
-			</div>
-		</div><a class="scrollToTop scroll-btn" href="#"><i class="far fa-arrow-up"></i></a>
-		<div class="shape-mockup jump d-none d-xl-block" data-left="0%" data-top="10%"><img alt="shapes" src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/footer_shape_4.png')}}"></div>
-		<div class="shape-mockup movingX d-none d-xl-block" data-bottom="15%" data-right="0%"><img alt="shapes" src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/footer_shape_5.png')}}"></div>
-	</footer>
+	@include('landingpage.layout.footer')
 	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
 	</script>
 	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/app.min.js')}}">

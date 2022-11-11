@@ -8,7 +8,7 @@
 		<div class="container z-index-common">
 			<div class="hero-style2">
 				<h1 class="big-title hero-title">Let’s Started</h1>
-				<h2 class="hero-title">SMK N 1 DLANGGU</h2>
+				<h2 class="hero-title">SMK NEGERI 1 DLANGGU</h2>
 				<div class="checklist">
 					<ul>
 						<li>Experts Advisors</li>
@@ -106,7 +106,7 @@
 				<div class="col-xxl-7 col-xl-8 align-self-end">
 					<div class="about-content">
 						<div class="title-area mb-40">
-							<span class="sub-title">More About Us</span>
+							<span class="sub-title">LEBIH BANYAK TENTANG KAMI</span>
 							<h2 class="fs-40 fw-medium mt-n2">Kami adalah lembaga pendidikan inovatif untuk penciptaan siswa</h2>
 						</div>
 						<p class="mt-n2 mb-30 mb-xl-5">Compellingly procrastinate equity invested markets with efficient process improvements. Collaboratively actualize mission-critical partnerships with integrated portals. Authoritatively optimize low-risk high-yield metrics and plug-and-play potentialities.</p>
@@ -114,19 +114,19 @@
 							<div class="counter-grid">
 								<div class="counter-grid_icon"><img alt="icon" src="{{asset ('1/yeye/html/acadu/demo/assets/img/icon/counter_1_1.svg')}}"></div>
 								<div class="counter-grid_content">
-									<h3 class="counter-grid_number"><span class="counter-number">350</span></h3><span class="counter-grid_text">FINISHED WEBINARS</span>
+									<h3 class="counter-grid_number"><span class="counter-number">1175</span></h3><span class="counter-grid_text">SISWA</span>
 								</div>
 							</div>
 							<div class="counter-grid">
 								<div class="counter-grid_icon"><img alt="icon" src="{{asset ('1/yeye/html/acadu/demo/assets/img/icon/counter_1_2.svg')}}"></div>
 								<div class="counter-grid_content">
-									<h3 class="counter-grid_number"><span class="counter-number">100</span>%</h3><span class="counter-grid_text">SATISFACTION RATE</span>
+									<h3 class="counter-grid_number"><span class="counter-number">117</span></h3><span class="counter-grid_text">GURU</span>
 								</div>
 							</div>
 							<div class="counter-grid">
 								<div class="counter-grid_icon"><img alt="icon" src="{{asset ('1/yeye/html/acadu/demo/assets/img/icon/counter_1_3.svg')}}"></div>
 								<div class="counter-grid_content">
-									<h3 class="counter-grid_number"><span class="counter-number">656</span></h3><span class="counter-grid_text">ONLINE SESSIONS</span>
+									<h3 class="counter-grid_number"><span class="counter-number">7</span></h3><span class="counter-grid_text">JuRUSAN</span>
 								</div>
 							</div>
 						</div>

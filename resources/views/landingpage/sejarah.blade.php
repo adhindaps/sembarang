@@ -17,11 +17,11 @@
                             
                             <a href="blog.html"></a></div>
                             <h2 class="blog-title">SEJARAH SEKOLAH</h2>
-    <p>Tata boga adalah suatu disiplin ilmu terkait dengan seni dalam menyiapkan, memasak, dan menghidangkan makanan siap saji. Di Indonesia, disiplin ilmu ini dapat dipelajari di Sekolah Menengah Kejuruan (SMK) atau di tingkat sekolah tinggi terkait Industri pariwisata dan industri perhotelan. Seorang yang memiliki keahlian dalam tata boga dinamakan sebagai koki, juru masak atau chef,
-         dimana orang ini diharuskan untuk memiliki pengetahuan dalam ilmu pangan, nutrisi, dan diet serta memiliki kreativitas dalam menyiapkan hidangan makanan yang menarik untuk dilihat. Ilmu tata boga sangat terkait dengan industri pariwisata dan perhotelan dimana kebanyakan para juru masak bekerja di rumah makan, hotel, atau taman hiburan</p>
-        <cite></cite>Pekerjaan Menjanjikan untuk Lulusan SMK Jurusan Tata Boga</blockquote>
-        <p>Bukan rahasia jika industri kuliner tidak pernah mati. Oleh karena itu, jurusan tata boga tetap menjadi salah satu jurusan yang paling diminati oleh industri saat ini. 
-            Lowongan pekerjaan yang tersedia pun beragam. Berikut ini beberapa pekerjaan yang cocok untuk para lulusan SMK jurusan tata boga.</p>
+    <p>SMK Negeri 1 Dlanggu berdiri pada tahun 2004, yang beralamat di Jl. Jend. A. Yani, No. 1 Pohkecik, Dlanggu, Mojokerto dengan luas tanah 2 Hektar. Pada tahun 2004, di SMKN 1 Dlanggu hanya ada 2 jurusan, yaitu TKJ (Teknik Komputer dan Jaringan) dengan 2 rombel dan Tata Boga dengan 2 rombel, yang dipimpin oleh kepala sekolah yang pertama yaitu Ibu Sri Supeni, SE,M.Pd.
+         Ibu Sri Supeni SE.M.Pd menjabat selama 3 tahun yaitu tahun 2004 – 2007. Selanjutnya pada tahun 2007 – 2012 SMKN 1 Dlanggu dipimpin oleh kepala sekolah baru yaitu Bapak Drs. Aslich, dan jurusan di SMKN 1 Dlanggu bertambah 2 yaitu Multimedia dan RPL (Rekyasa Perangkat Lunak). Pada akhir tahun pelajaran 2012, kepemimpinan di SMKN 1 Dlanggu berganti lagi dengan kepala sekolah yang baru, yaitu Bapak Drs. H. Mochamad Hasjim,MM. beliau adalah kepala sekolah yang paling senior dari pimpinan sebelumnya, karena setelah menjabat di SMKN 1 Dlanggu beliau pensiun. Pada kepemimpinan Bapak Drs. H. Mochamad Hasjim jurusan di SMKN 1 Dlanggu bertambah 2 lagi yaitu APH (Akomodasi Perhotelan) dan Animasi. Beliau menjabat selama 2 tahun mulai dari tahun 2012 – 2014 akhir. Karena di SMKN 1 Dlanggu menggunakan kurikulum 2013, maka kata “jurusan” di sini berubah menjadi “paket keahlian”. Setelah akhir tahun 2014 sampai sekarang kepemimpinan di sekolah kami berganti lagi sampai sekarang dipimpin oleh Bapak Muharto, S.Pd,MM.</p>
+        <cite></cite></blockquote>
+        <p>Jadi, sejak SMKN 1 Dlanggu berdiri sampai sekarang telah berganti kepemimpinan sebanyak 4 kali.
+             Dari tahun ke tahun siswa yang mendaftar di sekolah kami semakin banyak, begitu pula dengan prestasi yang diukir juga bertambah banyak, karena banyak juara yang diraih oleh siswa siswi dari sekolah kami. SMKN 1 Dlanggu mempunyai visi dan misi yang sangat relevan dan cocok untuk sekolah kami.</p>
         {{-- <h3 class="h4 mt-40">1. Asisten Koki</h3>
         <p>Menjadi asisten koki merupakan suatu pekerjaan yang sangat cocok untuk lulusan SMK tata boga. 
             Dengan kemampuannya di bidang kuliner, lulusan SMK tata boga tentu dapat menjadi asisten koki yang baik.
@@ -111,6 +111,8 @@
         </div>
     </div>
 </section>
+</div>
+            </div>
 @include('landingpage.layout.footerhal')
 	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
 	</script>

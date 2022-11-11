@@ -111,6 +111,8 @@
         </div>
     </div>
 </section>
+</div>
+</div>
 @include('landingpage.layout.footerhal')
 	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
 	</script>

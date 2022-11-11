@@ -39,3 +39,5 @@ Route::get('/tkj',[LandingController::class, 'tkj'])->name('tkj');
 Route::get('/sejarah',[LandingController::class, 'sejarah'])->name('sejarah');
 Route::get('/galerry',[LandingController::class, 'galerry'])->name('galerry');
 Route::get('/kontak',[LandingController::class, 'kontak'])->name('kontak');
+Route::get('/profile',[LandingController::class, 'profile'])->name('profile');
+Route::get('/visi',[LandingController::class, 'visi'])->name('visi');

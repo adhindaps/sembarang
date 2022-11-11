@@ -9,10 +9,16 @@
                                 <a href="/"><img alt="Acadu" src="/foto/smkdlanggu.jpeg"></a>
                             </div>
                             <p class="about-text">SMKN 1 Dlanggu adalah Sekolah Menengah Kejuruan Negeri yang berbasis Teknologi dan Pariwisata untuk mencetak lulusan yang
-                                 siap menjadi professional muda di bidang teknologi dan pariwisata, berjiwa religius, cinta tanah air serta berwirausaha. Dengan dukungan sumber daya manusia pengajar yang berkuwalitas dan sarana prasarana yang lengkap demi menjawab kebutuhan dunia usaha dan industri Indonesia.</p>
+                                 siap menjadi professional muda di bidang teknologi dan pariwisata, berjiwa religius, cinta tanah air serta berwirausaha.</p>
                             <div class="as-social">
-                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                            </div>
+                                <a href="https://www.facebook.com/humassmkn1dlanggumojokerto/"><i
+                                    class="fab fa-facebook-f"></i></a> 
+                                    <a href="https://twitter.com/HumasSMKN1DLG"><i
+                                    class="fab fa-twitter"></i></a> 
+                                    <a href="https://www.instagram.com/humas_smkn1dlanggu/"><i
+                                    class="fab fa-instagram"></i></a> 
+                                    <a href="https://www.youtube.com/channel/UC9l3e9tfY3P-grNXww2Mz_A"><i
+                                    class="fab fa-youtube"></i></a></div>
                         </div>
                     </div>
                 </div>
@@ -42,24 +48,19 @@
                 </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget style2">
-                        <h3 class="widget_title">Courses</h3>
+                        <h3 class="widget_title">Fasilitas</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
                                 <li>
-                                    <a href="course.html">Health Course</a>
+                                    <a href="course.html">Class Axio</a>
                                 </li>
                                 <li>
-                                    <a href="course.html">Development</a>
+                                    <a href="course.html">Beasiswa</a>
                                 </li>
                                 <li>
-                                    <a href="course.html">Web Design</a>
+                                    <a href="course.html">Layanan SILARAS</a>
                                 </li>
-                                <li>
-                                    <a href="course.html">SEO Optimize</a>
-                                </li>
-                                <li>
-                                    <a href="course.html">Marketing</a>
-                                </li>
+                            
                             </ul>
                         </div>
                     </div>
@@ -118,7 +119,7 @@
                     </div>
                 </div>
                 <div class="col-lg-auto">
-                    <p class="copyright-text">SMKN 1 DLANGGU <i class="fal fa-copyright"></i> 2022 <a href="https://themeforest.net/user/angfuz_soft"></a>
+                    <p class="copyright-text">SMK NEGERI 1 DLANGGU <i class="fal fa-copyright"></i> 2022 <a href="https://themeforest.net/user/angfuz_soft"></a>
                 </div>
             </div>
         </div>

@@ -55,18 +55,19 @@
                                                 <a href="#">Tentang Kami</a>
                                                 <ul class="sub-menu">
                                                     <li>
-                                                        <a href="sejarah">Sejarah Sekolah</a>
-                                                    </li>
-                                                    {{-- <li>
-                                                        <a href="video-course.html">Video Courses</a>
+                                                        <a href="profile">Profile Sekolah</a>
                                                     </li>
                                                     <li>
-                                                        <a href="course-details.html">Course Details</a>
-                                                    </li> --}}
+                                                        <a href="sejarah">Sejarah Sekolah</a>
+                                                    </li>
+                                                   
+                                                    <li>
+                                                        <a href="visi">Visi & Misi</a>
+                                                    </li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">
-                                                <a href="#">Kompetensi Jurusan</a>
+                                                <a href="#">Kompetensi Keahlian</a>
                                                 <ul class="sub-menu">
                                                     <li>
                                                         <a href="sija">SIJA</a>
@@ -89,20 +90,15 @@
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">
-                                                <a href="#">Fasilitas</a>
+                                                <a href="#">BKK</a>
                                                 <ul class="sub-menu">
                                                     <li>
-                                                        <a href="blog.html">Class Axio</a>
+                                                        <a href="bkk">BKK</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="beasiswa">Beasiswa</a>
+                                                    {{-- <li>
+                                                        <a href="profile">Profile Sekolah</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="blog.html">UPJ Jurusan</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="silaras">Layanan SILARAS</a>
-                                                    </li>
+                                                     --}}
                                                 </ul>
                                             </li>
                                             <li>

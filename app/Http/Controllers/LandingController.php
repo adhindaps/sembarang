@@ -38,6 +38,10 @@ class LandingController extends Controller
     {
         return view('landingpage.sejarah');
     }
+    public function profile(Request $request)
+    {
+        return view('landingpage.profile');
+    }
     public function galerry(Request $request)
     {
         return view('landingpage.galerry');
@@ -45,5 +49,9 @@ class LandingController extends Controller
     public function kontak(Request $request)
     {
         return view('landingpage.kontak');
+    }
+    public function visi(Request $request)
+    {
+        return view('landingpage.visi');
     }
 }

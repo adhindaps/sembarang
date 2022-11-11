@@ -44,7 +44,7 @@
                     type="submit"><i class="far fa-search"></i></button></form>
         </div>
         <div class="widget widget_search">
-                    <a><img src="mpls/tatabg.jpg"></a>
+                    <a><img src="mpls/9.jpg"></a>
         </div>
         <div class="widget">
             <h3 class="widget_title">Recent Posts</h3>
@@ -100,6 +100,8 @@
         </div>
     </div>
 </section>
+</div>
+</div>
 @include('landingpage.layout.footerhal')
 	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
 	</script>

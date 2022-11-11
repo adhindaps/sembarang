@@ -17,27 +17,18 @@
                             
                             <a href="blog.html"><i class="far fa-book"></i>Study</a></div>
                             <h2 class="blog-title">REKAYASA PERANGKAT LUNAK</h2>
-    {{-- <p>Sistem Informatika Jaringan dan Aplikasi (SIJA) merupakan satu-satunya program keahlian 
-        di SMK Negeri 1 Dlanggu Mojokerto yang menjalankan program SMK 4 tahun. </p>
+    <p>Rekayasa perangkat lunak (RPL, atau dalam bahasa Inggris: Software Engineering atau SE) 
+        adalah satu bidang profesi yang mendalami cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen organisasi pengembanganan perangkat lunak dan manajemen kualitas.</p>
         <cite></cite></blockquote>
-        <p>Program keahlian SIJA berdiri sejak tahun 2017 dengan jumlah sampai saat ini sebanyak 136 siswa
-            yang dipimpin seorang kepala jurusan yaitu bapak Fiki Fahrudin Fahmi, S.Kom
-            Program keahlian SIJA telah bekerjasama dengan beberapa industri berkelas internasional seperti
-            Axioo, Mikrotik, Redhat.</p>
-        <h3 class="h4 mt-40"></h3>
-        <p>Pada Axioo, siswa SIJA dibekali perakitan dan troubleshooting laptop dengan standart industri 
-            dan dipantau secara rutin oleh pihak axioo. Selain axioo, SIJA juga bekerjasama dengan 
-            perusahaan jaringan komputer yang cukup terkenal yakni Mikrotik. SMK Negeri 1 Dlanggu Mojokerto telah 
-            resmi menjadi Mikrotik Academy dibawah bimbingan bapak Ziad Sobri selaku salah satu 
-            Mikrotik Academy Coordinator di Indonesia. Dengan bergabung menjadi Mikrotik Academy, SMK Negeri 1 Dlanggu Mojokerto
-            dapat membuka kelas ujian Mikrotik Certified Network Assosiate (MTCNA) untuk seluruh siswanya. 
-            Selain itu, untuk mendukung skill siswa dibidang sistem administration, SMK Negeri 1 Dlanggu juga
-            telah bekerjasama dengan Redhat Academy. dengan bergabungnya kita dengan Redhat Academy, para siswa
-            mendapatkan akses khusus ke portal pembelajaran (modul) RHCSA. dan apabila ada siswa yang berminat mengambil sertifikasi </p>
-       
-        <p>RHCSA, mereka akan mendapatkan diskon sebesar 50%. 
-            Dengan kita bekerjasama dengan beberapa industri diharapkan ketika siswa SIJA keluar dari SMK Negeri 1 Dlanggu Mojokerto
-            memiliki kompetensi yang dapat diserap oleh industri.</p></div> --}}
+        <p>EEE Computer Society mendefinisikan rekayasa perangkat lunak sebagai penerapan suatu pendekatan yang sistematis, disiplin dan terkuantifikasi atas pengembangan, penggunaan dan pemeliharaan perangkat lunak, serta studi atas pendekatan-pendekatan ini, yaitu penerapan pendekatan engineering atas perangkat lunak.
+Rekayasa perangkat lunak adalah pengubahan perangkat lunak itu sendiri guna mengembangkan, memelihara, 
+dan membangun kembali dengan menggunakan prinsip reakayasa untuk menghasilkan perangkat lunak yang dapat bekerja lebih efisien dan efektif untuk pengguna.</p>
+        <h3 class="h4 mt-40">Sejarah</h3>
+        <p>Istilah software engineering, pertama kali digunakan pada akhir tahun 1950-an dan sekitar awal 1960-an. Pada tahun 1968, NATO menyelenggarakan konferensi tentang software engineering di Jerman dan kemudian dilanjutkan pada tahun 1969. Meski penggunaan kata software engineering masukan konferensi tersebut menimbulkan debat tajam tentang aspek engineering dari pengembangan perangkat lunak, banyak pihak yang menganggap konferensi tersebutlah yang menjadi awal tumbuhnya profesi rekayasa perangkat lunak.
+
+Rekayasa Perangkat Lunak Di indonesia dijadikan disiplin ilmu yang dipelajari mulai tingkat Sekolah Menengah 
+Kejuruan sampai tingkatan Perguruan Tinggi. Di tingkat SMK, jurusan ini sudah memiliki kurikulum materi pelajaran sendiri yang sudah ditentukan oleh Dinas Pendidikan. Rekayasa Perangkat Lunak Di tingkat SMK biasanya mempelajari materi materi seperti Bahasa Pemrograman, Desain Web, Pengetahuan tetang Undang Undang HAKI dan ITE, dan sebagainya, tergantung dari sekolah dan kurikulum tiap tahunnya.</p>
+       </div>
         
 </div>
 </div>
@@ -104,6 +95,8 @@
         </div>
     </div>
 </section>
+</div>
+</div>
 @include('landingpage.layout.footerhal')
 	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
 	</script>

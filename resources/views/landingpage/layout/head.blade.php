@@ -1,7 +1,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="ie=edge" http-equiv="x-ua-compatible">
-	<title>SMKN 1 Dlanggu</title>
+	<title>SMK NEGERI 1 DLANGGU</title>
 	<meta content="Angfuzsoft" name="author">
 	<meta content="Acadu - Online Courses & Education HTML Template" name="description">
 	<meta content="Acadu - Online Courses & Education HTML Template" name="keywords">

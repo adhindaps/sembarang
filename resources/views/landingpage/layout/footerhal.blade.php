@@ -8,13 +8,16 @@
                             <div class="about-logo"><a href="/"><img src="/foto/smkdlanggu.jpeg"
                                         alt="Acadu"></a></div>
                             <p class="about-text">SMKN 1 Dlanggu adalah Sekolah Menengah Kejuruan Negeri yang berbasis Teknologi dan Pariwisata untuk mencetak lulusan yang
-                                siap menjadi professional muda di bidang teknologi dan pariwisata, berjiwa religius, cinta tanah air serta berwirausaha. Dengan dukungan sumber daya manusia pengajar yang berkuwalitas dan sarana prasarana yang lengkap demi menjawab kebutuhan dunia usaha dan industri Indonesia.</p>
+                                siap menjadi professional muda di bidang teknologi dan pariwisata, berjiwa religius, cinta tanah air serta berwirausaha. </p>
                             <h4 class="footer-info-title">Follow Us On:</h4>
-                            <div class="as-social"><a href="https://www.facebook.com/"><i
-                                        class="fab fa-facebook-f"></i></a> <a href="https://www.twitter.com/"><i
-                                        class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/"><i
-                                        class="fab fa-linkedin-in"></i></a> <a href="https://www.instagram.com/"><i
-                                        class="fab fa-instagram"></i></a> <a href="https://www.youtube.com/"><i
+                            <div class="as-social">
+                                <a href="https://www.facebook.com/humassmkn1dlanggumojokerto/"><i
+                                        class="fab fa-facebook-f"></i></a> 
+                                        <a href="https://twitter.com/HumasSMKN1DLG"><i
+                                        class="fab fa-twitter"></i></a> 
+                                        <a href="https://www.instagram.com/humas_smkn1dlanggu/"><i
+                                        class="fab fa-instagram"></i></a> 
+                                        <a href="https://www.youtube.com/channel/UC9l3e9tfY3P-grNXww2Mz_A"><i
                                         class="fab fa-youtube"></i></a></div>
                         </div>
                     </div>
@@ -69,7 +72,7 @@
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6">
                     <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2022 <a
-                            href="https://themeforest.net/user/angfuz_soft"></a>. SMKN 1 DLANGGU.</p>
+                            href="https://themeforest.net/user/angfuz_soft"></a>. SMK NEGERI 1 DLANGGU.</p>
                 </div>
                 <div class="col-lg-6 text-end d-none d-lg-block">
                     <div class="footer-links">

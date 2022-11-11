@@ -11,7 +11,7 @@
             <div class="container"><div class="row"><div class="col-xxl-8 col-lg-7">
                 <div class="as-blog blog-single">
                     <div class="blog-img">
-                        <img src="assets/img/blog/blog-s-1-1.jpg" alt="Blog Image">
+                        <img src="mpls/sijaaa.jpg" alt="Blog Image">
                     </div><div class="blog-content"><div class="blog-meta">
                         <a href="blog.html">
                             
@@ -104,6 +104,8 @@
         </div>
     </div>
 </section>
+</div>
+</div>
 @include('landingpage.layout.footerhal')
 	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
 	</script>

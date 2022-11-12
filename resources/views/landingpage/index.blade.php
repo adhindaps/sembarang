@@ -265,14 +265,21 @@
 													<a href="#">Tentang Kami</a>
 													<ul class="sub-menu">
 														<li>
-															<a href="course.html">Courses</a>
+															<a href="course.html">Profile Sekolah</a>
 														</li>
 														<li>
-															<a href="video-course.html">Video Courses</a>
+															<a href="video-course.html">Visi Misi</a>
 														</li>
 														<li>
-															<a href="course-details.html">Course Details</a>
+															<a href="course-details.html">Daftar Guru</a>
 														</li>
+														<li>
+															<a href="course-details.html">DaftarStaf TU</a>
+														</li>
+														<li>
+															<a href="course-details.html">Sarana Prasarana</a>
+														</li>
+
 													</ul>
 												</li>
 												<li class="menu-item-has-children">
@@ -312,87 +319,10 @@
 																</li>
 															</ul>
 														</li>
-														<li>
-															<a href="#">Pagelist 2</a>
-															<ul>
-																<li>
-																	<a href="index-7.html">Home Seven</a>
-																</li>
-																<li>
-																	<a href="index-8.html">Home Eight</a>
-																</li>
-																<li>
-																	<a href="about.html">About Us</a>
-																</li>
-																<li>
-																	<a href="about-2.html">About Us Two</a>
-																</li>
-																<li>
-																	<a href="team.html">Teachers</a>
-																</li>
-																<li>
-																	<a href="team-details.html">Teachers Details</a>
-																</li>
-															</ul>
-														</li>
-														<li>
-															<a href="#">Pagelist 3</a>
-															<ul>
-																<li>
-																	<a href="blog.html">Blog</a>
-																</li>
-																<li>
-																	<a href="blog-details.html">Blog Details</a>
-																</li>
-																<li>
-																	<a href="course.html">Courses</a>
-																</li>
-																<li>
-																	<a href="video-course.html">Video Courses</a>
-																</li>
-																<li>
-																	<a href="course-details.html">Course Details</a>
-																</li>
-																<li>
-																	<a href="event.html">Event</a>
-																</li>
-															</ul>
-														</li>
-														<li>
-															<a href="#">Pagelist 4</a>
-															<ul>
-																<li>
-																	<a href="event-details.html">Event Details</a>
-																</li>
-																<li>
-																	<a href="gallery.html">Gallery</a>
-																</li>
-																<li>
-																	<a href="contact.html">Contact Us</a>
-																</li>
-																<li>
-																	<a href="cart.html">Shopping Cart</a>
-																</li>
-																<li>
-																	<a href="wishlist.html">Wishlist</a>
-																</li>
-																<li>
-																	<a href="error.html">Error Page</a>
-																</li>
-															</ul>
-														</li>
 													</ul>
 												</li>
 												<li class="menu-item-has-children">
-													<a href="#">Blog</a>
-													<ul class="sub-menu">
-														<li>
-															<a href="blog.html">Blog</a>
-														</li>
-														<li>
-															<a href="blog-details.html">Blog Details</a>
-														</li>
-													</ul>
+													<a href="#">Prestasi</a>
 												</li>
 												<li>
 													<a href="contact.html">Contact</a>

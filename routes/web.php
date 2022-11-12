@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LandingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,3 +28,16 @@ Route::get('/dashboard', function () {
 Route::get('/siswapres', function () {
     return view('admin.siswapres');
 });
+
+Route::get('/anm',[LandingController::class, 'anm'])->name('anm');
+Route::get('/aph',[LandingController::class, 'aph'])->name('aph');
+Route::get('/mm',[LandingController::class, 'mm'])->name('mm');
+Route::get('/rpl',[LandingController::class, 'rpl'])->name('rpl');
+Route::get('/sija',[LandingController::class, 'sija'])->name('sija');
+Route::get('/tb',[LandingController::class, 'tb'])->name('tb');
+Route::get('/tkj',[LandingController::class, 'tkj'])->name('tkj');
+Route::get('/sejarah',[LandingController::class, 'sejarah'])->name('sejarah');
+Route::get('/galerry',[LandingController::class, 'galerry'])->name('galerry');
+Route::get('/kontak',[LandingController::class, 'kontak'])->name('kontak');
+Route::get('/profile',[LandingController::class, 'profile'])->name('profile');
+Route::get('/visi',[LandingController::class, 'visi'])->name('visi');

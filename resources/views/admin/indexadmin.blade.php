@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="foto/smklogo.jpg">
-    <title>Admin-SMK DLANGGU</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="mpls/10.png">
+    <title>ADMIN-SMK N 1 DLANGGU</title>
     <!-- Custom CSS -->
     <link href="{{ asset('admin/assets/extra-libs/c3/c3.min.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/assets/libs/chartist/dist/chartist.min.css') }}" rel="stylesheet">
@@ -121,7 +121,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <img src="foto/smklogo.jpg" alt="user" class="rounded-circle"
+                                <img src="mpls/10.png" alt="user" class="rounded-circle"
                                     width="40">
                                 <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span
                                         class="text-dark">Admin</span> <i data-feather="chevron-down"
@@ -177,15 +177,15 @@
 
                         <li class="sidebar-item"> <a class="sidebar-link" href="@"
                                 aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
-                                    class="hide-menu">Visi
+                                    class="hide-menu">Profile Sekolah
                                 </span></a>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="$"
                                 aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
-                                    class="hide-menu">Misi</span></a></li>
+                                    class="hide-menu">Sejarah Sekolah</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="%"
                                 aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
-                                    class="hide-menu">Sejarah Sekolah</span></a></li>
+                                    class="hide-menu">Visi & Misi</span></a></li>
 
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Data Sekolah</span></li>

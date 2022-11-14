@@ -96,12 +96,12 @@
 </section>
 </div>
             </div>
-@include('landingpage.layout.footerhal')
-	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
-	</script>
-	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/app.min.js')}}">
-	</script>
-	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/main.js')}}">
-	</script><!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:30:06 GMT -->
-</body>
+            @include('landingpage.layout.footer')
+            <script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
+            </script>
+            <script src="{{asset ('1/yeye/html/acadu/demo/assets/js/app.min.js')}}">
+            </script>
+            <script src="{{asset ('1/yeye/html/acadu/demo/assets/js/main.js')}}">
+            </script><!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:30:06 GMT -->
+        </body>
 </html>

@@ -48,47 +48,7 @@
         
 </div>
 </div>
-<div class="col-xxl-4 col-lg-5">
-    <aside class="sidebar-area">
-        <div class="widget widget_search">
-            <form class="search-form"><input type="text" placeholder="Search..."> <button
-                    type="submit"><i class="far fa-search"></i></button></form>
-        </div>
-        <div class="widget widget_search">
-                    <a><img src="mpls/tatabg.jpg"></a>
-        </div>
-        <div class="widget">
-            <h3 class="widget_title">Recent Posts</h3>
-            <div class="recent-post-wrap">
-                <div class="recent-post">
-                    <div class="media-img"><a href="blog-details.html"><img
-                                src="mpls/3.jpg" alt="Blog Image"></a></div>
-                    <div class="media-body">
-                        <div class="recent-post-meta"><a href="blog.html"><i
-                                    class="far fa-calendar"></i>21/01/2022</a></div>
-                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS hari Pertama </a></h4>
-                    </div>
-                </div>
-                <div class="recent-post">
-                    <div class="media-img"><a href="blog-details.html"><img
-                                src="mpls/4.jpg" alt="Blog Image"></a></div>
-                    <div class="media-body">
-                        <div class="recent-post-meta"><a href="blog.html"><i
-                                    class="far fa-calendar"></i>22/01/2022</a></div>
-                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Kedua</a></h4>
-                    </div>
-                </div>
-                <div class="recent-post">
-                    <div class="media-img"><a href="blog-details.html"><img
-                                src="mpls/5.jpg" alt="Blog Image"></a></div>
-                    <div class="media-body">
-                        <div class="recent-post-meta"><a href="blog.html"><i
-                                    class="far fa-calendar"></i>22/01/2022</a></div>
-                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Ketiga</a></h4>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </aside>
 </div>
 <section class="" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
@@ -113,12 +73,12 @@
 </section>
 </div>
             </div>
-@include('landingpage.layout.footerhal')
-	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
-	</script>
-	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/app.min.js')}}">
-	</script>
-	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/main.js')}}">
-	</script><!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:30:06 GMT -->
-</body>
+            @include('landingpage.layout.footer')
+            <script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
+            </script>
+            <script src="{{asset ('1/yeye/html/acadu/demo/assets/js/app.min.js')}}">
+            </script>
+            <script src="{{asset ('1/yeye/html/acadu/demo/assets/js/main.js')}}">
+            </script><!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:30:06 GMT -->
+        </body>
 </html>

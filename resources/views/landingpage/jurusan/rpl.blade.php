@@ -97,7 +97,7 @@ Kejuruan sampai tingkatan Perguruan Tinggi. Di tingkat SMK, jurusan ini sudah me
 </section>
 </div>
 </div>
-@include('landingpage.layout.footerhal')
+@include('landingpage.layout.footer')
 	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
 	</script>
 	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/app.min.js')}}">

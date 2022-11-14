@@ -54,4 +54,20 @@ class LandingController extends Controller
     {
         return view('landingpage.visi');
     }
+    public function dataguru(Request $request)
+    {
+        return view('landingpage.dataguru');
+    }
+    public function blog(Request $request)
+    {
+        return view('landingpage.blog');
+    }
+    public function events(Request $request)
+    {
+        return view('landingpage.events');
+    }
+    public function detailevents(Request $request)
+    {
+        return view('landingpage.detailevents');
+    }
 }

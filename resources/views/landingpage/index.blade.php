@@ -93,42 +93,35 @@
 			</div>
 		</div>
 	</section>
-	<div class="space-bottom about-sec bg-bottom-right" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/bg/about_bg_1.jpg')}}">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-4 mb-40 mb-xl-0">
-					<div class="img-box3"><img alt="About" class="w-100" src="mpls/yy.jpeg" height="100"></div>
-				</div>
-				<div class="col-xxl-7 col-xl-8 align-self-end">
-					<div class="about-content">
-						<div class="title-area mb-40">
-							<h2>Kami adalah lembaga pendidikan inovatif untuk penciptaan Alumni yang Berkualitas</h2>
-						</div>
-						<div class="counter-grid-wrap">
-							<div class="counter-grid">
-								<div class="counter-grid_icon"><img alt="icon" src="{{asset ('1/yeye/html/acadu/demo/assets/img/icon/counter_1_1.svg')}}"></div>
-								<div class="counter-grid_content">
-									<h3 class="counter-grid_number"><span class="counter-number">1175</span></h3><span class="counter-grid_text">SISWA</span>
-								</div>
-							</div>
-							<div class="counter-grid">
-								<div class="counter-grid_icon"><img alt="icon" src="{{asset ('1/yeye/html/acadu/demo/assets/img/icon/counter_1_2.svg')}}"></div>
-								<div class="counter-grid_content">
-									<h3 class="counter-grid_number"><span class="counter-number">117</span></h3><span class="counter-grid_text">GURU</span>
-								</div>
-							</div>
-							<div class="counter-grid">
-								<div class="counter-grid_icon"><img alt="icon" src="{{asset ('1/yeye/html/acadu/demo/assets/img/icon/counter_1_3.svg')}}"></div>
-								<div class="counter-grid_content">
-									<h3 class="counter-grid_number"><span class="counter-number">7</span></h3><span class="counter-grid_text">JuRUSAN</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="space">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <div class="img-box5">
+                        <div class="img1"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/normal/about_3_1.png')}}" alt="about"></div>
+                        <div class="shape"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/normal/about_shape_1.png')}}" alt="shape"></div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="title-area mb-35"><span class="sub-title"></span>
+                        <h2 class="sec-title fw-semibold">Sambutan Kepala Sekolah</h2>
+                    </div>
+                    <p class="mt-n2 mb-25">Selamat datang di Website kami di Sekolah Menengah Kejuruan Telkom Bandung. Website ini kami tujukan untuk seluruh guru, karyawan dan siswa serta masyarakat umum agar dapat mengakses seluruh informasi tentang profil, aktifitas/kegiatan serta fasilitas sekolah secara berkala dan update.
+
+						Tentunya Website sekolah kami masih terdapat banyak kekurangan, oleh karena itu kepada seluruh civitas akademika dan masyarakat umum dapat memberikan saran dan kritik yang membangun demi kemajuan website ini lebih lanjut.
+						
+						Kami berharap Website ini dapat dijadikan wahana interaksi yang positif baik antar civitas akademika maupun masyarakat pada umumnya sehingga dapat menjalin silaturahmi yang erat disegala unsur sesuai dengan motto sekolah kita.
+						
+						𝑺𝑴𝑲 𝑻𝒆𝒍𝒌𝒐𝒎 𝑩𝒂𝒏𝒅𝒖𝒏𝒈 𝑺𝒆𝒌𝒐𝒍𝒂𝒉𝒏𝒚𝒂 𝑺𝒂𝒏𝒈 𝑱𝒖𝒂𝒓𝒂, 𝑷𝑹𝑰𝑴𝑨𝑺𝑬𝑹𝑼 𝑺𝒆𝒎𝒖𝒂 𝑷𝒓𝒊𝒎𝒂, 𝑺𝒆𝒎𝒖𝒂 𝑺𝒆𝒓𝒖, 𝑴𝒂𝒌𝒊𝒏 𝑷𝒓𝒊𝒎𝒂 𝒅𝒂𝒏 𝑴𝒂𝒌𝒊𝒏 𝑺𝒆𝒓𝒖 𝒅𝒂𝒍𝒂𝒎 𝑲𝒂𝒓𝒂𝒌𝒕𝒆𝒓, 𝑷𝒓𝒆𝒔𝒕𝒂𝒔𝒊 𝒅𝒂𝒏 𝑳𝒂𝒚𝒂𝒏𝒂𝒏
+						
+						Pada akhirnya, mari kita bekerja dan berkarya dengan keikhlasan yang tulus demi suksesnya masa depan anak-anak didik kita.
+					</p>    
+                </div>
+            </div>
+        </div>
+        <div class="shape-mockup" data-top="0%" data-right="0"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/cloud_3.png')}}" alt="shape">
+        </div>
+    </div>
 	<section class="space position-relative">
 		<div class="bg-img" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/bg/cta_bg_4.jpg')}}"><img alt="overlay" src="{{asset ('1/yeye/html/acadu/demo/assets/img/bg/bg_overlay_3.png')}}"></div>
 		<div class="container z-index-common">
@@ -144,33 +137,98 @@
 		</div>
 	</section>
 	<section class="space">
-		<div class="container z-index-common">
-			<div class="row flex-row-reverse">
-				<div class="col-xl-8 mb-35 mb-xl-0">
-					<div class="img-box4">
-						<div class="img1"><img alt="mockup" src="{{asset ('1/yeye/html/acadu/demo/assets/img/normal/mockup_1_1.jpg')}}"></div>
-						<div class="img2"><img alt="mockup" src="{{asset ('1/yeye/html/acadu/demo/assets/img/normal/mockup_1_2.jpg')}}"></div>
-						<div class="shape"><img alt="shape" src="{{asset ('1/yeye/html/acadu/demo/assets/img/normal/mockup_shape.png')}}"></div>
-					</div>
-				</div>
-				<div class="col-xl-4">
-					<div class="title-area mb-30">
-						<span class="sub-title">Best Learning Platform</span>
-						<h2 class="sec-title fw-medium">One Platfrom Many Courses Fo You</h2>
-					</div>
-					<p class="mb-30">Synergistically integrate orthogonal synergy rather than visionary expertise. Credibly supply bleeding-edge deliverables after robust action items generate principle centered</p>
-					<div class="checklist mb-40">
-						<ul>
-							<li>Easy Online Learning Platform</li>
-							<li>98% Course Completitation Rates</li>
-							<li>Friendly Enviroments & Teachers</li>
-						</ul>
-					</div><a class="as-btn" href="course.html">Explore Our Courses<i class="fas fa-arrow-right ms-2"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="shape-mockup big-shape" data-right="0%" data-top="0%"><img alt="shapes" src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/line_2.png')}}"></div>
-	</section>
+        <div class="container z-index-common">
+            <div class="title-area text-center"><span class="sub-title"><i class="fal fa-book me-2"></i>Ditampilkan Acara</span>
+                <h2 class="sec-title">Agenda<span class="text-theme fw-light">Sekolah</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="event-card">
+                        <div class="event-card_img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/event_1_1.jpg')}}" alt="event"></div>
+                        <div class="event-card_content">
+                            <div class="event-meta">
+                                <p><i class="fal fa-location-dot"></i>259 Hilton Street, NewYork</p>
+                                <p><i class="fal fa-clock"></i>08:00 am - 10:00 am</p>
+                            </div>
+                            <h3 class="event-card_title">What Soul Can Tech Us About Web
+                                    Design</h3>
+                            <div class="event-card_bottom"><a href="detailevent" class="as-btn">Lihat Acara</a>
+                                <div class="event-author">
+                                    <div class="avater"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/avater.jpg')}}" alt="avater"></div><span
+                                        class="author-name">David Smith</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="event-card">
+                        <div class="event-card_img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg')}}" alt="event"></div>
+                        <div class="event-card_content">
+                            <div class="event-meta">
+                                <p><i class="fal fa-location-dot"></i>559 Milton Street, London</p>
+                                <p><i class="fal fa-clock"></i>09:00 am - 11:00 am</p>
+                            </div>
+                            <h3 class="event-card_title">Why Soul Can Tech Us About
+                                    Marketing</h3>
+                            <div class="event-card_bottom"><a href="detailevents" class="as-btn">Lihat Acara</a>
+                                <div class="event-author">
+                                    <div class="avater"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/avater.jpg')}}" alt="avater"></div><span
+                                        class="author-name">David Smith</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="event-card">
+                        <div class="event-card_img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/event_1_3.jpg')}}" alt="event"></div>
+                        <div class="event-card_content">
+                            <div class="event-meta">
+                                <p><i class="fal fa-location-dot"></i>359 Juabal Street, NewYork</p>
+                                <p><i class="fal fa-clock"></i>10:00 am - 12:00 am</p>
+                            </div>
+                            <h3 class="event-card_title"> Soul Can Tech Us About Web
+                                    Docan</a></h3>
+                            <div class="event-card_bottom"><a href="detailevents" class="as-btn">Lihat Acara</a>
+                                <div class="event-author">
+                                    <div class="avater"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/avater.jpg')}}" alt="avater"></div><span
+                                        class="author-name">David Smith</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="event-card">
+                        <div class="event-card_img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/event_1_4.jpg')}}" alt="event"></div>
+                        <div class="event-card_content">
+                            <div class="event-meta">
+                                <p><i class="fal fa-location-dot"></i>659 Kurban Street, Sweeden</p>
+                                <p><i class="fal fa-clock"></i>06:00 am - 08:00 am</p>
+                            </div>
+                            <h3 class="event-card_title"><a href="detailevents">Goha Soul Can Tech Us About Web
+                                    Geisnm</a></h3>
+                            <div class="event-card_bottom"><a href="detailevents" class="as-btn">Lihat Acara</a>
+                                <div class="event-author">
+                                    <div class="avater"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/avater.jpg')}}" alt="avater"></div><span
+                                        class="author-name">David Smith</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-20 mt-xl-5"><a href="events" class="as-btn">Semua Agenda Sekolah<i
+                        class="fas fa-arrow-right ms-2"></i></a></div>
+        </div>
+        <div class="shape-mockup jump d-none d-md-block" data-top="0%" data-left="0%"><img
+                src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/dot_shape_3.png')}}" alt="shapes"></div>
+        <div class="shape-mockup jump d-none d-md-block" data-top="4%" data-right="0%"><img
+                src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/cloud_1.png')}}" alt="shapes"></div>
+        <div class="shape-mockup jump-reverse d-none d-md-block" data-top="8%" data-right="0%"><img
+                src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/cloud_2.png')}}" alt="shapes"></div>
+    </section>
 	<section class="" data-pos-for="#team-sec" data-sec-pos="bottom-half">
 		<div class="container">
 			<div class="video-box">
@@ -247,19 +305,19 @@
 	<section class="overflow-hidden bg-white space">
 		<div class="container">
 			<div class="title-area text-center">
-				<span class="sub-title">Our Students Testimonials</span>
-				<h2 class="sec-title fw-medium">Bekerjasama </h2>
+				<span class="sub-title">Testimoni Siswa Kami</span>
+				<h2 class="sec-title fw-medium">Testimoni</h2>
 			</div>
 			<div class="row as-carousel" data-dots="true" data-lg-slide-show="1" data-ml-dots="true" data-slide-show="2" data-xl-dots="true">
 				<div class="col-lg-6">
 					<div class="testi-box">
 						<div class="testi-box_content">
-							<div class="testi-box_img"><img alt="Avater" src="foto/axio.webp" width="200"></div>
-							<p class="testi-box_text">Axioo Class Program (ACP) merupakan program sosial dari PT Tera Data Indonusa Tbk (TDI) atau Axioo Indonesia</p>
+							<div class="testi-box_img"><img alt="Avater" src="{{asset ('1/yeye/html/acadu/demo/assets/img/testimonial/testi_2_1.jpg')}}"></div>
+							<p class="testi-box_text">“Quickly maximize visionary solutions after mission critical action items productivate premium portals for impactful -services stinctively negotiate enabled niche markets via growth strategies”</p>
 						</div>
 						<div class="testi-box_bottom">
 							<div>
-								<h3 class="testi-box_name">Axioo Class Program</h3><span class="testi-box_desig"></span>
+								<h3 class="testi-box_name">Vlademir Hilton</h3><span class="testi-box_desig">IT Student</span>
 							</div>
 							<div class="testi-box_review">
 								<i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
@@ -270,12 +328,12 @@
 				<div class="col-lg-6">
 					<div class="testi-box">
 						<div class="testi-box_content">
-							<div class="testi-box_img"><img alt="Avater" src="foto/mikrotik.png"></div>
-							<p class="testi-box_text">“MikroTik adalah perusahaan kecil berkantor pusat di Latvia, yang dibentuk oleh Johnson Trully dan Armin Riekstins.”</p>
+							<div class="testi-box_img"><img alt="Avater" src="{{asset ('1/yeye/html/acadu/demo/assets/img/testimonial/testi_2_2.jpg')}}"></div>
+							<p class="testi-box_text">“Markets maximize visionary solutions after mission critical action items productivate premium portals for impactful -services stinctively negotiate enabled niche markets via growth strategies”</p>
 						</div>
 						<div class="testi-box_bottom">
 							<div>
-								<h3 class="testi-box_name">Mikrotik</h3><span class="testi-box_desig"></span>
+								<h3 class="testi-box_name">David Milton</h3><span class="testi-box_desig">CSE Student</span>
 							</div>
 							<div class="testi-box_review">
 								<i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
@@ -286,28 +344,12 @@
 				<div class="col-lg-6">
 					<div class="testi-box">
 						<div class="testi-box_content">
-							<div class="testi-box_img"><img alt="Avater" src="foto/JTV.webp"></div>
-							<p class="testi-box_text">“sebuah jaringan televisi regional di Surabaya, Jawa Timur. JTV adalah jaringan televisi swasta regional pertama di Indonesia sekaligus yang terbesar di Indonesia hingga saat ini”</p>
-						</div>
-						<div class="testi-box_bottom">
-							<div>
-								<h3 class="testi-box_name">JTV</h3><span class="testi-box_desig"></span>
-							</div>
-							<div class="testi-box_review">
-								<i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="testi-box">
-						<div class="testi-box_content">
-							<div class="testi-box_img"><img alt="Avater" src="foto/aston.webp"></div>
+							<div class="testi-box_img"><img alt="Avater" src="{{asset ('1/yeye/html/acadu/demo/assets/img/testimonial/testi_2_3.jpg')}}"></div>
 							<p class="testi-box_text">“Mission maximize visionary solutions after mission critical action items productivate premium portals for impactful -services stinctively negotiate enabled niche markets via growth strategies”</p>
 						</div>
 						<div class="testi-box_bottom">
 							<div>
-								<h3 class="testi-box_name">Aston Hotel</h3><span class="testi-box_desig"></span>
+								<h3 class="testi-box_name">Abraham Khalil</h3><span class="testi-box_desig">GS Student</span>
 							</div>
 							<div class="testi-box_review">
 								<i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
@@ -327,7 +369,7 @@
 			<div class="row slider-shadow as-carousel" data-lg-slide-show="2" data-md-slide-show="2" data-slide-show="3" data-sm-slide-show="1">
 				<div class="col-md-6 col-xl-4">
 					<div class="blog-card">
-						<img src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/ciputra.png" alt="SMKN 1 DLANGGU Terpilih Mengikuti Pelatihan Entrepreneur Yang DIgelar Unversitas Ciputra">
+						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/ciputra.png" alt="SMKN 1 DLANGGU Terpilih Mengikuti Pelatihan Entrepreneur Yang DIgelar Unversitas Ciputra">
 						<div class="blog-content">
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 15, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Marketing</a>
@@ -338,18 +380,18 @@
 				</div>
 				<div class="col-md-6 col-xl-4">
 					<div class="blog-card">
-						<img src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/gizi2.jpg" alt="Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu">
+						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/gizi2.jpg" alt="Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu">
 						<div class="blog-content">
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 16, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Technology</a>
 							</div>
-							<h3 class="blog-title"><a href="blog-details.html">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3><a class="link-btn" href="blog-details.html">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
+							<h3 class="blog-title"><a  href="blog-details.html">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3><a class="link-btn" href="blog-details.html">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 col-xl-4">
 					<div class="blog-card">
-						<img src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/SAI.JPG" alt="PT SAI Masih Favorit Di Kalangan Alumni Pencari Kerja">
+						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/SAI.JPG" alt="PT SAI Masih Favorit Di Kalangan Alumni Pencari Kerja" >
 						<div class="blog-content">
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 17, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Programing</a>
@@ -360,7 +402,7 @@
 				</div>
 				<div class="col-md-6 col-xl-4">
 					<div class="blog-card">
-						<img src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/Screen_Shot_2022-06-06_at_8_56_01_AM.png" alt="KaCabdin Pendidikan Kabupaten dan Kota Mojokerto beri Wejangan Khusus GTK SMKN 1 DLANGGU">
+						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/Screen_Shot_2022-06-06_at_8_56_01_AM.png" alt="KaCabdin Pendidikan Kabupaten dan Kota Mojokerto beri Wejangan Khusus GTK SMKN 1 DLANGGU">
 						<div class="blog-content">
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 18, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Technology</a>
@@ -378,32 +420,32 @@
 			<div class="row gx-10 as-carousel" data-lg-slide-show="5" data-md-slide-show="4" data-slide-show="6" data-sm-slide-show="3" data-xs-slide-show="2">
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/1.jpg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/Ca4WStOlwjH/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/1.jpg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/Ca4WStOlwjH/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 					</div>
 				</div>
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/2.jpg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/CVzoGyul4ee/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/2.jpg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/CVzoGyul4ee/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 					</div>
 				</div>
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/3.jpeg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/CVIGbmdlluJ/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/3.jpeg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/CVIGbmdlluJ/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 					</div>
 				</div>
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/4.jpeg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/CUaOYjOvTjC/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/4.jpeg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/CUaOYjOvTjC/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 					</div>
 				</div>
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/5.jpeg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/Ca9KHOTvFAW/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/5.jpeg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/Ca9KHOTvFAW/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 					</div>
 				</div>
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/6.jpeg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/CVzjFzAFyT-/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/6.jpeg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/CVzjFzAFyT-/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 					</div>
 				</div>
 			</div>

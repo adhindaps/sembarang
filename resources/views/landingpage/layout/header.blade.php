@@ -57,12 +57,17 @@
                                                     <li>
                                                         <a href="profile">Profile Sekolah</a>
                                                     </li>
+                                                    <br/>
                                                     <li>
                                                         <a href="sejarah">Sejarah Sekolah</a>
                                                     </li>
-                                                   
+                                                   <br/>
                                                     <li>
                                                         <a href="visi">Visi & Misi</a>
+                                                    </li>
+                                                    <br/>
+                                                    <li>
+                                                        <a href="dataguru">Data Guru</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -72,22 +77,30 @@
                                                     <li>
                                                         <a href="sija">SIJA</a>
                                                     </li>
+                                                    <br/>
                                                     <li>
                                                         <a href="tkj">TKJ</a>
                                                     </li>
+                                                    <br/>
                                                     <li>
                                                         <a href="anm">AMINASI</a>
                                                     </li>
+                                                    <br/>
                                                     <li>
                                                         <a href="rpl">RPL</a>
                                                     </li>
+                                                    <br/>
                                                     <li>
                                                         <a href="tb">TATA BOGA</a>
                                                     </li>
+                                                    <br/>
                                                     <li>
                                                         <a href="aph">PERHOTELAN</a>
                                                     </li>
                                                 </ul>
+                                            </li>
+                                            <li>
+                                                <a href="">EXTRAKULIKULER</a>
                                             </li>
                                             <li class="menu-item-has-children">
                                                 <a href="#">BKK</a>
@@ -100,17 +113,6 @@
                                                     </li>
                                                      --}}
                                                 </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">Blog</a>
-                                                {{-- <ul class="sub-menu">
-                                                    <li>
-                                                        <a href="blog.html">Blog</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog-details.html">Blog Details</a>
-                                                    </li>
-                                                </ul> --}}
                                             </li>
                                             <li>
                                                 <a href="kontak">Contact</a>

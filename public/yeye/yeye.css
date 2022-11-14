@@ -1,0 +1,18 @@
+.imgg{
+    height: 300px !important;
+    width: 400px !important;
+}
+
+.imgyeye{
+    height: 150px !important;
+    width: 500px !important;
+}
+
+/* .overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+} */
+

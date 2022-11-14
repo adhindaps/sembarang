@@ -22,23 +22,23 @@
                 </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget style2">
-                        <h3 class="widget_title">Company</h3>
+                        <h3 class="widget_title">Link SMK</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
                                 <li>
-                                    <a href="about.html">About Us</a>
+                                    <a href="http://psmk.kemdikbud.go.id">PSMK Kemdikbud</a>
                                 </li>
                                 <li>
-                                    <a href="course.html">Resource Center</a>
+                                    <a href="http://pesertadidik.ditpsmk.net">Portal Subdit Peserta Didik</a>
                                 </li>
                                 <li>
-                                    <a href="course.html">Careers</a>
+                                    <a href="http://pipsmk.ditpsmk.net">PIP SMK</a>
                                 </li>
                                 <li>
-                                    <a href="team.html">Instructor</a>
+                                    <a href="http://dapo.dikdasmen.kemdikbud.go.id">Dapodikdasmen</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Become A Teacher</a>
+                                    <a href="http://infoptk.datadapodik.com/">Info Data PTK</a>
                                 </li>
                             </ul>
                         </div>
@@ -65,14 +65,14 @@
                 </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget style2">
-                        <h3 class="widget_title">Resourses</h3>
+                        <h3 class="widget_title">Halaman</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
                                 <li>
-                                    <a href="about.html">Community</a>
+                                    <a href="blog">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Support</a>
+                                    <a href="events">Events</a>
                                 </li>
                                 <li>
                                     <a href="course.html">Video Guides</a>

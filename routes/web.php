@@ -28,6 +28,9 @@ Route::get('/dashboard', function () {
 Route::get('/siswapres', function () {
     return view('admin.siswapres');
 });
+Route::get('/bug', function () {
+    return view('landingpage.jurusan.bug');
+});
 
 Route::get('/anm',[LandingController::class, 'anm'])->name('anm');
 Route::get('/aph',[LandingController::class, 'aph'])->name('aph');
@@ -41,3 +44,7 @@ Route::get('/galerry',[LandingController::class, 'galerry'])->name('galerry');
 Route::get('/kontak',[LandingController::class, 'kontak'])->name('kontak');
 Route::get('/profile',[LandingController::class, 'profile'])->name('profile');
 Route::get('/visi',[LandingController::class, 'visi'])->name('visi');
+Route::get('/dataguru',[LandingController::class, 'dataguru'])->name('dataguru');
+Route::get('/blog',[LandingController::class, 'blog'])->name('blog');
+Route::get('/events',[LandingController::class, 'events'])->name('events');
+Route::get('/detailevents',[LandingController::class, 'detailevents'])->name('detailevents');

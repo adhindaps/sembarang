@@ -43,7 +43,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/android-icon-192x192.png')}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/favicon-96x96.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" img src="http://www.smkn1dlanggu.sch.id/websmk/asset/logo/logo-footer.png" alt="smkn1dlanggu">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset ('1/yeye/html/acadu/demo/assets/img/icon/smk.png')}}" rel="icon" sizes="16x16" type="image/png">
     <link rel="manifest" href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/manifest.json')}}"><meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/ms-icon-144x144.png')}}">
     <meta name="theme-color" content="#ffffff">

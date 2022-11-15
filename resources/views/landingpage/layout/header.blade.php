@@ -52,6 +52,48 @@
                                                 <a href="/">Beranda</a>
                                             </li>
                                             <li class="menu-item-has-children">
+                                                <a href="#">Program</a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="sija">PROGRAM STUDI</a>
+                                                        <ul class="sub-menu">
+                                                            <li>
+                                                                <a href="sija">SIJA</a>
+                                                            </li>
+                                                            <br/>
+                                                            <li>
+                                                                <a href="rpl">RPLk</a>
+                                                            </li>
+                                                            <br/>
+                                                            <li>
+                                                                <a href="tkj">TKJ</a>
+                                                            </li>
+                                                            <br/>
+                                                            <li>
+                                                                <a href="anm">Animasi</a>
+                                                            </li>
+                                                            <br/>
+                                                            <li>
+                                                                <a href="mm">Multimedia</a>
+                                                            </li>
+                                                            <br/>
+                                                            <li>
+                                                                <a href="tb">Tata Boga</a>
+                                                            </li>
+                                                            <br/>
+                                                            <li>
+                                                                <a href="aph">Perhotelan</a>
+                                                            </li>
+                                                            <br/>
+                                                        </ul>
+                                                    </li>
+                                                    <br/>
+                                                    <li>
+                                                        <a href="extrakulikuler">EXTRAKULIKULER</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children">
                                                 <a href="#">Tentang Kami</a>
                                                 <ul class="sub-menu">
                                                     <li>
@@ -65,42 +107,10 @@
                                                 
                                                     <li>
                                                         <a href="dataguru">Data Guru</a>
-                                                    </li>
-                                                   
-                                                   
+                                                    </li>                                                                                                  
                                                 </ul>
                                             </li>
-                                            <li class="menu-item-has-children">
-                                                <a href="#">Kompetensi Keahlian</a>
-                                                <ul class="sub-menu">
-                                                    <li>
-                                                        <a href="sija">SIJA</a>
-                                                    </li>
-                                                    <br/>
-                                                    <li>
-                                                        <a href="tkj">TKJ</a>
-                                                    </li>
-                                                    <br/>
-                                                    <li>
-                                                        <a href="anm">AMINASI</a>
-                                                    </li>
-                                                    <br/>
-                                                    <li>
-                                                        <a href="rpl">RPL</a>
-                                                    </li>
-                                                    <br/>
-                                                    <li>
-                                                        <a href="tb">TATA BOGA</a>
-                                                    </li>
-                                                    <br/>
-                                                    <li>
-                                                        <a href="aph">PERHOTELAN</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="">EXTRAKULIKULER</a>
-                                            </li>
+                                    
                                             <li class="menu-item-has-children">
                                                 <a href="#">BKK</a>
                                                 <ul class="sub-menu">
@@ -111,6 +121,34 @@
                                                         <a href="profile">Profile Sekolah</a>
                                                     </li>
                                                      --}}
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children mega-menu-wrap">
+                                                <a href="#">Pages</a>
+                                                <ul class="mega-menu">
+                                                    <li>
+
+                                                        <ul>
+                                                            <li>
+                                                                <a href="index.html">Home One</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="index-2.html">Home Two</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="index-3.html">Home Three</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="index-4.html">Home Four</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="index-5.html">Home Five</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="index-6.html">Home Six</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
                                                 </ul>
                                             </li>
                                             <li>

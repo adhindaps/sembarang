@@ -77,4 +77,8 @@ class LandingController extends Controller
     {
         return view('landingpage.blogdetail');
     }
+    public function extrakulikuler(Request $request)
+    {
+        return view('landingpage.extrakulikuler');
+    }
 }

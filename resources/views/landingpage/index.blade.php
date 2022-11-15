@@ -4,37 +4,77 @@
 @include('landingpage.layout.head')
 <body>
 	@include('landingpage.layout.header')
-	<div class="as-hero-wrapper hero-2">
-		<div class="container z-index-common">
-			<div class="hero-style2">
-				<h1 class="big-title hero-title">Let’s Started</h1>
-				<h2 class="hero-title">SMK NEGERI 1 DLANGGU</h2>
-				<div class="checklist">
-					<ul>
-						<li>Experts Advisors</li>
-						<li>538+ Courses</li>
-						<li>Events & Program</li>
-					</ul>
-				</div>
-				<div class="btn-group">
-					<a class="as-btn" href="course.html">Get Started<i class="fas fa-long-arrow-right ms-2"></i></a>
-					 <a class="as-btn style5" href="course.html">Our Courses<i class="fas fa-long-arrow-right ms-2"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="hero-img1"><img alt="Hero Image" class="imgConvert" src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_img_2_1.png')}}"></div>
-		<div class="hero-img2">
-			<img alt="Hero Image" src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_img_2_2.png')}}">
-			<div class="shape"><img alt="shape" src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/shape_2_5.png')}}"></div>
-		</div>
-		<div class="big-circle" id="circle"></div>
-		<div class="hero-shape shape1"><img alt="shape" src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/shape_2_1.png')}}"></div>
-		<div class="hero-shape shape2"><img alt="shape" src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/shape_2_2.png')}}"></div>
-		<div class="hero-shape shape3"><img alt="shape" src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/shape_2_3.png')}}"></div>
-		<div class="hero-shape shape4"><img alt="shape" src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/shape_2_4.png')}}"></div>
-	</div>
+	<div class="as-hero-wrapper hero-3">
+        <div class="hero-slider-3 as-carousel" data-fade="true" data-slide-show="1" data-md-slide-show="1"
+            data-dots="true" data-xl-dots="true" data-ml-dots="true" data-lg-dots="true">
+            <div class="as-hero-slide">
+                <div class="as-hero-bg" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_bg_8_1.jpg')}}"><img
+                        src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png')}}" alt="overlay"></div>
+                <div class="container z-index-common">
+                    <div class="hero-style8">
+                        <div class="hero-meta" data-ani="slideinup" data-ani-delay="0.2s"><span>Anytime</span>
+                            <span>Anywhere</span></div>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">Grow Your Career With</h1>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s">Quality <span
+                                class="bg-theme">Education</span></h1>
+                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">Enthusiastically provide access
+                            to client-focused testing procedures through cooperative niches. Intrinsicly promote
+                            compelling methods of empowerment before.</p>
+                        <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s"><a href="contact.html"
+                                class="as-btn style3">Register Now<i class="fas fa-long-arrow-right ms-2"></i></a> <a
+                                href="contact.html" class="as-btn style6">Get Instructor<i
+                                    class="fas fa-long-arrow-right ms-2"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="as-hero-slide">
+                <div class="as-hero-bg" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_bg_8_2.jpg')}}"><img
+                        src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png')}}" alt="overlay"></div>
+                <div class="container z-index-common">
+                    <div class="hero-style8">
+                        <div class="hero-meta" data-ani="slideinup" data-ani-delay="0.2s"><span>Online</span>
+                            <span>Anytime</span></div>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">Start Your Study With</h1>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s">Higher <span
+                                class="bg-theme">Study</span></h1>
+                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">Enthusiastically provide access
+                            to client-focused testing procedures through cooperative niches. Intrinsicly promote
+                            compelling methods of empowerment before.</p>
+                        <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s"><a href="contact.html"
+                                class="as-btn style3">Register Now<i class="fas fa-long-arrow-right ms-2"></i></a> <a
+                                href="contact.html" class="as-btn style6">Get Instructor<i
+                                    class="fas fa-long-arrow-right ms-2"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="as-hero-slide">
+                <div class="as-hero-bg" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_bg_8_3.jpg')}}"><img
+                        src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png')}}" alt="overlay"></div>
+                <div class="container z-index-common">
+                    <div class="hero-style8">
+                        <div class="hero-meta" data-ani="slideinup" data-ani-delay="0.2s"><span>Anywhere</span>
+                            <span>Online</span></div>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">Get Start Career With</h1>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s">Quality <span
+                                class="bg-theme">Learning</span></h1>
+                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">Enthusiastically provide access
+                            to client-focused testing procedures through cooperative niches. Intrinsicly promote
+                            compelling methods of empowerment before.</p>
+                        <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s"><a href="contact.html"
+                                class="as-btn style3">Register Now<i class="fas fa-long-arrow-right ms-2"></i></a> <a
+                                href="contact.html" class="as-btn style6">Get Instructor<i
+                                    class="fas fa-long-arrow-right ms-2"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<section class="space">
 		<div class="container">
+			<div class="title-area text-center text-md-start">
+				<span class="sub-title">Pilih SMKN 1 Dlanggu</span>
+				<h2 class="sec-title fw-medium">Kenapa Harus SMKN 1 Dlanggu ?</h2>
+			</div>
 			<div class="row gy-50">
 				<div class="col-sm-6 col-xl-4">
 					<div class="category-card">
@@ -122,20 +162,82 @@
         <div class="shape-mockup" data-top="0%" data-right="0"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/cloud_3.png')}}" alt="shape">
         </div>
     </div>
-	<section class="space position-relative">
-		<div class="bg-img" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/bg/cta_bg_4.jpg')}}"><img alt="overlay" src="{{asset ('1/yeye/html/acadu/demo/assets/img/bg/bg_overlay_3.png')}}"></div>
-		<div class="container z-index-common">
-			<div class="row align-items-center justify-content-center justify-lg-content-between">
-				<div class="col mb-40 mb-lg-0 text-center text-lg-start">
-					<h3 class="fw-medium text-white mt-n2">Get 10% Off on registration free COVID-19</h3>
-					<p class="text-white mb-n2">The last step you to take to be allowed to follow a course is to be registered on it.</p>
+	<br/>
+	<br/>
+	<section class="" data-pos-for="#team-sec" data-sec-pos="bottom-half">
+		<div class="container">
+			<div class="video-box">
+				<div class="overlay"></div><img alt="video" src="foto/g.jpeg" width="2000">
+				<div class="video-content">
+					<h2 class="video-title">VIDEO PROFILE SMKN 1 DLANGGU</h2>
+					<a class="icon-btn popup-video" href="https://www.youtube.com/watch?v=4C-XHxX7l4A">
+						<i class="fas fa-play"></i></a> <span class="video-text">PERHATIKAN</span>
 				</div>
-				<div class="col-lg-auto text-center text-lg-start">
-					<a class="as-btn style2" href="course.html">Get Started<i class="fas fa-arrow-right ms-2"></i></a>
+			</div>
+		</div>
+		<div class="shape-mockup jump" data-left="6%" data-top="10%"><img alt="shapes" src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/circle_5.png')}}"></div>
+		<div class="shape-mockup jump-reverse" data-left="6%" data-top="11%"><img alt="shapes" src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/hex_1.png')}}"></div>
+	</section>
+	<section class="space" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/bg/team_bg_1.jpg')}}" id="team-sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6 mb-5 mb-xl-0">
+					<div class="title-area mb-30 text-center text-xl-start">
+						<span class="sub-title">Best Online Teachers</span>
+						<h2 class="sec-title fw-medium">Our Course Teachers</h2>
+					</div>
+					<p class="mb-30 text-center text-xl-start">Seamlessly target robust quality vectors and goals oriented architectures propriately enegdrages one-to-one resources after standardized scenarios adaptive experiences exceptional resources service depend lifestyle carefully</p>
+					<div class="text-center text-xl-start">
+						<a class="as-btn" href="team.html">View All Teachers<i class="fas fa-arrow-right ms-2"></i></a>
+					</div>
+				</div>
+				<div class="col-xl-6">
+					<div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
+						<div class="col-md-6 col-lg-4">
+							<div class="team-box">
+								<div class="team-img">
+									<img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_1.jpg')}}">
+									<div class="as-social">
+										<a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3 class="team-title"><a href="team-details.html">Kevin Martin Ben</a></h3><span class="team-desig">Online Teacher</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="team-box">
+								<div class="team-img">
+									<img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_2.jpg')}}">
+									<div class="as-social">
+										<a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h3><span class="team-desig">Online Teacher</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="team-box">
+								<div class="team-img">
+									<img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_3.jpg')}}">
+									<div class="as-social">
+										<a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</div>
+								</div>
+								<div class="team-content">
+									<h3 class="team-title"><a href="team-details.html">Aiden Samuel Jabin</a></h3><span class="team-desig">Online Teacher</span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
 	<section class="space">
         <div class="container z-index-common">
             <div class="title-area text-center"><span class="sub-title"><i class="fal fa-book me-2"></i>Ditampilkan Acara</span>
@@ -222,144 +324,12 @@
             <div class="text-center mt-20 mt-xl-5"><a href="events" class="as-btn">Semua Agenda Sekolah<i
                         class="fas fa-arrow-right ms-2"></i></a></div>
         </div>
-        <div class="shape-mockup jump d-none d-md-block" data-top="0%" data-left="0%"><img
-                src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/dot_shape_3.png')}}" alt="shapes"></div>
+       
         <div class="shape-mockup jump d-none d-md-block" data-top="4%" data-right="0%"><img
                 src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/cloud_1.png')}}" alt="shapes"></div>
         <div class="shape-mockup jump-reverse d-none d-md-block" data-top="8%" data-right="0%"><img
                 src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/cloud_2.png')}}" alt="shapes"></div>
     </section>
-	<section class="" data-pos-for="#team-sec" data-sec-pos="bottom-half">
-		<div class="container">
-			<div class="video-box">
-				<div class="overlay"></div><img alt="video" src="foto/g.jpeg" width="2000">
-				<div class="video-content">
-					<h2 class="video-title">VIDEO PROFILE SMKN 1 DLANGGU</h2>
-					<a class="icon-btn popup-video" href="https://www.youtube.com/watch?v=4C-XHxX7l4A">
-						<i class="fas fa-play"></i></a> <span class="video-text">PERHATIKAN</span>
-				</div>
-			</div>
-		</div>
-		<div class="shape-mockup jump" data-left="6%" data-top="10%"><img alt="shapes" src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/circle_5.png')}}"></div>
-		<div class="shape-mockup jump-reverse" data-left="6%" data-top="11%"><img alt="shapes" src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/hex_1.png')}}"></div>
-	</section>
-	<section class="space" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/bg/team_bg_1.jpg')}}" id="team-sec">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-6 mb-5 mb-xl-0">
-					<div class="title-area mb-30 text-center text-xl-start">
-						<span class="sub-title">Best Online Teachers</span>
-						<h2 class="sec-title fw-medium">Our Course Teachers</h2>
-					</div>
-					<p class="mb-30 text-center text-xl-start">Seamlessly target robust quality vectors and goals oriented architectures propriately enegdrages one-to-one resources after standardized scenarios adaptive experiences exceptional resources service depend lifestyle carefully</p>
-					<div class="text-center text-xl-start">
-						<a class="as-btn" href="team.html">View All Teachers<i class="fas fa-arrow-right ms-2"></i></a>
-					</div>
-				</div>
-				<div class="col-xl-6">
-					<div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
-						<div class="col-md-6 col-lg-4">
-							<div class="team-box">
-								<div class="team-img">
-									<img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_1.jpg')}}">
-									<div class="as-social">
-										<a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-									</div>
-								</div>
-								<div class="team-content">
-									<h3 class="team-title"><a href="team-details.html">Kevin Martin Ben</a></h3><span class="team-desig">Online Teacher</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4">
-							<div class="team-box">
-								<div class="team-img">
-									<img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_2.jpg')}}">
-									<div class="as-social">
-										<a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-									</div>
-								</div>
-								<div class="team-content">
-									<h3 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h3><span class="team-desig">Online Teacher</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4">
-							<div class="team-box">
-								<div class="team-img">
-									<img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_3.jpg')}}">
-									<div class="as-social">
-										<a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-									</div>
-								</div>
-								<div class="team-content">
-									<h3 class="team-title"><a href="team-details.html">Aiden Samuel Jabin</a></h3><span class="team-desig">Online Teacher</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="overflow-hidden bg-white space">
-		<div class="container">
-			<div class="title-area text-center">
-				<span class="sub-title">Testimoni Siswa Kami</span>
-				<h2 class="sec-title fw-medium">Testimoni</h2>
-			</div>
-			<div class="row as-carousel" data-dots="true" data-lg-slide-show="1" data-ml-dots="true" data-slide-show="2" data-xl-dots="true">
-				<div class="col-lg-6">
-					<div class="testi-box">
-						<div class="testi-box_content">
-							<div class="testi-box_img"><img alt="Avater" src="{{asset ('1/yeye/html/acadu/demo/assets/img/testimonial/testi_2_1.jpg')}}"></div>
-							<p class="testi-box_text">“Quickly maximize visionary solutions after mission critical action items productivate premium portals for impactful -services stinctively negotiate enabled niche markets via growth strategies”</p>
-						</div>
-						<div class="testi-box_bottom">
-							<div>
-								<h3 class="testi-box_name">Vlademir Hilton</h3><span class="testi-box_desig">IT Student</span>
-							</div>
-							<div class="testi-box_review">
-								<i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="testi-box">
-						<div class="testi-box_content">
-							<div class="testi-box_img"><img alt="Avater" src="{{asset ('1/yeye/html/acadu/demo/assets/img/testimonial/testi_2_2.jpg')}}"></div>
-							<p class="testi-box_text">“Markets maximize visionary solutions after mission critical action items productivate premium portals for impactful -services stinctively negotiate enabled niche markets via growth strategies”</p>
-						</div>
-						<div class="testi-box_bottom">
-							<div>
-								<h3 class="testi-box_name">David Milton</h3><span class="testi-box_desig">CSE Student</span>
-							</div>
-							<div class="testi-box_review">
-								<i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="testi-box">
-						<div class="testi-box_content">
-							<div class="testi-box_img"><img alt="Avater" src="{{asset ('1/yeye/html/acadu/demo/assets/img/testimonial/testi_2_3.jpg')}}"></div>
-							<p class="testi-box_text">“Mission maximize visionary solutions after mission critical action items productivate premium portals for impactful -services stinctively negotiate enabled niche markets via growth strategies”</p>
-						</div>
-						<div class="testi-box_bottom">
-							<div>
-								<h3 class="testi-box_name">Abraham Khalil</h3><span class="testi-box_desig">GS Student</span>
-							</div>
-							<div class="testi-box_review">
-								<i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<section class="space bg-smoke">
 		<div class="container">
 			<div class="title-area text-center">
@@ -369,12 +339,12 @@
 			<div class="row slider-shadow as-carousel" data-lg-slide-show="2" data-md-slide-show="2" data-slide-show="3" data-sm-slide-show="1">
 				<div class="col-md-6 col-xl-4">
 					<div class="blog-card">
-						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/ciputra.png" alt="SMKN 1 DLANGGU Terpilih Mengikuti Pelatihan Entrepreneur Yang DIgelar Unversitas Ciputra">
+						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/ab.png" alt="ab.png">
 						<div class="blog-content">
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 15, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Marketing</a>
 							</div>
-							<h3 class="blog-title"><a href="blog-details.html">SMKN 1 DLANGGU Terpilih Mengikuti Pelatihan Entrepreneur Yang DIgelar Unversitas Ciputra</a></h3><a class="link-btn" href="blog-details.html">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
+							<h3 class="blog-title"><a href="blog-details.html">Gebyar Uji Kompetensi Keahlian Tata Boga Hadirkan Bupati Mojokerto</a></h3><a class="link-btn" href="blog-details.html">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -385,8 +355,7 @@
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 16, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Technology</a>
 							</div>
-							<h3 class="blog-title"><a  href="blog-details.html">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3><a class="link-btn" href="blog-details.html">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
-							<h3 class="blog-title"><a href="blog-details.html">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3>
+							<h3 class="blog-title"><a  href="blog-details.html">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3>
 							<a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div>
@@ -404,18 +373,18 @@
 				</div>
 				<div class="col-md-6 col-xl-4">
 					<div class="blog-card">
-						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/Screen_Shot_2022-06-06_at_8_56_01_AM.png" alt="KaCabdin Pendidikan Kabupaten dan Kota Mojokerto beri Wejangan Khusus GTK SMKN 1 DLANGGU">
+						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/tb.png" alt="tb.png">
 						<div class="blog-content">
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 18, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Technology</a>
 							</div>
-							<h3 class="blog-title"><a href="blog-details.html">KaCabdin Pendidikan Kabupaten dan Kota Mojokerto beri Wejangan Khusus GTK SMKN 1 DLANGGU</a></h3><a class="link-btn" href="blog-details.html">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
+							<h3 class="blog-title"><a href="blog-details.html">GM Ouest Hotel Semangati Siswa-Siswi Tata Boga Untuk Serius Belajar</a></h3><a class="link-btn" href="blog-details.html">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="shape-mockup d-none d-md-block" data-left="0%" data-top="0%"><img alt="shapes" src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/shadow_1.png')}}"></div>
+		
 	</section>
 	<div class="bg-smoke" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
 		<div class="container as-container3 z-index-common">

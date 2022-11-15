@@ -50,3 +50,4 @@ Route::get('/events',[LandingController::class, 'events'])->name('events');
 Route::get('/detailevents',[LandingController::class, 'detailevents'])->name('detailevents');
 Route::get('/echo',[LandingController::class, 'echo'])->name('echo');
 Route::get('/blogdetail',[LandingController::class, 'blogdetail'])->name('blogdetail');
+Route::get('/extrakulikuler',[LandingController::class, 'extrakulikuler'])->name('extrakulikuler');

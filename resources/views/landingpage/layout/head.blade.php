@@ -7,7 +7,7 @@
 	<meta content="Acadu - Online Courses & Education HTML Template" name="keywords">
 	<meta content="INDEX,FOLLOW" name="robots">
 	<meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-57x57.png')}}" rel="apple-touch-icon" sizes="57x57">
+	{{-- <link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-57x57.png')}}" rel="apple-touch-icon" sizes="57x57">
 	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-60x60.png')}}" rel="apple-touch-icon" sizes="60x60">
 	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-72x72.png')}}" rel="apple-touch-icon" sizes="72x72">
 	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-76x76.png')}}" rel="apple-touch-icon" sizes="76x76">
@@ -20,7 +20,7 @@
 	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/favicon-32x32.png')}}" rel="icon" sizes="32x32" type="image/png">
 	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/favicon-96x96.png')}}" rel="icon" sizes="96x96" type="image/png">
 	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/favicon-16x16.png')}}" rel="icon" sizes="16x16" type="image/png">
-	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/manifest.json')}}" rel="manifest">
+	<link href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/manifest.json')}}" rel="manifest"> --}}
 	<meta content="#ffffff" name="msapplication-TileColor">
 	<meta content="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/ms-icon-144x144.png')}}" name="msapplication-TileImage">
 	<meta content="#ffffff" name="theme-color">
@@ -41,7 +41,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-152x152.png')}}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/apple-icon-180x180.png')}}">
     <link rel="icon" type="image/png" sizes="192x192" href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/android-icon-192x192.png')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('1/yeye/html/acadu/demo/assets/img/favicons/smk.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/favicon-96x96.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset ('1/yeye/html/acadu/demo/assets/img/icon/smk.png')}}" rel="icon" sizes="16x16" type="image/png">
     <link rel="manifest" href="{{asset ('1/yeye/html/acadu/demo/assets/img/favicons/manifest.json')}}"><meta name="msapplication-TileColor" content="#ffffff">

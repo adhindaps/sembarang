@@ -40,38 +40,50 @@
         <div class="widget widget_search">
                     <a><img src="mpls/tatabg.jpg"></a>
         </div>
-        <div class="widget">
-            <h3 class="widget_title">Recent Posts</h3>
-            <div class="recent-post-wrap">
-                <div class="recent-post">
-                    <div class="media-img"><a href="blog-details.html"><img
-                                src="mpls/3.jpg" alt="Blog Image"></a></div>
-                    <div class="media-body">
-                        <div class="recent-post-meta"><a href="blog.html"><i
-                                    class="far fa-calendar"></i>21/01/2022</a></div>
-                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS hari Pertama </a></h4>
+        <div class="col-xl-6">
+            <div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-box">
+                        <div class="team-img">
+                            <img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_1.jpg')}}">
+                            <div class="as-social">
+                                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-title"><a href="team-details.html">Kevin Martin Ben</a></h3><span class="team-desig">Online Teacher</span>
+                        </div>
                     </div>
                 </div>
-                <div class="recent-post">
-                    <div class="media-img"><a href="blog-details.html"><img
-                                src="mpls/4.jpg" alt="Blog Image"></a></div>
-                    <div class="media-body">
-                        <div class="recent-post-meta"><a href="blog.html"><i
-                                    class="far fa-calendar"></i>22/01/2022</a></div>
-                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Kedua</a></h4>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-box">
+                        <div class="team-img">
+                            <img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_2.jpg')}}">
+                            <div class="as-social">
+                                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h3><span class="team-desig">Online Teacher</span>
+                        </div>
                     </div>
                 </div>
-                <div class="recent-post">
-                    <div class="media-img"><a href="blog-details.html"><img
-                                src="mpls/5.jpg" alt="Blog Image"></a></div>
-                    <div class="media-body">
-                        <div class="recent-post-meta"><a href="blog.html"><i
-                                    class="far fa-calendar"></i>22/01/2022</a></div>
-                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Ketiga</a></h4>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-box">
+                        <div class="team-img">
+                            <img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_3.jpg')}}">
+                            <div class="as-social">
+                                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-title"><a href="team-details.html">Aiden Samuel Jabin</a></h3><span class="team-desig">Online Teacher</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </aside>
 </div>
 <section class="" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">

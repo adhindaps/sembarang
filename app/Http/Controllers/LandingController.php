@@ -54,7 +54,6 @@ class LandingController extends Controller
     {
         return view('landingpage.visi');
     }
-<<<<<<< Updated upstream:app/Http/Controllers/LandingController.php
     public function dataguru(Request $request)
     {
         return view('landingpage.dataguru');
@@ -69,8 +68,7 @@ class LandingController extends Controller
     }
     public function detailevents(Request $request)
     {
-        return view('landingpage.detailevents');
-=======
+        return view('landingpage.detailevents');}
     public function echo(Request $request)
     {
         return view('landingpage.echo');
@@ -78,6 +76,5 @@ class LandingController extends Controller
     public function blogdetail(Request $request)
     {
         return view('landingpage.blogdetail');
->>>>>>> Stashed changes:app/Http/Controllers/LandingsController.php
     }
 }

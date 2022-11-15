@@ -50,15 +50,17 @@
                         <div class="menu-all-pages-container">
                             <ul class="menu">
                                 <li>
-                                    <a href="course.html">Class Axio</a>
+                                    <a href="axio">Class Axio</a>
                                 </li>
                                 <li>
-                                    <a href="course.html">Beasiswa</a>
+                                    <a href="beasiswa">Beasiswa</a>
                                 </li>
                                 <li>
-                                    <a href="course.html">Layanan SILARAS</a>
+                                    <a href="silaras">Layanan SILARAS</a>
                                 </li>
-                            
+                                <li>
+                                    <a href="echo">Sudut Baca Echo</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -74,15 +76,15 @@
                                 <li>
                                     <a href="events">Events</a>
                                 </li>
-                                <li>
+                                {{-- <li>
                                     <a href="course.html">Video Guides</a>
-                                </li>
+                                </li> --}}
                                 <li>
-                                    <a href="course.html">Documentation</a>
+                                    <a href="galerry">Gallery</a>
                                 </li>
-                                <li>
+                                {{-- <li>
                                     <a href="contact.html">Security</a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>

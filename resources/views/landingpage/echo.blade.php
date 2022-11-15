@@ -8,8 +8,7 @@
         <div class="container z-index-common">
             <h1 class="breadcumb-title">Sudut Baca Echo</h1>
             <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
-                <li>Sudut Baca Echo</li>
+                
             </ul>
         </div>
     </div>

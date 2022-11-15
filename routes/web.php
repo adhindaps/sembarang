@@ -50,3 +50,7 @@ Route::get('/events',[LandingController::class, 'events'])->name('events');
 Route::get('/detailevents',[LandingController::class, 'detailevents'])->name('detailevents');
 Route::get('/echo',[LandingController::class, 'echo'])->name('echo');
 Route::get('/blogdetail',[LandingController::class, 'blogdetail'])->name('blogdetail');
+Route::get('/axio',[LandingController::class, 'axio'])->name('axio');
+Route::get('/silaras',[LandingController::class, 'silaras'])->name('silaras');
+Route::get('/beasiswa',[LandingController::class, 'beasiswa'])->name('beasiswa');
+Route::get('/bkk',[LandingController::class, 'bkk'])->name('bkk');

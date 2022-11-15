@@ -385,8 +385,7 @@
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 16, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Technology</a>
 							</div>
-							<h3 class="blog-title"><a  href="blog-details.html">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3><a class="link-btn" href="blog-details.html">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
-							<h3 class="blog-title"><a href="blog-details.html">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3>
+						<h3 class="blog-title"><a href="blog-details.html">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3>
 							<a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div>

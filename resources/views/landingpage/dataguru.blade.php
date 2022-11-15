@@ -10,7 +10,7 @@
         <div class="container z-index-common">
             <h1 class="breadcumb-title">Instructors</h1>
             <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Tentang kami</a></li>
                 <li>Instructors</li>
             </ul>
         </div>

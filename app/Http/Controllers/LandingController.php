@@ -77,4 +77,20 @@ class LandingController extends Controller
     {
         return view('landingpage.blogdetail');
     }
+    public function axio(Request $request)
+    {
+        return view('landingpage.axio');
+    }
+    public function silaras(Request $request)
+    {
+        return view('landingpage.silaras');
+    }
+    public function beasiswa(Request $request)
+    {
+        return view('landingpage.beasiswa');
+    }
+    public function bkk(Request $request)
+    {
+        return view('landingpage.bkk');
+    }
 }

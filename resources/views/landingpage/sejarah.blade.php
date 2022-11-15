@@ -6,7 +6,7 @@
 	@include('landingpage.layout.header')
 <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
     <div class="container z-index-common"><h1 class="breadcumb-title">SEJARAH SEKOLAH</h1>
-        <ul class="breadcumb-menu"><li><a href="index.html">Kompetensi Jurusan</a></li><li>SEJARAH</li></ul></div></div>
+        <ul class="breadcumb-menu"><li><a href="index.html">Tentang Kami</a></li><li>SEJARAH</li></ul></div></div>
         <section class="as-blog-wrapper blog-details space-top space-extra-bottom">
             <div class="container"><div class="row"><div class="col-xxl-8 col-lg-7">
                 <div class="as-blog blog-single">

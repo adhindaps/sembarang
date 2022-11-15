@@ -8,7 +8,7 @@
         <div class="container z-index-common">
             <h1 class="breadcumb-title">Profile Sekolah</h1>
             <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Tentang Kami</a></li>
                 <li>Profile Sekolah</li>
             </ul>
         </div>
@@ -19,7 +19,7 @@
                 <div class="col-xxl-9 col-lg-8">
                     <div class="course-single">
                         <div class="course-single-top">
-                            <div class="course-img"><img src="foto/g.jpeg" width="150" alt="Course Image">
+                            <div class="course-img"><img src="https://4.bp.blogspot.com/-hr6ko7FRlvY/VWByVK4DVgI/AAAAAAAAAWs/AAQ-yCBIMFg/s1600/DSC02781.JPG" width="150" alt="Course Image">
                             </div>
                            
                             <h2 class="course-title">PROFILE SMK NEGERI 1 DLANGGU</h2>
@@ -90,10 +90,10 @@
                                             <p>Nama             :   Drs. Ladi,MM.<br/>
                                                NIP              :   196509151989031013 </p>
                                             <h5 class="h5">Wakil Kepala Sekolah</h5>
-                                            <p>Waka.Kurikulum        : Nizar Agus Diarochmah <br/>
-                                               Waka.Humas            : Huddy Siswanto <br/>
-                                               Waka.Kesiswaan        : Samsul Hadi<br/>
-                                               Waka.Sarana Prasarana : Frans Umila<br/></p>
+                                            <p>Waka.Kurikulum        : NIZAR AGUS DIYARROCHMAN <br/>
+                                               Waka.Humas            : HUDDY ISWANTO <br/>
+                                               Waka.Kesiswaan        : SAMSUL HADI<br/>
+                                               Waka.Sarana Prasarana : FRANS UMILA<br/></p>
                                         </div>
                                     </div>
                                 </div>
@@ -209,7 +209,7 @@
                         <div class="col-xxl-3 col-lg-4">
                             <aside class="sidebar-area">
                                 <div class="widget widget_info">
-                                    <div class="as-video"><img src="foto/g.jpeg" alt="video"> <a
+                                    <div class="as-video"><img src="https://4.bp.blogspot.com/-hr6ko7FRlvY/VWByVK4DVgI/AAAAAAAAAWs/AAQ-yCBIMFg/s1600/DSC02781.JPG " alt="video"> <a
                                             href="https://www.youtube.com/watch?v=5y3o4Z5DFY4" class="play-btn popup-video"><i
                                                 class="fas fa-play"></i></a></div>
                                     <h3 class="widget_title">Course Information</h3>

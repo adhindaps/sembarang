@@ -50,44 +50,69 @@
 </div>
 <div class="col-xxl-4 col-lg-5">
     <aside class="sidebar-area">
-        <div class="widget widget_search">
-            <form class="search-form"><input type="text" placeholder="Search..."> <button
-                    type="submit"><i class="far fa-search"></i></button></form>
+        <div class="widget widget_info">
+            <a><img src="mpls/1.jpg"></a>
+            <h3 class="widget_title">Ketua Jurusan</h3>
+           
+            <div class="info-list">
+                <ul>
+                   
+                    <li><i class="fa-light fa-user"></i> <strong>Nama: </strong><span>David Smith</span>
+                    </li>
+                    <li><i class="fa-light fa-phone"></i> <strong>Telepon: </strong><span>(+256) 2152
+                            2156</span></li>
+                            <li><i class="fa-light fa-calendar-days"></i> <strong>Date: </strong><span>August
+                                25, 2022</span></li>
+                        <li><i class="fa-light fa-clock"></i> <strong>Time: </strong><span>8:00 am - 5:00
+                                pm</span></li>
+                        <li><i class="fa-light fa-location-dot"></i> <strong>Venue: </strong><span>School Of
+                                Arts</span></li>
+                        <li><i class="fa-light fa-map"></i> <strong>Address: </strong><span>256 SDY Oliva
+                                St.</span></li>
+                </ul>
+            </div>
         </div>
-        <div class="widget widget_search">
-                    <a><img src="mpls/tatabg.jpg"></a>
-        </div>
-        <div class="widget">
-            <h3 class="widget_title">Recent Posts</h3>
-            <div class="recent-post-wrap">
-                <div class="recent-post">
-                    <div class="media-img"><a href="blog-details.html"><img
-                                src="mpls/3.jpg" alt="Blog Image"></a></div>
-                    <div class="media-body">
-                        <div class="recent-post-meta"><a href="blog.html"><i
-                                    class="far fa-calendar"></i>21/01/2022</a></div>
-                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS hari Pertama </a></h4>
+        <div class="widget widget_info">
+           
+            <h3 class="widget_title">Guru produktif</h3>
+           
+        <div class="col-xl-12">
+            <div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
+                <div class="col-md-8 col-lg-6">
+                    <div class="team-box">
+                        <div class="team-img">
+                            <img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_1.jpg')}}">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-title"><a href="team-details.html">Kevin Martin Ben</a></h3><span class="team-desig">Online Teacher</span>
+                        </div>
                     </div>
                 </div>
-                <div class="recent-post">
-                    <div class="media-img"><a href="blog-details.html"><img
-                                src="mpls/4.jpg" alt="Blog Image"></a></div>
-                    <div class="media-body">
-                        <div class="recent-post-meta"><a href="blog.html"><i
-                                    class="far fa-calendar"></i>22/01/2022</a></div>
-                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Kedua</a></h4>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-box">
+                        <div class="team-img">
+                            <img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_2.jpg')}}">
+                            
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h3><span class="team-desig">Online Teacher</span>
+                        </div>
                     </div>
                 </div>
-                <div class="recent-post">
-                    <div class="media-img"><a href="blog-details.html"><img
-                                src="mpls/5.jpg" alt="Blog Image"></a></div>
-                    <div class="media-body">
-                        <div class="recent-post-meta"><a href="blog.html"><i
-                                    class="far fa-calendar"></i>22/01/2022</a></div>
-                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Ketiga</a></h4>
+                <div class="col-md-6 col-lg-4">
+                    <div class="team-box">
+                        <div class="team-img">
+                            <img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_3.jpg')}}">
+                           
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-title"><a href="team-details.html">Aiden Samuel Jabin</a></h3><span class="team-desig">Online Teacher</span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
     </aside>
 </div>

@@ -97,4 +97,8 @@ class LandingController extends Controller
     {
         return view('landingpage.bkk');
     }
+    public function bkkdetail(Request $request)
+    {
+        return view('landingpage.bkkdetail');
+    }
 }

@@ -1,0 +1,32 @@
+.imgnd{
+    height: 500px !important;
+    width: 1000px !important;
+}
+.imgenduk{
+    height: 550px !important;
+    width: 350px !important;
+}
+.wienduk .widget_title {
+	margin: 19px 0 0 0
+}
+@media (max-width: 1199px) {
+	.end-content {
+		padding: 40px 0 40px 20px
+	}
+}
+.endukk {
+	padding: 60px;
+	border-radius: 10px;
+	overflow: hidden
+}
+@media (max-width: 575px) {
+	.endukk
+ {
+		padding: 45px 15px
+	}
+}
+
+.img-box8 .nduk {
+	text-align: center
+}
+

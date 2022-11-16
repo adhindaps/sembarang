@@ -63,41 +63,35 @@
             <div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
                 <div class="col-md-8 col-lg-6">
                     <div class="team-box">
-                        <div class="team-img">
+                        <div class="imgenduk">
                             <img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_1.jpg')}}">
                         </div>
-                        <div class="team-content">
-                            <h3 class="team-title"><a href="team-details.html">Kevin Martin Ben</a></h3><span class="team-desig">Online Teacher</span>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="team-box">
-                        <div class="team-img">
+                        <div class="imgenduk">
                             <img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_2.jpg')}}">
-                            <div class="as-social">
-                                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                            
                         </div>
-                        <div class="team-content">
-                            <h3 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h3><span class="team-desig">Online Teacher</span>
-                        </div>
+                        {{-- <div class="team-content">
+                            <h4 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h4><span class="team-desig">Online Teacher</span>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="team-box">
-                        <div class="team-img">
+                        <div class="imgenduk">
                             <img alt="Team" src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_1_3.jpg')}}">
-                            <div class="as-social">
-                                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                           
                         </div>
-                        <div class="team-content">
-                            <h3 class="team-title"><a href="team-details.html">Aiden Samuel Jabin</a></h3><span class="team-desig">Online Teacher</span>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
     </aside>
 </div>

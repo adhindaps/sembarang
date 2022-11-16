@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,13 +22,11 @@ Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
 Route::get('/logout',[LoginController::class, 'logout'])->name('logout');
 
-Route::get('/dashboard', function () {
-    return view('admin.beranda');
-});
+Route::get('/dashboard',[AdminController::class, 'dashboard'])->name('dashboard');
+Route::get('/siswapres',[AdminController::class, 'siswapres'])->name('siswapres');
 
-Route::get('/siswapres', function () {
-    return view('admin.siswapres');
-});
+
+
 Route::get('/bug', function () {
     return view('landingpage.jurusan.bug');
 });
@@ -55,3 +54,4 @@ Route::get('/axio',[LandingController::class, 'axio'])->name('axio');
 Route::get('/silaras',[LandingController::class, 'silaras'])->name('silaras');
 Route::get('/beasiswa',[LandingController::class, 'beasiswa'])->name('beasiswa');
 Route::get('/bkk',[LandingController::class, 'bkk'])->name('bkk');
+Route::get('/bkkdetail',[LandingController::class, 'bkkdetail'])->name('bkkdetail');

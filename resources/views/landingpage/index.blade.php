@@ -183,12 +183,12 @@
 			<div class="row">
 				<div class="col-xl-6 mb-5 mb-xl-0">
 					<div class="title-area mb-30 text-center text-xl-start">
-						<span class="sub-title">Best Online Teachers</span>
-						<h2 class="sec-title fw-medium">Our Course Teachers</h2>
+						
+						<h2 class="sec-title fw-medium">Guru dan Karyawan</h2>
 					</div>
 					<p class="mb-30 text-center text-xl-start">Seamlessly target robust quality vectors and goals oriented architectures propriately enegdrages one-to-one resources after standardized scenarios adaptive experiences exceptional resources service depend lifestyle carefully</p>
 					<div class="text-center text-xl-start">
-						<a class="as-btn" href="team.html">View All Teachers<i class="fas fa-arrow-right ms-2"></i></a>
+						<a class="as-btn" href="team.html">Selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
 					</div>
 				</div>
 				<div class="col-xl-6">
@@ -391,32 +391,42 @@
 			<div class="row gx-10 as-carousel" data-lg-slide-show="5" data-md-slide-show="4" data-slide-show="6" data-sm-slide-show="3" data-xs-slide-show="2">
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/1.jpg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/Ca4WStOlwjH/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="website" class="imgyeye" src="{{asset ('foto/axio.jpg')}}"> <a class="icon-btn" href="http://www.axiooclassprogram.org" target="_blank"><i class="fa-solid fa-earth-americas"></i></a>
 					</div>
 				</div>
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/2.jpg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/CVzoGyul4ee/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="website" class="imgyeye" src="{{asset ('foto/mikrotik.jpg')}}"> <a class="icon-btn" href="http://www.mikrotikacademy.com" target="_blank"><i class="fa-solid fa-earth-americas"></i></a>
 					</div>
 				</div>
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/3.jpeg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/CVIGbmdlluJ/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="website" class="imgyeye" src="{{asset ('foto/mocca.jpg')}}"> <a class="icon-btn" href="https://mocca.studio/" target="_blank"><i class="fa-solid fa-earth-americas"></i></a>
 					</div>
 				</div>
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/4.jpeg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/CUaOYjOvTjC/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="website" class="imgyeye" src="{{asset ('foto/aston.jpg')}}"> <a class="icon-btn"  href="http://www.astonhotels.com/groups" target="_blank"><i class="fa-solid fa-earth-americas"></i></a>
 					</div>
 				</div>
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/5.jpeg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/Ca9KHOTvFAW/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="website" class="imgyeye" src="{{asset ('foto/javaparagon.png')}}"> <a class="icon-btn" href="http://www.javaparagon.com" target="_blank"><i class="fa-solid fa-earth-americas"></i></a>
 					</div>
 				</div>
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/6.jpeg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/CVzjFzAFyT-/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="website" class="imgyeye" src="{{asset ('foto/luminor.jpg')}}"> <a class="icon-btn" href="http://www.luminorhotel.com" target="_blank"><i class="fa-solid fa-earth-americas"></i></a>
+					</div>
+				</div>
+				<div class="col-auto">
+					<div class="insta-box">
+						<img alt="website" class="imgyeye" src="{{asset ('foto/jtv.jpg')}}"> <a class="icon-btn" href="http://jtv.co.id" target="_blank"><i class="fa-solid fa-earth-americas"></i></a>
+					</div>
+				</div>
+				<div class="col-auto">
+					<div class="insta-box">
+						<img alt="website" class="imgyeye" src="{{asset ('foto/good.png')}}"> <a class="icon-btn" href="http://www.goodnewsfromindonesia.com" target="_blank"><i class="fa-solid fa-earth-americas"></i></a>
 					</div>
 				</div>
 			</div>

@@ -385,12 +385,8 @@
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 16, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Technology</a>
 							</div>
-<<<<<<< Updated upstream:resources/views/landingpage/index.blade.php
-							<h3 class="blog-title"><a  href="blog-details.html">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3><a class="link-btn" href="blog-details.html">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
-=======
 							<h3 class="blog-title"><a href="blog-details.html">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3>
 							<a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
->>>>>>> Stashed changes:resources/views/landingpage/indexs.blade.php
 						</div>
 					</div>
 				</div>
@@ -425,7 +421,7 @@
 			<div class="row gx-10 as-carousel" data-lg-slide-show="5" data-md-slide-show="4" data-slide-show="6" data-sm-slide-show="3" data-xs-slide-show="2">
 				<div class="col-auto">
 					<div class="insta-box">
-						<img alt="Instagram" class="imgyeye" src="{{asset ('1/yeye/html/acadu/demo/assets/img/insta/1.jpg')}}"> <a class="icon-btn" href="https://www.instagram.com/p/Ca4WStOlwjH/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<img alt="Instagram" class="imgyeye" src="{{asset ('foto/axio.webp')}}"> <a class="icon-btn" href="https://www.instagram.com/p/Ca4WStOlwjH/?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 					</div>
 				</div>
 				<div class="col-auto">

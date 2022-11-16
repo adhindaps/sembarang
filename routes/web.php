@@ -55,3 +55,4 @@ Route::get('/silaras',[LandingController::class, 'silaras'])->name('silaras');
 Route::get('/beasiswa',[LandingController::class, 'beasiswa'])->name('beasiswa');
 Route::get('/bkk',[LandingController::class, 'bkk'])->name('bkk');
 Route::get('/bkkdetail',[LandingController::class, 'bkkdetail'])->name('bkkdetail');
+Route::get('/programkeahlian',[LandingController::class, 'programkeahlian'])->name('programkeahlian');

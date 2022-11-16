@@ -101,4 +101,8 @@ class LandingController extends Controller
     {
         return view('landingpage.bkkdetail');
     }
+    public function programkeahlian(Request $request)
+    {
+        return view('landingpage.jurusan.programkeahlian');
+    }
 }

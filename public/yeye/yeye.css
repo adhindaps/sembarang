@@ -8,6 +8,22 @@
     width: 500px !important;
 }
 
+.yy{
+    height: 150px !important;
+    width: 150px !important;
+}
+
+.rr{
+    height: 450px !important;
+    width: 360px !important;
+}
+
+.ii{
+    height: 600px !important;
+    width: 1500px !important;
+}
+
+
 /* .overflow {
     overflow: hidden;
     text-overflow: ellipsis;

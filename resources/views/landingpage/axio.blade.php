@@ -27,14 +27,31 @@
                     <p>Para siswa yang mengikuti Axioo Class Program merupakan siswa-siswa terbaik yang dipilih langsung oleh pihak sekolah. Pelatihannya diberikan sejak mereka duduk di kelas 10 hingga nantinya lulus dan siap memasuki dunia kerja. Selain itu, program-program pelatihan Axioo juga menyasar para penyandang disabilitas.</p>
                                  
         </div>
-        
+    </div>
 </div>
-</div>
-
+<div class="col-xxl-3 col-lg-4">
+    <aside class="sidebar-area">
+        <div class="widget widget_info">
+            <div class="as-video"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/widget/video_1.jpg')}}" alt="video">
+                 <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-xl-17 ps-xxl-18">
+            <div class="img-box9">
+                <div class="img-group">
+                    <div class="img2"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/normal/about_6_2.jpg')}}" alt="about"></div>
+                    <div class="img3"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/normal/about_6_3.jpg')}}" alt="about"></div>
+                </div>
+                <div class="img1"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/normal/about_6_1.jpg')}}" alt="about"></div>
+            </div>
+        </div>
     </aside>
 </div>
 <section class="" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
     <div class="container">
+        <br/>
         <div class="cta-wrap">
             <div class="row flex-row-reverse justify-content-between">
                 <div class="col-lg-6">

@@ -5,11 +5,11 @@
 
 <body>
     @include('landingpage.layout.header')
-    <div class="breadcumb-wrapper" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/breadcumb/breadcumb-bg.jpg')}}">
+    <div class="breadcumb-wrapper" data-bg-src="{{asset ('foto/upacar.jpg')}}">
         <div class="container z-index-common">
             <h1 class="breadcumb-title">EXTRAKULIKULER</h1>
             <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Beranda</a></li>
                 <li>Extrakulikuler</li>
             </ul>
         </div>
@@ -26,21 +26,11 @@
                 </div>
                 <div class="col-xl-7 ps-xl-5">
                     <br/>
-                    <div class="title-area mb-35"><span class="sub-title">Tentang Brigpasda</span>
+                    <div class="title-area mb-35"><span class="sub-title">Tentang Paskibra</span>
                         <h2 class="sec-title fw-semibold">Paskibraka</h2>
                     </div>
-                    <p class="mt-n2 mb-35">Continually harness backward-compatible initiatives and synergistic content.
-                        Objectively strategize cutting edge niches with collaborative synergy. Globally pontificate
-                        e-business processes through orthoonal web readiness enhance backend value whereas
-                        bricks-and-clicks services.
+                    <p class="mt-n2 mb-35">Ekstrakulikuler PASKIBRA bertujuan  sebagai wadah pembinaan bagi anak-anak dan pemuda Indonesia dengan prinsip-prinsip metodik kepaskibraan yang pelaksanaannya disesuaikan dengan keadaan, kepentingan, dan perkembangan bangsa dan negara. Dan ekstrakulikuler ini bertujuan untuk menyiapkan siswa mampu melaksanakan upacara bendera yang lebih baik lagi, serta menunjang kegiatan belajar mengajar, khususnya di bidang pembinaan kesiswaan dalam pembentukan watak, kedisiplinan dan kepribadian siswa melalui kegiatan kepaskibraan.
                      </p>
-                     <div class="checklist style3 mb-45">
-                        <ul>
-                            <li>Dramatically re-engineer value added systems via mission</li>
-                            <li>Our unique learning environment sparks physical growth</li>
-                            <li>Discovery while our creative curriculum which combines</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -53,17 +43,8 @@
                     <div class="title-area mb-35"><span class="sub-title">Tentang Pramuka</span>
                         <h2 class="sec-title fw-semibold">PRAMUKA</h2>
                     </div>
-                    <p class="mt-n2 mb-35">Continually harness backward-compatible initiatives and synergistic content.
-                        Objectively strategize cutting edge niches with collaborative synergy. Globally pontificate
-                        e-business processes through orthoonal web readiness enhance backend value whereas
-                        bricks-and-clicks services.</p>
-                    <div class="checklist style3 mb-45">
-                        <ul>
-                            <li>Dramatically re-engineer value added systems via mission</li>
-                            <li>Our unique learning environment sparks physical growth</li>
-                            <li>Discovery while our creative curriculum which combines</li>
-                        </ul>
-                    </div>
+                    <p class="mt-n2 mb-35">
+                        Pramuka SMKN 1 Dlanggu didirikan oleh beberapa pembina dan beberapa siswa dan siswi. Pramuka didirikan pada 1 september tahun 2013 dan memiliki GUDEP 27137-27138. Salah satu anggota pramuka pernah mewakili sekolah untuk dikirim ke wilayah perbatasan negara di Pulau Kalimantan dan di tahun sebelumnya dibentuk SAKA Telematika yang memiliki 50 orang.</p>
                 </div>
                 <div class="col-xl-5">
                     <div class="img-box8">
@@ -90,10 +71,7 @@
                     <div class="title-area mb-35"><span class="sub-title">Tentang Palang Merah Indonesia</span>
                         <h2 class="sec-title fw-semibold">Palang Merah Remaja</h2>
                     </div>
-                    <p class="mt-n2 mb-35">Continually harness backward-compatible initiatives and synergistic content.
-                        Objectively strategize cutting edge niches with collaborative synergy. Globally pontificate
-                        e-business processes through orthoonal web readiness enhance backend value whereas
-                        bricks-and-clicks services.
+                    <p class="mt-n2 mb-35">Palang Merah Remaja adalah ekstrakurikuler dan organisasi yang bergerak di bidang kemanusiaan yang memberikan ilmu medis, kesiapsiagaan bencana dan ilmu kemanusiaan dan berbakti kepada masyarakat
                      </p>
                 </div>
             </div>

@@ -8,7 +8,7 @@
         <div class="hero-slider-3 as-carousel" data-fade="true" data-slide-show="1" data-md-slide-show="1"
             data-dots="true" data-xl-dots="true" data-ml-dots="true" data-lg-dots="true">
             <div class="as-hero-slide">
-                <div class="as-hero-bg" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_bg_8_1.jpg')}}"><img
+                <div class="as-hero-bg" data-bg-src="{{asset ('foto/hal1.jpg')}}"><img
                         src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png')}}" alt="overlay"></div>
                 <div class="container z-index-common">
                     <div class="hero-style8">
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="as-hero-slide">
-                <div class="as-hero-bg" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_bg_8_2.jpg')}}"><img
+                <div class="as-hero-bg" data-bg-src="{{asset ('mpls/8.jpg')}}"><img
                         src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png')}}" alt="overlay"></div>
                 <div class="container z-index-common">
                     <div class="hero-style8">
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="as-hero-slide">
-                <div class="as-hero-bg" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_bg_8_3.jpg')}}"><img
+                <div class="as-hero-bg" data-bg-src="{{asset ('mpls/wd.jpg')}}"><img
                         src="{{asset ('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png')}}" alt="overlay"></div>
                 <div class="container z-index-common">
                     <div class="hero-style8">
@@ -146,13 +146,13 @@
                     <div class="title-area mb-35"><span class="sub-title"></span>
                         <h2 class="sec-title fw-semibold">Sambutan Kepala Sekolah</h2>
                     </div>
-                    <p class="mt-n2 mb-25">Selamat datang di Website kami di Sekolah Menengah Kejuruan Telkom Bandung. Website ini kami tujukan untuk seluruh guru, karyawan dan siswa serta masyarakat umum agar dapat mengakses seluruh informasi tentang profil, aktifitas/kegiatan serta fasilitas sekolah secara berkala dan update.
+                    <p class="mt-n2 mb-25">Selamat datang di Website kami di Sekolah Menengah Kejuruan Negri 1 Dlanggu. Website ini kami tujukan untuk seluruh guru, karyawan dan siswa serta masyarakat umum agar dapat mengakses seluruh informasi tentang profil, aktifitas/kegiatan serta fasilitas sekolah secara berkala dan update.
 
 						Tentunya Website sekolah kami masih terdapat banyak kekurangan, oleh karena itu kepada seluruh civitas akademika dan masyarakat umum dapat memberikan saran dan kritik yang membangun demi kemajuan website ini lebih lanjut.
 						
 						Kami berharap Website ini dapat dijadikan wahana interaksi yang positif baik antar civitas akademika maupun masyarakat pada umumnya sehingga dapat menjalin silaturahmi yang erat disegala unsur sesuai dengan motto sekolah kita.
 						
-						𝑺𝑴𝑲 𝑻𝒆𝒍𝒌𝒐𝒎 𝑩𝒂𝒏𝒅𝒖𝒏𝒈 𝑺𝒆𝒌𝒐𝒍𝒂𝒉𝒏𝒚𝒂 𝑺𝒂𝒏𝒈 𝑱𝒖𝒂𝒓𝒂, 𝑷𝑹𝑰𝑴𝑨𝑺𝑬𝑹𝑼 𝑺𝒆𝒎𝒖𝒂 𝑷𝒓𝒊𝒎𝒂, 𝑺𝒆𝒎𝒖𝒂 𝑺𝒆𝒓𝒖, 𝑴𝒂𝒌𝒊𝒏 𝑷𝒓𝒊𝒎𝒂 𝒅𝒂𝒏 𝑴𝒂𝒌𝒊𝒏 𝑺𝒆𝒓𝒖 𝒅𝒂𝒍𝒂𝒎 𝑲𝒂𝒓𝒂𝒌𝒕𝒆𝒓, 𝑷𝒓𝒆𝒔𝒕𝒂𝒔𝒊 𝒅𝒂𝒏 𝑳𝒂𝒚𝒂𝒏𝒂𝒏
+						𝑺𝑴𝑲N 1  Dlanggu 𝑺𝒆𝒌𝒐𝒍𝒂𝒉𝒏𝒚𝒂 𝑺𝒂𝒏𝒈 𝑱𝒖𝒂𝒓𝒂, 𝑷𝑹𝑰𝑴𝑨𝑺𝑬𝑹𝑼 𝑺𝒆𝒎𝒖𝒂 𝑷𝒓𝒊𝒎𝒂, 𝑺𝒆𝒎𝒖𝒂 𝑺𝒆𝒓𝒖, 𝑴𝒂𝒌𝒊𝒏 𝑷𝒓𝒊𝒎𝒂 𝒅𝒂𝒏 𝑴𝒂𝒌𝒊𝒏 𝑺𝒆𝒓𝒖 𝒅𝒂𝒍𝒂𝒎 𝑲𝒂𝒓𝒂𝒌𝒕𝒆𝒓, 𝑷𝒓𝒆𝒔𝒕𝒂𝒔𝒊 𝒅𝒂𝒏 𝑳𝒂𝒚𝒂𝒏𝒂𝒏
 						
 						Pada akhirnya, mari kita bekerja dan berkarya dengan keikhlasan yang tulus demi suksesnya masa depan anak-anak didik kita.
 					</p>    
@@ -249,16 +249,12 @@
                         <div class="event-card_img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/event_1_1.jpg')}}" alt="event"></div>
                         <div class="event-card_content">
                             <div class="event-meta">
-                                <p><i class="fal fa-location-dot"></i>259 Hilton Street, NewYork</p>
+                                <p><i class="fal fa-location-dot"></i>Aula</p>
+								<p><i class="fa-light fa-calendar-days"></i>23 Desember 2022</p>
                                 <p><i class="fal fa-clock"></i>08:00 am - 10:00 am</p>
                             </div>
-                            <h3 class="event-card_title">What Soul Can Tech Us About Web
-                                    Design</h3>
+                            <h3 class="event-card_title">Sosialisai Pendaftaran Online PPDB 2023</h3></h3>
                             <div class="event-card_bottom"><a href="detailevent" class="as-btn">Lihat Acara</a>
-                                <div class="event-author">
-                                    <div class="avater"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/avater.jpg')}}" alt="avater"></div><span
-                                        class="author-name">David Smith</span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -268,16 +264,12 @@
                         <div class="event-card_img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg')}}" alt="event"></div>
                         <div class="event-card_content">
                             <div class="event-meta">
-                                <p><i class="fal fa-location-dot"></i>559 Milton Street, London</p>
+                                <p><i class="fal fa-location-dot"></i>Gedung C</p>
+								<p><i class="fa-light fa-calendar-days"></i>23 Desember 2022</p>
                                 <p><i class="fal fa-clock"></i>09:00 am - 11:00 am</p>
                             </div>
-                            <h3 class="event-card_title">Why Soul Can Tech Us About
-                                    Marketing</h3>
+                            <h3 class="event-card_title">Pondok Romadhon</h3>
                             <div class="event-card_bottom"><a href="detailevents" class="as-btn">Lihat Acara</a>
-                                <div class="event-author">
-                                    <div class="avater"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/avater.jpg')}}" alt="avater"></div><span
-                                        class="author-name">David Smith</span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -287,16 +279,12 @@
                         <div class="event-card_img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/event_1_3.jpg')}}" alt="event"></div>
                         <div class="event-card_content">
                             <div class="event-meta">
-                                <p><i class="fal fa-location-dot"></i>359 Juabal Street, NewYork</p>
+                                <p><i class="fal fa-location-dot"></i>Gedung C</p>
+								<p><i class="fa-light fa-calendar-days"></i>12 Desember 2022</p>
                                 <p><i class="fal fa-clock"></i>10:00 am - 12:00 am</p>
                             </div>
-                            <h3 class="event-card_title"> Soul Can Tech Us About Web
-                                    Docan</a></h3>
+                            <h3 class="event-card_title">Absensi Siswa Prakerin Gl.1</a></h3>
                             <div class="event-card_bottom"><a href="detailevents" class="as-btn">Lihat Acara</a>
-                                <div class="event-author">
-                                    <div class="avater"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/avater.jpg')}}" alt="avater"></div><span
-                                        class="author-name">David Smith</span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -306,17 +294,12 @@
                         <div class="event-card_img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/event_1_4.jpg')}}" alt="event"></div>
                         <div class="event-card_content">
                             <div class="event-meta">
-                                <p><i class="fal fa-location-dot"></i>659 Kurban Street, Sweeden</p>
-                                <p><i class="fal fa-clock"></i>06:00 am - 08:00 am</p>
+                                <p><i class="fal fa-location-dot"></i>Gedung C</p>
+								<p><i class="fa-light fa-calendar-days"></i>23 Desember 2022</p>
+                                <p><i class="fal fa-clock"></i>06:00 am - 12:00 am</p>
                             </div>
-                            <h3 class="event-card_title"><a href="detailevents">Goha Soul Can Tech Us About Web
-                                    Geisnm</a></h3>
-                            <div class="event-card_bottom"><a href="detailevents" class="as-btn">Lihat Acara</a>
-                                <div class="event-author">
-                                    <div class="avater"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/avater.jpg')}}" alt="avater"></div><span
-                                        class="author-name">David Smith</span>
-                                </div>
-                            </div>
+                            <h3 class="event-card_title"><a href="detailevents">Rekrutmen Operator Produkdi PT.Sai</a></h3>
+                            <div class="event-card_bottom"><a href="detailevents" class="as-btn">Lihat Acara</a></div>
                         </div>
                     </div>
                 </div>

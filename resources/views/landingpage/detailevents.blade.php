@@ -5,12 +5,12 @@
 
 <body>
     @include('landingpage.layout.header')
-    <div class="breadcumb-wrapper" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/breadcumb/breadcumb-bg.jpg')}}">
+    <div class="breadcumb-wrapper" data-bg-src="{{asset ('foto')}}">
         <div class="container z-index-common">
-            <h1 class="breadcumb-title">Event Details</h1>
+            <h1 class="breadcumb-title">Detail Events</h1>
             <ul class="breadcumb-menu">
-                <li><a href="index.html">Home</a></li>
-                <li>Event Details</li>
+                <li><a href="index.html">Beranda</a></li>
+                <li>Detail Events</li>
             </ul>
         </div>
     </div>
@@ -19,64 +19,77 @@
             <div class="row">
                 <div class="col-xxl-9 col-lg-8">
                     <div class="event-details">
-                        <div class="event-img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/event_details.jpg')}}" alt="Event Image"></div>
+                        <div class="event-img"><img src="{{asset ('mpls/1.jpg')}}" alt="Event Image"></div>
                         <h3 class="h3 mt-n2">Event Description</h3>
-                        <p class="mb-30">Proactively enable reliable partnerships whereas process-centric
-                            potentialities. Authoritatively integrate covalent vortals whereas virtual markets
-                            Competently empower customized customer service with standards compliants infrastructures.
-                            Energistically deliver integrated e-tailers after reliable technologies. Conveniently
-                            customize dynamic architectures with high quality commerce Efficiently productize just in
-                            time process improvements whereas transparent action items.</p>
-                        <p class="mb-40">Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur
-                            elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and
-                            fadolorit to the consectetur elit. All the Lorem Ipsum generators on the Internet tend to
-                            repeat that predefined chunks as necessary, making this the first true dummy generator on
-                            the Internet. It uses a dictionary of over 200 Latin words, combined Lorem Ipsum looks
-                            reasonable.Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit.
-                            Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada and fadolorit
-                            to the consectetur elit. All the Lorem Ipsum generators on the Internet tend to repeat that
-                            predefined chunks as necessary, making this the first true dummy generator on the Internet.
-                        </p>
-                        <h4 class="h4 mb-25">What You Will Learn?</h4>
-                        <div class="checklist">
-                            <ul>
-                                <li>How to use social media to reach local, national and international audiences</li>
-                                <li>How to set up and market events, using online tools, so you no longer depend</li>
-                                <li>How to create and run online shows, adapt your performance techniques and</li>
-                                <li>Mentoring and troubleshooting and post-training support from Jason</li>
-                                <li>How to use social media to reach local, national and international audiences</li>
-                                <li>How to set up and market events, using online tools</li>
-                                <li>Adapt your performance techniques and manage your audience throughout</li>
-                            </ul>
-                        </div>
+                        <p class="mb-30">INFO KEGIATAN SISWA
+                            Info Kegiatan Layanan BK/ Bimbingan Karir dilaksanakan pada :
+                            <br/>
+                            <br/>
+                            Hari/ tgl : Selasa, 08 November 22
+                            Jam ; 07.30 - 09.30 [2 Jam]
+                            Tempat : Aula ECO
+                            Agenda : Sosialisasi dari Perguruan Tinggi
+                            Catatan : Khusus Grup Kuliah 2023
+                            <br/>
+                            <br/>
+                            Kemudian dilanjutkan di Ruang kelas. 
+                            <br/>
+                            <br/>
+                            Jadwalnya :
+                            
+                              # Kelas : XII TKJ 1,2 & M 1, 2 & RPL 1,2 & XIII SIJA 1 , 2
+                                  Waktu : 09.45 - 10.45
+                            
+                               # Kelas : XII Anm 1,2 & TB 1,2,3 & PHT 1,2
+                                  Waktu : 11.00 - 12.00
+                            .</p>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4">
                     <aside class="sidebar-area">
-                        <div class="widget widget_info"><a href="https://calendar.google.com/calendar/"
-                                class="as-btn">Add To Calendar</a> <a href="https://calendar.google.com/calendar/"
-                                class="as-btn style4">Add To Calendar</a>
+                        <div class="widget widget_info">
                             <h3 class="widget_title">Event Information</h3>
                             <div class="info-list">
                                 <ul>
-                                    <li><i class="fa-light fa-calendar-days"></i> <strong>Date: </strong><span>August
-                                            25, 2022</span></li>
-                                    <li><i class="fa-light fa-clock"></i> <strong>Time: </strong><span>8:00 am - 5:00
+                                    <li><i class="fa-light fa-calendar-days"></i> <strong>Tanggal: </strong><span>November
+                                            08, 2022</span></li>
+                                    <li><i class="fa-light fa-clock"></i> <strong>Waktu: </strong><span>8:00 am - 11:00
                                             pm</span></li>
-                                    <li><i class="fa-light fa-location-dot"></i> <strong>Venue: </strong><span>School Of
-                                            Arts</span></li>
-                                    <li><i class="fa-light fa-map"></i> <strong>Address: </strong><span>256 SDY Oliva
-                                            St.</span></li>
-                                    <li><i class="fa-light fa-user"></i> <strong>Name: </strong><span>David Smith</span>
-                                    </li>
-                                    <li><i class="fa-light fa-phone"></i> <strong>Phone: </strong><span>(+256) 2152
-                                            2156</span></li>
+                                    <li><i class="fa-light fa-location-dot"></i> <strong>Lokasi: </strong><span>Aula ECO SMKN 1 Dlanggu</span></li>
+                                    <li><i class="fa-light fa-map"></i> <strong>Alamat: </strong><span>Jalan Jendral Ahmad Yani No.17, Kedunglengkong, Dlanggu, Jabaran, Pohkecik, Kec. Dlanggu, Kabupaten Mojokerto, Jawa Timur 61371</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="widget widget_banner">
-                            <div class="widget-map"><iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.7310056272386!2d89.2286059153658!3d24.00527418490799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b97badc6151%3A0x30b048c9fb2129bc!2sAngfuzsoft!5e0!3m2!1sen!2sbd!4v1658812932163!5m2!1sen!2sbd"></iframe>
+                        <div class="widget">
+                            <h3 class="widget_title">Agenda Terbaru</h3>
+                            <div class="recent-post-wrap">
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="blog-details.html"><img
+                                                src="{{asset ('1/yeye/html/acadu/demo/assets/img/blog/recent-post-1-1.jpg')}}" alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta"><a href="blog.html"><i
+                                                    class="far fa-calendar"></i>05/03/2022</a></div>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Sosialisasi Pendaftaran Online PPDB</a></h4>
+                                    </div>
+                                </div>
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="blog-details.html"><img
+                                                src="{{asset ('1/yeye/html/acadu/demo/assets/img/blog/recent-post-1-2.jpg')}}" alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta"><a href="blog.html"><i
+                                                    class="far fa-calendar"></i>07/03/2022</a></div>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Rekrutmen Operator Produksi PT.Sai</a></h4>
+                                    </div>
+                                </div>
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="blog-details.html"><img
+                                                src="{{asset ('1/yeye/html/acadu/demo/assets/img/blog/recent-post-1-3.jpg')}}" alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta"><a href="blog.html"><i
+                                                    class="far fa-calendar"></i>08/03/2022</a></div>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Absensi Siswa Prakerin Gl.1</a></h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </aside>

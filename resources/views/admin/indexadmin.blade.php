@@ -163,7 +163,7 @@
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Tentang Sekolah</span></li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link" href="@"
+                        <li class="sidebar-item"> <a class="sidebar-link" href="identitas"
                                 aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
                                     class="hide-menu">Profile Sekolah
                                 </span></a>
@@ -171,7 +171,7 @@
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="$"
                                 aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                     class="hide-menu">Sejarah Sekolah</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="%"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="indexvisi"
                                 aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
                                     class="hide-menu">Visi & Misi</span></a></li>
 
@@ -328,6 +328,7 @@
             <!-- End footer -->
             <!-- ============================================================== -->
         </div>
+    </div>
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
@@ -362,6 +363,10 @@
     <script src="{{ asset('admin/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js') }}"></script>
     <script src="{{ asset('admin/assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js') }}"></script>
     <script src="{{ asset('admin/dist/js/pages/dashboards/dashboard1.min.js') }}"></script>
+
+{{-- ck-editor --}}
+@yield('ck-editor')
+
 </body>
 
 </html>

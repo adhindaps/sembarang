@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\VisiController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -56,3 +59,14 @@ Route::get('/beasiswa',[LandingController::class, 'beasiswa'])->name('beasiswa')
 Route::get('/bkk',[LandingController::class, 'bkk'])->name('bkk');
 Route::get('/bkkdetail',[LandingController::class, 'bkkdetail'])->name('bkkdetail');
 Route::get('/programkeahlian',[LandingController::class, 'programkeahlian'])->name('programkeahlian');
+
+
+
+//Profile Sekolah Admin
+Route::get('/identitas',[ProfileController::class, 'identitas'])->name('identitas');
+Route::post('/store',[ProfileController::class, 'store'])->name('store');
+
+Route::get('/indexvisi',[VisiController::class, 'indexvisi'])->name('indexvisi');
+Route::get('/createvisi',[VisiController::class, 'createvisi'])->name('createvisi');
+Route::post('/storevisi',[VisiController::class, 'storevisi']);
+Route::get('/editvisi/{id}',[VisiController::class, 'show'])->name('show');

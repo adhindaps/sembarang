@@ -128,26 +128,14 @@
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
-                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
+                                <a class="dropdown-item" href="profileadmin"><i data-feather="user"
                                         class="svg-icon mr-2 ml-1"></i>
                                     My Profile</a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="credit-card"
-                                        class="svg-icon mr-2 ml-1"></i>
-                                    My Balance</a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="mail"
-                                        class="svg-icon mr-2 ml-1"></i>
-                                    Inbox</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="settings"
-                                        class="svg-icon mr-2 ml-1"></i>
-                                    Account Setting</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
+                               
+                                <a class="dropdown-item" href="/logout"><i data-feather="power"
                                         class="svg-icon mr-2 ml-1"></i>
                                     Logout</a>
-                                <div class="dropdown-divider"></div>
-                                <div class="pl-4 p-3"><a href="javascript:void(0)" class="btn btn-sm btn-info">View
-                                        Profile</a></div>
+                               
                             </div>
                         </li>
                         <!-- ============================================================== -->
@@ -233,17 +221,73 @@
                                
                             </ul>
                         </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                            aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
+                                class="hide-menu">BKK </span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                        class="hide-menu"> BKK
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="form-input-grid.html" class="sidebar-link"><span
+                                        class="hide-menu"> BKK Detail
+                                    </span></a>
+                            </li>
+                            
+                        </ul>
+                    </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="ui-cards.html"
                                 aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span
-                                    class="hide-menu">Cards
+                                    class="hide-menu">Extrakulikuler
                                 </span></a>
                         </li>
+                        
+                        <li class="nav-small-cap"><span class="hide-menu">Fasilitas Sekolah</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                                aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
+                                    class="hide-menu">Fasilitas </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                            class="hide-menu"> Beasiswa
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="form-input-grid.html" class="sidebar-link"><span
+                                            class="hide-menu"> Axio
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="/siswapres" class="sidebar-link"><span
+                                            class="hide-menu"> SILARAS
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="/siswapres" class="sidebar-link"><span
+                                    class="hide-menu"> Echo
+                                </span></a>
+                        </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                            aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                                class="hide-menu">Halaman </span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+                                        class="hide-menu"> Blog
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="ui-modals.html" class="sidebar-link"><span
+                                        class="hide-menu"> Event </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                                        class="hide-menu"> Galerry </span></a></li>
+                            
+                           
+                        </ul>
+                    </li>
                         {{-- <li class="list-divider"></li>
-                        <li class="nav-small-cap"><span class="hide-menu">Authentication</span></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Fasilitas</span></li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="authentication-login1.html"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="Fasilitas-login1.html"
                                 aria-expanded="false"><i data-feather="lock" class="feather-icon"></i><span
-                                    class="hide-menu">Login
+                                    class="hide-menu">SILARAS
                                 </span></a>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link"

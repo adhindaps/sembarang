@@ -26,6 +26,9 @@
                         <div class="menu-all-pages-container">
                             <ul class="menu">
                                 <li>
+                                    <a href="https://ppdbjatim.net/">PPDB JATIM</a>
+                                </li>
+                                <li>
                                     <a href="http://psmk.kemdikbud.go.id">PSMK Kemdikbud</a>
                                 </li>
                                 <li>

@@ -55,37 +55,7 @@
                                                 <a href="#">Program</a>
                                                 <ul class="sub-menu">
                                                     <li>
-                                                        <a href="sija">PROGRAM STUDI</a>
-                                                        <ul class="sub-menu">
-                                                            <li>
-                                                                <a href="sija">SIJA</a>
-                                                            </li>
-                                                            <br/>
-                                                            <li>
-                                                                <a href="rpl">RPLk</a>
-                                                            </li>
-                                                            <br/>
-                                                            <li>
-                                                                <a href="tkj">TKJ</a>
-                                                            </li>
-                                                            <br/>
-                                                            <li>
-                                                                <a href="anm">Animasi</a>
-                                                            </li>
-                                                            <br/>
-                                                            <li>
-                                                                <a href="mm">Multimedia</a>
-                                                            </li>
-                                                            <br/>
-                                                            <li>
-                                                                <a href="tb">Tata Boga</a>
-                                                            </li>
-                                                            <br/>
-                                                            <li>
-                                                                <a href="aph">Perhotelan</a>
-                                                            </li>
-                                                            <br/>
-                                                        </ul>
+                                                        <a href="programkeahlian">Program Studi</a>
                                                     </li>
                                                     <br/>
                                                     <li>
@@ -123,34 +93,7 @@
                                                      --}}
                                                 </ul>
                                             </li>
-                                            <li class="menu-item-has-children mega-menu-wrap">
-                                                <a href="#">Pages</a>
-                                                <ul class="mega-menu">
-                                                    <li>
-
-                                                        <ul>
-                                                            <li>
-                                                                <a href="index.html">Home One</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="index-2.html">Home Two</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="index-3.html">Home Three</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="index-4.html">Home Four</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="index-5.html">Home Five</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="index-6.html">Home Six</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
+                                            
                                             <li>
                                                 <a href="kontak">Contact</a>
                                             </li>

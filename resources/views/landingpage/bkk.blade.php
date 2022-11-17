@@ -13,9 +13,9 @@
         <div class="container">
             <div class="tinv-wishlist woocommerce tinv-wishlist-clear">
                 <div class="tinv-header">
-                    <h2 class="mb-30">Wishlist</h2>
+                    <h2 class="mb-30">Bursa Kerja Khusus</h2>
                 </div>
-                <form action="#" method="" autocomplete="off">
+                {{-- <form action="#" method="" autocomplete="off">
                     <table class="tinvwl-table-manage-list">
                         <thead>
                             <tr>
@@ -38,8 +38,37 @@
                             
                         </tbody>
                     </table>
-                </form>
-                
+                </form> --}}
+                <section class="space-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 mb-20 mb-xl-0">
+                                <div class="cta-card" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/bg/team_bg_1.jpg')}}">
+                                    <div class="title-area mb-40"><span class="sub-title"><i class="fal fa-book me-2"></i>Lowongan Kerja</span>
+                                        <h4 class="sec-title">AYOLA SUNRISE<br>MOJOKERTO</h4>
+                                    </div><a href="bkkdetail" class="as-btn">Selengkapnya<i
+                                            class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="cta-card" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/bg/team_bg_1.jpg')}}">
+                                    <div class="title-area mb-40"><span class="sub-title"><i class="fal fa-book me-2"></i>Lowongan Kerja</span>
+                                        <h4 class="sec-title">PT SAI<br>NGORO INDUSTRI</h4>
+                                    </div><a href="contact.html" class="as-btn">Selengkapnya<i
+                                            class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="cta-card" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/bg/team_bg_1.jpg')}}">
+                                    <div class="title-area mb-40"><span class="sub-title"><i class="fal fa-book me-2"></i>Lowongan Kerja</span>
+                                        <h4 class="sec-title">PT CORT<br>NGORO INDUSTRI</h4>
+                                    </div><a href="contact.html" class="as-btn">Selengkapnya<i
+                                            class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>

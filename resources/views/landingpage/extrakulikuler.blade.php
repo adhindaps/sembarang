@@ -9,7 +9,7 @@
         <div class="container z-index-common">
             <h1 class="breadcumb-title">EXTRAKULIKULER</h1>
             <ul class="breadcumb-menu">
-                <li><a href="index.html">Beranda</a></li>
+                <li><a href="/">Beranda</a></li>
                 <li>Extrakulikuler</li>
             </ul>
         </div>
@@ -78,10 +78,11 @@
         </div>
     </div>
 </body>
-@include('landingpage.layout.footerhal')
-<script src="{{ asset('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
-<script src="{{ asset('1/yeye/html/acadu/demo/assets/js/app.min.js') }}"></script>
-<script src="{{ asset('1/yeye/html/acadu/demo/assets/js/main.js') }}"></script>
-<!-- Mirrored from angfuzsoft.com/html/acadu/demo/event.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:32:22 GMT -->
-
+@include('landingpage.layout.footer')
+	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
+	</script>
+	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/app.min.js')}}">
+	</script>
+	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/main.js')}}">
+	</script><!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:30:06 GMT -->
 </html>

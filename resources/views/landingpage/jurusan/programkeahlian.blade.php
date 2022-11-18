@@ -12,50 +12,65 @@
             <div class="row gy-4 justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-grid">
-                        <div class="feature-grid_icon"><img src="{{asset ('foto/sija.png')}}" alt="icon"></div>
+                        <img class="gg" src="{{asset ('foto/sija.png')}}" alt="icon">
+                        <br/>
+                        <br/>
                         <h3 class="feature-grid_title">Sistem Informasi, Jaringan & Aplikasi</h3>
-                        <p class="feature-grid_text">Competently unleash competitive initiatives for alternative
-                            interfaces. Enthusiastically supply resource eveling platforms</p>
+                        <p class="overflow" class="feature-grid_text">Sistem Informatika Jaringan dan Aplikasi (SIJA) merupakan satu-satunya program keahlian di SMK Negeri 1 Dlanggu Mojokerto yang menjalankan program SMK 4 tahun.
+
+                            Program keahlian SIJA berdiri sejak tahun 2017 dengan jumlah sampai saat ini sebanyak 136 siswa .</p>
+                         <div class="text-center mt-20 mt-xl-5">
+                            <a href="sija" class="as-btn">selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-grid">
-                        <div class="feature-grid_icon"><img src="{{asset ('foto/rpl-remove.png')}}" alt="icon"></div>
+                        <img class="gg" src="{{asset ('foto/rpl-remove.png')}}" alt="icon">
+                        <br/>
+                        <br/>
                         <h3 class="feature-grid_title">Rekayasa Perangkat Lunak</h3>
-                        <p class="feature-grid_text">Competently unleash competitive initiatives for alternative
-                            interfaces. Enthusiastically supply resource eveling platforms</p>
+                        <p class="overflow"class="feature-grid_text">Rekayasa perangkat lunak (RPL, atau dalam bahasa Inggris: Software Engineering atau SE) adalah satu bidang profesi yang mendalami cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen organisasi pengembanganan perangkat lunak dan manajemen kualitas.</p>
+                        <div class="text-center mt-20 mt-xl-5">
+                            <a href="rpl" class="as-btn">selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-grid">
-                        <div class="feature-grid_icon"><img src="{{asset ('foto/tkj.png')}}" alt="icon"></div>
+                        <img class="gg" src="{{asset ('foto/tkj.png')}}" alt="icon">
+                        <br/>
+                        <br/>
                         <h3 class="feature-grid_title">Teknik Komputer & Jaringan</h3>
-                        <p class="feature-grid_text">Competently unleash competitive initiatives for alternative
-                            interfaces. Enthusiastically supply resource eveling platforms</p>
+                        <p class="overflow"class="feature-grid_text">Sistem Informatika Jaringan dan Aplikasi (SIJA) merupakan satu-satunya program keahlian di SMK Negeri 1 Dlanggu Mojokerto yang menjalankan program SMK 4 tahun.
+                            Program keahlian SIJA berdiri sejak tahun 2017 dengan jumlah sampai saat ini sebanyak 136 siswa .</p>
+                            <div class="text-center mt-20 mt-xl-5">
+                                <a href="tkj" class="as-btn">selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-grid">
-                        <div class="feature-grid_icon"><img src="{{asset ('foto/animasi.png')}}" alt="icon"></div>
+                        <img class="gg" src="{{asset ('foto/animasi.png')}}" alt="icon">
+                        <br/>
+                        <br/>
                         <h3 class="feature-grid_title">Animasi</h3>
-                        <p class="feature-grid_text">Competently unleash competitive initiatives for alternative
-                            interfaces. Enthusiastically supply resource eveling platforms</p>
+                        <p class="overflow" class="feature-grid_text">Program studi animasi dibentuk dengan aspek kemanfaatan mengembangkan sumber daya bangsa: baik manusia, alam, budaya, seni dan karakter lokal bercirikan ke-Indonesiaan yang mendunia. Hal ini terwujud dalam peran sertanya membangun sumber daya manusia yang kompeten dalam segi keahlian dan berkarakter.</p>
+                        <div class="text-center mt-20 mt-xl-5">
+                            <a href="anm" class="as-btn">selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-grid">
-                        <div class="feature-grid_icon"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/icon/feature_2_2.png')}}" alt="icon"></div>
-                        <h3 class="feature-grid_title">Multimedia</h3>
-                        <p class="feature-grid_text">Competently unleash competitive initiatives for alternative
-                            interfaces. Enthusiastically supply resource eveling platforms</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-grid">
-                        <div class="feature-grid_icon"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/icon/feature_2_3.png')}}" alt="icon"></div>
+                        <img class="gg" src="{{asset ('1/yeye/html/acadu/demo/assets/img/icon/feature_2_3.png')}}" alt="icon">
+                        <br/>
+                        <br/>
                         <h3 class="feature-grid_title">Tata Boga</h3>
-                        <p class="feature-grid_text">Competently unleash competitive initiatives for alternative
-                            interfaces. Enthusiastically supply resource eveling platforms</p>
+                        <p class="overflow"class="feature-grid_text">Tata boga adalah suatu disiplin ilmu terkait dengan seni dalam menyiapkan, memasak, dan menghidangkan makanan siap saji. Di Indonesia, disiplin ilmu ini dapat dipelajari di Sekolah Menengah Kejuruan (SMK) atau di tingkat sekolah tinggi terkait Industri pariwisata dan industri perhotelan.</p>
+                        <div class="text-center mt-20 mt-xl-5">
+                            <a href="tb" class="as-btn">selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>

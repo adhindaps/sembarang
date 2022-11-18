@@ -4,11 +4,12 @@
 @include('landingpage.layout.head')
 <body>
 	@include('landingpage.layout.header')
-    <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
+    <div class="breadcumb-wrapper" data-bg-src="{{asset ('foto')}}">
         <div class="container z-index-common">
-            <h1 class="breadcumb-title">Sudut Baca Echo</h1>
+            <h1 class="breadcumb-title"> Sudut Baca ECO</h1>
             <ul class="breadcumb-menu">
-                
+                <li><a href="/">Beranda</a></li>
+                <li> Sudut Baca ECO</li>
             </ul>
         </div>
     </div>
@@ -44,28 +45,20 @@
                 <div class="col-xxl-3 col-lg-4">
                     <aside class="sidebar-area">
                         <div class="widget widget_info">
+                            
+                            <div class="as-video">
+                                <img src="https://4.bp.blogspot.com/-hr6ko7FRlvY/VWByVK4DVgI/AAAAAAAAAWs/AAQ-yCBIMFg/s1600/DSC02781.JPG " alt="video"> 
+                                <a href="https://youtu.be/wbmQOyvitXU" class="play-btn popup-video"><i class="fas fa-play"></i></a>
+                            </div>
                            
-                            <h3 class="widget_title">Event Information</h3>
+                            <h3 class="widget_title">Informasi</h3>
                             <div class="info-list">
                                 <ul>
-                                    <li><i class="fa-light fa-calendar-days"></i> <strong>Date: </strong><span>August
-                                            25, 2022</span></li>
-                                    <li><i class="fa-light fa-clock"></i> <strong>Time: </strong><span>8:00 am - 5:00
+                                    <li><i class="fa-light fa-clock"></i> <strong>Buka: </strong><span>8:00 am - 5:00
                                             pm</span></li>
-                                    <li><i class="fa-light fa-location-dot"></i> <strong>Venue: </strong><span>School Of
-                                            Arts</span></li>
-                                    <li><i class="fa-light fa-map"></i> <strong>Address: </strong><span>256 SDY Oliva
-                                            St.</span></li>
-                                    <li><i class="fa-light fa-user"></i> <strong>Name: </strong><span>David Smith</span>
-                                    </li>
-                                    <li><i class="fa-light fa-phone"></i> <strong>Phone: </strong><span>(+256) 2152
-                                            2156</span></li>
+                                    <li><i class="fa-light fa-location-dot"></i> <strong>Lokasi: </strong><span>SMKN 1 Dlanggu</span></li>
+                                    <li><i class="fa-light fa-map"></i> <strong>Alamat: </strong><span>Jalan Jendral Ahmad Yani No.17, Kedunglengkong, Dlanggu, Jabaran, Pohkecik, Kec. Dlanggu, Kabupaten Mojokerto, Jawa Timur 61371</span></li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="widget widget_banner">
-                            <div class="widget-map"><iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.214831443387!2d112.47793521400968!3d-7.551537776652838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78731ce537479f%3A0x350a36480b9ea39f!2sSMK%20Negeri%201%20Dlanggu%20Mojokerto!5e0!3m2!1sid!2sid!4v1668063638210!5m2!1sid!2sid"></iframe>
                             </div>
                         </div>
                     </aside>
@@ -73,26 +66,6 @@
             </div>
         </div>
     </section>
-<section class="" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
-    <div class="container">
-        <div class="cta-wrap">
-            <div class="row flex-row-reverse justify-content-between">
-                <div class="col-lg-6">
-                    <div class="cta-img"><img src="foto/hal1.jpg" alt="Image"></div>
-                </div>
-                <div class="col-lg-6 align-self-center">
-                    <div class="cta-content">
-                        <h2 class="fs-40 fw-light text-theme mb-10">SMK N 1 DLANGGU</h2>
-                        <h2 class="mb-25">MOJOKERTO</h2><a href="/"
-                            class="as-btn">Beranda</a>
-                    </div>
-                </div>
-            </div>
-            <div class="shape-mockup movingX z-index-n1" data-bottom="0%" data-left="44%"><img
-                    src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/dot_shape_1.png')}}" alt="shapes"></div>
-        </div>
-    </div>
-</section>
 @include('landingpage.layout.footer')
 <script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
 </script>

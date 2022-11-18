@@ -5,13 +5,14 @@
 
 <body>
     @include('landingpage.layout.header')
-
-    <div class="breadcumb-wrapper" data-bg-src="{{asset ('1/yeye/html/acadu/demo/assets/img/breadcumb/breadcumb-bg.jpg')}}">
+    <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
         <div class="container z-index-common">
-            <h1 class="breadcumb-title">Instructors</h1>
+            <h1 class="breadcumb-title">Data Guru</h1>
             <ul class="breadcumb-menu">
-                <li><a href="index.html">Tentang kami</a></li>
-                <li>Instructors</li>
+                <li>
+                    <a href="/">Beranda</a>
+                </li>
+                <li>Data Guru</li>
             </ul>
         </div>
     </div>
@@ -109,49 +110,12 @@
             </div>
         </div>
     </section>
-    <section class="space bg-smoke">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 mb-35 mb-xl-0">
-                    <div class="text-center text-xl-start"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/normal/vector_3.png')}}" alt="vector"></div>
-                </div>
-                <div class="col-xl-6 text-center text-xl-start">
-                    <div class="title-area mb-30"><span class="sub-title">Why Choose Us</span>
-                        <h2 class="sec-title fw-semibold">Let’s Get Started Your Carrer With Acadu Education</h2>
-                    </div>
-                    <p class="mb-30">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantsnium dolore
-                        mque laudantium, totam rem aperiam, eaque ipsa quae illo inventore veritatis et quasi architecto
-                        beatae vitae dicta unde omnis iste natus error sit</p><a href="course.html"
-                        class="as-btn style4">Watch How To Start<i class="far fa-play ms-2"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-smoke" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
-        <div class="container">
-            <div class="cta-wrap">
-                <div class="row flex-row-reverse justify-content-between">
-                    <div class="col-lg-6">
-                        <div class="cta-img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/normal/cta_1_1.png')}}" alt="Image"></div>
-                    </div>
-                    <div class="col-lg-6 align-self-center">
-                        <div class="cta-content">
-                            <h2 class="fs-40 fw-light text-theme mb-10">Learn From Our Platform</h2>
-                            <h2 class="mb-25">That Take You Next Level</h2><a href="contact.html"
-                                class="as-btn">Register Now<i class="fas fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="shape-mockup movingX z-index-n1" data-bottom="0%" data-left="44%"><img
-                        src="{{asset ('1/yeye/html/acadu/demo/assets/img/shape/dot_shape_1.png')}}" alt="shapes"></div>
-            </div>
-        </div>
-    </section>
 </body>
-@include('landingpage.layout.footerhal')
-	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}"></script>
-	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/app.min.js')}}"></script>
-	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/main.js')}}"></script>
-<!-- Mirrored from angfuzsoft.com/html/acadu/demo/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:32:10 GMT -->
-
+@include('landingpage.layout.footer')
+	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
+	</script>
+	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/app.min.js')}}">
+	</script>
+	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/main.js')}}">
+	</script><!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:30:06 GMT -->
 </html>

@@ -304,8 +304,9 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-20 mt-xl-5"><a href="events" class="as-btn">Semua Agenda Sekolah<i
-                        class="fas fa-arrow-right ms-2"></i></a></div>
+            <div class="text-center mt-20 mt-xl-5">
+				<a href="events" class="as-btn">Semua Agenda Sekolah<i class="fas fa-arrow-right ms-2"></i></a>
+			</div>
         </div>
        
         <div class="shape-mockup jump d-none d-md-block" data-top="4%" data-right="0%"><img
@@ -327,7 +328,7 @@
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 15, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Marketing</a>
 							</div>
-							<h3 class="blog-title"><a href="blog-details.html">Gebyar Uji Kompetensi Keahlian Tata Boga Hadirkan Bupati Mojokerto</a></h3><a class="link-btn" href="blog-details.html">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
+							<h3 class="blog-title"><a href="blogdetail">Gebyar Uji Kompetensi Keahlian Tata Boga Hadirkan Bupati Mojokerto</a></h3><a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -338,7 +339,7 @@
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 16, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Technology</a>
 							</div>
-							<h3 class="blog-title"><a  href="blog-details.html">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3>
+							<h3 class="blog-title"><a  href="blogdetail">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3>
 							<a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div>
@@ -350,7 +351,7 @@
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 17, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Programing</a>
 							</div>
-							<h3 class="blog-title"><a href="blog-details.html">PT SAI Masih Favorit Di Kalangan Alumni Pencari Kerja</a></h3><a class="link-btn" href="blog-details.html">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
+							<h3 class="blog-title"><a href="blogdetail">PT SAI Masih Favorit Di Kalangan Alumni Pencari Kerja</a></h3><a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -361,7 +362,7 @@
 							<div class="blog-meta style2">
 								<a href="blog.html"><i class="far fa-clock"></i>March 18, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Technology</a>
 							</div>
-							<h3 class="blog-title"><a href="blog-details.html">GM Ouest Hotel Semangati Siswa-Siswi Tata Boga Untuk Serius Belajar</a></h3><a class="link-btn" href="blog-details.html">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
+							<h3 class="blog-title"><a>GM Ouest Hotel Semangati Siswa-Siswi Tata Boga Untuk Serius Belajar</a></h3><a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>

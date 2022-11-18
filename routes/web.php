@@ -6,6 +6,8 @@ use App\Http\Controllers\LandingController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\VisiController;
+use App\Http\Controllers\SejarahController;
+use App\Http\Controllers\JurusanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,3 +72,16 @@ Route::get('/indexvisi',[VisiController::class, 'indexvisi'])->name('indexvisi')
 Route::get('/createvisi',[VisiController::class, 'createvisi'])->name('createvisi');
 Route::post('/storevisi',[VisiController::class, 'storevisi']);
 Route::get('/editvisi/{id}',[VisiController::class, 'show'])->name('show');
+Route::post('/updatevisi/{id}',[VisiController::class, 'updatevisi']);
+
+Route::get('/sejarahindex',[SejarahController::class, 'sejarahindex'])->name('sejarahindex');
+Route::get('/sejarahcreate',[SejarahController::class, 'sejarahcreate'])->name('sejarahcreate');
+Route::post('/sejarahstore',[SejarahController::class, 'sejarahstore']);
+Route::get('/sejarahedit/{id}',[SejarahController::class, 'sejarahedit']);
+Route::post('/updatesjr/{id}',[SejarahController::class, 'updatesjr']);
+
+Route::get('/jurusanindex',[JurusanController::class, 'jurusanindex'])->name('jurusanindex');
+Route::get('/jurusancreate',[JurusanController::class, 'jurusancreate'])->name('jurusancreate');
+Route::post('/jurusanstore',[JurusanController::class, 'jurusanstore'])->name('jurusanstore');
+Route::get('/jurusanedit/{id}',[JurusanController::class, 'jurusanedit'])->name('jurusanedit');
+Route::post('/jurusanupdate/{id}',[JurusanController::class, 'jurusanupdate'])->name('jurusanupdate');

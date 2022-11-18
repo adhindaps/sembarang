@@ -51,7 +51,7 @@ class VisiController extends Controller
      */
     public function show($id)
     {
-        // $data = visi::find($id);    
+        $data = visi::find($id);    
         $data = visi::findOrfail($id); 
         return view('admin.profile.editvisi', compact('data'));
     }
@@ -71,6 +71,7 @@ class VisiController extends Controller
      * @param  \App\Models\visi  $visi
      * @return \Illuminate\Http\Response
      */
+
     public function updatevisi(Request $request,$id)
     {
         $data = visi::find($id);

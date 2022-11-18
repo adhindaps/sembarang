@@ -6,18 +6,19 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">VISI MISI SEKOLAH</h4>
+                    <h4 class="card-title">JURUSAN</h4>
                     <h6 class="card-subtitle">
                       </h6>
-                      <a href="/createvisi" class="btn btn-primary" >Tambah </a> 
+                      <a href="/jurusancreate" class="btn btn-warning" >Tambah </a> 
 
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Nama</th>
-                                    <th scope="col md 6">Deskripsi</th>
+                                    <th scope="col">Foto</th>
+                                    <th scope="col">Jurusan</th>
+                                    <th scope="col">Deskripsi</th>
                                     <th scope="text-right">Aksi</th>
                                 </tr>
                             </thead>
@@ -25,12 +26,13 @@
                                 @php
                                 $no = 1;
                             @endphp
-                            @foreach ($data as $vm)
+                            @foreach ($data as $row)
                                 <tr>
-                                    <th scope="vm">{{ $no++ }}</th>
-                                    <td>{{ $vm->nama }}</td>
-                                    <td>{!! $vm->deskripsi !!}</td>
-                                    <td><a href="/editvisi/ {{ $vm->id }}" class="btn btn-warning">Ubah</a></td>
+                                    <th scope="row">{{ $no++ }}</th>
+                                    <td>  <img alt=" " src="foto/{{ $row->foto }}"width="100px"> </td>
+                                    <td>{{ $row->jurusan }}</td>
+                                    <td>{!! $row->deskripsi !!}</td>
+                                    <td><a href="/jurusanedit/{{ $row->id }}" class="btn btn-warning">Ubah</a></td>
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -39,6 +41,6 @@
                 </div>
             </div>
     
-    </div>
-    </div>
+</div>
+</div>
 @endsection

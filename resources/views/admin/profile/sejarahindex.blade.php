@@ -6,10 +6,10 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">VISI MISI SEKOLAH</h4>
+                    <h4 class="card-title">SEJARAH SEKOLAH</h4>
                     <h6 class="card-subtitle">
                       </h6>
-                      <a href="/createvisi" class="btn btn-primary" >Tambah </a> 
+                      <a href="/sejarahcreate" class="btn btn-primary" >Tambah </a> 
 
                     <div class="table-responsive">
                         <table class="table">
@@ -25,12 +25,12 @@
                                 @php
                                 $no = 1;
                             @endphp
-                            @foreach ($data as $vm)
+                            @foreach ($data as $data)
                                 <tr>
-                                    <th scope="vm">{{ $no++ }}</th>
-                                    <td>{{ $vm->nama }}</td>
-                                    <td>{!! $vm->deskripsi !!}</td>
-                                    <td><a href="/editvisi/ {{ $vm->id }}" class="btn btn-warning">Ubah</a></td>
+                                    <th scope="data">{{ $no++ }}</th>
+                                    <td>{{ $data->nama }}</td>
+                                    <td>{!! $data->deskripsi !!}</td>
+                                    <td><a href="/sejarahedit/ {{ $data->id }}" class="btn btn-warning">Ubah</a></td>
                                 </tr>
                                 @endforeach
                             </tbody>

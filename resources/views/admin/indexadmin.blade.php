@@ -168,7 +168,7 @@
                                     class="hide-menu">Profile Sekolah
                                 </span></a>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="$"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="sejarahindex"
                                 aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                     class="hide-menu">Sejarah Sekolah</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="indexvisi"
@@ -195,33 +195,10 @@
                                 </li>
                             </ul>
                         </li>
-                       
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                                aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
-                                    class="hide-menu">Data Jurusan </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
-                                            class="hide-menu"> SIJA
-                                        </span></a>
-                                </li>
-                                <li class="sidebar-item"><a href="ui-modals.html" class="sidebar-link"><span
-                                            class="hide-menu"> JASA BOGA </span></a>
-                                </li>
-                                <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
-                                            class="hide-menu"> PERHOTELAN </span></a></li>
-                                <li class="sidebar-item"><a href="ui-tooltip-popover.html" class="sidebar-link"><span
-                                            class="hide-menu"> RPL</span></a></li>
-                                <li class="sidebar-item"><a href="ui-notification.html" class="sidebar-link"><span
-                                            class="hide-menu">ANIMASI</span></a></li>
-                                <li class="sidebar-item"><a href="ui-progressbar.html" class="sidebar-link"><span
-                                            class="hide-menu">TKJ</span></a></li>
-                                
-                                <li class="sidebar-item"><a href="ui-bootstrap.html" class="sidebar-link"><span
-                                            class="hide-menu">Multimedia</span></a></li>
-                               
-                            </ul>
-                        </li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/jurusanindex"
+                            aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                                class="hide-menu">Jurusan</span></a></li>
+                       <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                 class="hide-menu">BKK </span></a>
                         <ul aria-expanded="false" class="collapse  first-level base-level-line">

@@ -12,9 +12,10 @@ class SejarahController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function sejarahindex()
     {
-        //
+        $data=Sejarah::all();
+        return view('admin.profile.sejarahindex',compact('data'));
     }
 
     /**
@@ -22,9 +23,9 @@ class SejarahController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function sejarahcreate()
     {
-        //
+        return view('admin.profile.sejarahcreate');
     }
 
     /**
@@ -33,9 +34,28 @@ class SejarahController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function sejarahstore(Request $request)
     {
-        //
+        $data = Sejarah::create([
+            'nama' => $request->nama,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        return redirect()->route('sejarahindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+    public function sejarahedit($id)
+    {
+        $data = Sejarah::find($id);
+        $data = Sejarah::findOrfail($id);
+        return view('admin.profile.editsejarah',compact('data'));
+    }
+    public function updatesjr(Request $request, $id)
+    {
+        $data = Sejarah::find($id); 
+        $data ->update([
+            'nama' => $request->nama,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        return redirect()->route('sejarahindex')->with('success', 'Data Berhasil Di ubah');
     }
 
     /**

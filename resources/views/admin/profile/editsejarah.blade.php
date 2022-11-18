@@ -6,13 +6,13 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Visi Misi</h4>
-                    <form action="/updatevisi/{{ $data->id }}" method="POST" enctype="multipart form-data" > 
+                    <h4 class="card-title">Ubah Sejarah sekolah</h4>
+                    <form action="/updatesjr/{{ $data->id }}" method="POST" enctype="multipart/form-data" >  
                         @csrf
                         <div class="form-row">
                             <div class="form-group col-md-12">
                               <label for="inputPassword4">Nama</label>
-                              <input type="text" name="nama" class="form-control" id="inputPassword4" value="{{$data->nama}}" placeholder="">
+                              <input type="text" name="nama" class="form-control" id="inputPassword4" value="{{ $data->nama }}"  placeholder="">
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="editor">Deskripsi</label>
@@ -21,16 +21,17 @@
                           </div>
                           <div class="form-actions">
                             <div class="text-right">
-                                <button type="submit" class="btn btn-info" value="update">Ubah</button>
+                                <button type="submit" class="btn btn-info">Submit</button>
+                             
                             </div>
                         </div>
-                        </div>
-                        
                     </form>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
+    
     </div>
     </div>
 @endsection
@@ -45,6 +46,5 @@
             console.error( error );
         } );
 </script>
-
 
 @endsection

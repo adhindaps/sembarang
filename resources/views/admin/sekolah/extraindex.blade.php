@@ -6,10 +6,10 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">JURUSAN</h4>
+                    <h4 class="card-title">EXTRAKULIKULER</h4>
                     <h6 class="card-subtitle">
                       </h6>
-                      <a href="/jurusancreate" class="btn btn-primary" >Tambah </a> 
+                      <a href="/extracreate" class="btn btn-primary" >Tambah </a> 
 
                     <div class="table-responsive">
                         <table class="table">
@@ -17,7 +17,7 @@
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Foto</th>
-                                    <th scope="col">Jurusan</th>
+                                    <th scope="col">Extra</th>
                                     <th scope="col">Deskripsi</th>
                                     <th scope="text-right">Aksi</th>
                                 </tr>
@@ -26,13 +26,13 @@
                                 @php
                                 $no = 1;
                             @endphp
-                            @foreach ($data as $row)
+                            @foreach ($data as $ex)
                                 <tr>
-                                    <th scope="row">{{ $no++ }}</th>
-                                    <td>  <img alt=" " src="foto/{{ $row->foto }}"width="100px"> </td>
-                                    <td>{{ $row->jurusan }}</td>
-                                    <td>{!! $row->deskripsi !!}</td>
-                                    <td><a href="/jurusanedit/{{ $row->id }}" class="btn btn-warning">Ubah</a></td>
+                                    <th scope="ex">{{ $no++ }}</th>
+                                    <td>  <img alt=" " src="foto/{{ $ex->fotoex }}"width="100px"> </td>
+                                    <td>{{ $ex->extra }}</td>
+                                    <td>{!! $ex->deskripsi !!}</td>
+                                    <td><a href="/extraedit/{{ $ex->id }}" class="btn btn-warning">Ubah</a></td>
                                 </tr>
                                 @endforeach
                             </tbody>

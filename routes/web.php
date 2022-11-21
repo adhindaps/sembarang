@@ -8,6 +8,9 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\VisiController;
 use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\JurusanController;
+use App\Http\Controllers\GuruController;
+use App\Http\Controllers\GaleryController;
+use App\Http\Controllers\ExtraController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +32,6 @@ Route::get('/logout',[LoginController::class, 'logout'])->name('logout');
 
 Route::get('/dashboard',[AdminController::class, 'dashboard'])->name('dashboard');
 Route::get('/siswapres',[AdminController::class, 'siswapres'])->name('siswapres');
-
 
 
 Route::get('/bug', function () {
@@ -64,6 +66,9 @@ Route::get('/programkeahlian',[LandingController::class, 'programkeahlian'])->na
 
 
 
+
+
+
 //Profile Sekolah Admin
 Route::get('/identitas',[ProfileController::class, 'identitas'])->name('identitas');
 Route::post('/store',[ProfileController::class, 'store'])->name('store');
@@ -85,3 +90,20 @@ Route::get('/jurusancreate',[JurusanController::class, 'jurusancreate'])->name('
 Route::post('/jurusanstore',[JurusanController::class, 'jurusanstore'])->name('jurusanstore');
 Route::get('/jurusanedit/{id}',[JurusanController::class, 'jurusanedit'])->name('jurusanedit');
 Route::post('/jurusanupdate/{id}',[JurusanController::class, 'jurusanupdate'])->name('jurusanupdate');
+
+Route::get('/guruindex',[GuruController::class, 'guruindex'])->name('guruindex');
+Route::get('/gurucreate',[GuruController::class, 'gurucreate'])->name('gurucreate');
+Route::post('/gurustore',[GuruController::class, 'gurustore'])->name('gurustore');
+Route::get('/guruedit/{id}',[GuruController::class, 'guruedit'])->name('guruedit');
+Route::post('/guruupdate/{id}',[GuruController::class, 'guruupdate'])->name('guruupdate');
+
+Route::get('/galeryindex',[GaleryController::class, 'galeryindex'])->name('galeryindex');
+Route::get('/galerycreate',[GaleryController::class, 'galerycreate'])->name('galerycreate');
+Route::post('/galerystore',[GaleryController::class, 'galerystore'])->name('galerystore');
+
+
+Route::get('/extraindex',[ExtraController::class, 'extraindex'])->name('extraindex');
+Route::get('/extracreate',[ExtraController::class, 'extracreate'])->name('extracreate');
+Route::post('/extrastore',[ExtraController::class, 'extrastore'])->name('extrastore');
+Route::get('/extraedit/{id}',[ExtraController::class, 'extraedit'])->name('extraedit');
+Route::post('/extraupdate/{id}',[ExtraController::class, 'extraupdate'])->name('extraupdate');

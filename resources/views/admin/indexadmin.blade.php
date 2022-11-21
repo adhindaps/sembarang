@@ -181,16 +181,13 @@
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                     class="hide-menu">Data </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="guruindex" class="sidebar-link"><span
                                             class="hide-menu"> Data Guru
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="form-input-grid.html" class="sidebar-link"><span
-                                            class="hide-menu"> Data Karyawan
-                                        </span></a>
-                                </li>
+                               
                                 <li class="sidebar-item"><a href="/siswapres" class="sidebar-link"><span
-                                            class="hide-menu"> Data Siswa Berprestasi
+                                            class="hide-menu"> Data Siswa
                                         </span></a>
                                 </li>
                             </ul>
@@ -213,7 +210,7 @@
                             
                         </ul>
                     </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="ui-cards.html"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="extraindex"
                                 aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span
                                     class="hide-menu">Extrakulikuler
                                 </span></a>
@@ -253,7 +250,7 @@
                             <li class="sidebar-item"><a href="ui-modals.html" class="sidebar-link"><span
                                         class="hide-menu"> Event </span></a>
                             </li>
-                            <li class="sidebar-item"><a href="ui-tab.html" class="sidebar-link"><span
+                            <li class="sidebar-item"><a href="galeryindex" class="sidebar-link"><span
                                         class="hide-menu"> Galerry </span></a></li>
                             
                            

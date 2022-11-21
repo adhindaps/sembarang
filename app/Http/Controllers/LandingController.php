@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
+use App\Models\Jurusan;
+use App\Models\Galery;
+use App\Models\Extra;
 
 class LandingController extends Controller
 {
@@ -44,7 +48,8 @@ class LandingController extends Controller
     }
     public function galerry(Request $request)
     {
-        return view('landingpage.galerry');
+        $data=Galery::all();
+        return view('landingpage.galerry',compact('data'));
     }
     public function kontak(Request $request)
     {
@@ -79,7 +84,10 @@ class LandingController extends Controller
     }
     public function extrakulikuler(Request $request)
     {
-        return view('landingpage.extrakulikuler');
+        
+        $data=Extra::all();
+
+        return view('landingpage.extrakulikuler',compact('data'));
     }
     public function axio(Request $request)
     {
@@ -103,6 +111,7 @@ class LandingController extends Controller
     }
     public function programkeahlian(Request $request)
     {
-        return view('landingpage.jurusan.programkeahlian');
+        $data=Jurusan::all();
+        return view('landingpage.jurusan.programkeahlian',compact('data'));
     }
 }

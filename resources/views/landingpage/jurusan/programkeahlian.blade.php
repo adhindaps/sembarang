@@ -8,23 +8,51 @@
         <div class="container">
             <div class="title-area text-center"><span class="sub-title">Semua</span>
                 <h2 class="sec-title fw-semibold text-white">Bidang Keahlian</h2>
-            </div>
+            </div> <tbody>
+                @php
+                $no = 1;
+            @endphp
+            @foreach ($data as $row)
             <div class="row gy-4 justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-grid">
-                        <img class="gg" src="{{asset ('foto/sija.png')}}" alt="icon">
+                            <tr>
+                                <th scope="row">{{ $no++ }}</th>
+                        <img alt=" " src="foto/{{ $row->foto }}"width="100px" alt="icon">
                         <br/>
                         <br/>
-                        <h3 class="feature-grid_title">Sistem Informasi, Jaringan & Aplikasi</h3>
-                        <p class="overflow" class="feature-grid_text">Sistem Informatika Jaringan dan Aplikasi (SIJA) merupakan satu-satunya program keahlian di SMK Negeri 1 Dlanggu Mojokerto yang menjalankan program SMK 4 tahun.
-
-                            Program keahlian SIJA berdiri sejak tahun 2017 dengan jumlah sampai saat ini sebanyak 136 siswa .</p>
-                         <div class="text-center mt-20 mt-xl-5">
-                            <a href="sija" class="as-btn">selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
+                        <h3 class="feature-grid_title"><td>{{ $row->jurusan }}</td></h3>
+                        <div class="overflow"class="feature-grid_text"><td>{!! $row->deskripsi !!}</td></div>
+                        <div class="text-center mt-20 mt-xl-5">
+                            <a href="rpl" class="as-btn">selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                @endforeach
+            </tbody>
+                {{-- <div class="col-lg-4 col-md-6">
+                    <div class="feature-grid">
+                        <br/>
+                        <br/>
+                        <thead>
+                        </thead>
+                        <tbody>
+                            @php
+                            $no = 1;
+                        @endphp
+                        @foreach ($data as $row)
+                            <tr>
+                                <th scope="row">{{ $no++ }}</th>
+                                <td>  <img alt=" " src="foto/{{ $row->foto }}"width="100px"> </td>
+                                <td>{{ $row->jurusan }}</td>
+                                <td>{!! $row->deskripsi !!}</td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                    </div>
+                </div> --}}
+                {{-- <div class="col-lg-4 col-md-6">
                     <div class="feature-grid">
                         <img class="gg" src="{{asset ('foto/rpl-remove.png')}}" alt="icon">
                         <br/>
@@ -72,7 +100,7 @@
                             <a href="tb" class="as-btn">selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

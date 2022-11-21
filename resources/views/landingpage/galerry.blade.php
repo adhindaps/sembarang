@@ -17,120 +17,18 @@
     <div class="space">
         <div class="container">
             <div class="row gy-4 masonary-active">
-                <div class="col-md-2 col-xxl-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img src="mpls/wd.jpg" width="5" height="6"
-                                alt="gallery image">
-                            <a href="mpls/wd.jpg" class="gallery-btn popup-image">
-                                <i class="fas fa-eye"></i></a>
-                        </div>
-                        <div class="gallery-content"><span class="gallery-tag">Kunjungan Kebun Coklat</span></div>
-                    </div>
-                </div>
+                @foreach ( $data as $foto )
                 <div class="col-md-2 col-xxl-4 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img"><img
-                                src="http://smkn1dlanggu.sch.id/websmk/asset/foto_berita/IMG_20221110_075714.jpg"
+                                src="foto/{{ $foto->fotokgt }}"
                                 alt="gallery image"> <a
-                                href="http://smkn1dlanggu.sch.id/websmk/asset/foto_berita/IMG_20221110_075714.jpg"
+                                href="foto/{{ $foto->fotokgt }}"
                                 class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content"><span class="gallery-tag">Upacara 10 November</span></div>
+                        <div class="gallery-content"><span class="gallery-tag"><h4 class="card-title">{{$foto->judul}}</h4></span></div>
                     </div>
                 </div>
-                <div class="col-md-2 col-xxl-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img
-                                src="{{ asset('1/yeye/html/acadu/demo/assets/img/insta/1.jpg') }}" alt="gallery image">
-                            <a href="{{ asset('1/yeye/html/acadu/demo/assets/img/insta/1.jpg') }}"
-                                class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content"><span class="gallery-tag">UKK</span></div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xxl-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img src="mpls/9.jpg" alt="gallery image"> <a href="mpls/9.jpg"
-                                class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content"><span class="gallery-tag">Persiapan Gerak jalan</span></div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xxl-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img src="mpls/3.jpg" alt="gallery image"> <a href="mpls/3.jpg"
-                                class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content"><span class="gallery-tag">Upacara MPLS</span></div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xxl-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img src="mpls/7.jpg" alt="gallery image"> <a href="mpls/7.jpg"
-                                class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content"><span class="gallery-tag">Upacara MPLS</span></div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xxl-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img
-                                src="http://www.smkn1dlanggu.sch.id/websmk/asset/img_galeri/istighosah_2.jpg"
-                                alt="gallery image"> <a
-                                href="http://www.smkn1dlanggu.sch.id/websmk/asset/img_galeri/istighosah_2.jpg"
-                                class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content"><span class="gallery-tag">Istighosah Akbar di pimpin oleh Ustad Khoirul</span></div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xxl-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img
-                                src="http://www.smkn1dlanggu.sch.id/websmk/asset/img_galeri/IMG-20170504-WA0016.jpg"
-                                alt="gallery image"> <a
-                                href="http://www.smkn1dlanggu.sch.id/websmk/asset/img_galeri/IMG-20170504-WA0016.jpg"
-                                class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content"><span class="gallery-tag">Berbagi kebahagiaan dengan yang membutuhkan</span></div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xxl-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img src="mpls/8.jpg" alt="gallery image"> <a href="mpls/8.jpg"
-                                class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content"><span class="gallery-tag">Latihan PBB </span></div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xxl-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img
-                                src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/ki_1_(2).jpg"
-                                alt="gallery image"> <a
-                                href="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/ki_1_(2).jpg"
-                                class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content"><span class="gallery-tag">Kunjungan Industri SIJA</span></div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xxl-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img src="mpls/osis.jpg" alt="gallery image"> <a
-                                href="mpls/osis.jpg" class="gallery-btn popup-image"><i class="fas fa-eye"></i></a>
-                        </div>
-                        <div class="gallery-content"><span class="gallery-tag">Bagi-Bagi Takjil Bersama Osis</span></div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xxl-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img
-                                src="http://smkn1dlanggu.sch.id/websmk/asset/foto_berita/pbb.jpg" alt="gallery image">
-                            <a href="http://smkn1dlanggu.sch.id/websmk/asset/foto_berita/pbb.jpg"
-                                class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content"><span class="gallery-tag">Lomba Paskibraka</span></div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xxl-4 filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img
-                                src="http://smkn1dlanggu.sch.id/websmk/asset/foto_berita/sedekah_jajan_2.jpg"
-                                alt="gallery image"> <a
-                                href="http://smkn1dlanggu.sch.id/websmk/asset/foto_berita/sedekah_jajan_2.jpg"
-                                class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content"><span class="gallery-tag">Sedekah Jajan Kegiatan Terobosan Remas Masjid</span></div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

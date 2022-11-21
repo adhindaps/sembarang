@@ -85,7 +85,7 @@ class ExtraController extends Controller
         $data = DB::table('extras')->where('id',$id);
         if($request->hasFile('fotoex')){
             $pindah = $request->file('fotoex')->move(public_path().'\storage', $request->file('fotoex')->getClientOriginalName());
-            $data = jurusan::find($id)->update([
+            $data = Extra::find($id)->update([
                 'fotoex' => $request->file('fotoex')->getClientOriginalName(),
                'extra' => $request->extra,
                'deskripsi' => $request->deskripsi,

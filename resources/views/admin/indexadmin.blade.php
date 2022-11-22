@@ -203,7 +203,7 @@
                                         class="hide-menu"> BKK
                                     </span></a>
                             </li>
-                            <li class="sidebar-item"><a href="form-input-grid.html" class="sidebar-link"><span
+                            <li class="sidebar-item"><a href="bkkindex" class="sidebar-link"><span
                                         class="hide-menu"> BKK Detail
                                     </span></a>
                             </li>
@@ -221,7 +221,7 @@
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                     class="hide-menu">Fasilitas </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="beasiswaindex" class="sidebar-link"><span
                                             class="hide-menu"> Beasiswa
                                         </span></a>
                                 </li>
@@ -233,7 +233,7 @@
                                             class="hide-menu"> SILARAS
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="/siswapres" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="echoindex" class="sidebar-link"><span
                                     class="hide-menu"> Echo
                                 </span></a>
                         </li>

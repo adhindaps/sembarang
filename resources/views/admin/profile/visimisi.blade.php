@@ -29,7 +29,7 @@
                                 <tr>
                                     <th scope="vm">{{ $no++ }}</th>
                                     <td>{{ $vm->nama }}</td>
-                                    <td>{!! $vm->deskripsi !!}</td>
+                                    <td style="word-break: break-word !important">{!! $vm->deskripsi !!}</td>
                                     <td><a href="/editvisi/ {{ $vm->id }}" class="btn btn-warning">Ubah</a></td>
                                 </tr>
                                 @endforeach

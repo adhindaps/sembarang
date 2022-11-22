@@ -31,7 +31,7 @@
                                     <th scope="row">{{ $no++ }}</th>
                                     <td>  <img alt=" " src="foto/{{ $row->foto }}"width="100px"> </td>
                                     <td>{{ $row->jurusan }}</td>
-                                    <td>{!! $row->deskripsi !!}</td>
+                                    <td style="word-break: break-word;">{!! $row->deskripsi !!}</td>
                                     <td><a href="/jurusanedit/{{ $row->id }}" class="btn btn-warning">Ubah</a></td>
                                 </tr>
                                 @endforeach

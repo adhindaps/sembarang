@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\sudutecho;
 use App\Models\Profile;
 use App\Models\blog;
 use Illuminate\Http\Request;
@@ -17,16 +18,6 @@ class ProfileController extends Controller
     {
         $data = Profile::where('id','=',1)->firstOrFail();
         return view('admin.profile.identitas', compact(['data']));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
     }
 
     /**
@@ -63,27 +54,6 @@ class ProfileController extends Controller
     
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Profile  $profile
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Profile $profile)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Profile  $profile
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Profile $profile)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
@@ -99,15 +69,10 @@ class ProfileController extends Controller
         return redirect('identitas');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Profile  $profile
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Profile $profile)
+    public function echoindex()
     {
-        //
+        $data = sudutecho::where('id','=',1)->firstOrFail();
+        return view('admin.fasilitas.echoindex',compact('data'));
     }
 
      public function blogindex()
@@ -163,4 +128,27 @@ class ProfileController extends Controller
         return redirect('jurusanindex')->with('sukses','Updatedata!');
     }
     }
+    public function echostore(Request $request)
+    {
+        $this->validate($request, [
+            'foto' => 'required',
+            'judul' => 'required',
+            'deskripsi' => 'required',
+        ]);
+        $data = sudutecho::create([
+            'foto' => $request->foto,
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        return redirect('echoindex');
+    
+    }
+
+    public function echoupdate(Request $request)
+    {
+        $data=sudutecho::find($request->id);
+        $data->update($request->all());
+        return redirect('echoindex');
+    }
+    
 }

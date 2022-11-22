@@ -80,17 +80,32 @@ Route::post('/blogstore',[ProfileController::class, 'blogstore'])->name('blogsto
 Route::get('/blogedit/{id}',[ProfileController::class, 'blogedit'])->name('blogedit');
 Route::post('/blogupdate/{id}',[ProfileController::class, 'blogupdate'])->name('blogupdate');
 
+Route::get('/echoindex',[ProfileController::class, 'echoindex'])->name('echoindex');
+Route::post('/echostore',[ProfileController::class, 'echostore'])->name('echostore');
+Route::post('/echoupdate',[ProfileController::class, 'echoupdate'])->name('echoupdate');
+
 Route::get('/indexvisi',[VisiController::class, 'indexvisi'])->name('indexvisi');
 Route::get('/createvisi',[VisiController::class, 'createvisi'])->name('createvisi');
 Route::post('/storevisi',[VisiController::class, 'storevisi']);
 Route::get('/editvisi/{id}',[VisiController::class, 'show'])->name('show');
 Route::post('/updatevisi/{id}',[VisiController::class, 'updatevisi']);
 
+Route::get('/bkkindex',[SejarahController::class, 'bkkindex'])->name('bkkindex');
+Route::get('/bkkcreate',[SejarahController::class, 'bkkcreate'])->name('bkkcreate');
+Route::post('/bkkstore',[SejarahController::class, 'bkkstore'])->name('bkkstore');
+Route::get('/bkkedit/{id}',[SejarahController::class, 'bkkedit'])->name('bkkedit');
+Route::post('/bkkupdate/{id}',[SejarahController::class, 'bkkupdate'])->name('bkkupdate');
+Route::get('/bkkhapus',[SejarahController::class, 'bkkhapus'])->name('bkkhapus');
+
+Route::get('/beasiswaindex',[SejarahController::class, 'beasiswaindex'])->name('beasiswaindex');
+Route::post('/beasiswastore',[SejarahController::class, 'beasiswastore'])->name('beasiswastore');
+Route::post('/beasiswaupdate',[SejarahController::class, 'beasiswaupdate'])->name('beasiswaupdate');
+
 Route::get('/sejarahindex',[SejarahController::class, 'sejarahindex'])->name('sejarahindex');
-Route::get('/sejarahcreate',[SejarahController::class, 'sejarahcreate'])->name('sejarahcreate');
-Route::post('/sejarahstore',[SejarahController::class, 'sejarahstore']);
-Route::get('/sejarahedit/{id}',[SejarahController::class, 'sejarahedit']);
-Route::post('/updatesjr/{id}',[SejarahController::class, 'updatesjr']);
+// Route::get('/sejarahcreate',[SejarahController::class, 'sejarahcreate'])->name('sejarahcreate');
+Route::post('/sejarahstore',[SejarahController::class, 'sejarahstore'])->name('sejarahstore');
+// Route::get('/sejarahedit/{id}',[SejarahController::class, 'sejarahedit']);
+Route::post('/updatesjr',[SejarahController::class, 'updatesjr'])->name('updatesjr');
 
 Route::get('/jurusanindex',[JurusanController::class, 'jurusanindex'])->name('jurusanindex');
 Route::get('/jurusancreate',[JurusanController::class, 'jurusancreate'])->name('jurusancreate');

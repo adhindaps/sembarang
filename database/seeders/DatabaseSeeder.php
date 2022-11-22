@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Profile;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,12 +16,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(UserSeeder::class);
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $profile=Profile::create([
+            'nama'=>'SMK DLANGGU',
+            'status'=>'NEGERI',
+            'NPNS'=>'123',
+            'akreditasi'=>'A',
+            'NSS'=>'123',
+            'alamat'=>'dlanggu',
+            'kode'=>'3671',
+            'no'=>'087465353',
+            'email'=>'smkdlanggu@gmail.com',
+        ]);
     }
 }

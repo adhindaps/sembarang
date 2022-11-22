@@ -72,6 +72,7 @@ Route::get('/programkeahlian',[LandingController::class, 'programkeahlian'])->na
 //Profile Sekolah Admin
 Route::get('/identitas',[ProfileController::class, 'identitas'])->name('identitas');
 Route::post('/store',[ProfileController::class, 'store'])->name('store');
+Route::post('/updateprofile',[ProfileController::class, 'updateprofile'])->name('updateprofile');
 
 Route::get('/indexvisi',[VisiController::class, 'indexvisi'])->name('indexvisi');
 Route::get('/createvisi',[VisiController::class, 'createvisi'])->name('createvisi');

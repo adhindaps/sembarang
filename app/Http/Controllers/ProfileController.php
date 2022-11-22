@@ -14,7 +14,7 @@ class ProfileController extends Controller
      */
     public function identitas()
     {
-        $data = Profile::all();
+        $data = Profile::where('id','=',1)->firstOrFail();
         return view('admin.profile.identitas', compact(['data']));
     }
 
@@ -91,9 +91,11 @@ class ProfileController extends Controller
      * @param  \App\Models\Profile  $profile
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Profile $profile)
+    public function updateprofile(Request $request, Profile $profile)
     {
-        //
+        $data=Profile::find($request->id);
+        $data->update($request->all());
+        return redirect('identitas');
     }
 
     /**

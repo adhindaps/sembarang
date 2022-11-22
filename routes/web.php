@@ -74,6 +74,12 @@ Route::get('/identitas',[ProfileController::class, 'identitas'])->name('identita
 Route::post('/store',[ProfileController::class, 'store'])->name('store');
 Route::post('/updateprofile',[ProfileController::class, 'updateprofile'])->name('updateprofile');
 
+Route::get('/blogindex',[ProfileController::class, 'blogindex'])->name('blogindex');
+Route::get('/blogcreate',[ProfileController::class, 'blogcreate'])->name('blogcreate');
+Route::post('/blogstore',[ProfileController::class, 'blogstore'])->name('blogstore');
+Route::get('/blogedit/{id}',[ProfileController::class, 'blogedit'])->name('blogedit');
+Route::post('/blogupdate/{id}',[ProfileController::class, 'blogupdate'])->name('blogupdate');
+
 Route::get('/indexvisi',[VisiController::class, 'indexvisi'])->name('indexvisi');
 Route::get('/createvisi',[VisiController::class, 'createvisi'])->name('createvisi');
 Route::post('/storevisi',[VisiController::class, 'storevisi']);

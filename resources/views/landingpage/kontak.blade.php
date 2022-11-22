@@ -90,26 +90,7 @@
         </div>
     </section>
 
-    <section class="" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
-        <div class="container">
-            <div class="cta-wrap">
-                <div class="row flex-row-reverse justify-content-between">
-                    <div class="col-lg-6">
-                        <div class="cta-img"><img src="foto/hal1.jpg" alt="Image"></div>
-                    </div>
-                    <div class="col-lg-6 align-self-center">
-                        <div class="cta-content">
-                            <h2 class="fs-40 fw-light text-theme mb-10">SMK N 1 DLANGGU</h2>
-                            <h2 class="mb-25">MOJOKERTO</h2><a href="/" class="as-btn">Beranda</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="shape-mockup movingX z-index-n1" data-bottom="0%" data-left="44%"><img
-                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/shape/dot_shape_1.png') }}" alt="shapes">
-                </div>
-            </div>
-        </div>
-    </section>
+
     @include('landingpage.layout.footer')
     <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/app.min.js') }}"></script>

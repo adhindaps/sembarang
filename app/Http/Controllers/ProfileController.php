@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Profile;
+use App\Models\blog;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
@@ -107,5 +108,59 @@ class ProfileController extends Controller
     public function destroy(Profile $profile)
     {
         //
+    }
+
+     public function blogindex()
+    {
+        $data = blog::where('id','=',1)->firstOrFail();
+        return view('admin.blogindex', compact(['data']));
+    }
+
+    public function blogcreate()
+    {
+        
+        return view('admin.blogcreat');
+    }
+
+    public function blogstore(Request $request)
+    {
+        if($request->hasFile('foto')){
+            $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
+        $data = blog::create([
+            'foto' => $request->file('foto')->getClientOriginalName(),
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        $data->foto = $request->file('foto')->getClientOriginalName();
+    }
+        return redirect()->route('blogindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function blogedit($id)
+    {
+        $data = blog::find($id);
+        $data = blog::findOrfail($id);
+        return view('admin.blognedit',compact('data'));
+    }
+
+    public function blogupdate($id, Request $request, Profile $blog)
+    {
+        $data = DB::table('blogs')->where('id',$id);
+        if($request->hasFile('foto')){
+            $pindah = $request->file('foto')->move(public_path().'\storage', $request->file('foto')->getClientOriginalName());
+            $data = blog::find($id)->update([
+                'foto' => $request->file('foto')->getClientOriginalName(),
+               'blog' => $request->blog,
+               'deskripsi' => $request->deskripsi,
+              
+            ]);
+        return redirect('jurusanindex')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        return redirect('jurusanindex')->with('sukses','Updatedata!');
+    }
     }
 }

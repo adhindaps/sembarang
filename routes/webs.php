@@ -44,12 +44,9 @@ Route::get('/galerry',[LandingController::class, 'galerry'])->name('galerry');
 Route::get('/kontak',[LandingController::class, 'kontak'])->name('kontak');
 Route::get('/profile',[LandingController::class, 'profile'])->name('profile');
 Route::get('/visi',[LandingController::class, 'visi'])->name('visi');
-<<<<<<< Updated upstream:routes/web.php
 Route::get('/dataguru',[LandingController::class, 'dataguru'])->name('dataguru');
 Route::get('/blog',[LandingController::class, 'blog'])->name('blog');
 Route::get('/events',[LandingController::class, 'events'])->name('events');
 Route::get('/detailevents',[LandingController::class, 'detailevents'])->name('detailevents');
-=======
 Route::get('/echo',[LandingController::class, 'echo'])->name('echo');
 Route::get('/blogdetail',[LandingController::class, 'blogdetail'])->name('blogdetail');
->>>>>>> Stashed changes:routes/webs.php

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('fotoex');
             $table->string('extra');
-            $table->string('deskripsi');
+            $table->text('deskripsi');
             $table->timestamps();
         });
     }

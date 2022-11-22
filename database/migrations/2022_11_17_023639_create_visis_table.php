@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('visis', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('deskripsi');
+            $table->text('deskripsi');
             $table->timestamps();
         });
     }

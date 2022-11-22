@@ -6,39 +6,47 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">SEJARAH SEKOLAH</h4>
-                    <h6 class="card-subtitle">
-                      </h6>
-                      <a href="/sejarahcreate" class="btn btn-primary" >Tambah </a> 
+                    <form action="/updatesjr" method="POST" enctype="multipart/form-data" >  
+                        @csrf
+                    <h4 class="card-title">Sejarah sekolah</h4>
+                    <input type="text" value="{{$data->id}}" name="id" class="form-control" id="inputPassword4" placeholder="" hidden>
 
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Nama</th>
-                                    <th scope="col md 6">Deskripsi</th>
-                                    <th scope="text-right">Aksi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @php
-                                $no = 1;
-                            @endphp
-                            @foreach ($data as $data)
-                                <tr>
-                                    <th scope="data">{{ $no++ }}</th>
-                                    <td>{{ $data->nama }}</td>
-                                    <td>{!! $data->deskripsi !!}</td>
-                                    <td><a href="/sejarahedit/ {{ $data->id }}" class="btn btn-warning">Ubah</a></td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                    </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                              <label for="inputPassword4">Nama</label>
+                              <input type="text" value="{{$data->nama}}" name="nama" class="form-control" id="inputPassword4"  placeholder="">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="editor">Deskripsi</label>
+                                <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
+                              </div>
+                          </div>
+                          <div class="form-actions">
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-info">Update</button>
+                             
+                            </div>
+                        </div>
+                    </form>
+                        </div>
                 </div>
             </div>
+        </div>
+    </div>
     
     </div>
     </div>
+@endsection
+
+@section('ck-editor')
+<script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
+
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+
 @endsection

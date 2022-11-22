@@ -6,22 +6,21 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Ubah Jurusan</h4>
-                    <form action="/jurusanupdate/{{ $data->id }}" method="POST" enctype="multipart/form-data" >  
+                    <h4 class="card-title">BURSA KERJA KHUSUS</h4>
+                    <form action="/bkkstore" method="POST" enctype="multipart/form-data" >  
                         @csrf
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                              <label for="inputPassword4">Foto</label>
-                              <img class="img mb-3" src="{{ asset('foto/' . $data->foto) }}" alt="" style="width: 100px;">
-                              <input type="file" name="foto" class="form-control" id="foto" aria-describedby="emailHelp" value="{{ $data->foto }}">
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label for="inputPassword4">Jurusan</label>
-                                <input type="text" name="jurusan" class="form-control" id="inputPassword4" value="{{ $data->jurusan }}"  placeholder="">
+                                <label for="inputPassword4">Foto</label>
+                                <input type="file" id="fotobk" name="fotobk" class="form-control" >
                               </div>
                             <div class="form-group col-md-12">
+                              <label for="inputPassword4">Perusahaan</label>
+                              <input type="text" name="perusahaan" class="form-control" id="inputPassword4"  placeholder="">
+                            </div>
+                            <div class="form-group col-md-12">
                                 <label for="editor">Deskripsi</label>
-                                <textarea name="deskripsi" id="editor">{!!  $data->deskripsi !!}</textarea>
+                                <textarea name="deskripsi" id="editor"></textarea>
                               </div>
                           </div>
                           <div class="form-actions">

@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Sejarah;
+use App\Models\Bkk;
+use App\Models\Beasiswa;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SejarahController extends Controller
 {
@@ -14,92 +17,115 @@ class SejarahController extends Controller
      */
     public function sejarahindex()
     {
-        $data=Sejarah::all();
+        $data = Sejarah::where('id','=',1)->firstOrFail();
         return view('admin.profile.sejarahindex',compact('data'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function sejarahcreate()
-    {
-        return view('admin.profile.sejarahcreate');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function sejarahstore(Request $request)
     {
+        $this->validate($request, [
+            'nama' => 'required',
+            'deskripsi' => 'required',
+        ]);
         $data = Sejarah::create([
             'nama' => $request->nama,
             'deskripsi' => $request->deskripsi,
         ]);
-        return redirect()->route('sejarahindex')->with('success', 'Data Berhasil Di Tambahkan');
+        return redirect('sejarahindex');
+    
     }
-    public function sejarahedit($id)
+    
+    public function updatesjr(Request $request, Sejarah $sejarah)
     {
-        $data = Sejarah::find($id);
-        $data = Sejarah::findOrfail($id);
-        return view('admin.profile.editsejarah',compact('data'));
+        $data=Sejarah::find($request->id);
+        $data->update($request->all());
+        return redirect('sejarahindex');
     }
-    public function updatesjr(Request $request, $id)
+
+    public function beasiswaindex()
     {
-        $data = Sejarah::find($id); 
-        $data ->update([
-            'nama' => $request->nama,
+        $data = Beasiswa::where('id','=',1)->firstOrFail();
+        return view('admin.fasilitas.beasiswaindex',compact('data'));
+    }
+    public function beasiswastore(Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required',
+            'desk' => 'required',
+        ]);
+        $data = Sejarah::create([
+            'name' => $request->name,
+            'desk' => $request->desk,
+        ]);
+        return redirect('beasiswaindex');
+    
+    }
+
+    public function beasiswaupdate(Request $request)
+    {
+        $data=Beasiswa::find($request->id);
+        $data->update($request->all());
+        return redirect('beasiswaindex');
+    }
+    
+    public function bkkindex()
+    {
+        $data=Bkk::all();
+        return view('admin.sekolah.bkkindex',compact('data'));
+    }
+
+    public function bkkcreate()
+    {
+        return view('admin.sekolah.bkkcreate');
+    }
+
+    public function bkkstore(Request $request)
+    {
+        if($request->hasFile('fotobk')){
+            $request->file('fotobk')->move('foto/', $request->file('fotobk')->getClientOriginalName());
+        $data = Bkk::create([
+            'fotobk' => $request->file('fotobk')->getClientOriginalName(),
+            'perusahaan' => $request->perusahaan,
             'deskripsi' => $request->deskripsi,
         ]);
-        return redirect()->route('sejarahindex')->with('success', 'Data Berhasil Di ubah');
+        $data->fotobk = $request->file('fotobk')->getClientOriginalName();
+    }
+        return redirect()->route('bkkindex')->with('success', 'Data Berhasil Di Tambahkan');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Sejarah  $sejarah
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Sejarah $sejarah)
+    public function bkkedit($id)
     {
-        //
+        $data = Bkk::find($id);
+        $data = Bkk::findOrfail($id);
+        return view('admin.sekolah.bkkedit',compact('data'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Sejarah  $sejarah
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Sejarah $sejarah)
+    public function bkkupdate($id,Request $request)
     {
-        //
+        $data = DB::table('bkks')->where('id',$id);
+        if($request->hasFile('fotobkk')){
+            $pindah = $request->file('fotobkk')->move(public_path().'\storage', $request->file('fotobkk')->getClientOriginalName());
+            $data = Bkk::find($id)->update([
+                'fotobkk' => $request->file('fotobkk')->getClientOriginalName(),
+               'perusahaan' => $request->perusahaan,
+               'deskripsi' => $request->deskripsi,
+              
+            ]);
+        return redirect('bkkindex')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
+            'perusahaan' => $request->perusahaan,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        return redirect('bkkindex')->with('sukses','Updatedata!');
+    }
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Sejarah  $sejarah
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Sejarah $sejarah)
+    public function bkkhapus($id)
     {
-        //
+        $data = Bkk::find($id);
+        $data->delete();
+        return redirect('/bkkindex');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Sejarah  $sejarah
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Sejarah $sejarah)
-    {
-        //
-    }
 }

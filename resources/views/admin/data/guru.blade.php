@@ -32,7 +32,13 @@
                                     <td>  <img alt=" " src="foto/{{ $data->fotoguru }}"width="100px" > </td>
                                     <td>{{ $data->nama }}</td>
                                     <td>{!! $data->jabatan !!}</td>
-                                    <td><a href="/guruedit/{{ $data->id }}" class="btn btn-warning">Ubah</a></td>
+                                    <td><a href="/guruedit/{{ $data->id }}" class="btn btn-warning">
+                                        <i class="fas fa-pencil-alt"></i></a>
+                                    
+                                        <a href="#" class="btn btn-danger deleteguru"
+                                        data-id="{{ $data->id }}"
+                                        data-guru="{{ $data->guru }}">
+                                        <i class=" fas fa-trash"></i></a></td>
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -43,4 +49,30 @@
     
 </div>
 </div>
+
+@include('admin.footeradmin')
+<script>
+    $('.deleteguru').click(function() {
+        var guruid = $(this).attr('data-id');
+        var guru = $(this).attr('data-guru');
+        Swal.fire({
+            title: 'Apakah Kamu yakin?',
+            text: "Menghapus data guru " + guru + "",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location = "/gurudelete/" + guruid + ""
+                Swal.fire(
+                    'Terhapus!',
+                    'Data guru ' + guru + ' terhapus',
+                    'success'
+                )
+            }
+        })
+    });
+    </script>
 @endsection

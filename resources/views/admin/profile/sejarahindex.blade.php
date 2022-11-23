@@ -36,6 +36,7 @@
     
     </div>
     </div>
+    @include('admin.footeradmin')
 @endsection
 
 @section('ck-editor')

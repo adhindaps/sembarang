@@ -107,8 +107,11 @@ class GuruController extends Controller
      * @param  \App\Models\Guru  $guru
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Guru $guru)
+    public function deleteguru(Guru $guru)
     {
-        //
+        $data = Guru::find($id);
+        $data->delete();
+        return redirect()->route('guruindex')->with('success', 'Data Berhasil Dihapus');
+    
     }
 }

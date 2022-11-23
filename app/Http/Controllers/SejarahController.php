@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Sejarah;
 use App\Models\Bkk;
+use App\Models\Axio;
+use App\Models\Silaras;
 use App\Models\Beasiswa;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -68,12 +70,68 @@ class SejarahController extends Controller
         return redirect('beasiswaindex');
     }
     
+    public function axioindex()
+    {
+        $data = Axio::where('id','=',1)->firstOrFail();
+        return view('admin.fasilitas.axioindex',compact('data'));
+    }
+    public function axiostore(Request $request)
+    {
+        $this->validate($request, [
+            'judul' => 'required',
+            'deskaxio' => 'required',
+        ]);
+        $data = Sejarah::create([
+            'judul' => $request->judul,
+            'deskaxio' => $request->deskaxio,
+        ]);
+        return redirect('axioindex');
+    
+    }
+
+    public function axioupdate(Request $request)
+    {
+        $data=axio::find($request->id);
+        $data->update($request->all());
+        return redirect('axioindex');
+    }
+    
+    public function silarasindex()
+    {
+        $data = silaras::where('id','=',1)->firstOrFail();
+        return view('admin.fasilitas.silarasindex',compact('data'));
+    }
+    public function silarasstore(Request $request)
+    {
+        $this->validate($request, [
+            'nama' => 'required',
+            'judul' => 'required',
+            'deskripsilaras' => 'required',
+        ]);
+        $data = Silaras::create([
+            'nama' => $request->nama,
+            'judul' => $request->judul,
+            'deskripsilaras' => $request->deskripsilaras,
+        ]);
+        return redirect('silarasindex');
+    
+    }
+
+    public function silarasupdate(Request $request)
+    {
+        $data=Silaras::find($request->id);
+        $data->update($request->all());
+        return redirect('silarasindex');
+    }
+    
+
     public function bkkindex()
     {
         $data=Bkk::all();
         return view('admin.sekolah.bkkindex',compact('data'));
     }
 
+    
     public function bkkcreate()
     {
         return view('admin.sekolah.bkkcreate');

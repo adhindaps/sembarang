@@ -107,8 +107,11 @@ class JurusanController extends Controller
      * @param  \App\Models\Jurusan  $jurusan
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Jurusan $jurusan)
+    public function destroy($id)
     {
-        //
+        $data = Jurusan::find($id);
+        $data->delete();
+        return redirect()->route('jurusanindex')->with('success', 'Data Berhasil Dihapus');
+    
     }
 }

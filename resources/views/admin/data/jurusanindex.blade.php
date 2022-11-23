@@ -32,7 +32,13 @@
                                     <td>  <img alt=" " src="foto/{{ $row->foto }}"width="100px"> </td>
                                     <td>{{ $row->jurusan }}</td>
                                     <td style="word-break: break-word;">{!! $row->deskripsi !!}</td>
-                                    <td><a href="/jurusanedit/{{ $row->id }}" class="btn btn-warning">Ubah</a></td>
+                                    <td><a href="/jurusanedit/{{ $row->id }}" class="btn btn-warning">
+                                         <i class="fas fa-pencil-alt"></i></a>
+                                    
+                                        <a href="#" class="btn btn-danger deletejurusan"
+                                        data-id="{{ $row->id }}"
+                                        data-jurusan="{{ $row->jurusan }}">
+                                        <i class=" fas fa-trash"></i></a></td>
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -43,4 +49,39 @@
     
 </div>
 </div>
+
+@include('admin.footeradmin')
+<script>
+    $('.deletejurusan').click(function() {
+        var jurusanid = $(this).attr('data-id');
+        var jurusan = $(this).attr('data-jurusan');
+        Swal.fire({
+            title: 'Apakah Kamu yakin?',
+            text: "Menghapus data jurusan " + jurusan + "",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location = "/jurusandelete/" + jurusanid + ""
+                Swal.fire(
+                    'Terhapus!',
+                    'Data jurusan ' + jurusan + ' terhapus',
+                    'success'
+                )
+            }
+        })
+    });
+    </script>
 @endsection
+
+{{-- main js --}}
+{{-- <script>
+@if(Session::get('success'))
+toastr.success("{{ Session::get('success') }}")
+@endif
+</script> --}}
+   
+

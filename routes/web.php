@@ -101,6 +101,14 @@ Route::get('/beasiswaindex',[SejarahController::class, 'beasiswaindex'])->name('
 Route::post('/beasiswastore',[SejarahController::class, 'beasiswastore'])->name('beasiswastore');
 Route::post('/beasiswaupdate',[SejarahController::class, 'beasiswaupdate'])->name('beasiswaupdate');
 
+Route::get('/axioindex',[SejarahController::class, 'axioindex'])->name('axioindex');
+Route::post('/axiostore',[SejarahController::class, 'axiostore'])->name('axiostore');
+Route::post('/axioupdate',[SejarahController::class, 'axioupdate'])->name('axioupdate');
+
+Route::get('/silarasindex',[SejarahController::class, 'silarasindex'])->name('silarasindex');
+Route::post('/silarasstore',[SejarahController::class, 'silarasstore'])->name('silarasstore');
+Route::post('/silarasupdate',[SejarahController::class, 'silarasupdate'])->name('silarasupdate');
+
 Route::get('/sejarahindex',[SejarahController::class, 'sejarahindex'])->name('sejarahindex');
 // Route::get('/sejarahcreate',[SejarahController::class, 'sejarahcreate'])->name('sejarahcreate');
 Route::post('/sejarahstore',[SejarahController::class, 'sejarahstore'])->name('sejarahstore');
@@ -112,12 +120,14 @@ Route::get('/jurusancreate',[JurusanController::class, 'jurusancreate'])->name('
 Route::post('/jurusanstore',[JurusanController::class, 'jurusanstore'])->name('jurusanstore');
 Route::get('/jurusanedit/{id}',[JurusanController::class, 'jurusanedit'])->name('jurusanedit');
 Route::post('/jurusanupdate/{id}',[JurusanController::class, 'jurusanupdate'])->name('jurusanupdate');
+Route::get('/jurusandelete/{id}',[JurusanController::class, 'destroy'])->name('destroy');
 
 Route::get('/guruindex',[GuruController::class, 'guruindex'])->name('guruindex');
 Route::get('/gurucreate',[GuruController::class, 'gurucreate'])->name('gurucreate');
 Route::post('/gurustore',[GuruController::class, 'gurustore'])->name('gurustore');
 Route::get('/guruedit/{id}',[GuruController::class, 'guruedit'])->name('guruedit');
 Route::post('/guruupdate/{id}',[GuruController::class, 'guruupdate'])->name('guruupdate');
+Route::post('/deleteguru/{id}',[GuruController::class, 'deleteguru'])->name('deleteguru');
 
 Route::get('/galeryindex',[GaleryController::class, 'galeryindex'])->name('galeryindex');
 Route::get('/galerycreate',[GaleryController::class, 'galerycreate'])->name('galerycreate');

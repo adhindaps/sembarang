@@ -241,4 +241,5 @@
     <!-- End Top Leader Table -->
     <!-- *************************************************************** -->
 </div>
+@include('admin.footeradmin')
 @endsection

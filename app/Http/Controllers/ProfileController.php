@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\sudutecho;
 use App\Models\Profile;
 use App\Models\blog;
+use App\Models\Event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProfileController extends Controller
 {
@@ -75,9 +77,12 @@ class ProfileController extends Controller
         return view('admin.fasilitas.echoindex',compact('data'));
     }
 
+
+
+
      public function blogindex()
     {
-        $data = blog::where('id','=',1)->firstOrFail();
+        $data=blog::all();
         return view('admin.blogindex', compact(['data']));
     }
 
@@ -105,7 +110,7 @@ class ProfileController extends Controller
     {
         $data = blog::find($id);
         $data = blog::findOrfail($id);
-        return view('admin.blognedit',compact('data'));
+        return view('admin.blogedit',compact('data'));
     }
 
     public function blogupdate($id, Request $request, Profile $blog)
@@ -115,19 +120,33 @@ class ProfileController extends Controller
             $pindah = $request->file('foto')->move(public_path().'\storage', $request->file('foto')->getClientOriginalName());
             $data = blog::find($id)->update([
                 'foto' => $request->file('foto')->getClientOriginalName(),
-               'blog' => $request->blog,
+               'judul' => $request->judul,
                'deskripsi' => $request->deskripsi,
               
             ]);
-        return redirect('jurusanindex')->with('sukses','Updatedata!');
+        return redirect('blogindex')->with('sukses','Updatedata!');
     }else{
         $data->update([
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
         ]);
-        return redirect('jurusanindex')->with('sukses','Updatedata!');
+        return redirect('blogindex')->with('sukses','Updatedata!');
     }
     }
+
+    public function deleteblog($id){
+        $data = blog::find($id);
+        $data->delete();
+        return redirect()->route('blogindex')->with('sukses','Deletedata!');
+
+    }
+
+    public function index()
+    {
+        $data = Event::all();
+        return view('eventindex', compact('data'));
+    }
+    
     public function echostore(Request $request)
     {
         $this->validate($request, [

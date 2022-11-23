@@ -246,7 +246,7 @@
             <div class="row">
                 <div class="col-xl-6">
                     <div class="event-card">
-                        <div class="event-card_img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/event/event_1_1.jpg')}}" alt="event"></div>
+                        <div class="event-card_img"> <img alt=" " src="foto/{{ $row->foto }}"width="100px"></div>
                         <div class="event-card_content">
                             <div class="event-meta">
                                 <p><i class="fal fa-location-dot"></i>Aula</p>

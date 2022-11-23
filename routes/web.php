@@ -79,6 +79,15 @@ Route::get('/blogcreate',[ProfileController::class, 'blogcreate'])->name('blogcr
 Route::post('/blogstore',[ProfileController::class, 'blogstore'])->name('blogstore');
 Route::get('/blogedit/{id}',[ProfileController::class, 'blogedit'])->name('blogedit');
 Route::post('/blogupdate/{id}',[ProfileController::class, 'blogupdate'])->name('blogupdate');
+Route::post('/deleteblog/{id}',[ProfileController::class, 'deleteblog'])->name('deleteblog');
+
+Route::get('/eventindex', [ProfileController::class, 'index'])->name('eventindex');
+Route::get('/tambahevent', [ProfileController::class, 'create'])->name('tambahevent');
+Route::post('/insertevent', [ProfileController::class, 'store'])->name('insertevent');
+Route::get('/tampilevent/{id}', [ProfileController::class, 'tampilevent'])->name('tampilevent');
+Route::post('/updateevent/{id}', [ProfileController::class, 'updateevent'])->name('updateevent');
+Route::get('/deleteevent/{id}', [ProfileController::class, 'destroy'])->name('deleteevent');
+
 
 Route::get('/echoindex',[ProfileController::class, 'echoindex'])->name('echoindex');
 Route::post('/echostore',[ProfileController::class, 'echostore'])->name('echostore');

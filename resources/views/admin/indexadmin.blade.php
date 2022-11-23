@@ -244,11 +244,11 @@
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
                                 class="hide-menu">Halaman </span></a>
                         <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                            <li class="sidebar-item"><a href="ui-buttons.html" class="sidebar-link"><span
+                            <li class="sidebar-item"><a href="blogindex" class="sidebar-link"><span
                                         class="hide-menu"> Blog
                                     </span></a>
                             </li>
-                            <li class="sidebar-item"><a href="ui-modals.html" class="sidebar-link"><span
+                            <li class="sidebar-item"><a href="eventindex" class="sidebar-link"><span
                                         class="hide-menu"> Event </span></a>
                             </li>
                             <li class="sidebar-item"><a href="galeryindex" class="sidebar-link"><span

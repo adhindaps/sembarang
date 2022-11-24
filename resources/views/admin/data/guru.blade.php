@@ -8,11 +8,10 @@
                 <div class="card-body">
                     <h4 class="card-title">DATA GURU</h4>
                     <h6 class="card-subtitle">
-                      </h6>
-                      <a href="/gurucreate" class="btn btn-primary" >Tambah </a> 
-
+                        <a href="/gurucreate" class="btn btn-primary" >Tambah </a> 
+                        <a href="https://datatables.net/"></a></h6>
                     <div class="table-responsive">
-                        <table class="table">
+                        <table id="zero_config" class="table table-striped table-bordered no-wrap">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
@@ -57,7 +56,7 @@
         var guru = $(this).attr('data-guru');
         Swal.fire({
             title: 'Apakah Kamu yakin?',
-            text: "Menghapus data guru " + guru + "",
+            text: "Menghapus guru " + guru + "",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
@@ -65,14 +64,14 @@
             confirmButtonText: 'Ya, hapus!'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location = "/gurudelete/" + guruid + ""
+                window.location = "/deleteguru/" + guruid + ""
                 Swal.fire(
                     'Terhapus!',
-                    'Data guru ' + guru + ' terhapus',
+                    'data ' + guru + ' terhapus',
                     'success'
                 )
             }
         })
     });
-    </script>
+</script>
 @endsection

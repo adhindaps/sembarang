@@ -9,8 +9,8 @@ class Extra extends Model
 {
     protected $table = 'extras';
     protected $fillable = [
-        'id','fotoex','extra','deskripsi'
+        'id','fotoex','logo','subjudul','extra','deskripsi'
     ];
-    protected $guarded = [];
+    
     use HasFactory;
 }

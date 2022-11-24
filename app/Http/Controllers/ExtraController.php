@@ -37,15 +37,22 @@ class ExtraController extends Controller
      */
     public function extrastore(Request $request)
     {
-        if($request->hasFile('fotoex')){
-            $request->file('fotoex')->move('foto/', $request->file('fotoex')->getClientOriginalName());
-        $data = Extra::create([
-            'fotoex' => $request->file('fotoex')->getClientOriginalName(),
+       $data = Extra::create([
+            'fotoex' => $request->fotoex,
+            'logo' => $request->logo,
+            'subjudul' => $request->subjudul,
             'extra' => $request->extra,
             'deskripsi' => $request->deskripsi,
         ]);
-        $data->fotoex = $request->file('fotoex')->getClientOriginalName();
-    }
+        // dd($data);
+        if($request->hasFile('fotoex')){
+            $request->file('fotoex')->move('foto/', $request->file('fotoex')->getClientOriginalName());
+        $data->fotoex = $request->file('fotoex')->getClientOriginalName(); }
+        if ($request->hasFile('logo')) {
+            $request->file('logo')->move('foto/', $request->file('logo')->getClientOriginalName());
+            $data->logo = $request->file('logo')->getClientOriginalName();
+            $data->save();
+        }
         return redirect()->route('extraindex')->with('success', 'Data Berhasil Di Tambahkan');
     }
 
@@ -81,24 +88,24 @@ class ExtraController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function extraupdate($id,Request $request, Extra $extra)
-    {
-        $data = DB::table('extras')->where('id',$id);
-        if($request->hasFile('fotoex')){
-            $pindah = $request->file('fotoex')->move(public_path().'\storage', $request->file('fotoex')->getClientOriginalName());
-            $data = Extra::find($id)->update([
-                'fotoex' => $request->file('fotoex')->getClientOriginalName(),
-               'extra' => $request->extra,
-               'deskripsi' => $request->deskripsi,
-              
-            ]);
-        return redirect('extraindex')->with('sukses','Updatedata!');
-    }else{
+    { $data = Extra::find($id);
         $data->update([
+            'subjudul' => $request->subjudul,
             'extra' => $request->extra,
             'deskripsi' => $request->deskripsi,
         ]);
-        return redirect('extraindex')->with('sukses','Updatedata!');
-    }
+        if ($request->hasFile('fotoex')) {
+            $request->file('fotoex')->move('foto/', $request->file('fotoex')->getClientOriginalName());
+            $data->fotoex = $request->file('fotoex')->getClientOriginalName();
+            $data->save();
+        }
+        if ($request->hasFile('logo')) {
+            $request->file('logo')->move('foto/', $request->file('logo')->getClientOriginalName());
+            $data->logo = $request->file('logo')->getClientOriginalName();
+            $data->save();
+        }
+        return redirect()->route('extraindex')->with('success', 'Berhasil Di Edit');
+    
     }
 
     /**

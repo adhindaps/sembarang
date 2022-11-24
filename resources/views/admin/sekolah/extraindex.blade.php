@@ -17,6 +17,8 @@
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Foto</th>
+                                    <th scope="col">Logo</th>
+                                    <th scope="col">Subjudul</th>
                                     <th scope="col">Extra</th>
                                     <th scope="col">Deskripsi</th>
                                     <th scope="text-right">Aksi</th>
@@ -30,6 +32,8 @@
                                 <tr>
                                     <th scope="ex">{{ $no++ }}</th>
                                     <td>  <img alt=" " src="foto/{{ $ex->fotoex }}"width="100px"> </td>
+                                    <td>  <img alt=" " src="foto/{{ $ex->logo }}"width="100px"> </td>
+                                    <td>{{ $ex->subjudul }}</td>
                                     <td>{{ $ex->extra }}</td>
                                     <td>{!! $ex->deskripsi !!}</td>
                                     <td><a href="/extraedit/{{ $ex->id }}" class="btn btn-warning">Ubah</a></td>

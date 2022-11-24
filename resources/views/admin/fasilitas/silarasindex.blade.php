@@ -6,7 +6,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <form action="/beasiswaupdate" method="POST" enctype="multipart/form-data" >  
+                    <form action="/silarasupdate" method="POST" enctype="multipart/form-data" >  
                         @csrf
                     <h4 class="card-title">Class Axioo</h4>
                     <input type="text" value="{{$data->id}}" name="id" class="form-control" id="inputPassword4" placeholder="" hidden>

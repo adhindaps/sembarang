@@ -18,14 +18,14 @@
         <div class="container">
             <div class="row gy-4 masonary-active">
                 @foreach ( $data as $foto )
-                <div class="col-md-2 col-xxl-4 filter-item">
+                <div class="col-md-4 col-xxl-6 filter-item">
                     <div class="gallery-card">
                         <div class="gallery-img"><img
                                 src="foto/{{ $foto->fotokgt }}"
                                 alt="gallery image"> <a
                                 href="foto/{{ $foto->fotokgt }}"
                                 class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content"><span class="gallery-tag"><h4 class="card-title">{{$foto->judul}}</h4></span></div>
+                        <div class="gallery-content"><span class="gallery-tag"><h6 class="card-title">{{$foto->judul}}</h6></span></div>
                     </div>
                 </div>
                 @endforeach

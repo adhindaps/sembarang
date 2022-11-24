@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('extras', function (Blueprint $table) {
             $table->id();
             $table->string('fotoex');
+            $table->string('logo');
+            $table->string('subjudul');
             $table->string('extra');
             $table->text('deskripsi');
             $table->timestamps();

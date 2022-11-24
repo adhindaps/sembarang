@@ -18,7 +18,7 @@ class SejarahSeeder extends Seeder
     {
         $sejarah=Sejarah::create([
             'nama'=>'SEJARAH SEKOLAH',
-            'deskripsi'=>'adalah berikut',
+            'deskripsi'=>'<p>Jadi, sejak SMKN 1 Dlanggu berdiri sampai sekarang telah berganti kepemimpinan sebanyak 4 kali. Dari tahun ke tahun siswa yang mendaftar di sekolah kami semakin banyak, begitu pula dengan prestasi yang diukir juga bertambah banyak, karena banyak juara yang diraih oleh siswa siswi dari sekolah kami. SMKN 1 Dlanggu mempunyai visi dan misi yang sangat relevan dan cocok untuk sekolah kami.</p>',
         ]);
     }
 }

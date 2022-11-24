@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('sudutechos', function (Blueprint $table) {
             $table->id();
-            $table->string('foto');
+            $table->string('fotoecho');
             $table->string('judul');
             $table->text('deskripsi');
             $table->timestamps();

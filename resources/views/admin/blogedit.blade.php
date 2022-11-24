@@ -23,6 +23,11 @@
                                             value="{{ $data->judul }}" placeholder="">
                                     </div>
                                     <div class="form-group col-md-12">
+                                        <label for="inputPassword4">Kategori</label>
+                                        <input type="text" name="kategori" class="form-control" id="inputPassword4"
+                                            value="{{ $data->kategori }}" placeholder="">
+                                    </div>
+                                    <div class="form-group col-md-12">
                                         <label for="editor">Deskripsi</label>
                                         <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
                                     </div>

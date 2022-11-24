@@ -19,94 +19,19 @@
     <section class="bg-white space">
         <div class="container">
             <div class="row gy-4">
+            @foreach ($data as $data)
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="team-grid">
-                        <div class="team-img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_3_1.jpg')}}" alt="Team"></div>
+                        <div class="team-img"><img class="imgg" src="foto/{{ $data->fotoguru }}" alt="Team"></div>
                         <div class="team-content">
-                            <h3 class="team-title"><a href="team-details.html">Lilar Dikeoa</a></h3><span
-                                class="team-desig">Instructor</span>
+                            <h3 class="team-title"><a href="team-details.html">{{ $data->nama }}</a></h3><span
+                                class="team-desig">{!! $data->jabatan !!}</span>
                         </div>
-                        <div class="team-info"><span><i class="fa-light fa-file"></i>6 Courses</span> <span
-                                class="line"></span> <span><i class="fa-light fa-users"></i>25 Students</span></div>
+                        <div class="team-info"><span><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></span> <span
+                                class="line"></span> <span><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></span></div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="team-grid">
-                        <div class="team-img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_3_2.jpg')}}" alt="Team"></div>
-                        <div class="team-content">
-                            <h3 class="team-title"><a href="team-details.html">David K. Smith</a></h3><span
-                                class="team-desig">Instructor</span>
-                        </div>
-                        <div class="team-info"><span><i class="fa-light fa-file"></i>3 Courses</span> <span
-                                class="line"></span> <span><i class="fa-light fa-users"></i>15 Students</span></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="team-grid">
-                        <div class="team-img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_3_3.jpg')}}" alt="Team"></div>
-                        <div class="team-content">
-                            <h3 class="team-title"><a href="team-details.html">Mardle Smith</a></h3><span
-                                class="team-desig">Instructor</span>
-                        </div>
-                        <div class="team-info"><span><i class="fa-light fa-file"></i>4 Courses</span> <span
-                                class="line"></span> <span><i class="fa-light fa-users"></i>35 Students</span></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="team-grid">
-                        <div class="team-img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_3_4.jpg')}}" alt="Team"></div>
-                        <div class="team-content">
-                            <h3 class="team-title"><a href="team-details.html">Hirmar Ubunti</a></h3><span
-                                class="team-desig">Instructor</span>
-                        </div>
-                        <div class="team-info"><span><i class="fa-light fa-file"></i>5 Courses</span> <span
-                                class="line"></span> <span><i class="fa-light fa-users"></i>50 Students</span></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="team-grid">
-                        <div class="team-img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_3_5.jpg')}}" alt="Team"></div>
-                        <div class="team-content">
-                            <h3 class="team-title"><a href="team-details.html">Joseph Carter</a></h3><span
-                                class="team-desig">Instructor</span>
-                        </div>
-                        <div class="team-info"><span><i class="fa-light fa-file"></i>2 Courses</span> <span
-                                class="line"></span> <span><i class="fa-light fa-users"></i>12 Students</span></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="team-grid">
-                        <div class="team-img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_3_6.jpg')}}" alt="Team"></div>
-                        <div class="team-content">
-                            <h3 class="team-title"><a href="team-details.html">Jarrial Jorry</a></h3><span
-                                class="team-desig">Instructor</span>
-                        </div>
-                        <div class="team-info"><span><i class="fa-light fa-file"></i>4 Courses</span> <span
-                                class="line"></span> <span><i class="fa-light fa-users"></i>14 Students</span></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="team-grid">
-                        <div class="team-img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_3_7.jpg')}}" alt="Team"></div>
-                        <div class="team-content">
-                            <h3 class="team-title"><a href="team-details.html">Ananth Machon</a></h3><span
-                                class="team-desig">Instructor</span>
-                        </div>
-                        <div class="team-info"><span><i class="fa-light fa-file"></i>5 Courses</span> <span
-                                class="line"></span> <span><i class="fa-light fa-users"></i>65 Students</span></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="team-grid">
-                        <div class="team-img"><img src="{{asset ('1/yeye/html/acadu/demo/assets/img/team/team_3_8.jpg')}}" alt="Team"></div>
-                        <div class="team-content">
-                            <h3 class="team-title"><a href="team-details.html">Harikan Kubra</a></h3><span
-                                class="team-desig">Instructor</span>
-                        </div>
-                        <div class="team-info"><span><i class="fa-light fa-file"></i>2 Courses</span> <span
-                                class="line"></span> <span><i class="fa-light fa-users"></i>52 Students</span></div>
-                    </div>
-                </div>
+            @endforeach
             </div>
         </div>
     </section>

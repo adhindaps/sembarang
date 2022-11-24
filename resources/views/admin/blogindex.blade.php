@@ -20,6 +20,8 @@
                                     <th scope="col">Foto</th>
                                     <th scope="col">Judul</th>
                                     <th scope="col">Deskripsi</th>
+                                    <th scope="col">Kategori</th>
+                                    <th scope="col">Dibuat</th>
                                     <th scope="text-right">Aksi</th>
                                 </tr>
                             </thead>
@@ -33,6 +35,8 @@
                                     <td>  <img alt=" " src="foto/{{ $row->foto }}"width="100px"> </td>
                                     <td>{{ $row->judul }}</td>
                                     <td>{!! $row->deskripsi !!}</td>
+                                    <td>{{ $row->kategori }}</td>
+                                    <td>{{ $row->created_at->format('D M Y')}}</td>
                                     <td>
                                         <a href="/blogedit/{{ $row->id }}" class="btn btn-warning">Ubah</a>
                                         <a href="/deleteblog/{{ $row->id }}" class="btn btn-danger">Hapus</a>

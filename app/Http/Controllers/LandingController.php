@@ -2,50 +2,40 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\blog;
 use Illuminate\Http\Request;
 use App\Models\Jurusan;
 use App\Models\Galery;
 use App\Models\Extra;
+use App\Models\Guru;
+use App\Models\Profile;
+use App\Models\Sejarah;
+use App\Models\visi;
 
 class LandingController extends Controller
 {
-    public function anm(Request $request)
-    {
-        return view('landingpage.jurusan.anm');
-    }
-    public function aph(Request $request)
-    {
-        return view('landingpage.jurusan.aph');
-    }
-    public function rpl(Request $request)
-    {
-        return view('landingpage.jurusan.rpl');
-    }
-    public function mm(Request $request)
-    {
-        return view('landingpage.jurusan.mm');
+    public function index(){
+        $data=Guru::all();
+        // $data=sejarah
+        return view('landingpage.index', compact('data'));
     }
     public function sija(Request $request)
     {
         return view('landingpage.jurusan.sija');
     }
+
     public function tb(Request $request)
     {
         return view('landingpage.jurusan.tb');
     }
-    public function tkj(Request $request)
-    {
-        return view('landingpage.jurusan.tkj');
-    }
-    public function sejarah(Request $request)
-    {
-        return view('landingpage.sejarah');
-    }
+
     public function profile(Request $request)
     {
-        return view('landingpage.profile');
+        $data = Profile::where('id','=',1)->firstOrFail();
+        return view('landingpage.profile', compact('data'));
+        
     }
+    
     public function galerry(Request $request)
     {
         $data=Galery::all();
@@ -61,11 +51,13 @@ class LandingController extends Controller
     }
     public function dataguru(Request $request)
     {
-        return view('landingpage.dataguru');
+        $data=Guru::all();
+        return view('landingpage.dataguru',compact('data'));
     }
     public function blog(Request $request)
     {
-        return view('landingpage.blog');
+        $data=blog::all();
+        return view('landingpage.blog', compact(['data']));
     }
     public function events(Request $request)
     {
@@ -113,5 +105,10 @@ class LandingController extends Controller
     {
         $data=Jurusan::all();
         return view('landingpage.jurusan.programkeahlian',compact('data'));
+    }
+    public function sejarah(Request $request)
+    {
+        $data = Sejarah::where('id','=',1)->firstOrFail();
+        return view('landingpage.sejarah',compact('data'));
     }
 }

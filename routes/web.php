@@ -11,6 +11,8 @@ use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\ExtraController;
+use App\Models\Guru;
+use App\Models\Sejarah;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +25,10 @@ use App\Http\Controllers\ExtraController;
 |
 */
 
-Route::get('/', function () {
-    return view('landingpage.index');
-});
+
+Route::get('/', [LandingController::class, 'index'])->name('index');
+
+
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
 Route::get('/logout',[LoginController::class, 'logout'])->name('logout');
@@ -34,17 +37,11 @@ Route::get('/dashboard',[AdminController::class, 'dashboard'])->name('dashboard'
 Route::get('/siswapres',[AdminController::class, 'siswapres'])->name('siswapres');
 
 
-Route::get('/bug', function () {
-    return view('landingpage.jurusan.bug');
-});
 
-Route::get('/anm',[LandingController::class, 'anm'])->name('anm');
-Route::get('/aph',[LandingController::class, 'aph'])->name('aph');
-Route::get('/mm',[LandingController::class, 'mm'])->name('mm');
-Route::get('/rpl',[LandingController::class, 'rpl'])->name('rpl');
+
 Route::get('/sija',[LandingController::class, 'sija'])->name('sija');
 Route::get('/tb',[LandingController::class, 'tb'])->name('tb');
-Route::get('/tkj',[LandingController::class, 'tkj'])->name('tkj');
+
 Route::get('/sejarah',[LandingController::class, 'sejarah'])->name('sejarah');
 Route::get('/galerry',[LandingController::class, 'galerry'])->name('galerry');
 Route::get('/kontak',[LandingController::class, 'kontak'])->name('kontak');

@@ -26,81 +26,24 @@
                 </div>
             </div>
             <div class="row">
+				@foreach ($data as $row)
                 <div class="col-md-6 col-xl-4">
 					<div class="blog-card">
-						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/gizi2.jpg" alt="Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu">
+						<img class="imgg" src="foto/{{ $row->foto }}"width="100px" alt="Gambar">
 						<div class="blog-content">
 							<div class="blog-meta style2">
-								<a href="blog.html"><i class="far fa-clock"></i>March 16, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Technology</a>
+								<a href="blog.html"><i class="fa-light fa-calendar-days"></i>{{ $row->created_at->format('D M Y')}}</a> <a href="blog.html"><i class="far fa-folder"></i>{{ $row->kategori }}</a>
 							</div>
-							<h3 class="blog-title"><a  href="blogdetail">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3>
+							<h3 class="blog-title"><a  href="blogdetail">{{ $row->judul }}</a></h3>
 							<a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-xl-4">
-					<div class="blog-card">
-						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/SAI.JPG" alt="PT SAI Masih Favorit Di Kalangan Alumni Pencari Kerja" >
-						<div class="blog-content">
-							<div class="blog-meta style2">
-								<a href="blog.html"><i class="far fa-clock"></i>March 17, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Programing</a>
-							</div>
-							<h3 class="blog-title"><a href="blogdetail">PT SAI Masih Favorit Di Kalangan Alumni Pencari Kerja</a></h3><a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-xl-4">
-					<div class="blog-card">
-						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/tb.png" alt="tb.png">
-						<div class="blog-content">
-							<div class="blog-meta style2">
-								<a href="blog.html"><i class="far fa-clock"></i>March 18, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Technology</a>
-							</div>
-							<h3 class="blog-title"><a>GM Ouest Hotel Semangati Siswa-Siswi Tata Boga Untuk Serius Belajar</a></h3><a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-xl-4">
-					<div class="blog-card">
-						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/gizi2.jpg" alt="Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu">
-						<div class="blog-content">
-							<div class="blog-meta style2">
-								<a href="blog.html"><i class="far fa-clock"></i>March 16, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Technology</a>
-							</div>
-							<h3 class="blog-title"><a  href="blogdetail">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu</a></h3>
-							<a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-xl-4">
-					<div class="blog-card">
-						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/SAI.JPG" alt="PT SAI Masih Favorit Di Kalangan Alumni Pencari Kerja" >
-						<div class="blog-content">
-							<div class="blog-meta style2">
-								<a href="blog.html"><i class="far fa-clock"></i>March 17, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Programing</a>
-							</div>
-							<h3 class="blog-title"><a href="blogdetail">PT SAI Masih Favorit Di Kalangan Alumni Pencari Kerja</a></h3><a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-xl-4">
-					<div class="blog-card">
-						<img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/tb.png" alt="tb.png">
-						<div class="blog-content">
-							<div class="blog-meta style2">
-								<a href="blog.html"><i class="far fa-clock"></i>March 18, 2022</a> <a href="blog.html"><i class="far fa-folder"></i>Technology</a>
-							</div>
-							<h3 class="blog-title"><a>GM Ouest Hotel Semangati Siswa-Siswi Tata Boga Untuk Serius Belajar</a></h3><a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-            </div>
+				@endforeach
         </div>
     </section>
 </body>
-@include('landingpage.layout.footerr')
+@include('landingpage.layout.footer')
 <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
 <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/app.min.js') }}"></script>
 <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/main.js') }}"></script>

@@ -100,6 +100,7 @@ class ProfileController extends Controller
             'foto' => $request->file('foto')->getClientOriginalName(),
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
+            'kategori' => $request->kategori,
         ]);
         $data->foto = $request->file('foto')->getClientOriginalName();
     }

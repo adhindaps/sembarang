@@ -9,8 +9,9 @@ class blog extends Model
 {
     protected $table = 'blogs';
     protected $fillable = [
-        'id','foto','judul','deskripsi'
+        'id','foto','judul','deskripsi', 'kategori'
     ];
     protected $guarded = [];
+    protected $data = ['created_at'];
     use HasFactory;
 }

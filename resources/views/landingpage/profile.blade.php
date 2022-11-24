@@ -53,16 +53,20 @@
                                     <div class="course-description">
                                         <h5 class="h5">Identitas Sekolah</h5>
                                         {{-- <p>Berdiri Pada Tahun 2004</p><br/> --}}
-                                        <p>Nama Sekolah     : SMK NEGERI 1 DLANGGU<br/>
-                                        Status              :  NEGERI <br/>
-                                        NPNS                : 20502729 <br/>
-                                        Akreditasi          : Akreditasi A<br/>
-                                        NSS                 : 341050313310</p>
+                                        <p>
+                                            <strong>Nama Sekolah     : </strong>{{ $data->nama }}<br/>
+                                            <strong>Status              :</strong>{{ $data->status }}<br/>
+                                            <strong>NPNS                :</strong>{{ $data->NPNS }}<br/>
+                                            <strong>Akreditasi          :</strong>{{ $data->akreditasi }}<br/>
+                                            <strong>NSS                 :</strong>{{ $data->NSS }}
+                                        </p>
                                         <h5 class="h5">Alamat Sekolah</h5>
-                                        <p>Alamat           : Jl. Jend A.Yani No.1 Ds. Pohkecik - Dlanggu <br/>
-                                           Kode Pos         : 61371 <br/>
-                                           No Tlpn          : 0321513093<br/>
-                                           Email            : info@smkndlanggu.sch.id<br/></p>
+                                        <p>
+                                            <strong>Alamat           : </strong>{{ $data->alamat }} <br/>
+                                            <strong>Kode Pos         :</strong>{{ $data->kode }}<br/>
+                                            <strong>No Tlpn          :</strong>{{ $data->no }}<br/>
+                                            <strong>Email            :</strong>{{ $data->email }}<br/>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="curriculam" role="tabpanel"

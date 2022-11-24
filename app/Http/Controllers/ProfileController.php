@@ -79,7 +79,6 @@ class ProfileController extends Controller
 
 
 
-
      public function blogindex()
     {
         $data=blog::all();
@@ -151,12 +150,12 @@ class ProfileController extends Controller
     public function echostore(Request $request)
     {
         $this->validate($request, [
-            'foto' => 'required',
+            'fotoecho' => 'required',
             'judul' => 'required',
             'deskripsi' => 'required',
         ]);
         $data = sudutecho::create([
-            'foto' => $request->foto,
+            'fotoecho' => $request->fotoecho,
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
         ]);

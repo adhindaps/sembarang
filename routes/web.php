@@ -133,11 +133,13 @@ Route::get('/gurucreate',[GuruController::class, 'gurucreate'])->name('gurucreat
 Route::post('/gurustore',[GuruController::class, 'gurustore'])->name('gurustore');
 Route::get('/guruedit/{id}',[GuruController::class, 'guruedit'])->name('guruedit');
 Route::post('/guruupdate/{id}',[GuruController::class, 'guruupdate'])->name('guruupdate');
-Route::post('/deleteguru/{id}',[GuruController::class, 'deleteguru'])->name('deleteguru');
+// Route::get('/deleteguru/{id}',[GuruController::class, 'deleteguru']);
+Route::get('/deleteguru/{id}',[GuruController::class, 'destroy'])->name('destroy');
 
 Route::get('/galeryindex',[GaleryController::class, 'galeryindex'])->name('galeryindex');
 Route::get('/galerycreate',[GaleryController::class, 'galerycreate'])->name('galerycreate');
 Route::post('/galerystore',[GaleryController::class, 'galerystore'])->name('galerystore');
+Route::post('/galerydelete/{id}',[GaleryController::class, 'deletegaleri'])->name('deletegaleri');
 
 
 Route::get('/extraindex',[ExtraController::class, 'extraindex'])->name('extraindex');

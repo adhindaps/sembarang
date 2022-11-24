@@ -14,6 +14,14 @@
                                 <label for="inputPassword4">Foto</label>
                                 <input type="file" id="fotoex" name="fotoex" class="form-control" >
                               </div>
+                              <div class="form-group col-md-12">
+                                <label for="inputPassword4">Logo</label>
+                                <input type="file" id="logo" name="logo" class="form-control" >
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="inputPassword4">Judul</label>
+                                <input type="text" name="subjudul" class="form-control" id="inputPassword4"  placeholder="">
+                              </div>
                             <div class="form-group col-md-12">
                               <label for="inputPassword4">Extra</label>
                               <input type="text" name="extra" class="form-control" id="inputPassword4"  placeholder="">

@@ -22,6 +22,23 @@
                                 <label for="editor">Deskripsi</label>
                                 <textarea name="deskripsi" id="editor"></textarea>
                               </div>
+                              <div class="form-group col-md-12">
+                                <div class="form-group">
+                                    <label for="inputPassword4">Foto Guru</label>
+                                    <label for="img1"><i class="fas fa-chart-area"
+                                            style="font-size: 24px;border:1px solid black;padding:25px; margin-left: 10px;"></i></label>
+                                    <input id="img1" type="file" name="filefoto"
+                                        style="display: none">
+                                    <label for="img2"><i class="fas fa-chart-area"
+                                            style="font-size: 24px;border:1px solid black;padding:25px; margin-left: 10px;"></i></label>
+                                    <input id="img2" type="file" name="filefoto"
+                                        style="display: none">
+                                    <label for="img3"><i class="fas fa-chart-area"
+                                            style="font-size: 24px;border:1px solid black;padding:25px; margin-left: 10px;"></i></label>
+                                    <input id="img3" type="file" name="filefoto"
+                                        style="display: none">
+                                </div>
+                            </div>
                           </div>
                           <div class="form-actions">
                             <div class="text-right">

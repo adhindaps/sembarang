@@ -17,12 +17,42 @@
                             </div>
                         </div>
                     </div>
+                    <a href="#" class="btn btn-danger deletegalery"
+                    data-id="{{ $foto->id }}"
+                    data-galeri="{{ $foto->galeri }}">
+                    <i class=" fas fa-trash"></i></a>
                 </div>
+                
             </div>
+           
         </div>
         @endforeach
     </div>
 </div>
 </div>
 @include('admin.footeradmin')
+<script>
+    $('.deletegalery').click(function() {
+        var galeryid = $(this).attr('data-id');
+        var galery = $(this).attr('data-galery');
+        Swal.fire({
+            title: 'Apakah Kamu yakin?',
+            text: "Menghapus data galery " + galery + "",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location = "/galerydelete/" + galeryid + ""
+                Swal.fire(
+                    'Terhapus!',
+                    'Data galery ' + galery + ' terhapus',
+                    'success'
+                )
+            }
+        })
+    });
+    </script>
 @endsection

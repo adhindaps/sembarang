@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="mpls/10.png">
     <title>ADMIN-SMK N 1 DLANGGU</title>
     <!-- Custom CSS -->
+    <link href="{{ asset('admin/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/assets/extra-libs/c3/c3.min.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/assets/libs/chartist/dist/chartist.min.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet" />
@@ -178,39 +179,16 @@
 
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Data Sekolah</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                                aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
-                                    class="hide-menu">Data </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="guruindex" class="sidebar-link"><span
-                                            class="hide-menu"> Data Guru
-                                        </span></a>
-                                </li>
-                               
-                                <li class="sidebar-item"><a href="/siswapres" class="sidebar-link"><span
-                                            class="hide-menu"> Data Siswa
-                                        </span></a>
-                                </li>
-                            </ul>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="guruindex"
+                            aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                                class="hide-menu">Data Guru</span></a></li>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/jurusanindex"
                             aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                 class="hide-menu">Jurusan</span></a></li>
-                       <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                            aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
-                                class="hide-menu">BKK </span></a>
-                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                            <li class="sidebar-item"><a href="form-inputs.html" class="sidebar-link"><span
-                                        class="hide-menu"> BKK
-                                    </span></a>
-                            </li>
-                            <li class="sidebar-item"><a href="bkkindex" class="sidebar-link"><span
-                                        class="hide-menu"> BKK Detail
-                                    </span></a>
-                            </li>
-                            
-                        </ul>
-                    </li>
+                                <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/bkkindex"
+                                    aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                                        class="hide-menu">BKK</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="extraindex"
                                 aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span
                                     class="hide-menu">Extrakulikuler

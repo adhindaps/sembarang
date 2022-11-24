@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-xxl-9 col-lg-8">
                     <div class="event-details">
-                        <div class="event-img"><img src="https://cdn.timesmedia.co.id/images/2019/07/29/Sudut-Baca-Vokasi-2.jpg" alt="Event Image"></div>
+                        <div class="event-img"><img src="{{ $data->foto }}" alt="Event Image"></div>
                         <h3 class="h3 mt-n2">Program Kerja Sudut Baca Echo</h3>
                         <p class="mb-30">A. Kegiatan Rutin</p>
                             <p>1.Pelayanan pengunjung Sudut Baca "Berikan layanan terbaik untuk pengunjung cafe yang ingin berliterasi. Senyum, salam dan sapa menjadi bentuk pelauamam prima."<br/>

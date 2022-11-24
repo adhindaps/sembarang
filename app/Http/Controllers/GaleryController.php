@@ -88,8 +88,11 @@ class GaleryController extends Controller
      * @param  \App\Models\Galery  $galery
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Galery $galery)
+    public function deletegaleri(Galery $galery)
     {
-        //
+        $data = Galery::find($id);
+        $data->delete();
+        return redirect('galeryindex')->with('success', 'Data Berhasil Dihapus');
+    
     }
 }

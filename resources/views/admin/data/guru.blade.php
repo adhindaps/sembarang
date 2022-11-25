@@ -17,6 +17,10 @@
                                     <th scope="col">#</th>
                                     <th scope="col">Foto</th>
                                     <th scope="col">Nama</th>
+                                    <th scope="col">NIP</th>
+                                    <th scope="col">Tempat Lhr</th>
+                                    <th scope="col">Tgl Lahir</th>
+                                    <th scope="col">Status</th>
                                     <th scope="col">Jabatan</th>
                                     <th scope="text-right">Aksi</th>
                                 </tr>
@@ -30,6 +34,10 @@
                                     <th scope="data">{{ $no++ }}</th>
                                     <td>  <img alt=" " src="foto/{{ $data->fotoguru }}"width="100px" > </td>
                                     <td>{{ $data->nama }}</td>
+                                    <td>{!! $data->nip !!}</td>
+                                    <td>{{ $data->tmplahir }}</td>
+                                    <td>{!! $data->tgllahir !!}</td>
+                                    <td>{{ $data->status }}</td>
                                     <td>{!! $data->jabatan !!}</td>
                                     <td><a href="/guruedit/{{ $data->id }}" class="btn btn-warning">
                                         <i class="fas fa-pencil-alt"></i></a>

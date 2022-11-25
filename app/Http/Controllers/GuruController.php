@@ -42,6 +42,10 @@ class GuruController extends Controller
         $data = Guru::create([
             'fotoguru' => $request->file('fotoguru')->getClientOriginalName(),
             'nama' => $request->nama,
+            'nip' => $request->nip,
+               'tmplahir' => $request->tmplahir,
+               'tgllahir' => $request->tgllahir,
+               'status' => $request->status,
             'jabatan' => $request->jabatan,
         ]);
         $data->fotoguru = $request->file('fotoguru')->getClientOriginalName();
@@ -88,13 +92,20 @@ class GuruController extends Controller
             $data = guru::find($id)->update([
                 'fotoguru' => $request->file('fotoguru')->getClientOriginalName(),
                'nama' => $request->nama,
+               'nip' => $request->nip,
+               'tmplahir' => $request->tmplahir,
+               'tgllahir' => $request->tgllahir,
+               'status' => $request->status,
                'jabatan' => $request->jabatan,
-              
             ]);
         return redirect('guruindex')->with('sukses','Updatedata!');
     }else{
         $data->update([
             'nama' => $request->nama,
+            'nip' => $request->nip,
+               'tmplahir' => $request->tmplahir,
+               'tgllahir' => $request->tgllahir,
+               'status' => $request->status,
             'jabatan' => $request->jabatan,
         ]);
         return redirect('guruindex')->with('sukses','Updatedata!');

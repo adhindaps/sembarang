@@ -6,19 +6,19 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <form action="visiupdate" method="POST" enctype="multipart/form-data" >  
+                    <form action="/smbtnupdate" method="POST" enctype="multipart/form-data" >  
                         @csrf
-                    <h4 class="card-title">Visi Misi Sekolah</h4>
+                    <h4 class="card-title">Sambutan Kepala Sekolah</h4>
                     <input type="text" value="{{$data->id}}" name="id" class="form-control" id="inputPassword4" placeholder="" hidden>
 
                         <div class="form-row">
                             <div class="form-group col-md-12">
                               <label for="inputPassword4">Judul</label>
-                              <input type="text" value="{{$data->nama}}" name="nama" class="form-control" id="inputPassword4"  placeholder="">
+                              <input type="text" value="{{$data->judul}}" name="judul" class="form-control" id="inputPassword4"  placeholder="">
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="editor">Deskripsi</label>
-                                <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
+                                <textarea name="sambutan" id="editor">{!! $data->sambutan !!}</textarea>
                               </div>
                           </div>
                           <div class="form-actions">

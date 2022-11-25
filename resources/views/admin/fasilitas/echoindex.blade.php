@@ -14,9 +14,8 @@
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Foto</label>
-                                <img class="img mb-3" src="{{ asset('foto/' . $data->fotoecho) }}" alt="" style="width: 100px
-                                ;">
-                                <input type="file" name="fotoecho" class="form-control" id="fotoecho" aria-describedby="emailHelp" value="{{ $data->fotoecho }}">
+                                <img class="img mb-3" src="foto/{{ $data->fotoecho }}" alt="" style="width: 100px;">
+                                 <input type="file" name="fotoecho" class="form-control" id="fotoecho" aria-describedby="emailHelp" value="{{ $data->fotoecho }}">
                               </div>
                             <div class="form-group col-md-12">
                               <label for="inputPassword4">Judul</label>

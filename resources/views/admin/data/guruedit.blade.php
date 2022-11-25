@@ -19,6 +19,22 @@
                               <label for="inputPassword4">Nama</label>
                               <input type="text" name="nama" class="form-control" id="inputPassword4" value="{{ $data->nama }}" placeholder="">
                             </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">NIP</label>
+                                <input type="text" name="nip" class="form-control" id="inputPassword4" value="{{ $data->nip }}" placeholder="">
+                              </div>
+                              <div class="form-group col-md-6">
+                                  <label for="inputPassword4">TMP Lahir</label>
+                                  <input type="text" name="tmplahir" class="form-control" id="inputPassword4" value="{{ $data->tmplahir }}" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">TGL Lahir</label>
+                                    <input type="text" name="tgllahir" class="form-control" id="inputPassword4" value="{{ $data->tgllahir }}" placeholder="">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                      <label for="inputPassword4">Status</label>
+                                      <input type="text" name="status" class="form-control" id="inputPassword4" value="{{ $data->status }}" placeholder="">
+                                    </div>
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Jabatan</label>
                                 <input type="text" name="jabatan" class="form-control" id="inputPassword4" value="{{ $data->jabatan }}" placeholder="">

@@ -125,7 +125,7 @@
                                 aria-haspopup="true" aria-expanded="false">
                                 <img src="mpls/10.png" alt="user" class="rounded-circle"
                                     width="40">
-                                <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span
+                                <span class="ml-2 d-none d-lg-inline-block"><span>Hallo,</span> <span
                                         class="text-dark">Admin</span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
                             </a>
@@ -173,7 +173,10 @@
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="sejarahindex"
                                 aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                     class="hide-menu">Sejarah Sekolah</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="indexvisi"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="smbtnindex"
+                            aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                            class="hide-menu">Sambutan </span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="visiindex"
                                 aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
                                     class="hide-menu">Visi & Misi</span></a></li>
 

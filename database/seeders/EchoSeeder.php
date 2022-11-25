@@ -18,7 +18,7 @@ class EchoSeeder extends Seeder
     public function run()
     {
         $sudutecho=sudutecho::create([
-            'foto'=>'sija.jpg',
+            'fotoecho'=>'sija.png',
             'judul'=>'adalah berikut inii',
             'deskripsi'=>'adalah dguejfheuchsjsjuberikut inii',
         ]);

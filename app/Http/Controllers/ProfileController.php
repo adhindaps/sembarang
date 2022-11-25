@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Sambutan;
 use App\Models\sudutecho;
 use App\Models\Profile;
 use App\Models\blog;
@@ -170,4 +171,31 @@ class ProfileController extends Controller
         return redirect('echoindex');
     }
     
+    public function smbtnindex()
+    {
+        $data = Sambutan::where('id','=',1)->firstOrFail();
+        return view('admin.profile.sambutan',compact('data'));
+    }
+
+    public function smbtnstore(Request $request)
+    {
+        $this->validate($request, [
+            'judul' => 'required',
+            'sambutan' => 'required',
+        ]);
+        $data = sudutecho::create([
+            'judul' => $request->judul,
+            'sambutan' => $request->sambutan,
+        ]);
+        return redirect('smbtnindex');
+    
+    }
+
+    public function smbtnupdate(Request $request)
+    {
+        $data=Sambutan::find($request->id);
+        $data->update($request->all());
+        return redirect('smbtnindex');
+    }
+
 }

@@ -85,16 +85,17 @@ Route::get('/tampilevent/{id}', [ProfileController::class, 'tampilevent'])->name
 Route::post('/updateevent/{id}', [ProfileController::class, 'updateevent'])->name('updateevent');
 Route::get('/deleteevent/{id}', [ProfileController::class, 'destroy'])->name('deleteevent');
 
+Route::get('/smbtnindex',[ProfileController::class, 'smbtnindex'])->name('smbtnindex');
+Route::post('/smbtnstore',[ProfileController::class, 'smbtnstore'])->name('smbtnstore');
+Route::post('/smbtnupdate',[ProfileController::class, 'smbtnupdate'])->name('smbtnupdate');
 
 Route::get('/echoindex',[ProfileController::class, 'echoindex'])->name('echoindex');
 Route::post('/echostore',[ProfileController::class, 'echostore'])->name('echostore');
 Route::post('/echoupdate',[ProfileController::class, 'echoupdate'])->name('echoupdate');
 
-Route::get('/indexvisi',[VisiController::class, 'indexvisi'])->name('indexvisi');
-Route::get('/createvisi',[VisiController::class, 'createvisi'])->name('createvisi');
-Route::post('/storevisi',[VisiController::class, 'storevisi']);
-Route::get('/editvisi/{id}',[VisiController::class, 'show'])->name('show');
-Route::post('/updatevisi/{id}',[VisiController::class, 'updatevisi']);
+Route::get('/visiindex',[VisiController::class, 'visiindex'])->name('visiindex');
+Route::post('visistore',[VisiController::class, 'visistore']);
+Route::post('visiupdate',[VisiController::class, 'visiupdate']);
 
 Route::get('/bkkindex',[SejarahController::class, 'bkkindex'])->name('bkkindex');
 Route::get('/bkkcreate',[SejarahController::class, 'bkkcreate'])->name('bkkcreate');

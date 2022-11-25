@@ -18,28 +18,9 @@
             <div class="row">
                 <div class="col-xxl-9 col-lg-8">
                     <div class="event-details">
-                        <div class="event-img"><img src="{{ $data->foto }}" alt="Event Image"></div>
-                        <h3 class="h3 mt-n2">Program Kerja Sudut Baca Echo</h3>
-                        <p class="mb-30">A. Kegiatan Rutin</p>
-                            <p>1.Pelayanan pengunjung Sudut Baca "Berikan layanan terbaik untuk pengunjung cafe yang ingin berliterasi. Senyum, salam dan sapa menjadi bentuk pelauamam prima."<br/>
-                                2.Penambahan buku sudut baca "Menambah koleksi buku yang ada disudut baca sesuai kebutuhan dan keinginan pengunjung. Terciptanya sudut baca yang nyaman dan berkualitas."<br/>
-                                3.Penggantian buku sudut baca "Buku yang terdisplay akan diganti secara periodik. Menghindari kebosanan pengunjung cafe untuk memanfaatkan sudut baca.".<br/>
-                                4.Penggantian majalah berkala "Majalah baru akan mengisi display majalah sudut baca. Menyesuaikan usia pengunjung cafe.".<br/>
-                                5.Penggantian isi papan unjuk karya "Wadah terbaik untuk pengunjung menampilkan karya-karya nya. Bisa dalam berbagai bentuk sesuai keinginan dan kreativitas pengunjung.".<br/>
-                                6.KULIT (KUnjungan LITerasi) "Membawa dampak baik pengetahuan dari literasi dengan memanfaatkan teknologi multimedia".<br/>
-                                7.Rapat rutin pengurus sudut baca "Menjadi ajang konsolidasi pengurus untuk meningkatkan pelayanan kepada pengunjung dan evaluasi program yang berjalan".</p>
-                      
-                                <p class="mb-30">B. Kegiatan Insidentalb</p>
-                        <p class="mb-40">1.Koordinasi dengan perpustakaan daerah "Membangun jejaring dan bermitra dengan lembaga yang lebih tinggi. Sinergi program strategis dan berbagi pengalaman.".<br/>
-                            2.Pelatihan "Selalu upgrade kemampuan dan ilmu untuk pelayanan sudut baca echo yang lebih baik. Menambah wawasan dan pengalaman baru."<br/>
-                            3.Doorprize Pengunjung "Memberikan hadiah yang akan meningkatkan semangat untuk belajar terus dan lebih aktif berliterasi."<br/>
-                            4.ANDONG MAJA (Aksi Dongeng Remaja) "Sebagai wadah untuk menampung hobi remaja yang suka dengan dongeng. Mengambil hikmah dari literasi dongeng."<br/>
-                            5.ANDONG CILIK (Aksi Dongeng Cilik) "Membangun budaya membaca dan bercerita kepada pengunjung anak-anak. Penanaman karakter sejak dini kepada anak-anak.".<br/>
-                            6.PENTOL BAKAR (Pentas Olah Bakat dan Karya) "Wahana mengembangkan diri dan potensi. Ajang unjuk karya dan kemampuan untuk menginspirasi orang lain."<br/>
-                            7.RAPER (Remaja Bawa Perubahan) "Berlatih diskusi dan presentasi setelah literasi buku. Meningkatkan daya nalar dan kreativitas."<br/>
-                            8.Kampanye Digital Literasi "Menularkan kegemaran membaca buku dan berliterasi melalui internet"<br/>
-                            9.TALI SUNJUNG (Tabungan Literasi Pengunjung) "Memberikan kesempatan kepada pengunjung untuk berkontribusi dan merasa memiliki sudut literasi echo"<br/>
-                        </p>
+                        <div class="event-img"><img src="{{ $data->foto }}" alt="foto"></div>
+                        <h3 class="h3 mt-n2">{{$data->judul}}</h3>
+                        <p class="mb-30">{!! $data->deskripsi !!}</p>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4">

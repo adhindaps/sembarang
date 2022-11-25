@@ -19,27 +19,31 @@
     </div>
     <section class="as-blog-wrapper space-top space-extra-bottom">
         <div class="container">
-            <div class="col-md-6 col-xl-4">
+            <div class="row"> <div class="col-md-6 col-xl-4">
                 <div class="widget widget_search">
-                    <form class="search-form"><input type="text" placeholder="Search..."> <button
-                            type="submit"><i class="far fa-search"></i></button></form>
+                    <form class="search-form"><input type="text" placeholder="Search..."> <button type="submit"><i
+                                class="far fa-search"></i></button></form>
                 </div>
             </div>
-            <div class="row">
-				@foreach ($data as $row)
+        </div>
+        <div class="row">
+            @foreach ($data as $row)
                 <div class="col-md-6 col-xl-4">
-					<div class="blog-card">
-						<img class="imgg" src="foto/{{ $row->foto }}"width="100px" alt="Gambar">
-						<div class="blog-content">
-							<div class="blog-meta style2">
-								<a href="blog.html"><i class="fa-light fa-calendar-days"></i>{{ $row->created_at->format('D M Y')}}</a> <a href="blog.html"><i class="far fa-folder"></i>{{ $row->kategori }}</a>
-							</div>
-							<h3 class="blog-title"><a  href="blogdetail">{{ $row->judul }}</a></h3>
-							<a class="link-btn" href="blogdetail">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				@endforeach
+                    <div class="blog-card">
+                        <img class="imgg" src="foto/{{ $row->foto }}"width="100px" alt="Gambar">
+                        <div class="blog-content">
+                            <div class="blog-meta style2">
+                                <a href="blog.html"><i
+                                        class="fa-light fa-calendar-days"></i>{{ $row->created_at->format('D M Y') }}</a>
+                                <a href="blog.html"><i class="far fa-folder"></i>{{ $row->kategori }}</a>
+                            </div>
+                            <h3 class="blog-title"><a href="blogdetail">{{ $row->judul }}</a></h3>
+                            <a class="link-btn" href="blogdetail">Baca Lebih Detail<i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
         </div>
     </section>
 </body>

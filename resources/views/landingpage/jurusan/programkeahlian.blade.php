@@ -28,7 +28,7 @@
                                         <td>{!! $row->deskripsi !!}</td>
                                     </div>
                                     <div class="text-center mt-20 mt-xl-5">
-                                        <a href="rpl" class="as-btn">selengkapnya<i
+                                        <a href="detail" class="as-btn">selengkapnya<i
                                                 class="fas fa-arrow-right ms-2"></i></a>
                                     </div>
                             </div>

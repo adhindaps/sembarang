@@ -11,6 +11,9 @@ use App\Models\Guru;
 use App\Models\Profile;
 use App\Models\Sejarah;
 use App\Models\visi;
+use App\Models\sudutecho;
+use App\Models\Axio;
+use App\Models\Beasiswa;
 
 class LandingController extends Controller
 {
@@ -19,14 +22,15 @@ class LandingController extends Controller
         // $data=sejarah
         return view('landingpage.index', compact('data'));
     }
+
     public function sija(Request $request)
     {
         return view('landingpage.jurusan.sija');
     }
 
-    public function tb(Request $request)
+    public function detail(Request $request)
     {
-        return view('landingpage.jurusan.tb');
+        return view('landingpage.jurusan.detail');
     }
 
     public function profile(Request $request)
@@ -41,6 +45,7 @@ class LandingController extends Controller
         $data=Galery::all();
         return view('landingpage.galerry',compact('data'));
     }
+
     public function kontak(Request $request)
     {
         return view('landingpage.kontak');
@@ -65,10 +70,13 @@ class LandingController extends Controller
     }
     public function detailevents(Request $request)
     {
-        return view('landingpage.detailevents');}
+        return view('landingpage.detailevents');
+    }
+
     public function echo(Request $request)
     {
-        return view('landingpage.echo');
+        $data = sudutecho::where('id','=',1)->firstOrFail();
+        return view('landingpage.echo', compact('data'));
     }
     public function blogdetail(Request $request)
     {
@@ -83,7 +91,8 @@ class LandingController extends Controller
     }
     public function axio(Request $request)
     {
-        return view('landingpage.axio');
+        $data = Axio::where('id','=',1)->firstOrFail();
+        return view('landingpage.axio', compact('data'));
     }
     public function silaras(Request $request)
     {
@@ -91,7 +100,8 @@ class LandingController extends Controller
     }
     public function beasiswa(Request $request)
     {
-        return view('landingpage.beasiswa');
+        $data = Beasiswa::where('id','=',1)->firstOrFail();
+        return view('landingpage.beasiswa',compact('data'));
     }
     public function bkk(Request $request)
     {

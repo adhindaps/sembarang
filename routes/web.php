@@ -40,7 +40,7 @@ Route::get('/siswapres',[AdminController::class, 'siswapres'])->name('siswapres'
 
 
 Route::get('/sija',[LandingController::class, 'sija'])->name('sija');
-Route::get('/tb',[LandingController::class, 'tb'])->name('tb');
+Route::get('/detail',[LandingController::class, 'detail'])->name('detail');
 
 Route::get('/sejarah',[LandingController::class, 'sejarah'])->name('sejarah');
 Route::get('/galerry',[LandingController::class, 'galerry'])->name('galerry');

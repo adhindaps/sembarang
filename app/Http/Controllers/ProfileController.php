@@ -144,7 +144,7 @@ class ProfileController extends Controller
     public function index()
     {
         $data = Event::all();
-        return view('eventindex', compact('data'));
+        return view('admin.sekolah.eventindex', compact('data'));
     }
     
     public function echostore(Request $request)

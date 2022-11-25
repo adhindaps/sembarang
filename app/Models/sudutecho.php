@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class sudutecho extends Model
 {
+    protected $table = 'Profiles';
+    protected $fillable = [
+        'id', 'foto', 'judul', 'deskripsi'
+    ];
     protected $guarded = [];
     use HasFactory;
 }

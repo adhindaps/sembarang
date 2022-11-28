@@ -27,8 +27,11 @@
                             <h3 class="team-title"><a href="team-details.html">{{ $data->nama }}</a></h3><span
                                 class="team-desig">{!! $data->jabatan !!}</span>
                         </div>
-                        <div class="team-info"><span><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></span> <span
-                                class="line"></span> <span><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></span></div>
+                        <div class="team-info">
+                            <span>NIP: {{ $data->nip }}</span> 
+                            <span class="line"></span> 
+                            <span>{{ $data->status }}</span>
+                        </div>
                     </div>
                 </div>
             @endforeach

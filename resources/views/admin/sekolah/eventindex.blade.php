@@ -9,7 +9,7 @@
                             <h4 class="card-title">Event</h4>
                             <h6 class="card-subtitle">
                             </h6>
-                            <a href="/tambahevent" type="button" class="btn btn-primary">Tambah+</a>
+                            <a href="/eventscreate" type="button" class="btn btn-primary">Tambah+</a>
                             <div class="row">
 
                                 @if ($message = Session::get('success'))
@@ -38,18 +38,14 @@
                                         @foreach ($data as $row)
                                             <tr>
                                                 <th scope="row">{{ $no++ }}</th>
-                                                <td>
-                                                    <img src="{{ asset('gambar_wisata/' . $row->gambar) }}" alt=""
-                                                        style="width: 80px;">
-                                                </td>
+                                                <td> <img alt=" " src="foto/{{ $row->foto }}"width="100px"></td>
                                                 <td>{{ $row->namaevent }}</td>
-                                                <td>0{{ $row->tempatevent }}</td>
                                                 <td>{{ $row->tempat }}</td>
                                                 <td>{{ $row->tanggalevent }}</td>
                                                 <td>{{ $row->jamevent }}</td>
                                                 <td>{{ $row->deskripsi }}</td>
                                                 <td>
-                                                    <a href="/tampilevent/{{ $row->id }}"
+                                                    <a href="/eventedit/{{ $row->id }}"
                                                         class="btn btn-warning">Edit</a>
                                                     <a href="#" class="btn btn-danger delete"
                                                         data-id="{{ $row->id }}"

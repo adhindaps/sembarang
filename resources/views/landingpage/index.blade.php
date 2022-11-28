@@ -14,66 +14,37 @@
                 </div>
                 <div class="container z-index-common">
                     <div class="hero-style8">
-                        <div class="hero-meta" data-ani="slideinup" data-ani-delay="0.2s"><span>Anytime</span>
-                            <span>Anywhere</span>
-                        </div>
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">Grow Your Career With</h1>
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s">Quality <span
-                                class="bg-theme">Education</span></h1>
-                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">Enthusiastically provide access
-                            to client-focused testing procedures through cooperative niches. Intrinsicly promote
-                            compelling methods of empowerment before.</p>
-                        <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s"><a href="contact.html"
-                                class="as-btn style3">Register Now<i class="fas fa-long-arrow-right ms-2"></i></a> <a
-                                href="contact.html" class="as-btn style6">Get Instructor<i
-                                    class="fas fa-long-arrow-right ms-2"></i></a></div>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">SMK Negeri 1 Dlanggu</h1>
+                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">Sekolah berkualitas yang menciptakan Alumni siap kerja, siap kuliah dan siap berwirausaha</p>
+
                     </div>
                 </div>
             </div>
             <div class="as-hero-slide">
-                <div class="as-hero-bg" data-bg-src="{{ asset('mpls/8.jpg') }}"><img
+                <div class="as-hero-bg" data-bg-src="{{ asset('foto/hal1.jpg') }}"><img
                         src="{{ asset('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png') }}" alt="overlay">
                 </div>
                 <div class="container z-index-common">
                     <div class="hero-style8">
-                        <div class="hero-meta" data-ani="slideinup" data-ani-delay="0.2s"><span>Online</span>
-                            <span>Anytime</span>
-                        </div>
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">Start Your Study With</h1>
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s">Higher <span
-                                class="bg-theme">Study</span></h1>
-                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">Enthusiastically provide access
-                            to client-focused testing procedures through cooperative niches. Intrinsicly promote
-                            compelling methods of empowerment before.</p>
-                        <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s"><a href="contact.html"
-                                class="as-btn style3">Register Now<i class="fas fa-long-arrow-right ms-2"></i></a> <a
-                                href="contact.html" class="as-btn style6">Get Instructor<i
-                                    class="fas fa-long-arrow-right ms-2"></i></a></div>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">SMK Negeri 1 Dlanggu</h1>
+                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">Sekolah berkualitas yang menciptakan Alumni siap kerja, siap kuliah dan siap berwirausaha</p>
+
                     </div>
                 </div>
             </div>
             <div class="as-hero-slide">
-                <div class="as-hero-bg" data-bg-src="{{ asset('mpls/wd.jpg') }}"><img
+                <div class="as-hero-bg" data-bg-src="{{ asset('foto/hal1.jpg') }}"><img
                         src="{{ asset('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png') }}" alt="overlay">
                 </div>
                 <div class="container z-index-common">
                     <div class="hero-style8">
-                        <div class="hero-meta" data-ani="slideinup" data-ani-delay="0.2s"><span>Anywhere</span>
-                            <span>Online</span>
-                        </div>
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">Get Start Career With</h1>
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s">Quality <span
-                                class="bg-theme">Learning</span></h1>
-                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">Enthusiastically provide access
-                            to client-focused testing procedures through cooperative niches. Intrinsicly promote
-                            compelling methods of empowerment before.</p>
-                        <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s"><a href="contact.html"
-                                class="as-btn style3">Register Now<i class="fas fa-long-arrow-right ms-2"></i></a> <a
-                                href="contact.html" class="as-btn style6">Get Instructor<i
-                                    class="fas fa-long-arrow-right ms-2"></i></a></div>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">SMK Negeri 1 Dlanggu</h1>
+                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">Sekolah berkualitas yang menciptakan Alumni siap kerja, siap kuliah dan siap berwirausaha</p>
+
                     </div>
                 </div>
             </div>
+      
         </div>
     </div>
     <section class="space">
@@ -152,6 +123,9 @@
             </div>
         </div>
     </section>
+    @foreach ($sambutan as $bp )
+        
+    @endforeach
     <div class="space">
         <div class="container">
             <div class="row align-items-center">
@@ -167,28 +141,9 @@
                 </div>
                 <div class="col-xl-6">
                     <div class="title-area mb-35"><span class="sub-title"></span>
-                        <h2 class="sec-title fw-semibold">Sambutan Kepala Sekolah</h2>
+                        <h2 class="sec-title fw-semibold">{{$bp->judul}}</h2>
                     </div>
-                    <p class="mt-n2 mb-25">Selamat datang di Website kami di Sekolah Menengah Kejuruan Negri 1 Dlanggu.
-                        Website ini kami tujukan untuk seluruh guru, karyawan dan siswa serta masyarakat umum agar dapat
-                        mengakses seluruh informasi tentang profil, aktifitas/kegiatan serta fasilitas sekolah secara
-                        berkala dan update.
-
-                        Tentunya Website sekolah kami masih terdapat banyak kekurangan, oleh karena itu kepada seluruh
-                        civitas akademika dan masyarakat umum dapat memberikan saran dan kritik yang membangun demi
-                        kemajuan website ini lebih lanjut.
-
-                        Kami berharap Website ini dapat dijadikan wahana interaksi yang positif baik antar civitas
-                        akademika maupun masyarakat pada umumnya sehingga dapat menjalin silaturahmi yang erat disegala
-                        unsur sesuai dengan motto sekolah kita.
-
-                        𝑺𝑴𝑲N 1 Dlanggu 𝑺𝒆𝒌𝒐𝒍𝒂𝒉𝒏𝒚𝒂 𝑺𝒂𝒏𝒈 𝑱𝒖𝒂𝒓𝒂, 𝑷𝑹𝑰𝑴𝑨𝑺𝑬𝑹𝑼 𝑺𝒆𝒎𝒖𝒂
-                        𝑷𝒓𝒊𝒎𝒂, 𝑺𝒆𝒎𝒖𝒂 𝑺𝒆𝒓𝒖, 𝑴𝒂𝒌𝒊𝒏 𝑷𝒓𝒊𝒎𝒂 𝒅𝒂𝒏 𝑴𝒂𝒌𝒊𝒏 𝑺𝒆𝒓𝒖 𝒅𝒂𝒍𝒂𝒎
-                        𝑲𝒂𝒓𝒂𝒌𝒕𝒆𝒓, 𝑷𝒓𝒆𝒔𝒕𝒂𝒔𝒊 𝒅𝒂𝒏 𝑳𝒂𝒚𝒂𝒏𝒂𝒏
-
-                        Pada akhirnya, mari kita bekerja dan berkarya dengan keikhlasan yang tulus demi suksesnya masa
-                        depan anak-anak didik kita.
-                    </p>
+                    <p class="mt-n2 mb-25">{!! $bp->sambutan !!}</p>
                 </div>
             </div>
         </div>
@@ -232,63 +187,21 @@
                 </div>
                 <div class="col-xl-6">
                     <div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
+                        @foreach ($data as $yy)
                         <div class="col-md-6 col-lg-4">
                             <div class="team-box">
                                 <div class="team-img">
-                                    <img alt="Team"
-                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/team/team_1_1.jpg') }}">
-                                    <div class="as-social">
-                                        <a href="https://facebook.com/" target="_blank"><i
-                                                class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/"
-                                            target="_blank"><i class="fab fa-twitter"></i></a> <a
-                                            href="https://linkedin.com/" target="_blank"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </div>
+                                    <img class="rr" alt="Team"
+                                        src="{{ asset('foto/' . $yy->fotoguru) }}">
+                                  
                                 </div>
                                 <div class="team-content">
-                                    <h3 class="team-title"><a href="team-details.html">Kevin Martin Ben</a></h3><span
-                                        class="team-desig">Online Teacher</span>
+                                    <h3 class="team-title"><a href="team-details.html">{{$yy->nama}}</a></h3><span
+                                        class="team-desig">{{$yy->jabatan}}</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="team-box">
-                                <div class="team-img">
-                                    <img alt="Team"
-                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/team/team_1_2.jpg') }}">
-                                    <div class="as-social">
-                                        <a href="https://facebook.com/" target="_blank"><i
-                                                class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/"
-                                            target="_blank"><i class="fab fa-twitter"></i></a> <a
-                                            href="https://linkedin.com/" target="_blank"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h3><span
-                                        class="team-desig">Online Teacher</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="team-box">
-                                <div class="team-img">
-                                    <img alt="Team"
-                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/team/team_1_3.jpg') }}">
-                                    <div class="as-social">
-                                        <a href="https://facebook.com/" target="_blank"><i
-                                                class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/"
-                                            target="_blank"><i class="fab fa-twitter"></i></a> <a
-                                            href="https://linkedin.com/" target="_blank"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="team-title"><a href="team-details.html">Aiden Samuel Jabin</a></h3>
-                                    <span class="team-desig">Online Teacher</span>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -392,6 +305,9 @@
                 <span class="sub-title">BERITA & BLOG TERBARU</span>
                 <h2 class="sec-title fw-medium">Dapatkan Setiap Pembaruan</h2>
             </div>
+            @foreach ($gakenek as $ngelu)
+                
+            
             <div class="row slider-shadow as-carousel" data-lg-slide-show="2" data-md-slide-show="2"
                 data-slide-show="3" data-sm-slide-show="1">
                 <div class="col-md-6 col-xl-4">
@@ -400,61 +316,16 @@
                             alt="ab.png">
                         <div class="blog-content">
                             <div class="blog-meta style2">
-                                <a href="blog.html"><i class="far fa-clock"></i>March 15, 2022</a> <a
-                                    href="blog.html"><i class="far fa-folder"></i>Marketing</a>
+                                <a href="blog.html"><i class="far fa-clock"></i>{{$ngelu->created_at}}</a> <a
+                                    href="blog.html"><i class="far fa-folder"></i>{{$ngelu->kategori}}</a>
                             </div>
-                            <h3 class="blog-title"><a href="blogdetail">Gebyar Uji Kompetensi Keahlian Tata Boga
-                                    Hadirkan Bupati Mojokerto</a></h3><a class="link-btn" href="blogdetail">Baca Lebih
+                            <h3 class="blog-title"><a href="blogdetail">{{ $ngelu->judul}}</a></h3><a class="link-btn" href="blogdetail">Baca Lebih
                                 Detail<i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="blog-card">
-                        <img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/gizi2.jpg"
-                            alt="Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah di SMKN 1 Dlanggu">
-                        <div class="blog-content">
-                            <div class="blog-meta style2">
-                                <a href="blog.html"><i class="far fa-clock"></i>March 16, 2022</a> <a
-                                    href="blog.html"><i class="far fa-folder"></i>Technology</a>
-                            </div>
-                            <h3 class="blog-title"><a href="blogdetail">Gerakan Nasional Aksi Bergizi Nasional
-                                    Berlangsung Meriah di SMKN 1 Dlanggu</a></h3>
-                            <a class="link-btn" href="blogdetail">Baca Lebih Detail<i
-                                    class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="blog-card">
-                        <img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/SAI.JPG"
-                            alt="PT SAI Masih Favorit Di Kalangan Alumni Pencari Kerja">
-                        <div class="blog-content">
-                            <div class="blog-meta style2">
-                                <a href="blog.html"><i class="far fa-clock"></i>March 17, 2022</a> <a
-                                    href="blog.html"><i class="far fa-folder"></i>Programing</a>
-                            </div>
-                            <h3 class="blog-title"><a href="blogdetail">PT SAI Masih Favorit Di Kalangan Alumni
-                                    Pencari Kerja</a></h3><a class="link-btn" href="blogdetail">Baca Lebih Detail<i
-                                    class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="blog-card">
-                        <img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/tb.png"
-                            alt="tb.png">
-                        <div class="blog-content">
-                            <div class="blog-meta style2">
-                                <a href="blog.html"><i class="far fa-clock"></i>March 18, 2022</a> <a
-                                    href="blog.html"><i class="far fa-folder"></i>Technology</a>
-                            </div>
-                            <h3 class="blog-title"><a>GM Ouest Hotel Semangati Siswa-Siswi Tata Boga Untuk Serius
-                                    Belajar</a></h3><a class="link-btn" href="blogdetail">Baca Lebih Detail<i
-                                    class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+
+                @endforeach
             </div>
         </div>
 

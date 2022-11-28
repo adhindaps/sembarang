@@ -16,34 +16,27 @@
         </div>
     </div>
     <section class="as-blog-wrapper blog-details space-top space-extra-bottom">
+        
         <div class="container">
             <div class="row">
+                @foreach ($data as $data)
                 <div class="col-xxl-8 col-lg-7">
                     <div class="as-blog blog-single">
-                        <div class="blog-img"><img src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/gizi2.jpg" alt="Blog Image"></div>
+                        <div class="blog-img"><img src="{{ asset('foto/' . $data->foto) }}" alt="Blog Image"></div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <a href="blog.html"><i class="far fa-user"></i>Admin</a>
                                     <a href="blog.html"><i
-                                        class="far fa-clock"></i>04 April, 2022</a></div>
-                            <h2 class="blog-title">Gerakan Nasional Aksi Bergizi Nasional Berlangsung Meriah Di SMKN 1 Dlanggu</h2>
-                            <p>Dengan terjalinnya kerjasama dan komunikasi antara sekolah dengan berbagai pihak khususnya 
-                                Puskesmas Dlanggu, kegiatan yang melibatkan seluruh siswa kelas X itu terlaksana dengan lancar. Hudi iswanto,S.Kom selaku Waka
-                                 Humas menyampaikan bahwa kegiatan ini merupakan lanjutan dari program selama ini yaitu pemberian 
-                                 kapsul tambah darah untuk siswi SMKN 1 Dlanggu dalam menanggulangi bahaya anemia. "Dalam kegiatan hari ini diawali dengan senam bersama dan dilanjutkan dengan sarapan pagi bersama kemudian ditutup dengan mengkonsumsi kapsul penambah darah bagi siswa putri", jelasnya.</p>
-                            
-                            <p>Kegiatan ini bertujuan untuk meningkatkan kesehatan para siswa, khususnya siswa putri dalam menyiapkan kesehatan reproduksinya.
-                                 Menurut Bu Kristin, penanggung jawab kegiatan dari Puskesmas Dlanggu, menyampaikan bahwa kegiatan ini untuk kabupaten Mojokerto serentak pada hari ini, 26 Oktober 2022. "Kami ingin mengetahui dan juga menaikkan status gizi remaja diwilayah kami, khususnya remaja putri yang harus menyiapkan diri untuk kesehatan reproduksi. Tujuan kedua kami juga memberikan kapsul penambah darah khususnya untuk remaja putri, karena kebutuhan zat besi yang mereka butuhkan selama mereka mengalami menstruasi,"ungkapnya. "Kita mempromosikan kegiatan Aksi Bergizi ini harapannya para siswa siswi tahu dan mengerti serta membutuhkan akan kebutuhan gizi seimbang. Hari ini kita melihat bahwa adik-adik Ini, masih banyak yang tidak suka sayur, buah dan susu. Sehingga gizi mereka kurang seimbang", imbuhnya.
-                                Setelah kegiatan sarapan bersama dan meminum kapsul penambah darah khususnya siswa putri,
-                                 kegiatan dilanjutkan dengan sosialisasi Aksi Gizi Nasional.*(Humas)</p>
+                                        class="far fa-clock"></i>{{ $data->createt_at }}</a></div>
+                            <h2 class="blog-title">{{ $data->judul }}</h2>
+                            <p>{!! $data->deskripsi !!}</p>
           
                            
                         </div>
                         <div class="share-links clearfix">
                             <div class="row justify-content-between">
                                 <div class="col-md-auto"><span class="share-links-title">Tags:</span>
-                                    <div class="tagcloud"><a href="blog.html">Education</a> <a
-                                            href="blog.html">Online</a></div>
+                                    <div class="tagcloud"><a href="blog.html">{{ $data->kategori }}</a> 
                                 </div>
                                 <div class="col-md-auto text-xl-end"><span class="share-links-title">Share:</span>
                                     <ul class="social-links">
@@ -61,21 +54,13 @@
                         </div>
                     </div>
                 </div>
+                @endforeach
                 <div class="col-xxl-4 col-lg-5">
                     <aside class="sidebar-area">
                         
                         <div class="widget">
                             <h3 class="widget_title">Berita Terbaru</h3>
                             <div class="recent-post-wrap">
-                                <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
-                                                src="mpls/3.jpg" alt="Blog Image"></a></div>
-                                    <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="far fa-calendar"></i>21/01/2022</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS hari Pertama </a></h4>
-                                    </div>
-                                </div>
                                 <div class="recent-post">
                                     <div class="media-img"><a href="blog-details.html"><img
                                                 src="mpls/4.jpg" alt="Blog Image"></a></div>

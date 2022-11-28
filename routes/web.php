@@ -79,11 +79,12 @@ Route::post('/blogupdate/{id}',[ProfileController::class, 'blogupdate'])->name('
 Route::post('/deleteblog/{id}',[ProfileController::class, 'deleteblog'])->name('deleteblog');
 
 Route::get('/eventindex', [ProfileController::class, 'index'])->name('eventindex');
-Route::get('/tambahevent', [ProfileController::class, 'create'])->name('tambahevent');
-Route::post('/insertevent', [ProfileController::class, 'store'])->name('insertevent');
-Route::get('/tampilevent/{id}', [ProfileController::class, 'tampilevent'])->name('tampilevent');
-Route::post('/updateevent/{id}', [ProfileController::class, 'updateevent'])->name('updateevent');
-Route::get('/deleteevent/{id}', [ProfileController::class, 'destroy'])->name('deleteevent');
+Route::get('/eventscreate', [ProfileController::class, 'create'])->name('eventscreate');
+Route::post('/eventstore',[ProfileController::class, 'eventstore'])->name('eventstore');
+Route::get('/eventedit/{id}',[ProfileController::class, 'eventedit'])->name('eventedit');
+Route::post('/eventupdate/{id}',[ProfileController::class, 'eventupdate'])->name('eventupdate');
+Route::post('/deleteevent/{id}',[ProfileController::class, 'deleteevent'])->name('deleteevent');
+
 
 Route::get('/smbtnindex',[ProfileController::class, 'smbtnindex'])->name('smbtnindex');
 Route::post('/smbtnstore',[ProfileController::class, 'smbtnstore'])->name('smbtnstore');

@@ -14,13 +14,16 @@ use App\Models\visi;
 use App\Models\sudutecho;
 use App\Models\Axio;
 use App\Models\Beasiswa;
+use App\Models\Sambutan;
 
 class LandingController extends Controller
 {
     public function index(){
         $data=Guru::all();
+        $gakenek=blog::all();
+        $sambutan=Sambutan::all();
         // $data=sejarah
-        return view('landingpage.index', compact('data'));
+        return view('landingpage.index', compact('data','gakenek', 'sambutan'));
     }
 
     public function sija(Request $request)
@@ -30,7 +33,8 @@ class LandingController extends Controller
 
     public function detail(Request $request)
     {
-        return view('landingpage.jurusan.detail');
+        $data=Jurusan::all();
+        return view('landingpage.jurusan.detail',compact('data'));
     }
 
     public function profile(Request $request)
@@ -80,7 +84,8 @@ class LandingController extends Controller
     }
     public function blogdetail(Request $request)
     {
-        return view('landingpage.blogdetail');
+        $data=blog::all();
+        return view('landingpage.blogdetail', compact(['data']));
     }
     public function extrakulikuler(Request $request)
     {

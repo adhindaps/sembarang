@@ -148,6 +148,70 @@ class ProfileController extends Controller
         return view('admin.sekolah.eventindex', compact('data'));
     }
     
+    public function create()
+    {
+        
+        return view('admin.sekolah.eventscreate');
+    }
+
+    public function eventstore(Request $request)
+    {
+        if($request->hasFile('foto')){
+            $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
+        $data = Event::create([
+            'foto' => $request->file('foto')->getClientOriginalName(),
+            'namaevent' => $request->namaevent,
+            'tempat' => $request->tempat,
+            'tanggalevent' => $request->tanggalevent,
+            'jamevent' => $request->jamevent,
+            'deskripsi' => $request->tempat,
+        ]);
+        $data->foto = $request->file('foto')->getClientOriginalName();
+    }
+        return redirect()->route('eventindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function eventedit($id)
+    {
+        $row = Event::find($id);
+        $row = Event::findOrfail($id);
+        return view('admin.sekolah.eventedit',compact('row'));
+    }
+
+    public function eventupdate($id, Request $request, Profile $event)
+    {
+        $data = DB::table('events')->where('id',$id);
+        if($request->hasFile('foto')){
+            $pindah = $request->file('foto')->move(public_path().'\storage', $request->file('foto')->getClientOriginalName());
+            $data = Event::find($id)->update([
+                'foto' => $request->file('foto')->getClientOriginalName(),
+                'namaevent' => $request->namaevent,
+                'tempat' => $request->tempat,
+                'tanggalevent' => $request->tanggalevent,
+                'jamevent' => $request->jamevent,
+                'deskripsi' => $request->tempat,
+              
+            ]);
+        return redirect('eventindex')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
+            'namaevent' => $request->namaevent,
+            'tempat' => $request->tempat,
+            'tanggalevent' => $request->tanggalevent,
+            'jamevent' => $request->jamevent,
+            'deskripsi' => $request->tempat,
+        ]);
+        return redirect('eventindex')->with('sukses','Updatedata!');
+    }
+    }
+
+    public function deleteevent($id){
+        $data = Event::find($id);
+        $data->delete();
+        return redirect()->route('eventindex')->with('sukses','Deletedata!');
+
+    }
+
     public function echostore(Request $request)
     {
         $this->validate($request, [

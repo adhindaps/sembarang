@@ -12,8 +12,8 @@
                     <h4 class="card-title">{{$foto->judul}}</h4>
                     <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
                         <div class="carousel-inner" >
-                            <div class="carousel-item active" data-interval="10000"> <img class="img-fluid"
-                                src="foto/{{ $foto->fotokgt }}" alt="First slide">
+                            <div class="carousel-item active" data-interval="1000"> <img class="img-fluid"
+                                src="foto/{{ $foto->fotokgt }}" height="400" width="400"  alt="First slide">
                             </div>
                         </div>
                     </div>

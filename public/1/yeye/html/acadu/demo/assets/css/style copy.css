@@ -7563,13 +7563,13 @@ span.select2-selection.select2-selection--single:focus {
 .img-box5 .img1 {
 	text-align: center
 }
-	.img-box5 .shape {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		-webkit-animation: jumpAni 7s linear infinite;
-		animation: jumpAni 7s linear infinite
-	}
+.img-box5 .shape {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	-webkit-animation: jumpAni 7s linear infinite;
+	animation: jumpAni 7s linear infinite
+}
 @media (max-width: 1199px) {
 	.img-box5 {
 		position: relative;

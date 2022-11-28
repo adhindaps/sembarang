@@ -32,7 +32,7 @@
                             @foreach ($data as $data)
                                 <tr>
                                     <th scope="data">{{ $no++ }}</th>
-                                    <td>  <img alt=" " src="foto/{{ $data->fotoguru }}"width="100px" > </td>
+                                    <td>  <img alt=" " src="guru/{{ $data->fotoguru }}"width="100px" > </td>
                                     <td>{{ $data->nama }}</td>
                                     <td>{!! $data->nip !!}</td>
                                     <td>{{ $data->tmplahir }}</td>

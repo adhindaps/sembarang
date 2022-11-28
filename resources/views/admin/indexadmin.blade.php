@@ -176,6 +176,9 @@
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="smbtnindex"
                             aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                             class="hide-menu">Sambutan </span></a></li>
+                            <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="aboutindex"
+                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                                class="hide-menu">Keunggulan </span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="visiindex"
                                 aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
                                     class="hide-menu">Visi & Misi</span></a></li>
@@ -186,12 +189,21 @@
                             aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                 class="hide-menu">Data Guru</span></a></li>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/jurusanindex"
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                            aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                                class="hide-menu">Keahlian </span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="jurusanindex" class="sidebar-link"><span
+                                        class="hide-menu"> Jurusan 
+                                    </span></a>
+                                    <li class="sidebar-item"><a href="kajurindex" class="sidebar-link"><span
+                                        class="hide-menu"> Kajur 
+                                    </span></a>
+                                </ul>
+                            </li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/bkkindex"
                             aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
-                                class="hide-menu">Jurusan</span></a></li>
-                                <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/bkkindex"
-                                    aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
-                                        class="hide-menu">BKK</span></a></li>
+                                    class="hide-menu">BKK</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="extraindex"
                                 aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span
                                     class="hide-menu">Extrakulikuler

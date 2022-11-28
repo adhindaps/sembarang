@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('fotokajur');
             $table->string('nama');
             $table->string('nip');
-            $table->string('jurusan');
+            $table->unsignedBigInteger('id_jurusan');
             $table->timestamps();
         });
     }

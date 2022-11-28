@@ -57,7 +57,7 @@
                 <div class="col-sm-6 col-xl-4">
                     <div class="category-card">
                         <div class="category-card_icon"><img alt="icon"
-                                src="{{ asset('1/yeye/html/acadu/demo/assets/img/icon/category_1_1.svg') }}"></div>
+                                src="/jur/10.svg"></div>
                         <div class="category-card_content">
                             <h3 class="category-card_title"><a href="course.html">Pengajar Kompeten</a></h3>
                             <p class="category-card_text">Kualifikasi pengajar S1 dan S2 dari lulusan kampus ternama
@@ -125,7 +125,7 @@
     </section>
     @foreach ($sambutan as $bp )
         
-    @endforeach
+    
     <div class="space">
         <div class="container">
             <div class="row align-items-center">
@@ -134,7 +134,8 @@
                         <div class="img1"><img
                                 src="{{ asset('1/yeye/html/acadu/demo/assets/img/normal/about_3_1.png') }}"
                                 alt="about"></div>
-                        <div class="shape"><img
+                        <div class="shape">
+                            <img
                                 src="{{ asset('1/yeye/html/acadu/demo/assets/img/normal/about_shape_1.png') }}"
                                 alt="shape"></div>
                     </div>
@@ -147,6 +148,7 @@
                 </div>
             </div>
         </div>
+        @endforeach
         <div class="shape-mockup" data-top="0%" data-right="0"><img
                 src="{{ asset('1/yeye/html/acadu/demo/assets/img/shape/cloud_3.png') }}" alt="shape">
         </div>

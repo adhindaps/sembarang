@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Models\about;
 use App\Models\Sambutan;
 use App\Models\sudutecho;
 use App\Models\Profile;
@@ -71,14 +73,6 @@ class ProfileController extends Controller
         $data->update($request->all());
         return redirect('identitas');
     }
-
-    public function echoindex()
-    {
-        $data = sudutecho::where('id','=',1)->firstOrFail();
-        return view('admin.fasilitas.echoindex',compact('data'));
-    }
-
-
 
      public function blogindex()
     {
@@ -209,7 +203,12 @@ class ProfileController extends Controller
         $data = Event::find($id);
         $data->delete();
         return redirect()->route('eventindex')->with('sukses','Deletedata!');
-
+    }
+    
+    public function echoindex()
+    {
+        $data = sudutecho::where('id','=',1)->firstOrFail();
+        return view('admin.fasilitas.echoindex',compact('data'));
     }
 
     public function echostore(Request $request)
@@ -262,4 +261,36 @@ class ProfileController extends Controller
         return redirect('smbtnindex');
     }
 
+    
+    
+    public function aboutindex()
+    {
+        // $data = About::where('id','=',1)->firstOrFail();
+        // $data=About::all();
+        $data=about::all();
+        return view('admin.profile.aboutindex',compact('data'));
+    }
+
+    public function aboutstore(Request $request)
+    {
+        $this->validate($request, [
+            'icon' => 'required',
+            'judul' => 'required',
+            'deskripsi' => 'required',
+        ]);
+        $data = About::create([
+            'icon' => $request->icon,
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        return redirect('aboutindex');
+    
+    }
+
+    public function aboutupdate(Request $request)
+    {
+        $data=About::find($request->id);
+        $data->update($request->all());
+        return redirect('aboutindex');
+    }
 }

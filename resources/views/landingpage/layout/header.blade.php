@@ -61,6 +61,10 @@
                                                     <li>
                                                         <a href="extrakulikuler">EXTRAKULIKULER</a>
                                                     </li>
+                                                    <br/>
+                                                    <li>
+                                                        <a href="http://lsp.smkn1dlanggu.sch.id/#">LSP</a>
+                                                    </li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children">
@@ -73,29 +77,15 @@
                                                     <li>
                                                         <a href="sejarah">Sejarah Sekolah</a>
                                                     </li>
-                                                   <br/>
-                                                
-                                                    <li>
-                                                        <a href="dataguru">Data Guru</a>
-                                                    </li>                                                                                                  
+                                                   <br/>                                                                                                
                                                 </ul>
                                             </li>
                                     
-                                            <li class="menu-item-has-children">
-                                                <a href="#">BKK</a>
-                                                <ul class="sub-menu">
-                                                    <li>
-                                                        <a href="bkk">BKK</a>
-                                                    </li>
-                                                    {{-- <li>
-                                                        <a href="profile">Profile Sekolah</a>
-                                                    </li>
-                                                     --}}
-                                                </ul>
-                                            </li>
-                                            
                                             <li>
-                                                <a href="kontak">Contact</a>
+                                                <a href="bkk">BKK</a>
+                                            </li>
+                                            <li>
+                                                <a href="kontak">Kontak</a>
                                             </li>
                                         </ul>
                                     </nav><button class="as-menu-toggle d-inline-block d-lg-none" type="button"><i class="far fa-bars"></i></button>

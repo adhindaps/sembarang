@@ -17,6 +17,11 @@
                               <input type="text" value="{{$data->judul}}" name="judul" class="form-control" id="inputPassword4"  placeholder="">
                             </div>
                             <div class="form-group col-md-12">
+                                <label for="inputPassword4">Foto</label>
+                                <img class="img mb-3" src="foto/{{ $data->fotokepsek }}" alt="" style="width: 100px;">
+                                 <input type="file" name="fotokepsek" class="form-control" id="fotokepsek" aria-describedby="emailHelp" value="{{ $data->fotokepsek }}">
+                              </div>
+                            <div class="form-group col-md-12">
                                 <label for="editor">Deskripsi</label>
                                 <textarea name="sambutan" id="editor">{!! $data->sambutan !!}</textarea>
                               </div>

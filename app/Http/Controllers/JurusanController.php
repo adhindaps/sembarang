@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Jurusan;
+use App\Models\Kajur;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -113,5 +114,61 @@ class JurusanController extends Controller
         $data->delete();
         return redirect()->route('jurusanindex')->with('success', 'Data Berhasil Dihapus');
     
+    }
+
+    public function kajurindex()
+    {
+        $data=Kajur::all();
+        return view('admin.data.kajur',compact('data'));
+    }
+
+    public function kajurcreate()
+    {
+        $data=Kajur::all();
+        $datajurusan=Jurusan::all();
+        return view('admin.data.kajurcreate',compact('data','datajurusan'));
+    }
+    public function kajurstore(Request $request)
+    {
+        if($request->hasFile('fotokajur')){
+            $request->file('fotokajur')->move('foto/', $request->file('fotokajur')->getClientOriginalName());
+        $data = Kajur::create([
+            'fotokajur' => $request->file('fotokajur')->getClientOriginalName(),
+            'nama' => $request->nama,
+            'nip' => $request->nip,
+            'id_jurusan' => $request->id_jurusan,
+        ]);
+        $data->fotokajur = $request->file('fotokajur')->getClientOriginalName();
+    }
+        return redirect()->route('kajurindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function kajuredit($id)
+    {
+        $data = Kajur::findOrfail($id);
+        $datajurusan=Jurusan::all();
+        return view('admin.data.kajuredit',compact('data','datajurusan'));
+    }
+
+    public function kajurupdate($id,Request $request)
+    {
+        $data = DB::table('kajurs')->where('id',$id);
+        if($request->hasFile('fotokajur')){
+            $pindah = $request->file('fotokajur')->move(public_path().'\storage', $request->file('fotokajur')->getClientOriginalName());
+            $data = kajur::find($id)->update([
+                'fotokajur' => $request->file('fotokajur')->getClientOriginalName(),
+               'nama' => $request->nama,
+               'nip' => $request->nip,
+               'id_jurusan' => $request->id_jurusan,
+            ]);
+        return redirect('kajurindex')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
+            'nama' => $request->nama,
+            'nip' => $request->nip,
+            'id_jurusan' => $request->id_jurusan,
+        ]);
+        return redirect('kajurindex')->with('sukses','Updatedata!');
+    }
     }
 }

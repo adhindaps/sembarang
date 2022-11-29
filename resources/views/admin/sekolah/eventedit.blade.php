@@ -7,7 +7,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Tambah Events</h4>
-                            <form action="/eventupdate {{ $row->id }}" method="POST" enctype="multipart/form-data">
+                            <form action="/eventupdate/{{ $row->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-row">
                                     <div class="form-group col-md-12">

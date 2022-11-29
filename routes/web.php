@@ -96,7 +96,8 @@ Route::post('/echoupdate',[ProfileController::class, 'echoupdate'])->name('echou
 
 Route::get('/aboutindex',[ProfileController::class, 'aboutindex'])->name('aboutindex');
 Route::post('/aboutstore',[ProfileController::class, 'aboutstore'])->name('aboutstore');
-Route::post('/aboutupdate',[ProfileController::class, 'aboutupdate'])->name('aboutupdate');
+Route::get('/aboutedit/{id}',[ProfileController::class, 'aboutedit'])->name('aboutedit');
+Route::post('/aboutupdate/{id}',[ProfileController::class, 'aboutupdate'])->name('aboutupdate');
 
 Route::get('/visiindex',[VisiController::class, 'visiindex'])->name('visiindex');
 Route::post('visistore',[VisiController::class, 'visistore']);

@@ -26,10 +26,12 @@ class SejarahController extends Controller
     public function sejarahstore(Request $request)
     {
         $this->validate($request, [
+            'fotosjr' => 'required',
             'nama' => 'required',
             'deskripsi' => 'required',
         ]);
         $data = Sejarah::create([
+            'fotosjr' => $request->fotosjr,
             'nama' => $request->nama,
             'deskripsi' => $request->deskripsi,
         ]);

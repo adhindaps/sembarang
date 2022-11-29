@@ -43,7 +43,7 @@
                                                 <td>{{ $row->tempat }}</td>
                                                 <td>{{ $row->tanggalevent }}</td>
                                                 <td>{{ $row->jamevent }}</td>
-                                                <td>{{ $row->deskripsi }}</td>
+                                                <td>{!! $row->deskripsi !!}</td>
                                                 <td>
                                                     <a href="/eventedit/{{ $row->id }}"
                                                         class="btn btn-warning">Edit</a>
@@ -57,7 +57,7 @@
                                 </table>
                             </div>
                         </div>
-
+                    </div>
                     </div>
                 </div>
                 @include('admin.footeradmin')

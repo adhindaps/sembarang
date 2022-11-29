@@ -158,7 +158,7 @@ class ProfileController extends Controller
             'tempat' => $request->tempat,
             'tanggalevent' => $request->tanggalevent,
             'jamevent' => $request->jamevent,
-            'deskripsi' => $request->tempat,
+            'deskripsi' => $request->deskripsi,
         ]);
         $data->foto = $request->file('foto')->getClientOriginalName();
     }
@@ -183,7 +183,7 @@ class ProfileController extends Controller
                 'tempat' => $request->tempat,
                 'tanggalevent' => $request->tanggalevent,
                 'jamevent' => $request->jamevent,
-                'deskripsi' => $request->tempat,
+                'deskripsi' => $request->deskripsi,
               
             ]);
         return redirect('eventindex')->with('sukses','Updatedata!');
@@ -193,7 +193,7 @@ class ProfileController extends Controller
             'tempat' => $request->tempat,
             'tanggalevent' => $request->tanggalevent,
             'jamevent' => $request->jamevent,
-            'deskripsi' => $request->tempat,
+            'deskripsi' => $request->deskripsi,
         ]);
         return redirect('eventindex')->with('sukses','Updatedata!');
     }
@@ -269,6 +269,13 @@ class ProfileController extends Controller
         // $data=About::all();
         $data=about::all();
         return view('admin.profile.aboutindex',compact('data'));
+    }
+
+    public function aboutedit($id)
+    {
+        $data = About::find($id);
+        $data = About::findOrfail($id);
+        return view('admin.profile.aboutedit',compact('data'));
     }
 
     public function aboutstore(Request $request)

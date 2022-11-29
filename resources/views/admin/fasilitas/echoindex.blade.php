@@ -25,6 +25,23 @@
                                 <label for="editor">Deskripsi</label>
                                 <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
                               </div>
+                              <div class="form-group col-md-12">
+                                <label for="inputPassword4">Link</label>
+                                <input type="text" value="{{$data->link}}" name="link" class="form-control" id="inputPassword4"  placeholder="">
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="editor">Jam </label>
+                                <input type="time" name="jam" class="form-control" id="inputPassword4"
+                                value="{{ $data->jam }}" placeholder="">
+                            </div>
+                              <div class="form-group col-md-12">
+                                <label for="inputPassword4">Lokasi</label>
+                                <input type="text" value="{{$data->lokasi}}" name="lokasi" class="form-control" id="inputPassword4"  placeholder="">
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="inputPassword4">Alamat</label>
+                                <input type="text" value="{{$data->alamat}}" name="alamat" class="form-control" id="inputPassword4"  placeholder="">
+                              </div>
                           </div>
                           <div class="form-actions">
                             <div class="text-right">

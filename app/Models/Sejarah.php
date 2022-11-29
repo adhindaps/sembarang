@@ -7,11 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Sejarah extends Model
 {
-    protected $table = 'sejarahs';
-    protected $fillable = [
-        'id', 'nama','deskripsi'
-    ];
-
     protected $guarded = [];
     use HasFactory;
 }

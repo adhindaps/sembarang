@@ -18,6 +18,10 @@ return new class extends Migration
             $table->string('fotoecho');
             $table->string('judul');
             $table->text('deskripsi');
+            $table->string('link');
+            $table->string('jam');
+            $table->string('lokasi');
+            $table->string('alamat');
             $table->timestamps();
         });
     }

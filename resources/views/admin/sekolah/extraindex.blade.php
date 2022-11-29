@@ -36,7 +36,7 @@
                                     <td>{{ $ex->subjudul }}</td>
                                     <td>{{ $ex->extra }}</td>
                                     <td>{!! $ex->deskripsi !!}</td>
-                                    <td><a href="/extraedit/{{ $ex->id }}" class="btn btn-warning">Ubah</a></td>
+                                    <td><a href="/extraedit/{{ $ex->id }}" class="btn btn-warning"><i class="fas fa-pencil-alt"></i></a></td>
                                 </tr>
                                 @endforeach
                             </tbody>

@@ -13,6 +13,11 @@
 
                         <div class="form-row">
                             <div class="form-group col-md-12">
+                                <label for="inputPassword4">Foto</label>
+                                <img class="img mb-3" src="foto/{{ $data->fotosjr }}" alt="" style="width: 100px;">
+                                 <input type="file" name="fotosjr" class="form-control" id="fotosjr" aria-describedby="emailHelp" value="{{ $data->fotosjr }}">
+                              </div>
+                            <div class="form-group col-md-12">
                               <label for="inputPassword4">Nama</label>
                               <input type="text" value="{{$data->nama}}" name="nama" class="form-control" id="inputPassword4"  placeholder="">
                             </div>

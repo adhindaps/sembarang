@@ -31,8 +31,12 @@
                                     <td> <img alt=" " src="foto/{{ $bk->fotobk }}"width="100px"></td>
                                     <td>{{ $bk->perusahaan }}</td>
                                     <td style="word-break:break-all;">{!! $bk->deskripsi !!}</td>
-                                    <td><a href="/bkkedit/{{ $bk->id }}" class="btn btn-warning">Ubah</a>
-                                    <a href="/bkkhapus/{{$bk->id}}" class="btn btn-danger">Hapus</a></td>
+                                    <td>
+                                    <a href="/bkkedit/{{ $bk->id }}" class="btn btn-warning">
+                                        <i class="fas fa-pencil-alt"></i></a>
+                                    <a href="#" class="btn btn-danger deletebkk"
+                                        data-id="{{ $bk->id }}" data-bkk="{{ $bk->bkk }}">
+                                        <i class=" fas fa-trash"></i></a>
                                 </tr>
                             @endforeach
                             </tbody>
@@ -45,4 +49,30 @@
 </div>
 </div>
 @include('admin.footeradmin')
+
+<script>
+    $('.deletebkk').click(function() {
+        var bkkid = $(this).attr('data-id');
+        var bkk = $(this).attr('data-bkk');
+        Swal.fire({
+            title: 'Apakah Kamu yakin?',
+            text: "Menghapus bkk " + bkk + "",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location = "/deletebkk/" + bkkid + ""
+                Swal.fire(
+                    'Terhapus!',
+                    'data ' + bkk + ' terhapus',
+                    'success'
+                )
+            }
+        })
+    });
+</script>
+
 @endsection

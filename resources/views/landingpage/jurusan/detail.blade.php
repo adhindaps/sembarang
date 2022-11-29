@@ -17,67 +17,85 @@
     <section class="as-blog-wrapper blog-details space-top space-extra-bottom">
         <div class="container">
             <div class="row">
-                @foreach ($data as $data)
-                    <div class="col-xxl-8 col-lg-7">
-                        <div class="as-blog blog-single">
-                            <img src="{{ $data->foto }}" width="3000" alt="Blog Image">
-                            <div class="blog-content">
-                                <div class="blog-meta">
-                                    <a href="blog.html"><i class="far fa-book"></i>Study</a>
-                                </div>
-                                <h2 class="blog-title">{{ $data->jurusan }}</h2>
-                                <p>{{ $data->deskripsi }}
-                                </p>
+                <div class="col-xxl-8 col-lg-7">
+                    <div class="as-blog blog-single">
+                        <img src="{{ asset('foto/' . $data->foto) }}" width="3000" alt="Blog Image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="blog.html"><i class="far fa-book"></i>Study</a>
                             </div>
-                        </div>
-                @endforeach
-            </div>
-            <div class="col-xxl-4 col-lg-5">
-                <aside class="sidebar-area">
-                    <div class="widget widget_info">
-                        <a><img src="mpls/1.jpg"></a>
-                        <h3 class="widget_title">Ketua Jurusan</h3>
-                        <div class="info-list">
-                            <ul>
-                                <li><i class="fa-light fa-user"></i> <strong>Nama: </strong><span>David Smith</span>
-                                </li>
-                                <li><i class="fa-light fa-phone"></i> <strong>Nip: </strong><span>1827381548927</span>
-                                </li>
-                                <li><i class="fa-light fa-calendar-days"></i> <strong>Setatus: </strong><span>PNS</span>
-                                </li>
-                                <li><i class="fa-light fa-clock"></i> <strong>Tempat Lahir:
-                                    </strong><span>Mojokerto</span></li>
-                                <li><i class="fa-light fa-location-dot"></i> <strong>Tanggal Lahir: </strong><span>17
-                                        Aguatua 1990</span></li>
-                            </ul>
+                            <h2 class="blog-title">{{ $data->jurusan }}</h2>
+                            <p>{{ $data->deskripsi }}</p>
                         </div>
                     </div>
-                    <div class="widget widget_info">
-                        <h3 class="widget_title">Guru produktif</h3>
-                        <div class="col-xl-12">
-                            <div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
-                                <div class="col-md-8 col-lg-6">
-                                    <div class="team-box">
-                                        <img class="imgenduk" alt="Team"
-                                            src="{{ asset('1/yeye/html/acadu/demo/assets/img/team/team_1_1.jpg') }}">
+                </div>
+                <div class="col-xxl-4 col-lg-5">
+                    <aside class="sidebar-area">
+                        <div class="widget widget_info">
+                            <a><img class="imgenduk" alt="Team" src="{{ asset('foto/' . $kajur->fotokajur) }}"></a>
+                            <h3 class="widget_title">Ketua Jurusan</h3>
+                            <div class="info-list">
+                                <ul>
+                                    <li><i class="fa-light fa-user"></i> <strong>Nama:
+                                        </strong><span>{{ $kajur->nama }}</span>
+                                    </li>
+                                    <li><i class="fa-light fa-phone"></i> <strong>Nip:
+                                        </strong><span>{{ $kajur->nip }}</span>
+                                    </li>
+                                    {{-- <li><i class="fa-light fa-calendar-days"></i> <strong>Setatus: </strong><span>{{ $kj->jurusan->jurusan }}</span> --}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget widget_info">
+                            <h3 class="widget_title">Guru produktif</h3>
+                            <br />
+                            <div class="col-xl-12">
+                                <div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="team-box">
+                                            <div class="team-img">
+                                                <img class="rr" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
+                                                <div class="as-social">
+                                                    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="team-title"><a href="team-details.html">Kevin Martin Ben</a></h3><span class="team-desig">Online Teacher</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="team-box">
+                                            <div class="team-img">
+                                                <img class="rr" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
+                                                <div class="as-social">
+                                                    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h3><span class="team-desig">Online Teacher</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="team-box">
+                                            <div class="team-img">
+                                                <img class="rr" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
+                                                <div class="as-social">
+                                                    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="team-title"><a href="team-details.html">Aiden Samuel Jabin</a></h3><span class="team-desig">Online Teacher</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="team-box">
-                                    <img class="imgenduk"
-                                        alt="Team"src="{{ asset('1/yeye/html/acadu/demo/assets/img/team/team_1_2.jpg') }}">
-                                </div>
-                            </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="team-box">
-                                <img class="imgenduk" alt="Team"
-                                    src="{{ asset('1/yeye/html/acadu/demo/assets/img/team/team_1_3.jpg') }}">
-                            </div>
-                        </div>
-                    </div>
-                </aside>
+                    </aside>
+                </div>
             </div>
         </div>
     </section>

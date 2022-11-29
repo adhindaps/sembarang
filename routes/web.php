@@ -40,7 +40,7 @@ Route::get('/siswapres',[AdminController::class, 'siswapres'])->name('siswapres'
 
 
 Route::get('/sija',[LandingController::class, 'sija'])->name('sija');
-Route::get('/detail',[LandingController::class, 'detail'])->name('detail');
+Route::get('/detail/{id}',[LandingController::class, 'detail'])->name('detail');
 
 Route::get('/sejarah',[LandingController::class, 'sejarah'])->name('sejarah');
 Route::get('/galerry',[LandingController::class, 'galerry'])->name('galerry');
@@ -50,7 +50,7 @@ Route::get('/visi',[LandingController::class, 'visi'])->name('visi');
 Route::get('/dataguru',[LandingController::class, 'dataguru'])->name('dataguru');
 Route::get('/blog',[LandingController::class, 'blog'])->name('blog');
 Route::get('/events',[LandingController::class, 'events'])->name('events');
-Route::get('/detailevents',[LandingController::class, 'detailevents'])->name('detailevents');
+Route::get('/detailevents/{id',[LandingController::class, 'detailevents'])->name('detailevents');
 Route::get('/echo',[LandingController::class, 'echo'])->name('echo');
 Route::get('/blogdetail',[LandingController::class, 'blogdetail'])->name('blogdetail');
 Route::get('/extrakulikuler',[LandingController::class, 'extrakulikuler'])->name('extrakulikuler');
@@ -107,7 +107,7 @@ Route::get('/bkkcreate',[SejarahController::class, 'bkkcreate'])->name('bkkcreat
 Route::post('/bkkstore',[SejarahController::class, 'bkkstore'])->name('bkkstore');
 Route::get('/bkkedit/{id}',[SejarahController::class, 'bkkedit'])->name('bkkedit');
 Route::post('/bkkupdate/{id}',[SejarahController::class, 'bkkupdate'])->name('bkkupdate');
-Route::get('/bkkhapus',[SejarahController::class, 'bkkhapus'])->name('bkkhapus');
+Route::get('/deletebkk/{id}',[SejarahController::class, 'bkkhapus'])->name('bkkhapus');
 
 Route::get('/beasiswaindex',[SejarahController::class, 'beasiswaindex'])->name('beasiswaindex');
 Route::post('/beasiswastore',[SejarahController::class, 'beasiswastore'])->name('beasiswastore');
@@ -132,7 +132,7 @@ Route::get('/jurusancreate',[JurusanController::class, 'jurusancreate'])->name('
 Route::post('/jurusanstore',[JurusanController::class, 'jurusanstore'])->name('jurusanstore');
 Route::get('/jurusanedit/{id}',[JurusanController::class, 'jurusanedit'])->name('jurusanedit');
 Route::post('/jurusanupdate/{id}',[JurusanController::class, 'jurusanupdate'])->name('jurusanupdate');
-Route::get('/jurusandelete/{id}',[JurusanController::class, 'destroy'])->name('destroy');
+Route::get('/deletejurusan/{id}',[JurusanController::class, 'destroy'])->name('destroy');
 
 Route::get('/kajurindex',[JurusanController::class, 'kajurindex'])->name('kajurindex');
 Route::get('/kajurcreate',[JurusanController::class, 'kajurcreate'])->name('kajurcreate');
@@ -145,8 +145,7 @@ Route::get('/gurucreate',[GuruController::class, 'gurucreate'])->name('gurucreat
 Route::post('/gurustore',[GuruController::class, 'gurustore'])->name('gurustore');
 Route::get('/guruedit/{id}',[GuruController::class, 'guruedit'])->name('guruedit');
 Route::post('/guruupdate/{id}',[GuruController::class, 'guruupdate'])->name('guruupdate');
-// Route::get('/deleteguru/{id}',[GuruController::class, 'deleteguru']);
-//Route::get('/deleteguru/{id}',[GuruController::class, 'destroy'])->name('destroy');
+Route::get('/deleteguru/{id}',[GuruController::class, 'destroy'])->name('destroy');
 
 Route::get('/galeryindex',[GaleryController::class, 'galeryindex'])->name('galeryindex');
 Route::get('/galerycreate',[GaleryController::class, 'galerycreate'])->name('galerycreate');
@@ -159,3 +158,4 @@ Route::get('/extracreate',[ExtraController::class, 'extracreate'])->name('extrac
 Route::post('/extrastore',[ExtraController::class, 'extrastore'])->name('extrastore');
 Route::get('/extraedit/{id}',[ExtraController::class, 'extraedit'])->name('extraedit');
 Route::post('/extraupdate/{id}',[ExtraController::class, 'extraupdate'])->name('extraupdate');
+Route::get('/deleteextra/{id}',[ExtraController::class, 'destroy'])->name('destroy');

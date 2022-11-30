@@ -28,7 +28,7 @@
                             @foreach ($data as $bk )
                             <div class="col-xl-4 mb-20 mb-xl-0">
                                 <div class="cta-card"
-                                    data-bg-src="foto/{{ $bk->fotobk }}">
+                                    data-bg-src="{{ asset('1/yeye/html/acadu/demo/assets/img/breadcumb/breadcumb-bg.jpg')}}">
                                     <div class="title-area mb-40"><span class="sub-title"><i
                                                 class="fal fa-book me-2"></i>Lowongan Kerja</span>
                                         <h4 class="sec-title">{{ $bk->perusahaan }}</h4>

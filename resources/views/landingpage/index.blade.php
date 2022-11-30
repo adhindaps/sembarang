@@ -78,7 +78,7 @@
                 <div class="col-xl-6">
                     <div class="img-box5">
                         <div class="img1"><img
-                                src="{{ $bp->fotokepsek }}"
+                                src="{{ asset('foto/team.png')}}"
                                 alt="about"></div>
                         <div class="shape">
                             <img
@@ -130,7 +130,7 @@
                         oriented architectures propriately enegdrages one-to-one resources after standardized scenarios
                         adaptive experiences exceptional resources service depend lifestyle carefully</p>
                     <div class="text-center text-xl-start">
-                        <a class="as-btn" href="team.html">Selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
+                        <a class="as-btn" href="/dataguru">Selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-xl-6">
@@ -139,12 +139,12 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="team-box">
                                 <div class="team-img">
-                                    <img class="rr" alt="Team"
+                                    <img alt="Team"
                                         src="{{ asset('guru/' . $yy->fotoguru) }}">
                                   
                                 </div>
                                 <div class="team-content">
-                                    <h3 class="team-title"><a href="team-details.html">{{$yy->nama}}</a></h3><span
+                                    <h3 class="team-title">{{$yy->nama}}</h3><span
                                         class="team-desig">{{$yy->jabatan}}</span>
                                 </div>
                             </div>
@@ -253,14 +253,13 @@
                 <span class="sub-title">BERITA & BLOG TERBARU</span>
                 <h2 class="sec-title fw-medium">Dapatkan Setiap Pembaruan</h2>
             </div>
-            @foreach ($gakenek as $ngelu)
-                
-            
+
             <div class="row slider-shadow as-carousel" data-lg-slide-show="2" data-md-slide-show="2"
                 data-slide-show="3" data-sm-slide-show="1">
+                @foreach ($gakenek as $ngelu)
                 <div class="col-md-6 col-xl-4">
                     <div class="blog-card">
-                        <img class="imgg" src="http://www.smkn1dlanggu.sch.id/websmk/asset/foto_berita/ab.png"
+                        <img class="imgg" src="foto/{{ $ngelu->foto }}"
                             alt="ab.png">
                         <div class="blog-content">
                             <div class="blog-meta style2">
@@ -272,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 @endforeach
             </div>
         </div>

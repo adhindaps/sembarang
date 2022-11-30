@@ -30,7 +30,7 @@
                             @foreach ($data as $jur)
                                 <tr>
                                     <th scope="jur">{{ $no++ }}</th>
-                                    <td>  <img alt=" " src="foto/{{ $jur->fotokajur }}"width="100px"> </td>
+                                    <td>  <img alt=" " src="{{ asset('foto/lila.jpg')}}"width="100px"> </td>
                                     <td>{{ $jur->nama }}</td>
                                     <td>{{ $jur->nip }}</td>
                                     <td>{{ $jur->jurusan->jurusan }}</td>

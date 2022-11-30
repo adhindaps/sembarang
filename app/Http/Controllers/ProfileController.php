@@ -9,6 +9,7 @@ use App\Models\sudutecho;
 use App\Models\Profile;
 use App\Models\blog;
 use App\Models\Event;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -299,5 +300,47 @@ class ProfileController extends Controller
         $data=About::find($request->id);
         $data->update($request->all());
         return redirect('aboutindex');
+    }
+
+  
+    public function slider()
+    {
+        $data = Slider::all();
+        return view('admin.slider', compact('data'));
+    }
+
+    public function slidercreate()
+    {
+        
+        return view('admin.slidercreate');
+    }
+
+    public function sliderstore(Request $request)
+    {
+        if($request->hasFile('foto')){
+            $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
+        $data = Slider::create([
+            'foto' => $request->file('foto')->getClientOriginalName(),
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        $data->foto = $request->file('foto')->getClientOriginalName();
+    }
+        return redirect()->route('slider')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function slideredit($id)
+    {
+        $data = Slider::find($id);
+        $data = Slider::findOrfail($id);
+        return view('admin.slideredit',compact('data'));
+    }
+
+    public function destroy($id)
+    {
+        $data = Slider::find($id);
+        $data->delete();
+        return redirect()->route('slider')->with('success', 'Data Berhasil Dihapus');
+    
     }
 }

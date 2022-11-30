@@ -35,6 +35,7 @@
                 </div>
             </div>
         </div>
+        
     </section>                      
         @include('landingpage.layout.footer')
         <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>

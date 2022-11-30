@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-xxl-9 col-lg-8">
                     <div class="event-details">
-                        <div class="event-img"><img src="{{ $data->foto }}" alt="foto"></div>
+                        <div class="event-img"><img src="foto/ecooooooo.jpg" alt="foto"></div>
                         <h3 class="h3 mt-n2">{{$data->judul}}</h3>
                         <p class="mb-30">{!! $data->deskripsi !!}</p>
                     </div>

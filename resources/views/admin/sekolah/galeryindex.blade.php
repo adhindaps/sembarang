@@ -17,6 +17,7 @@
                             </div>
                         </div>
                     </div>
+                    <br/>
                     <a href="#" class="btn btn-danger deletegalery"
                     data-id="{{ $foto->id }}"
                     data-galeri="{{ $foto->galeri }}">

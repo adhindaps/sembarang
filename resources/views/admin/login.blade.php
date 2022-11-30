@@ -10,8 +10,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('admin/assets/images/favicon.png') }}">
-    <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="mpls/10.png">
+    <title>LOGIN ADMIN</title>
     <!-- Custom CSS -->
     <link href="{{ asset('admin/dist/css/style.min.css') }}" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -50,12 +50,12 @@
                         <h2 class="mt-3 text-center">Masuk</h2>
                         <p class="text-center">Masukkan alamat email dan kata sandi Anda untuk mengakses panel admin.</p>
                         {{-- <form class="mt-4"> --}}
-                            <form method="post" action="{{ route('postlogin') }}" >
-                                {{  csrf_field() }}
+                            <form method="post" action="/postlogin" enctype="multipart/form-data" >
+                                @csrf
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label class="text-dark" for="email">Username</label>
+                                        <label class="text-dark" for="email">Email</label>
                                         <input class="form-control" id="email" type="text"
                                             placeholder="enter your username">
                                     </div>

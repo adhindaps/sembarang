@@ -35,6 +35,8 @@
                                     <td>  <img alt=" " src="foto/{{ $ex->logo }}"width="100px"> </td>
                                     <td>{{ $ex->subjudul }}</td>
                                     <td>{{ $ex->extra }}</td>
+                                    <td style="word-break: break-word;"> {!! $ex->deskripsi !!}</td>
+                                    <td><a href="/extraedit/{{ $ex->id }}" class="btn btn-warning"><i class="fas fa-pencil-alt"></i></a></td>
                                     <td>{!! $ex->deskripsi !!}</td>
                                     <td>
                                     <a href="/extraedit/{{ $ex->id }}" class="btn btn-warning">

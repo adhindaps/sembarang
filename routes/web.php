@@ -11,6 +11,7 @@ use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\ExtraController;
+use App\Http\Controllers\Auth;
 use App\Models\Guru;
 use App\Models\Sejarah;
 
@@ -102,6 +103,19 @@ Route::post('/aboutupdate/{id}',[ProfileController::class, 'aboutupdate'])->name
 Route::get('/visiindex',[VisiController::class, 'visiindex'])->name('visiindex');
 Route::post('visistore',[VisiController::class, 'visistore']);
 Route::post('visiupdate',[VisiController::class, 'visiupdate']);
+
+Route::get('/patnerindex',[VisiController::class, 'patnerindex'])->name('patnerindex');
+Route::get('/patnercreate',[VisiController::class, 'patnercreate'])->name('patnercreate');
+Route::post('/patnerstore',[VisiController::class, 'patnerstore'])->name('patnerstore');
+Route::get('/patneredit/{id}',[VisiController::class, 'patneredit'])->name('patneredit');
+Route::post('/patnerupdate/{id}',[VisiController::class, 'patnerupdate'])->name('patnerupdate');
+
+Route::get('/videoindex',[VisiController::class, 'videoindex'])->name('videoindex');
+Route::get('/videocreate',[VisiController::class, 'videocreate'])->name('videocreate');
+Route::post('/videostore',[VisiController::class, 'videostore'])->name('videostore');
+Route::get('/videoedit/{id}',[VisiController::class, 'videoedit'])->name('videoedit');
+Route::post('/videoupdate/{id}',[VisiController::class, 'videoupdate'])->name('videoupdate');
+
 
 Route::get('/bkkindex',[SejarahController::class, 'bkkindex'])->name('bkkindex');
 Route::get('/bkkcreate',[SejarahController::class, 'bkkcreate'])->name('bkkcreate');

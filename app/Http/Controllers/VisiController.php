@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\video;
+use App\Models\Patner;
 use App\Models\visi;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class VisiController extends Controller
@@ -34,4 +37,100 @@ class VisiController extends Controller
         return redirect('visiindex');
     }
 
+    public function patnerindex()
+    {
+        $data=Patner::all();
+        return view('admin.halaman.kerjasama',compact('data'));
+    }
+
+    public function patnercreate()
+    {
+        $data=Patner::all();
+        return view('admin.data.kerjasamacreate',compact('data'));
+    }
+    public function patnerstore(Request $request)
+    {
+        if($request->hasFile('fotopatner')){
+            $request->file('fotopatner')->move('foto/', $request->file('fotopatner')->getClientOriginalName());
+        $data = Patner::create([
+            'fotopatner' => $request->file('fotopatner')->getClientOriginalName(),
+            'nama' => $request->nama,
+            'link' => $request->link,
+        ]);
+        $data->fotopatner = $request->file('fotopatner')->getClientOriginalName();
+    }
+        return redirect()->route('patnerindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function patneredit($id)
+    {
+        $data = Patner::findOrfail($id);
+        return view('admin.halaman.kerjasamaedit',compact('data'));
+    }
+
+    public function patnerupdate($id,Request $request)
+    {
+        $data = DB::table('patners')->where('id',$id);
+        if($request->hasFile('fotopatner')){
+            $pindah = $request->file('fotopatner')->move(public_path().'\storage', $request->file('fotopatner')->getClientOriginalName());
+            $data = patner::find($id)->update([
+                'fotopatner' => $request->file('fotopatner')->getClientOriginalName(),
+               'nama' => $request->nama,
+               'link' => $request->link,
+            ]);
+        return redirect('patnerindex')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
+            'nama' => $request->nama,
+            'link' => $request->link,
+        ]);
+        return redirect('patnerindex')->with('sukses','Updatedata!');
+    }
+    }
+
+    public function videoindex()
+    {
+        $data=Video::all();
+        return view('admin.halaman.videoprofile',compact('data'));
+    }
+    public function videostore(Request $request)
+    {
+        if($request->hasFile('foto')){
+            $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
+        $data = Video::create([
+            'judul' => $request->judul,
+            'link' => $request->link,
+            'foto' => $request->file('foto')->getClientOriginalName(),
+
+        ]);
+        $data->foto = $request->file('foto')->getClientOriginalName();
+    }
+        return redirect()->route('videoindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function videoedit($id)
+    {
+        $data = Video::findOrfail($id);
+        return view('admin.halaman.videoedit',compact('data'));
+    }
+
+    public function videoupdate($id,Request $request)
+    {
+        $data = DB::table('videos')->where('id',$id);
+        if($request->hasFile('foto')){
+            $pindah = $request->file('foto')->move(public_path().'\storage', $request->file('foto')->getClientOriginalName());
+            $data = Video::find($id)->update([
+               'judul' => $request->judul,
+               'link' => $request->link,
+               'foto' => $request->file('foto')->getClientOriginalName(),
+            ]);
+        return redirect('videoindex')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
+            'judul' => $request->judul,
+            'link' => $request->link,
+        ]);
+        return redirect('videoindex')->with('sukses','Updatedata!');
+    }
+    }
 }

@@ -15,8 +15,8 @@ class ExtraController extends Controller
      */
     public function extraindex()
     {
-        $data=Extra::all();
-        return view('admin.sekolah.extraindex',compact('data'));
+        $data = Extra::all();
+        return view('admin.sekolah.extraindex', compact('data'));
     }
 
     /**
@@ -37,7 +37,7 @@ class ExtraController extends Controller
      */
     public function extrastore(Request $request)
     {
-       $data = Extra::create([
+        $data = Extra::create([
             'fotoex' => $request->fotoex,
             'logo' => $request->logo,
             'subjudul' => $request->subjudul,
@@ -45,9 +45,10 @@ class ExtraController extends Controller
             'deskripsi' => $request->deskripsi,
         ]);
         // dd($data);
-        if($request->hasFile('fotoex')){
+        if ($request->hasFile('fotoex')) {
             $request->file('fotoex')->move('foto/', $request->file('fotoex')->getClientOriginalName());
-        $data->fotoex = $request->file('fotoex')->getClientOriginalName(); }
+            $data->fotoex = $request->file('fotoex')->getClientOriginalName();
+        }
         if ($request->hasFile('logo')) {
             $request->file('logo')->move('foto/', $request->file('logo')->getClientOriginalName());
             $data->logo = $request->file('logo')->getClientOriginalName();
@@ -77,7 +78,7 @@ class ExtraController extends Controller
     {
         $data = Extra::find($id);
         $data = Extra::findOrfail($id);
-        return view('admin.sekolah.extraedit',compact('data'));
+        return view('admin.sekolah.extraedit', compact('data'));
     }
 
     /**
@@ -87,8 +88,9 @@ class ExtraController extends Controller
      * @param  \App\Models\Extra  $extra
      * @return \Illuminate\Http\Response
      */
-    public function extraupdate($id,Request $request, Extra $extra)
-    { $data = Extra::find($id);
+    public function extraupdate($id, Request $request, Extra $extra)
+    {
+        $data = Extra::find($id);
         $data->update([
             'subjudul' => $request->subjudul,
             'extra' => $request->extra,
@@ -105,7 +107,6 @@ class ExtraController extends Controller
             $data->save();
         }
         return redirect()->route('extraindex')->with('success', 'Berhasil Di Edit');
-    
     }
 
     /**
@@ -114,8 +115,11 @@ class ExtraController extends Controller
      * @param  \App\Models\Extra  $extra
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Extra $extra)
+    public function destroy($id)
     {
-        //
+        $data = Extra::find($id);
+        $data->delete();
+        return redirect()->route('guruindex')->with('success', 'Data Berhasil Dihapus');
+    
     }
 }

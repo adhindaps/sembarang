@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\blog;
 use Illuminate\Http\Request;
 use App\Models\Jurusan;
@@ -14,6 +15,9 @@ use App\Models\visi;
 use App\Models\sudutecho;
 use App\Models\Axio;
 use App\Models\Beasiswa;
+use App\Models\Bkk;
+use App\Models\Event;
+use App\Models\Kajur;
 use App\Models\Sambutan;
 
 class LandingController extends Controller
@@ -22,8 +26,10 @@ class LandingController extends Controller
         $data=Guru::all();
         $gakenek=blog::all();
         $sambutan=Sambutan::all();
+        $about=About::all();
+        $event = Event::all();
         // $data=sejarah
-        return view('landingpage.index', compact('data','gakenek', 'sambutan'));
+        return view('landingpage.index', compact('data','gakenek', 'sambutan', 'about', 'event'));
     }
 
     public function sija(Request $request)
@@ -31,16 +37,19 @@ class LandingController extends Controller
         return view('landingpage.jurusan.sija');
     }
 
-    public function detail(Request $request)
+    public function detail($id)
     {
-        $data=Jurusan::all();
-        return view('landingpage.jurusan.detail',compact('data'));
+        $data=Jurusan::find($id);
+        $kj=Kajur::with('jurusan');
+        $kajur=Kajur::find($id);
+        return view('landingpage.jurusan.detail',compact('data','kajur', 'kj'));
     }
 
     public function profile(Request $request)
     {
         $data = Profile::where('id','=',1)->firstOrFail();
-        return view('landingpage.profile', compact('data'));
+        $visi = Visi::where('id','=',1)->firstOrFail();
+        return view('landingpage.profile', compact('data', 'visi'));
         
     }
     
@@ -70,11 +79,13 @@ class LandingController extends Controller
     }
     public function events(Request $request)
     {
-        return view('landingpage.events');
+        $data = Event::all();
+        return view('landingpage.events', compact('data'));
     }
-    public function detailevents(Request $request)
+    public function detailevents($id)
     {
-        return view('landingpage.detailevents');
+        $data=Event::find($id);
+        return view('landingpage.detailevents', compact('data'));
     }
 
     public function echo(Request $request)
@@ -110,7 +121,8 @@ class LandingController extends Controller
     }
     public function bkk(Request $request)
     {
-        return view('landingpage.bkk');
+        $data=Bkk::all();
+        return view('landingpage.bkk',compact('data'));
     }
     public function bkkdetail(Request $request)
     {

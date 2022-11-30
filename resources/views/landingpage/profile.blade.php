@@ -68,23 +68,17 @@
                                             <strong>Email            :</strong>{{ $data->email }}<br/>
                                         </p>
                                     </div>
-                                </div>
+                                </div>                                
+                                @foreach ($visi as $vs)
                                 <div class="tab-pane fade" id="curriculam" role="tabpanel"
                                     aria-labelledby="curriculam-tab">
                                     <div class="course-curriculam">
-                                        <h5 class="h5">Visi</h5>
-                                        <p>Visi dari sekolah kami yaitu “Menghasilkan tamatan yang profesional,
-                                            kompetitif secara nasional dan internasional, 
-                                            beriman dn bertaqwa serta cinta tanah air dan mampu berwirausaha”.</p>
-                                            <h5 class="h5">Misi</h5>
-                                            <p class="mb-30">
-                                                1.Melaksanakan kurikulum berstandar kompetensi untuk menyiapkan tamatan yang siap pakai di dunia kerja.<br/>
-                                                2.Meningkatkan professional dan akuntabilitas SMKN 1 Dlanggu sebagai pusat pendidikan yang berstandar nasional.<br/>
-                                                3.Meningkatkan profesionalisme tenaga pendidik yang mempunyai kompetensi sesuai dengan bidang keahlian<br/>
-                                                4.Meningkatkan kualitas tamatan yang menguasai teknologi yang dilansadi iman dan taqwa.</p>
+                                        {{-- <h5 class="h5">{{$vs->nama}}</h5> --}}
+                                        {{-- <p>{!! $vs->deskripsi !!}</p> --}}
                                             
                                     </div>
                                 </div>
+                                @endforeach
                                 <div class="tab-pane fade" id="instructor" role="tabpanel"
                                     aria-labelledby="instructor-tab">
                                     <div class="course-instructor">
@@ -103,81 +97,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
                                     <div class="course-Reviews">
-                                        <div class="as-comments-wrap">
-                                            <ul class="comment-list">
-                                                <li class="review as-comment-item">
-                                                    <div class="as-post-comment">
-                                                        <div class="comment-avater"><img
-                                                                src="assets/img/blog/comment-author-3.jpg"
-                                                                alt="Comment Author"></div>
-                                                        <div class="comment-content">
-                                                            <h4 class="name">Mark Jack</h4><span class="commented-on"><i
-                                                                    class="fal fa-calendar-alt"></i>22 April,
-                                                                2022</span>
-                                                            <div class="star-rating" role="img"
-                                                                aria-label="Rated 5.00 out of 5"><span
-                                                                    style="width:100%">Rated <strong
-                                                                        class="rating">5.00</strong> out of 5 based on
-                                                                    <span class="rating">1</span> customer rating</span>
-                                                            </div>
-                                                            <p class="text">Lorem ipsum dolor sit amet, consectetur
-                                                                adipiscing elit, sed do eiusmod tempor incididunt ut
-                                                                labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                                quis nostrud exercitation ullamco</p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="review as-comment-item">
-                                                    <div class="as-post-comment">
-                                                        <div class="comment-avater"><img
-                                                                src="assets/img/blog/comment-author-2.jpg"
-                                                                alt="Comment Author"></div>
-                                                        <div class="comment-content">
-                                                            <h4 class="name">Alexa Deo</h4><span class="commented-on"><i
-                                                                    class="fal fa-calendar-alt"></i>26 April,
-                                                                2022</span>
-                                                            <div class="star-rating" role="img"
-                                                                aria-label="Rated 5.00 out of 5"><span
-                                                                    style="width:100%">Rated <strong
-                                                                        class="rating">5.00</strong> out of 5 based on
-                                                                    <span class="rating">1</span> customer rating</span>
-                                                            </div>
-                                                            <p class="text">The purpose of lorem ipsum is to create a
-                                                                natural looking block of text (sentence, paragraph,
-                                                                page, etc.) that doesn't distract from the layout. A
-                                                                practice not without controversy, laying out pages.</p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="review as-comment-item">
-                                                    <div class="as-post-comment">
-                                                        <div class="comment-avater"><img
-                                                                src="assets/img/blog/comment-author-1.jpg"
-                                                                alt="Comment Author"></div>
-                                                        <div class="comment-content">
-                                                            <h4 class="name">Tara sing</h4><span class="commented-on"><i
-                                                                    class="fal fa-calendar-alt"></i>26 April,
-                                                                2022</span>
-                                                            <div class="star-rating" role="img"
-                                                                aria-label="Rated 5.00 out of 5"><span
-                                                                    style="width:100%">Rated <strong
-                                                                        class="rating">5.00</strong> out of 5 based on
-                                                                    <span class="rating">1</span> customer rating</span>
-                                                            </div>
-                                                            <p class="text">The passage experienced a surge in
-                                                                popularity during the 1960s when Letraset used it on
-                                                                their dry-transfer sheets, and again during the 90s as
-                                                                desktop publishers bundled the text with their software.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
                                         <div class="as-comment-form">
-                                            <div class="form-title">
-                                                <h3 class="blog-inner-title">Add a review</h3>
-                                            </div>
                                             <div class="row">
                                                 <div class="form-group rating-select d-flex align-items-center">
                                                     <label>Your Rating</label>
@@ -231,8 +151,7 @@
                                             <li><i class="fa-light fa-puzzle-piece"></i> <strong>Quizzes:
                                                 </strong><span>04</span></li>
                                         </ul>
-                                    </div><a href="https://www.linkedin.com/" class="as-btn style5 mt-35 mb-0"><i
-                                            class="far fa-share-nodes me-2"></i>Share This Course</a>
+                                    </div>
                                 </div>
                             </aside>
                         </div>

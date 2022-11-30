@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="as-hero-slide">
-                <div class="as-hero-bg" data-bg-src="{{ asset('foto/hal1.jpg') }}"><img
+                <div class="as-hero-bg" data-bg-src="{{ asset('mpls/8.jpg') }}"><img
                         src="{{ asset('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png') }}" alt="overlay">
                 </div>
                 <div class="container z-index-common">
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="as-hero-slide">
-                <div class="as-hero-bg" data-bg-src="{{ asset('foto/hal1.jpg') }}"><img
+                <div class="as-hero-bg" data-bg-src="{{ asset('mpls/tatabg.jpg') }}"><img
                         src="{{ asset('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png') }}" alt="overlay">
                 </div>
                 <div class="container z-index-common">
@@ -52,75 +52,21 @@
             <div class="title-area text-center text-md-start">
                 <span class="sub-title">Pilih SMKN 1 Dlanggu</span>
                 <h2 class="sec-title fw-medium">Kenapa Harus SMKN 1 Dlanggu ?</h2>
-            </div>
+            </div>         
             <div class="row gy-50">
+                @foreach ($about as $ab)
                 <div class="col-sm-6 col-xl-4">
                     <div class="category-card">
                         <div class="category-card_icon"><img alt="icon"
-                                src="/jur/10.svg"></div>
+                                src="{{ asset('jur/' . $ab->icon) }}"></div>
                         <div class="category-card_content">
-                            <h3 class="category-card_title"><a href="course.html">Pengajar Kompeten</a></h3>
-                            <p class="category-card_text">Kualifikasi pengajar S1 dan S2 dari lulusan kampus ternama
-                                dan memiliki sertifikasi keahlian.</p>
+                            <h3 class="category-card_title"><a href="course.html">{{ $ab->judul }}</a></h3>
+                            <p class="category-card_text">{{ $ab->deskripsi }}</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-4">
-                    <div class="category-card">
-                        <div class="category-card_icon"><img alt="icon"
-                                src="{{ asset('1/yeye/html/acadu/demo/assets/img/icon/category_1_2.svg') }}"></div>
-                        <div class="category-card_content">
-                            <h3 class="category-card_title"><a href="course.html">Fasilitas Lengkap</a></h3>
-                            <p class="category-card_text">Penunjang belajar dengan kualitas premium.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-4">
-                    <div class="category-card">
-                        <div class="category-card_icon"><img alt="icon"
-                                src="{{ asset('1/yeye/html/acadu/demo/assets/img/icon/category_1_3.svg') }}"></div>
-                        <div class="category-card_content">
-                            <h3 class="category-card_title"><a href="course.html">Program Beasiswa</a></h3>
-                            <p class="category-card_text">Banyak Progeam Beasiswa untuk melanjutkan Pendidikan yang
-                                Lebih Tinggi.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-4">
-                    <div class="category-card">
-                        <div class="category-card_icon"><img alt="icon"
-                                src="{{ asset('1/yeye/html/acadu/demo/assets/img/icon/category_1_4.svg') }}"></div>
-                        <div class="category-card_content">
-                            <h3 class="category-card_title"><a href="course.html">Alumni Berkualitas</a></h3>
-                            <p class="category-card_text">Alumni siap kerja, siap kuliah dan siap berwirausaha. Alumni
-                                tersebar di berbagai negara Seperti Jepang, Turki, Paris, Jerman, dan lain-lain</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-4">
-                    <div class="category-card">
-                        <div class="category-card_icon"><img alt="icon"
-                                src="{{ asset('1/yeye/html/acadu/demo/assets/img/icon/category_1_5.svg') }}"></div>
-                        <div class="category-card_content">
-                            <h3 class="category-card_title"><a href="course.html">Prestasi</a></h3>
-                            <p class="category-card_text">Memiliki segudang prestasi baik tingkat lokal, regional
-                                maupun nasional.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-4">
-                    <div class="category-card">
-                        <div class="category-card_icon"><img alt="icon"
-                                src="{{ asset('1/yeye/html/acadu/demo/assets/img/icon/category_1_6.svg') }}"></div>
-                        <div class="category-card_content">
-                            <h3 class="category-card_title"><a href="course.html">Kurikulum Merdeka</a></h3>
-                            <p class="category-card_text">Merdeka Belajar Telkom Schools (MBTS) dengan 4 Pilar yaitu
-                                SDM GURU, Pendidikan Karakter Siswa, KURIKULUM dan Moderenisasi Sarana Prasaranasekolah.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                @endforeach
+            </div>       
         </div>
     </section>
     @foreach ($sambutan as $bp )
@@ -132,7 +78,7 @@
                 <div class="col-xl-6">
                     <div class="img-box5">
                         <div class="img1"><img
-                                src="{{ asset('1/yeye/html/acadu/demo/assets/img/normal/about_3_1.png') }}"
+                                src="{{ $bp->fotokepsek }}"
                                 alt="about"></div>
                         <div class="shape">
                             <img
@@ -194,7 +140,7 @@
                             <div class="team-box">
                                 <div class="team-img">
                                     <img class="rr" alt="Team"
-                                        src="{{ asset('foto/' . $yy->fotoguru) }}">
+                                        src="{{ asset('guru/' . $yy->fotoguru) }}">
                                   
                                 </div>
                                 <div class="team-content">

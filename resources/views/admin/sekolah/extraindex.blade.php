@@ -37,6 +37,14 @@
                                     <td>{{ $ex->extra }}</td>
                                     <td style="word-break: break-word;"> {!! $ex->deskripsi !!}</td>
                                     <td><a href="/extraedit/{{ $ex->id }}" class="btn btn-warning"><i class="fas fa-pencil-alt"></i></a></td>
+                                    <td>{!! $ex->deskripsi !!}</td>
+                                    <td>
+                                    <a href="/extraedit/{{ $ex->id }}" class="btn btn-warning">
+                                        <i class="fas fa-pencil-alt"></i></a>
+                                    <a href="#" class="btn btn-danger deleteextra"
+                                        data-id="{{ $ex->id }}" data-extra="{{ $ex->extra }}">
+                                        <i class=" fas fa-trash"></i></a>
+                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -48,4 +56,30 @@
 </div>
 </div>
 @include('admin.footeradmin')
+
+<script>
+    $('.deleteextra').click(function() {
+        var extraid = $(this).attr('data-id');
+        var extra = $(this).attr('data-extra');
+        Swal.fire({
+            title: 'Apakah Kamu yakin?',
+            text: "Menghapus extra " + extra + "",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location = "/deleteextra/" + extraid + ""
+                Swal.fire(
+                    'Terhapus!',
+                    'data ' + extra + ' terhapus',
+                    'success'
+                )
+            }
+        })
+    });
+</script>
+
 @endsection

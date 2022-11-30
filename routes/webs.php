@@ -50,3 +50,15 @@ Route::get('/events',[LandingController::class, 'events'])->name('events');
 Route::get('/detailevents',[LandingController::class, 'detailevents'])->name('detailevents');
 Route::get('/echo',[LandingController::class, 'echo'])->name('echo');
 Route::get('/blogdetail',[LandingController::class, 'blogdetail'])->name('blogdetail');
+
+Route::get('/patnerindex',[VisiController::class, 'patnerindex'])->name('patnerindex');
+Route::get('/patnercreate',[VisiController::class, 'patnercreate'])->name('patnercreate');
+Route::post('/patnerstore',[VisiController::class, 'patnerstore'])->name('patnerstore');
+Route::get('/patneredit/{id}',[VisiController::class, 'patneredit'])->name('patneredit');
+Route::post('/patnerupdate/{id}',[VisiController::class, 'patnerupdate'])->name('patnerupdate');
+
+Route::get('/videoindex',[VisiController::class, 'videoindex'])->name('videoindex');
+Route::get('/videocreate',[VisiController::class, 'videocreate'])->name('videocreate');
+Route::post('/videostore',[VisiController::class, 'videostore'])->name('videostore');
+Route::get('/videoedit/{id}',[VisiController::class, 'videoedit'])->name('videoedit');
+Route::post('/videoupdate/{id}',[VisiController::class, 'videoupdate'])->name('videoupdate');

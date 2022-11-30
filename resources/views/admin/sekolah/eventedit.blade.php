@@ -32,7 +32,7 @@
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="editor">Jam Event</label>
-                                        <input type="text" name="jamevent" class="form-control" id="inputPassword4"
+                                        <input type="time" name="jamevent" class="form-control" id="inputPassword4"
                                         value="{{ $row->jamevent }}" placeholder="">
                                     </div>
                                     <div class="form-group col-md-12">

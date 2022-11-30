@@ -38,9 +38,12 @@
                                     <td>{{ $row->kategori }}</td>
                                     <td>{{ $row->created_at->format('D M Y')}}</td>
                                     <td>
-                                        <a href="/blogedit/{{ $row->id }}" class="btn btn-warning">Ubah</a>
-                                        <a href="/deleteblog/{{ $row->id }}" class="btn btn-danger">Hapus</a>
-                                    </td>
+                                      <a href="/blogedit/{{ $row->id }}" class="btn btn-warning">
+                                          <i class="fas fa-pencil-alt"></i></a>
+                                      <a href="#" class="btn btn-danger deleteblog"
+                                          data-id="{{ $row->id }}" data-blog="{{ $row->blog }}">
+                                          <i class=" fas fa-trash"></i></a>
+                                      </td>
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -52,36 +55,29 @@
     </div>
 </div>
 @include('admin.footeradmin')
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $('#id_table').DataTable();
-  });
-</script>
 
 <script>
-    $('.delete').click(function() {
-      var pemesanan = $(this).attr('data-id');
-      var nama = $(this).attr('data-nama');
-      swal({
-          title: "Apakah kamu yakin?",
-          text: "Kamu akan menghapus data pemesanan " + pemesanan + "",
-          icon: "warning",
-          buttons: true,
-          dangerMode: true,
-        })
-        .then((willDelete) => {
-          if (willDelete) {
-            window.location = "/deletepemesanan/" + pemesanan + ""
-            swal("Data terhapus", {
-              icon: "success",
-            });
-          } else {
-            swal("Data tidak jadi dihapus");
+  $('.deleteblog').click(function() {
+      var blogid = $(this).attr('data-id');
+      var blog = $(this).attr('data-blog');
+      Swal.fire({
+          title: 'Apakah Kamu yakin?',
+          text: "Menghapus blog " + blog + "",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Ya, hapus!'
+      }).then((result) => {
+          if (result.isConfirmed) {
+              window.location = "/deleteblog/" + blogid + ""
+              Swal.fire(
+                  'Terhapus!',
+                  'data ' + blog + ' terhapus',
+                  'success'
+              )
           }
-        });
-    });
-  </script>
+      })
+  });
+</script>
 @endsection

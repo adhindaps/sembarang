@@ -19,30 +19,9 @@
             <div class="row">
                 <div class="col-xxl-9 col-lg-8">
                     <div class="event-details">
-                        <div class="event-img"><img src="{{asset ('mpls/1.jpg')}}" alt="Event Image"></div>
-                        <h3 class="h3 mt-n2">Deskripsi Event</h3>
-                        <p class="mb-30">INFO KEGIATAN SISWA
-                            Info Kegiatan Layanan BK/ Bimbingan Karir dilaksanakan pada :
-                            <br/>
-                            <br/>
-                            Hari/ tgl : Selasa, 08 November 22
-                            Jam ; 07.30 - 09.30 [2 Jam]
-                            Tempat : Aula ECO
-                            Agenda : Sosialisasi dari Perguruan Tinggi
-                            Catatan : Khusus Grup Kuliah 2023
-                            <br/>
-                            <br/>
-                            Kemudian dilanjutkan di Ruang kelas. 
-                            <br/>
-                            <br/>
-                            Jadwalnya :
-                            
-                              # Kelas : XII TKJ 1,2 & M 1, 2 & RPL 1,2 & XIII SIJA 1 , 2
-                                  Waktu : 09.45 - 10.45
-                            
-                               # Kelas : XII Anm 1,2 & TB 1,2,3 & PHT 1,2
-                                  Waktu : 11.00 - 12.00
-                            .</p>
+                        <div class="event-img"><img src="foto/{{ $data->foto }}" alt="Event Image"></div>
+                        <h3 class="h3 mt-n2">{{ $data->namaevent }}</h3>
+                        <p class="mb-30">{{ $data->deskripsi }}</p>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4">
@@ -51,12 +30,9 @@
                             <h3 class="widget_title">Informasi Events</h3>
                             <div class="info-list">
                                 <ul>
-                                    <li><i class="fa-light fa-calendar-days"></i> <strong>Tanggal: </strong><span>November
-                                            08, 2022</span></li>
-                                    <li><i class="fa-light fa-clock"></i> <strong>Waktu: </strong><span>8:00 am - 11:00
-                                            pm</span></li>
-                                    <li><i class="fa-light fa-location-dot"></i> <strong>Lokasi: </strong><span>Aula ECO SMKN 1 Dlanggu</span></li>
-                                    <li><i class="fa-light fa-map"></i> <strong>Alamat: </strong><span>Jalan Jendral Ahmad Yani No.17, Kedunglengkong, Dlanggu, Jabaran, Pohkecik, Kec. Dlanggu, Kabupaten Mojokerto, Jawa Timur 61371</span></li>
+                                    <li><i class="fa-light fa-calendar-days"></i> <strong>Tanggal: </strong><span>{{ $data->tanggalevent }}</span></li>
+                                    <li><i class="fa-light fa-clock"></i> <strong>Waktu: </strong><span>{{ $data->jamevent }</span></li>
+                                    <li><i class="fa-light fa-location-dot"></i> <strong>Lokasi: </strong><span>{{ $data->tempat }}</span></li>
                                 </ul>
                             </div>
                         </div>

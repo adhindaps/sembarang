@@ -164,25 +164,27 @@
                                     class="hide-menu">Beranda</span></a></li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Tentang Sekolah</span></li>
-
-                        <li class="sidebar-item"> <a class="sidebar-link" href="identitas"
-                                aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
-                                    class="hide-menu">Profile Sekolah
-                                </span></a>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                            aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
+                                class="hide-menu"> Profile Sekolah </span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="identitas" class="sidebar-link"><span
+                                        class="hide-menu"> Identitas Sekolah  </span></a>
+                            <li class="sidebar-item"><a href="sejarahindex" class="sidebar-link"><span
+                                        class="hide-menu"> Sejarah Sekolah</span></a>
+                            <li class="sidebar-item"><a href="visiindex" class="sidebar-link"><span
+                                            class="hide-menu"> Visi & Misi</span></a>
+                            <li class="sidebar-item"><a href="videoindex" class="sidebar-link"><span
+                                                class="hide-menu"> Video Profile</span></a>
+                        </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="sejarahindex"
-                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
-                                    class="hide-menu">Sejarah Sekolah</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="smbtnindex"
                             aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                             class="hide-menu">Sambutan </span></a></li>
-                            <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="aboutindex"
-                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
-                                class="hide-menu">Keunggulan </span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="visiindex"
-                                aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
-                                    class="hide-menu">Visi & Misi</span></a></li>
-
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="aboutindex"
+                            aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                            class="hide-menu">Keunggulan </span></a></li>
+                        
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Data Sekolah</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="guruindex"
@@ -191,24 +193,20 @@
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
-                                class="hide-menu">Keahlian </span></a>
+                                class="hide-menu">Program</span></a>
                         <ul aria-expanded="false" class="collapse  first-level base-level-line">
                             <li class="sidebar-item"><a href="jurusanindex" class="sidebar-link"><span
-                                        class="hide-menu"> Jurusan 
-                                    </span></a>
-                                    <li class="sidebar-item"><a href="kajurindex" class="sidebar-link"><span
-                                        class="hide-menu"> Kajur 
-                                    </span></a>
-                                </ul>
-                            </li>
+                                        class="hide-menu"> Keahlian </span></a>
+                            <li class="sidebar-item"><a href="kajurindex" class="sidebar-link"><span
+                                        class="hide-menu"> Kajur </span></a>
+                            <li class="sidebar-item"><a href="extraindex" class="sidebar-link"><span
+                                            class="hide-menu"> Extrakulikuler </span></a>
+                        </ul>
+                        </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/bkkindex"
                             aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                     class="hide-menu">BKK</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="extraindex"
-                                aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span
-                                    class="hide-menu">Extrakulikuler
-                                </span></a>
-                        </li>
+                        
                         
                         <li class="nav-small-cap"><span class="hide-menu">Fasilitas Sekolah</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
@@ -246,7 +244,9 @@
                             </li>
                             <li class="sidebar-item"><a href="galeryindex" class="sidebar-link"><span
                                         class="hide-menu"> Galerry </span></a></li>
-                            
+                            <li class="sidebar-item"><a href="patnerindex" class="sidebar-link"><span
+                                            class="hide-menu"> Kerjasama </span></a>
+                                </li>
                            
                         </ul>
                     </li>

@@ -50,32 +50,33 @@
                         <h2 class="mt-3 text-center">Masuk</h2>
                         <p class="text-center">Masukkan alamat email dan kata sandi Anda untuk mengakses panel admin.</p>
                         {{-- <form class="mt-4"> --}}
-                            <form method="post" action="/postlogin" enctype="multipart/form-data" >
+                            <form action="/postlogin" method="post" enctype="multipart/form-data" >
                                 @csrf
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label class="text-dark" for="email">Email</label>
-                                        <input class="form-control" id="email" type="text"
-                                            placeholder="enter your username">
+                                        <label class="text-dark" >Email</label>
+                                        <input class="form-control" name="email" type="text"
+                                            placeholder="masukkan email">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label class="text-dark" for="password">Password</label>
-                                        <input class="form-control" id="password" type="password"
-                                            placeholder="enter your password">
+                                        <label class="text-dark" >Password</label>
+                                        <input class="form-control" name="password" type="password"
+                                            placeholder="masukkan password">
                                     </div>
                                 </div>
                                 <div class="col-lg-12 text-center">
-                                    <button type="submit" class="btn btn-block btn-dark">Sign In</button>
+                                    <button type="submit" class="btn btn-block btn-dark">Masuk</button>
                                 </div>
+                            </form>
                                 <div class="col-lg-12 text-center mt-5">
-                                    Don't have an account? <a href="#" class="text-danger">Sign Up</a>
+                                    {{-- Don't have an account? <a href="#" class="text-danger">Sign Up</a> --}}
                                 </div>
                             </div>
                             
-                        </form>
+                        
                     </div>
                 </div>
             </div>

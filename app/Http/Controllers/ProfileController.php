@@ -8,6 +8,7 @@ use App\Models\Sambutan;
 use App\Models\sudutecho;
 use App\Models\Profile;
 use App\Models\blog;
+use App\Models\Kategoriblog;
 use App\Models\Event;
 use App\Models\Slider;
 use App\Models\visi;
@@ -80,13 +81,14 @@ class ProfileController extends Controller
      public function blogindex()
     {
         $data=blog::all();
-        return view('admin.blogindex', compact(['data']));
+        return view('admin.blog.blogindex', compact(['data']));
     }
 
     public function blogcreate()
     {
-        
-        return view('admin.blogcreat');
+        $data=blog::all();
+        $datakategori=Kategoriblog::all();
+        return view('admin.blog.blogcreat',compact('data','datakategori'));
     }
 
     public function blogstore(Request $request)
@@ -97,7 +99,7 @@ class ProfileController extends Controller
             'foto' => $request->file('foto')->getClientOriginalName(),
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
-            'kategori' => $request->kategori,
+            'id_kategori' => $request->id_kategori,
         ]);
         $data->foto = $request->file('foto')->getClientOriginalName();
     }
@@ -106,9 +108,9 @@ class ProfileController extends Controller
 
     public function blogedit($id)
     {
-        $data = blog::find($id);
         $data = blog::findOrfail($id);
-        return view('admin.blogedit',compact('data'));
+        $datakategori=Kategoriblog::all();
+        return view('admin.blog.blogedit',compact('data','datakategori'));
     }
 
     public function blogupdate($id, Request $request, Profile $blog)
@@ -120,13 +122,14 @@ class ProfileController extends Controller
                 'foto' => $request->file('foto')->getClientOriginalName(),
                'judul' => $request->judul,
                'deskripsi' => $request->deskripsi,
-              
+               'id_kategori' => $request->id_kategori,
             ]);
         return redirect('blogindex')->with('sukses','Updatedata!');
     }else{
         $data->update([
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
+            'id_kategori' => $request->id_kategori,
         ]);
         return redirect('blogindex')->with('sukses','Updatedata!');
     }

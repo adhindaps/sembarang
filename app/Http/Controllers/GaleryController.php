@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Galery;
+use App\Models\GaleriAxio;
+use App\Models\GaleriEcho;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class GaleryController extends Controller
 {
@@ -94,5 +97,96 @@ class GaleryController extends Controller
         $data->delete();
         return redirect('galeryindex')->with('success', 'Data Berhasil Dihapus');
     
+    }
+
+    public function galeriaxioindex()
+    {
+        $data=GaleriAxio::all();
+        return view('admin.fasilitas.galeriaxio',compact('data'));
+    }
+    public function galeriaxiocreate()
+    {
+        return view('admin.fasilitas.galcreate');
+    }
+    public function galeriaxiostore(Request $request)
+    {
+        if($request->hasFile('foto1')){
+            $request->file('foto1')->move('foto/', $request->file('foto1')->getClientOriginalName());
+        $data = GaleriAxio::create([
+            'namakegiatan' => $request->namakegiatan,
+            'foto1' => $request->file('foto1')->getClientOriginalName(),
+        ]);
+        $data->foto1 = $request->file('foto1')->getClientOriginalName();
+    }
+        return redirect()->route('galeriaxioindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+    public function galeriaxioedit($id)
+    {
+        $data = GaleriAxio::find($id);
+        $data = GaleriAxio::findOrfail($id);
+        return view('admin.fasilitas.galeriedit',compact('data'));
+    }
+    public function galeriaxioupdate($id,Request $request)
+    {
+        $data = DB::table('galeri_axios')->where('id',$id);
+        if($request->hasFile('foto1')){
+            $pindah = $request->file('foto1')->move(public_path().'\storage', $request->file('foto1')->getClientOriginalName());
+            $data = GaleriAxio::find($id)->update([
+               'namakegiatan' => $request->namakegiatan,
+               'foto1' => $request->file('foto1')->getClientOriginalName(),
+            ]);
+        return redirect('galeriaxioindex')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
+            'namakegiatan' => $request->namakegiatan,
+        ]);
+        return redirect('galeriaxioindex')->with('sukses','Updatedata!');
+    }
+    }
+
+    
+    public function galeriechoindex()
+    {
+        $data=GaleriEcho::all();
+        return view('admin.fasilitas.galeriecho',compact('data'));
+    }
+    public function galeriechocreate()
+    {
+        return view('admin.fasilitas.galechocreate');
+    }
+    public function galeriechostore(Request $request)
+    {
+        if($request->hasFile('foto11')){
+            $request->file('foto11')->move('foto/', $request->file('foto11')->getClientOriginalName());
+        $data = GaleriEcho::create([
+            'namakegiatan' => $request->namakegiatan,
+            'foto11' => $request->file('foto11')->getClientOriginalName(),
+        ]);
+        $data->foto11 = $request->file('foto11')->getClientOriginalName();
+    }
+        return redirect()->route('galeriechoindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+    public function galeriechoedit($id)
+    {
+        $data = GaleriEcho::find($id);
+        $data = GaleriEcho::findOrfail($id);
+        return view('admin.fasilitas.galechoedit',compact('data'));
+    }
+    public function galeriechoupdate($id,Request $request)
+    {
+        $data = DB::table('galeri_echoes')->where('id',$id);
+        if($request->hasFile('foto11')){
+            $pindah = $request->file('foto11')->move(public_path().'\storage', $request->file('foto11')->getClientOriginalName());
+            $data = GaleriEcho::find($id)->update([
+               'namakegiatan' => $request->namakegiatan,
+               'foto11' => $request->file('foto11')->getClientOriginalName(),
+            ]);
+        return redirect('galeriechoindex')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
+            'namakegiatan' => $request->namakegiatan,
+        ]);
+        return redirect('galeriechoindex')->with('sukses','Updatedata!');
+    }
     }
 }

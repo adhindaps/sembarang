@@ -6,8 +6,8 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Ubah Jurusan</h4>
-                    <form action="/jurusanupdate/{{ $data->id }}" method="POST" enctype="multipart/form-data" >  
+                    <h4 class="card-title">Ubah Kajur</h4>
+                    <form action="/kajurupdate/{{ $data->id }}" method="POST" enctype="multipart/form-data" >  
                         @csrf
                         <div class="form-row">
                             <div class="form-group col-md-12">

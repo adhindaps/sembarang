@@ -2,16 +2,17 @@
 
 namespace App\Models;
 
+use App\Models\kategoriblog;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class blog extends Model
 {
-    protected $table = 'blogs';
-    protected $fillable = [
-        'id','foto','judul','deskripsi', 'kategori'
-    ];
+    protected $primaryKey = "id";
     protected $guarded = [];
-    protected $data = ['created_at'];
     use HasFactory;
+    public function kategori()
+    {
+        return $this->belongsTo(Kategoriblog::class,'id_kategori','id');
+    }
 }

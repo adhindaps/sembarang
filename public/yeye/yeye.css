@@ -1,6 +1,6 @@
 .imgg{
     height: 350px !important;
-    width: 400px !important;
+    width: 450px !important;
 }
 
 .imgyeye{
@@ -9,8 +9,8 @@
 }
 
 .yy{
-    height: 150px !important;
-    width: 150px !important;
+    height: 200px !important;
+    width: 200px !important;
 }
 
 .rr{
@@ -26,6 +26,11 @@
 .gg{
     height: 100px !important;
     width: 100px !important;
+}
+
+.pp{
+    height: 300px !important;
+    width: 300px !important;
 }
 
 .overflow {

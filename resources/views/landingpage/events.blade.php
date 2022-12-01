@@ -20,7 +20,7 @@
                 @foreach ($data as $row)
                 <div class="col-xl-6">
                     <div class="event-card">
-                        <div class="event-card_img"><img src="foto/{{ $row->foto }}" alt="event"></div>
+                        <div class="event-card_img"><img  class="yy" src="foto/{{ $row->foto }}" alt="event"></div>
                         <div class="event-card_content">
                             <div class="event-meta">
                                 <p><i class="fal fa-location-dot"></i>{{ $row->tempat }}</p>

@@ -91,7 +91,7 @@ class GaleryController extends Controller
      * @param  \App\Models\Galery  $galery
      * @return \Illuminate\Http\Response
      */
-    public function deletegaleri(Galery $galery)
+    public function deletegaleri($id)
     {
         $data = Galery::find($id);
         $data->delete();

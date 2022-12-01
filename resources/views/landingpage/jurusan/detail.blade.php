@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
                     <div class="as-blog blog-single">
-                        <img src="{{ asset('foto/' . $data->foto) }}" width="3000" alt="Blog Image">
+                        <img src="{{ asset('foto/' . $data->foto) }}" width="600px" alt="Image">
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <a href="blog.html"><i class="far fa-book"></i>Study</a>
@@ -32,7 +32,7 @@
                 <div class="col-xxl-4 col-lg-5">
                     <aside class="sidebar-area">
                         <div class="widget widget_info">
-                            <a><img class="imgenduk" alt="Team" src="{{ asset('foto/' . $kajur->fotokajur) }}"></a>
+                            <a><img class="imgenduk" alt="Team" src="{{ asset('foto/lila.jpg')}}"></a>
                             <h3 class="widget_title">Ketua Jurusan</h3>
                             <div class="info-list">
                                 <ul>
@@ -55,7 +55,7 @@
                                     <div class="col-md-4 col-lg-4">
                                         <div class="team-box">
                                             <div class="team-img">
-                                                <img class="rr" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
+                                                <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
                                                 <div class="as-social">
                                                     <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                                 </div>
@@ -68,7 +68,7 @@
                                     <div class="col-md-6 col-lg-4">
                                         <div class="team-box">
                                             <div class="team-img">
-                                                <img class="rr" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
+                                                <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
                                                 <div class="as-social">
                                                     <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                                 </div>
@@ -81,7 +81,7 @@
                                     <div class="col-md-6 col-lg-4">
                                         <div class="team-box">
                                             <div class="team-img">
-                                                <img class="rr" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
+                                                <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
                                                 <div class="as-social">
                                                     <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                                 </div>

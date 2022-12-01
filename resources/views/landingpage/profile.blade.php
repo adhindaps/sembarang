@@ -130,7 +130,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-3 col-lg-4">
+                        {{-- <div class="col-xxl-3 col-lg-4">
                             <aside class="sidebar-area">
                                 <div class="widget widget_info">
                                     <div class="as-video"><img src="https://4.bp.blogspot.com/-hr6ko7FRlvY/VWByVK4DVgI/AAAAAAAAAWs/AAQ-yCBIMFg/s1600/DSC02781.JPG " alt="video"> <a
@@ -154,7 +154,7 @@
                                     </div>
                                 </div>
                             </aside>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
     </section>

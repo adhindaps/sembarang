@@ -10,6 +10,7 @@ use App\Models\Profile;
 use App\Models\blog;
 use App\Models\Kategoriblog;
 use App\Models\Event;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -304,64 +305,45 @@ class ProfileController extends Controller
         return redirect('aboutindex');
     }
 
-    public function smbtnguruindex()
+  
+    public function slider()
     {
-        $data = Sambutan::where('id','=',1)->firstOrFail();
-        return view('admin.data.sambutanguru',compact('data'));
+        $data = Slider::all();
+        return view('admin.slider', compact('data'));
     }
 
-    public function smbtngurustore(Request $request)
+    public function slidercreate()
     {
-        $this->validate($request, [
-            'nama' => 'required',
-            'katakata' => 'required',
+        
+        return view('admin.slidercreate');
+    }
+
+    public function sliderstore(Request $request)
+    {
+        if($request->hasFile('foto')){
+            $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
+        $data = Slider::create([
+            'foto' => $request->file('foto')->getClientOriginalName(),
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
         ]);
-        $data = sudutecho::create([
-            'nama' => $request->nama,
-            'katakata' => $request->katakata,
-        ]);
-        return redirect('smbtnguruindex');
+        $data->foto = $request->file('foto')->getClientOriginalName();
+    }
+        return redirect()->route('slider')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function slideredit($id)
+    {
+        $data = Slider::find($id);
+        $data = Slider::findOrfail($id);
+        return view('admin.slideredit',compact('data'));
+    }
+
+    public function destroy($id)
+    {
+        $data = Slider::find($id);
+        $data->delete();
+        return redirect()->route('slider')->with('success', 'Data Berhasil Dihapus');
     
-    }
-
-    public function smbtnguruupdate(Request $request)
-    {
-        $data=Sambutan::find($request->id);
-        $data->update($request->all());
-        return redirect('smbtnguruindex');
-    }
-
-    public function kategoriindex()
-    {
-        $data=Kategoriblog::all();
-        return view('admin.blog.kategoriblog',compact('data'));
-    }
-
-    public function kategoricreate()
-    {
-        $data=Kategoriblog::all();
-        return view('admin.blog.kategoricreate',compact('data'));
-    }
-    public function kategoristore(Request $request)
-    {
-        $data = Kategoriblog::create([
-            'kategori' => $request->kategori,
-        ]);
-        return redirect()->route('kategoriindex')->with('success', 'Data Berhasil Di Tambahkan');
-    }
-
-    public function kategoriedit($id)
-    {
-        $data = Kategoriblog::findOrfail($id);
-        return view('admin.blog.kategoriedit',compact('data'));
-    }
-
-    public function kategoriupdate($id,Request $request)
-    {
-        $data = DB::table('kategoriblogs')->where('id',$id);
-            $data = Kategoriblog::find($id)->update([
-               'kategori' => $request->kategori,
-            ]);
-        return redirect('kategoriindex')->with('sukses','Updatedata!');
     }
 }

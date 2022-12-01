@@ -62,27 +62,11 @@
             <div class="contact-form-wrap" data-bg-src="assets/img/bg/contact_bg_1.png"><span class="sub-title">KONTAK
                     DENGAN KAMI!</span>
                 <h2 class="border-title">Ada pertanyaan?</h2>
-                <p class="mt-n1 mb-25 sec-text">Apabila Anda memiliki saran atau pertanyaan, silahkan menghubungi kami
-                    dengan mengisi formulir di bawah ini..</p>
                 <form action="https://angfuzsoft.com/html/acadu/demo/mail.php" method="POST"
                     class="contact-form ajax-contact">
                     <div class="row">
-                        <div class="form-group col-md-6"><input type="text" class="form-control style3"
-                                name="name" id="name" placeholder="Masukkan Nama"> <i class="fal fa-user"></i>
-                        </div>
-                        <div class="form-group col-md-6"><input type="email" class="form-control style3"
-                                name="email" id="email" placeholder="Alamat Email "> <i
-                                class="fal fa-envelope"></i></div>
-
-                        <div class="form-group col-md-6"><input type="tel" class="form-control style3"
-                                name="number" id="number" placeholder="Nomor Telepon"> <i class="fal fa-phone"></i>
-                        </div>
-                        <div class="form-group col-12">
-                            <textarea name="message" id="message" cols="30" rows="3" class="form-control style3"
-                                placeholder="Pesan Kamu"></textarea> <i class="fal fa-comment"></i>
-                        </div>
-                        <div class="form-btn col-12 mt-10"><button class="as-btn">Kirim Pesan<i
-                                    class="fas fa-long-arrow-right ms-2"></i></button></div>
+                        
+                        <div class="form-btn col-12 mt-10"><a href="mailto:smkdlanggu@gmail.com" class="as-btn">Kirim Pesan</a></div>
                     </div>
                     <p class="form-messages mb-0 mt-3"></p>
                 </form>

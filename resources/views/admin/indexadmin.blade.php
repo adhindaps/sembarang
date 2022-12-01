@@ -176,20 +176,25 @@
                                             class="hide-menu"> Visi & Misi</span></a>
                             <li class="sidebar-item"><a href="videoindex" class="sidebar-link"><span
                                                 class="hide-menu"> Video Profile</span></a>
+                            <li class="sidebar-item"><a href="aboutindex" class="sidebar-link"><span
+                                                    class="hide-menu"> Keunggulan</span></a>
                         </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="smbtnindex"
                             aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                             class="hide-menu">Sambutan </span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="aboutindex"
-                            aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
-                            class="hide-menu">Keunggulan </span></a></li>
-                        
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Data Sekolah</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="guruindex"
-                            aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
-                                class="hide-menu">Data Guru</span></a></li>
+                        
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                            aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
+                                class="hide-menu">Data Guru</span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="smbtnguruindex" class="sidebar-link"><span
+                                        class="hide-menu"> Sambutan Guru </span></a>
+                            <li class="sidebar-item"><a href="guruindex" class="sidebar-link"><span
+                                        class="hide-menu"> Guru </span></a>
+                        </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                             aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
@@ -221,14 +226,21 @@
                                             class="hide-menu"> Axio
                                         </span></a>
                                 </li>
+                                <li class="sidebar-item"><a href="galeriaxioindex" class="sidebar-link"><span
+                                    class="hide-menu"> Galeri Axio
+                                </span></a>
+                                </li>
                                 <li class="sidebar-item"><a href="silarasindex" class="sidebar-link"><span
                                             class="hide-menu"> SILARAS
                                         </span></a>
                                 </li>
                                 <li class="sidebar-item"><a href="echoindex" class="sidebar-link"><span
                                     class="hide-menu"> Echo
+                                </span></a> </li>
+                                <li class="sidebar-item"><a href="galeriechoindex" class="sidebar-link"><span
+                                    class="hide-menu"> Galeri Echo
                                 </span></a>
-                        </li>
+                                </li>
                             </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
@@ -239,6 +251,10 @@
                                         class="hide-menu"> Blog
                                     </span></a>
                             </li>
+                            <li class="sidebar-item"><a href="kategoriindex" class="sidebar-link"><span
+                                class="hide-menu">  Kategori Blog
+                            </span></a>
+                    </li>
                             <li class="sidebar-item"><a href="eventindex" class="sidebar-link"><span
                                         class="hide-menu"> Event </span></a>
                             </li>

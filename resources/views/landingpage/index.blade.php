@@ -8,43 +8,20 @@
     <div class="as-hero-wrapper hero-3">
         <div class="hero-slider-3 as-carousel" data-fade="true" data-slide-show="1" data-md-slide-show="1" data-dots="true"
             data-xl-dots="true" data-ml-dots="true" data-lg-dots="true">
+            @foreach ($slider as $sl )
             <div class="as-hero-slide">
-                <div class="as-hero-bg" data-bg-src="{{ asset('foto/hal1.jpg') }}"><img
+                <div class="as-hero-bg" data-bg-src="foto/{{ $sl->foto }}"><img
                         src="{{ asset('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png') }}" alt="overlay">
                 </div>
                 <div class="container z-index-common">
                     <div class="hero-style8">
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">SMK Negeri 1 Dlanggu</h1>
-                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">Sekolah berkualitas yang menciptakan Alumni siap kerja, siap kuliah dan siap berwirausaha</p>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">{{ $sl->judul }}</h1>
+                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">{!! $sl->deskripsi !!}</p>
 
                     </div>
                 </div>
             </div>
-            <div class="as-hero-slide">
-                <div class="as-hero-bg" data-bg-src="{{ asset('mpls/8.jpg') }}"><img
-                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png') }}" alt="overlay">
-                </div>
-                <div class="container z-index-common">
-                    <div class="hero-style8">
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">SMK Negeri 1 Dlanggu</h1>
-                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">Sekolah berkualitas yang menciptakan Alumni siap kerja, siap kuliah dan siap berwirausaha</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="as-hero-slide">
-                <div class="as-hero-bg" data-bg-src="{{ asset('mpls/tatabg.jpg') }}"><img
-                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/hero/hero_overlay_8.png') }}" alt="overlay">
-                </div>
-                <div class="container z-index-common">
-                    <div class="hero-style8">
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">SMK Negeri 1 Dlanggu</h1>
-                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">Sekolah berkualitas yang menciptakan Alumni siap kerja, siap kuliah dan siap berwirausaha</p>
-
-                    </div>
-                </div>
-            </div>
-      
+            @endforeach
         </div>
     </div>
     <section class="space">
@@ -70,8 +47,6 @@
         </div>
     </section>
     @foreach ($sambutan as $bp )
-        
-    
     <div class="space">
         <div class="container">
             <div class="row align-items-center">
@@ -102,12 +77,15 @@
     <br />
     <br />
     <section class="" data-pos-for="#team-sec" data-sec-pos="bottom-half">
+        @foreach ($vidio as $vid)
+            
+        @endforeach
         <div class="container">
             <div class="video-box">
-                <div class="overlay"></div><img alt="video" src="foto/g.jpeg" width="2000">
+                <div class="overlay"></div><img alt="video" src="foto/{{ $vid->foto }}" width="2000">
                 <div class="video-content">
-                    <h2 class="video-title">VIDEO PROFILE SMKN 1 DLANGGU</h2>
-                    <a class="icon-btn popup-video" href="https://www.youtube.com/watch?v=4C-XHxX7l4A">
+                    <h2 class="video-title">{{ $vid->judul }}</h2>
+                    <a class="icon-btn popup-video" href="{{ $vid->link }}">
                         <i class="fas fa-play"></i></a> <span class="video-text">PERHATIKAN</span>
                 </div>
             </div>
@@ -281,61 +259,15 @@
         <div class="container as-container3 z-index-common">
             <div class="row gx-10 as-carousel" data-lg-slide-show="5" data-md-slide-show="4" data-slide-show="6"
                 data-sm-slide-show="3" data-xs-slide-show="2">
+                @foreach ($patner as $pt)
                 <div class="col-auto">
                     <div class="insta-box">
-                        <img alt="website" class="imgyeye" src="{{ asset('foto/axio.jpg') }}"> <a class="icon-btn"
-                            href="http://www.axiooclassprogram.org" target="_blank"><i
+                        <img alt="website" class="imgyeye" src="foto/{{ $pt->fotopatner }}"> <a class="icon-btn"
+                            href="{{ $pt->link }}" target="_blank"><i
                                 class="fa-solid fa-earth-americas"></i></a>
                     </div>
                 </div>
-                <div class="col-auto">
-                    <div class="insta-box">
-                        <img alt="website" class="imgyeye" src="{{ asset('foto/mikrotik.jpg') }}"> <a
-                            class="icon-btn" href="http://www.mikrotikacademy.com" target="_blank"><i
-                                class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="insta-box">
-                        <img alt="website" class="imgyeye" src="{{ asset('foto/mocca.jpg') }}"> <a
-                            class="icon-btn" href="https://mocca.studio/" target="_blank"><i
-                                class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="insta-box">
-                        <img alt="website" class="imgyeye" src="{{ asset('foto/aston.jpg') }}"> <a
-                            class="icon-btn" href="http://www.astonhotels.com/groups" target="_blank"><i
-                                class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="insta-box">
-                        <img alt="website" class="imgyeye" src="{{ asset('foto/javaparagon.png') }}"> <a
-                            class="icon-btn" href="http://www.javaparagon.com" target="_blank"><i
-                                class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="insta-box">
-                        <img alt="website" class="imgyeye" src="{{ asset('foto/luminor.jpg') }}"> <a
-                            class="icon-btn" href="http://www.luminorhotel.com" target="_blank"><i
-                                class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="insta-box">
-                        <img alt="website" class="imgyeye" src="{{ asset('foto/jtv.jpg') }}"> <a class="icon-btn"
-                            href="http://jtv.co.id" target="_blank"><i class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="insta-box">
-                        <img alt="website" class="imgyeye" src="{{ asset('foto/good.png') }}"> <a class="icon-btn"
-                            href="http://www.goodnewsfromindonesia.com" target="_blank"><i
-                                class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

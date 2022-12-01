@@ -46,7 +46,7 @@ class VisiController extends Controller
     public function patnercreate()
     {
         $data=Patner::all();
-        return view('admin.data.kerjasamacreate',compact('data'));
+        return view('admin.halaman.kerjasamacreate',compact('data'));
     }
     public function patnerstore(Request $request)
     {
@@ -86,6 +86,14 @@ class VisiController extends Controller
         ]);
         return redirect('patnerindex')->with('sukses','Updatedata!');
     }
+    }
+
+    public function deletepatner($id)
+    {
+        $data = Patner::find($id);
+        $data->delete();
+        return redirect()->route('patnerindex')->with('success', 'Data Berhasil Dihapus');
+    
     }
 
     public function videoindex()

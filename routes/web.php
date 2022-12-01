@@ -59,7 +59,7 @@ Route::get('/axio',[LandingController::class, 'axio'])->name('axio');
 Route::get('/silaras',[LandingController::class, 'silaras'])->name('silaras');
 Route::get('/beasiswa',[LandingController::class, 'beasiswa'])->name('beasiswa');
 Route::get('/bkk',[LandingController::class, 'bkk'])->name('bkk');
-Route::get('/bkkdetail',[LandingController::class, 'bkkdetail'])->name('bkkdetail');
+Route::get('/bkkdetail/{id}',[LandingController::class, 'bkkdetail'])->name('bkkdetail');
 Route::get('/programkeahlian',[LandingController::class, 'programkeahlian'])->name('programkeahlian');
 
 
@@ -109,6 +109,7 @@ Route::get('/patnercreate',[VisiController::class, 'patnercreate'])->name('patne
 Route::post('/patnerstore',[VisiController::class, 'patnerstore'])->name('patnerstore');
 Route::get('/patneredit/{id}',[VisiController::class, 'patneredit'])->name('patneredit');
 Route::post('/patnerupdate/{id}',[VisiController::class, 'patnerupdate'])->name('patnerupdate');
+Route::get('/deletepatner/{id}',[VisiController::class, 'deletepatner'])->name('deletepatner');
 
 Route::get('/videoindex',[VisiController::class, 'videoindex'])->name('videoindex');
 Route::get('/videocreate',[VisiController::class, 'videocreate'])->name('videocreate');
@@ -154,6 +155,7 @@ Route::get('/kajurcreate',[JurusanController::class, 'kajurcreate'])->name('kaju
 Route::post('/kajurstore',[JurusanController::class, 'kajurstore'])->name('kajurstore');
 Route::get('/kajuredit/{id}',[JurusanController::class, 'kajuredit'])->name('kajuredit');
 Route::post('/kajurupdate/{id}',[JurusanController::class, 'kajurupdate'])->name('kajurupdate');
+Route::get('/deletekajur/{id}',[JurusanController::class, 'deletekajur'])->name('deletekajur');
 
 Route::get('/guruindex',[GuruController::class, 'guruindex'])->name('guruindex');
 Route::get('/gurucreate',[GuruController::class, 'gurucreate'])->name('gurucreate');
@@ -177,7 +179,7 @@ Route::get('/deleteextra/{id}',[ExtraController::class, 'destroy'])->name('destr
 
 Route::get('/slider',[ProfileController::class, 'slider'])->name('slider');
 Route::get('/slidercreate',[ProfileController::class, 'slidercreate'])->name('slidercreate');
-Route::post('/slideredit',[ProfileController::class, 'slideredit'])->name('slideredit');
-Route::get('/extraedit/{id}',[ProfileController::class, 'extraedit'])->name('extraedit');
-Route::post('/extraupdate/{id}',[ProfileController::class, 'extraupdate'])->name('extraupdate');
+Route::post('/sliderstore',[ProfileController::class, 'sliderstore'])->name('sliderstore');
+Route::get('/slideredit/{id}',[ProfileController::class, 'slideredit'])->name('slideredit');
+Route::post('/sliderupdate/{id}',[ProfileController::class, 'sliderupdate'])->name('sliderupdate');
 Route::get('/deleteslider/{id}',[ProfileController::class, 'destroy'])->name('destroy');

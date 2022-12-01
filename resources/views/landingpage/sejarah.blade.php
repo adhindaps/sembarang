@@ -20,7 +20,7 @@
                 <div class="col-xxl-8 col-lg-7">
                     <div class="as-blog blog-single">
                         <div class="blog-img">
-                            <img src="foto/g.jpeg" width="2500" alt="Blog Image">
+                            <img src="foto/{{ $data->fotosjr }}" width="1500" alt="Blog Image">
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">

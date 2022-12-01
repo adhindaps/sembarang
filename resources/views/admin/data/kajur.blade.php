@@ -36,6 +36,9 @@
                                     <td>{{ $jur->jurusan->jurusan }}</td>
                                     <td><a href="/kajuredit/{{ $jur->id }}" class="btn btn-warning">
                                          <i class="fas fa-pencil-alt"></i></a>
+                                         <a href="#" class="btn btn-danger deletekajur"
+                                         data-id="{{ $jur->id }}" data-kajur="{{ $jur->kajur }}">
+                                         <i class=" fas fa-trash"></i></a>
                                 </td>
                                 </tr>
                                 @endforeach
@@ -50,13 +53,33 @@
 
 @include('admin.footeradmin')
 
+<script>
+    $('.deletekajur').click(function() {
+        var kajurid = $(this).attr('data-id');
+        var kajur = $(this).attr('data-kajur');
+        Swal.fire({
+            title: 'Apakah Kamu yakin?',
+            text: "Menghapus kajur " + kajur + "",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location = "/deletekajur/" + kajurid + ""
+                Swal.fire(
+                    'Terhapus!',
+                    'data ' + kajur + ' terhapus',
+                    'success'
+                )
+            }
+        })
+    });
+</script>
+
 @endsection
 
-{{-- main js --}}
-{{-- <script>
-@if(Session::get('success'))
-toastr.success("{{ Session::get('success') }}")
-@endif
-</script> --}}
+
    
 

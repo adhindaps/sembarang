@@ -19,6 +19,9 @@ use App\Models\Bkk;
 use App\Models\Event;
 use App\Models\Kajur;
 use App\Models\Sambutan;
+use App\Models\Slider;
+use App\Models\Patner;
+use App\Models\Video;
 
 class LandingController extends Controller
 {
@@ -28,8 +31,11 @@ class LandingController extends Controller
         $sambutan=Sambutan::all();
         $about=About::all();
         $event = Event::all();
+        $slider = Slider::all();
+        $patner=Patner::all();
+        $vidio=Video::all();
         // $data=sejarah
-        return view('landingpage.index', compact('data','gakenek', 'sambutan', 'about', 'event'));
+        return view('landingpage.index', compact('data','gakenek', 'sambutan', 'about', 'event', 'slider', 'patner', 'vidio'));
     }
 
     public function sija(Request $request)
@@ -39,7 +45,7 @@ class LandingController extends Controller
 
     public function detail($id)
     {
-        $data=Jurusan::find($id);
+        $data=Jurusan::where('id',$id)->get();
         $kj=Kajur::with('jurusan');
         $kajur=Kajur::find($id);
         return view('landingpage.jurusan.detail',compact('data','kajur', 'kj'));
@@ -48,7 +54,7 @@ class LandingController extends Controller
     public function profile(Request $request)
     {
         $data = Profile::where('id','=',1)->firstOrFail();
-        $visi = Visi::where('id','=',1)->firstOrFail();
+        $visi = visi::where('id','=',1)->firstOrFail();
         return view('landingpage.profile', compact('data', 'visi'));
         
     }
@@ -124,9 +130,10 @@ class LandingController extends Controller
         $data=Bkk::all();
         return view('landingpage.bkk',compact('data'));
     }
-    public function bkkdetail(Request $request)
+    public function bkkdetail($id)
     {
-        return view('landingpage.bkkdetail');
+        $data=BKK::find($id);
+        return view('landingpage.bkkdetail', compact('data'));
     }
     public function programkeahlian(Request $request)
     {

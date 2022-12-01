@@ -17,18 +17,21 @@
     <div class="space">
         <div class="container">
             <div class="row gy-4 masonary-active">
-                @foreach ( $data as $foto )
-                <div class="col-md-6 col-xxl-auto filter-item">
-                    <div class="gallery-card">
-                        <div class="gallery-img"><img class="pp"src="foto/{{ $foto->fotokgt }}" alt="gallery image"> <a
-                                href="foto/{{ $foto->fotokgt }}" class="gallery-btn popup-image"><i
-                                    class="fas fa-eye"></i></a></div>
-                        <div class="gallery-content">
-                            <h2 class="gallery-title">{{$foto->judul}}</h2>
+                <div class="row">
+                    @foreach ($data as $foto)
+                        <div class="col-md-3 col-xxl-auto filter-item">
+                            <div class="gallery-card">
+                                <div class="gallery-img"><img class="pp"src="foto/{{ $foto->fotokgt }}"
+                                        alt="gallery image"> <a href="foto/{{ $foto->fotokgt }}"
+                                        class="gallery-btn popup-image"><i class="fas fa-eye"></i></a></div>
+                                <div class="gallery-content">
+                                    <h2 class="gallery-title">{{ $foto->judul }}</h2>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <br/>
+                    @endforeach
                 </div>
-                @endforeach
             </div>
         </div>
     </div>

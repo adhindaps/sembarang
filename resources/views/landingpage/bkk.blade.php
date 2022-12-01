@@ -32,7 +32,7 @@
                                     <div class="title-area mb-40"><span class="sub-title"><i
                                                 class="fal fa-book me-2"></i>Lowongan Kerja</span>
                                         <h4 class="sec-title">{{ $bk->perusahaan }}</h4>
-                                    </div><a href="bkkdetail" class="as-btn">Selengkapnya<i
+                                    </div><a href="bkkdetail/{id}" class="as-btn">Selengkapnya<i
                                             class="fas fa-arrow-right ms-2"></i></a>
                                 </div>
                             </div>

@@ -79,6 +79,13 @@ Route::get('/blogedit/{id}',[ProfileController::class, 'blogedit'])->name('bloge
 Route::post('/blogupdate/{id}',[ProfileController::class, 'blogupdate'])->name('blogupdate');
 Route::post('/deleteblog/{id}',[ProfileController::class, 'deleteblog'])->name('deleteblog');
 
+Route::get('/kategoriindex',[ProfileController::class, 'kategoriindex'])->name('kategoriindex');
+Route::get('/kategoricreate',[ProfileController::class, 'kategoricreate'])->name('kategoricreate');
+Route::post('/kategoristore',[ProfileController::class, 'kategoristore'])->name('kategoristore');
+Route::get('/kategoriedit/{id}',[ProfileController::class, 'kategoriedit'])->name('kategoriedit');
+Route::post('/kategoriupdate/{id}',[ProfileController::class, 'kategoriupdate'])->name('kategoriupdate');
+Route::post('/deletekategori/{id}',[ProfileController::class, 'deletekategori'])->name('deletekategori');
+
 Route::get('/eventindex', [ProfileController::class, 'index'])->name('eventindex');
 Route::get('/eventscreate', [ProfileController::class, 'create'])->name('eventscreate');
 Route::post('/eventstore',[ProfileController::class, 'eventstore'])->name('eventstore');
@@ -86,6 +93,10 @@ Route::get('/eventedit/{id}',[ProfileController::class, 'eventedit'])->name('eve
 Route::post('/eventupdate/{id}',[ProfileController::class, 'eventupdate'])->name('eventupdate');
 Route::post('/deleteevent/{id}',[ProfileController::class, 'deleteevent'])->name('deleteevent');
 
+
+Route::get('/smbtnguruindex',[ProfileController::class, 'smbtnguruindex'])->name('smbtnguruindex');
+Route::post('/smbtngurustore',[ProfileController::class, 'smbtngurustore'])->name('smbtngurustore');
+Route::post('/smbtnguruupdate',[ProfileController::class, 'smbtnguruupdate'])->name('smbtnguruupdate');
 
 Route::get('/smbtnindex',[ProfileController::class, 'smbtnindex'])->name('smbtnindex');
 Route::post('/smbtnstore',[ProfileController::class, 'smbtnstore'])->name('smbtnstore');
@@ -167,6 +178,19 @@ Route::get('/galerycreate',[GaleryController::class, 'galerycreate'])->name('gal
 Route::post('/galerystore',[GaleryController::class, 'galerystore'])->name('galerystore');
 Route::post('/galerydelete/{id}',[GaleryController::class, 'deletegaleri'])->name('deletegaleri');
 
+Route::get('/galeriaxioindex',[GaleryController::class, 'galeriaxioindex'])->name('galeriaxioindex');
+Route::get('/galeriaxiocreate',[GaleryController::class, 'galeriaxiocreate'])->name('galeriaxiocreate');
+Route::post('/galeriaxiostore',[GaleryController::class, 'galeriaxiostore'])->name('galeriaxiostore');
+Route::get('/galeriaxioedit/{id}',[GaleryController::class, 'galeriaxioedit'])->name('galeriaxioedit');
+Route::post('/galeriaxioupdate/{id}',[GaleryController::class, 'galeriaxioupdate'])->name('galeriaxioupdate');
+Route::get('/deletegaleriaxio/{id}',[GaleryController::class, 'destroy'])->name('destroy');
+
+Route::get('/galeriechoindex',[GaleryController::class, 'galeriechoindex'])->name('galeriechoindex');
+Route::get('/galeriechocreate',[GaleryController::class, 'galeriechocreate'])->name('galeriechocreate');
+Route::post('/galeriechostore',[GaleryController::class, 'galeriechostore'])->name('galeriechostore');
+Route::get('/galeriechoedit/{id}',[GaleryController::class, 'galeriechoedit'])->name('galeriechoedit');
+Route::post('/galeriechoupdate/{id}',[GaleryController::class, 'galeriechoupdate'])->name('galeriechoupdate');
+Route::get('/deletegaleriecho/{id}',[GaleryController::class, 'destroy'])->name('destroy');
 
 Route::get('/extraindex',[ExtraController::class, 'extraindex'])->name('extraindex');
 Route::get('/extracreate',[ExtraController::class, 'extracreate'])->name('extracreate');

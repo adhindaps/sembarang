@@ -8,6 +8,7 @@ use App\Models\Sambutan;
 use App\Models\sudutecho;
 use App\Models\Profile;
 use App\Models\blog;
+use App\Models\Kategoriblog;
 use App\Models\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -77,13 +78,14 @@ class ProfileController extends Controller
      public function blogindex()
     {
         $data=blog::all();
-        return view('admin.blogindex', compact(['data']));
+        return view('admin.blog.blogindex', compact(['data']));
     }
 
     public function blogcreate()
     {
-        
-        return view('admin.blogcreat');
+        $data=blog::all();
+        $datakategori=Kategoriblog::all();
+        return view('admin.blog.blogcreat',compact('data','datakategori'));
     }
 
     public function blogstore(Request $request)
@@ -94,7 +96,7 @@ class ProfileController extends Controller
             'foto' => $request->file('foto')->getClientOriginalName(),
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
-            'kategori' => $request->kategori,
+            'id_kategori' => $request->id_kategori,
         ]);
         $data->foto = $request->file('foto')->getClientOriginalName();
     }
@@ -103,9 +105,9 @@ class ProfileController extends Controller
 
     public function blogedit($id)
     {
-        $data = blog::find($id);
         $data = blog::findOrfail($id);
-        return view('admin.blogedit',compact('data'));
+        $datakategori=Kategoriblog::all();
+        return view('admin.blog.blogedit',compact('data','datakategori'));
     }
 
     public function blogupdate($id, Request $request, Profile $blog)
@@ -117,13 +119,14 @@ class ProfileController extends Controller
                 'foto' => $request->file('foto')->getClientOriginalName(),
                'judul' => $request->judul,
                'deskripsi' => $request->deskripsi,
-              
+               'id_kategori' => $request->id_kategori,
             ]);
         return redirect('blogindex')->with('sukses','Updatedata!');
     }else{
         $data->update([
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
+            'id_kategori' => $request->id_kategori,
         ]);
         return redirect('blogindex')->with('sukses','Updatedata!');
     }
@@ -299,5 +302,66 @@ class ProfileController extends Controller
         $data=About::find($request->id);
         $data->update($request->all());
         return redirect('aboutindex');
+    }
+
+    public function smbtnguruindex()
+    {
+        $data = Sambutan::where('id','=',1)->firstOrFail();
+        return view('admin.data.sambutanguru',compact('data'));
+    }
+
+    public function smbtngurustore(Request $request)
+    {
+        $this->validate($request, [
+            'nama' => 'required',
+            'katakata' => 'required',
+        ]);
+        $data = sudutecho::create([
+            'nama' => $request->nama,
+            'katakata' => $request->katakata,
+        ]);
+        return redirect('smbtnguruindex');
+    
+    }
+
+    public function smbtnguruupdate(Request $request)
+    {
+        $data=Sambutan::find($request->id);
+        $data->update($request->all());
+        return redirect('smbtnguruindex');
+    }
+
+    public function kategoriindex()
+    {
+        $data=Kategoriblog::all();
+        return view('admin.blog.kategoriblog',compact('data'));
+    }
+
+    public function kategoricreate()
+    {
+        $data=Kategoriblog::all();
+        return view('admin.blog.kategoricreate',compact('data'));
+    }
+    public function kategoristore(Request $request)
+    {
+        $data = Kategoriblog::create([
+            'kategori' => $request->kategori,
+        ]);
+        return redirect()->route('kategoriindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function kategoriedit($id)
+    {
+        $data = Kategoriblog::findOrfail($id);
+        return view('admin.blog.kategoriedit',compact('data'));
+    }
+
+    public function kategoriupdate($id,Request $request)
+    {
+        $data = DB::table('kategoriblogs')->where('id',$id);
+            $data = Kategoriblog::find($id)->update([
+               'kategori' => $request->kategori,
+            ]);
+        return redirect('kategoriindex')->with('sukses','Updatedata!');
     }
 }

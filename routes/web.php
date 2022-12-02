@@ -52,7 +52,7 @@ Route::get('/blog',[LandingController::class, 'blog'])->name('blog');
 Route::get('/events',[LandingController::class, 'events'])->name('events');
 Route::get('/detailevents/{id',[LandingController::class, 'detailevents'])->name('detailevents');
 Route::get('/echo',[LandingController::class, 'echo'])->name('echo');
-Route::get('/blogdetail',[LandingController::class, 'blogdetail'])->name('blogdetail');
+Route::get('/blogdetail/{id}',[LandingController::class, 'blogdetail'])->name('blogdetail');
 Route::get('/extrakulikuler',[LandingController::class, 'extrakulikuler'])->name('extrakulikuler');
 Route::get('/axio',[LandingController::class, 'axio'])->name('axio');
 Route::get('/silaras',[LandingController::class, 'silaras'])->name('silaras');

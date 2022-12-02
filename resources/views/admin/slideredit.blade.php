@@ -13,16 +13,16 @@
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Foto</label>
                                         <input type="file" name="foto" class="form-control" id="foto"
-                                        aria-describedby="emailHelp" value="{{ $row->foto }}">
+                                        aria-describedby="emailHelp" value="{{ $data->foto }}">
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Judul</label>
-                                        <input type="text" name="judul" class="form-control" id="inputPassword4" {{ $row->judul }}
+                                        <input type="text" name="judul" class="form-control" id="inputPassword4" value="{{ $data->judul }}"
                                             placeholder="">
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="editor">Deskripsi</label>
-                                        <textarea name="deskripsi" id="editor" {!! $row->deskripsi !!}></textarea>
+                                        <textarea name="deskripsi" id="editor" {!! $data->deskripsi !!}></textarea>
                                     </div>
 
                                     <div class="form-actions">

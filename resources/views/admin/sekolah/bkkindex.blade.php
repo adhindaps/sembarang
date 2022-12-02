@@ -7,9 +7,9 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">BURSA KERJA KHUSUS</h4>
+                    <a href="https://datatables.net/"></a></h6>
                     <h6 class="card-subtitle">
-                        <a href="/bkkcreate" class="btn btn-primary" >Tambah </a> 
-                        <a href="https://datatables.net/"></a></h6>
+                        <a href="/bkkcreate" class="btn btn-primary" >Tambah </a></h6>
                     <div class="table-responsive">
                         <table id="zero_config" class="table table-striped table-bordered no-wrap">
                             <thead>

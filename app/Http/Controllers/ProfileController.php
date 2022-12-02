@@ -11,7 +11,6 @@ use App\Models\blog;
 use App\Models\Kategoriblog;
 use App\Models\Event;
 use App\Models\Slider;
-use App\Models\visi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -22,11 +21,10 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function identitas($id)
+    public function identitas(Request $request)
     {
-        // $visi = Visi::where('id',$id)->get();
         $data = Profile::where('id','=',1)->firstOrFail();
-        return view('admin.profile.identitas', compact('data', 'visi'));
+        return view('admin.profile.identitas', compact('data'));
     }
 
     /**
@@ -334,11 +332,33 @@ class ProfileController extends Controller
         return redirect()->route('slider')->with('success', 'Data Berhasil Di Tambahkan');
     }
 
-    public function slideredit($id)
+    public function slideredit(Request $request, $id)
     {
+        $this->validate($request, [
+            'id_kategori' => 'required|not_in:0',
+            'lokasi' => 'required',
+            'nama_destinasi_wisata' => 'required',
+            'deskripsi' => 'required',
+            'foto' =>'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048|dimensions:min_width=100,min_height=100,max_width=1000,max_height=1000',
+            ]);
+
         $data = Slider::find($id);
-        $data = Slider::findOrfail($id);
-        return view('admin.slideredit',compact('data'));
+        if ($request->hasfile('foto')) {
+            $foto = $request->file('foto')->getClientOriginalName();
+            $request->file('foto')->move('foto/', $foto);
+            $data->update([
+                'judul' => $request->judul,
+                'deskripsi' => $request->deskripsi,
+                'foto' => $request->file('foto')->getClientOriginalName(),
+            ]);
+            return redirect()->route('wisata')->with('success', 'Data Berhasil Di Update');
+        } else {
+            $data->update([
+                'judul' => $request->judul,
+                'deskripsi' => $request->deskripsi,
+            ]);
+            return redirect()->route('wisata')->with('success', 'Data Berhasil Di Update');
+        }
     }
 
     public function destroy($id)

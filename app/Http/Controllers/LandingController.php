@@ -90,8 +90,8 @@ class LandingController extends Controller
     }
     public function detailevents($id)
     {
-        $data=Event::find($id);
-        return view('landingpage.detailevents', compact('data'));
+        $data=Event::where('id',$id)->get();
+        return view('landingpage.detailevents', compact(['data']));
     }
 
     public function echo(Request $request)
@@ -99,9 +99,9 @@ class LandingController extends Controller
         $data = sudutecho::where('id','=',1)->firstOrFail();
         return view('landingpage.echo', compact('data'));
     }
-    public function blogdetail(Request $request)
+    public function blogdetail($id)
     {
-        $data=blog::all();
+        $data=blog::where('id',$id)->get();
         return view('landingpage.blogdetail', compact(['data']));
     }
     public function extrakulikuler(Request $request)
@@ -125,15 +125,16 @@ class LandingController extends Controller
         $data = Beasiswa::where('id','=',1)->firstOrFail();
         return view('landingpage.beasiswa',compact('data'));
     }
-    public function bkk(Request $request)
+    public function bkk($id)
     {
-        $data=Bkk::all();
+        $data=Bkk::where('id',$id)->get();
+        // dd($data);
         return view('landingpage.bkk',compact('data'));
     }
     public function bkkdetail($id)
     {
-        $data=BKK::find($id);
-        return view('landingpage.bkkdetail', compact('data'));
+        $data=Bkk::where('id',$id)->get();
+        return view('landingpage.bkkdetail', compact(['data']));
     }
     public function programkeahlian(Request $request)
     {

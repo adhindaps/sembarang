@@ -19,10 +19,11 @@
     <div class="space">
         <div class="container">
             <div class="row">
+                @foreach ($data as $haha) 
                 <div class="col-xl-5">
                     <div class="img-box8">
                         <div class="img1"><img
-                            src="foto/{{ $data->fotobk }}" alt="about">
+                            src="foto/{{ $haha->fotobk }}" alt="about">
                         </div>
                         <div class="shape"><img
                             src="{{ asset('1/yeye/html/acadu/demo/assets/img/normal/about_shape_2.png') }}" alt="shape">
@@ -32,21 +33,11 @@
                 <div class="col-xl-7 ps-xl-5">
                     <div class="title-area mb-35"><span class="sub-title">
                             Lowongan pekerjaan</span>
-                        <h2 class="sec-title fw-semibold">{{ $data->perusahaan }}</h2>
+                        <h2 class="sec-title fw-semibold">{{ $haha->perusahaan }}</h2>
                     </div>
-                    <p class="mt-n2 mb-35">{!! $data->deskripsi !!}</p>
-                    <div class="checklist style3 mb-45">
-                        <ul>
-                            <li>Alumni SMK Jurusan Perhotelan atau Tata Boga.</li>
-                            <li>Penampilan menarik.</li>
-                            <li>Usia maksimal 25 tahun</li>
-                        </ul>
-                    </div>
-                    <p class="mt-n2 mb-35">Bawa surat lamaran ke BKK SMKN 1 Dlanggu dengan melampirkan rekomendasi dari
-                        BKK sekolah asal.<br>Pelaksanaan Tes akan dilaksanakan di SMKN 1 Dlanggu setelah kuota
-                        terpenuhi.
-                    </p>
+                    <p class="mt-n2 mb-35">{!! $haha->deskripsi !!}</p>
                 </div>
+                @endforeach
             </div>
         </div>
     </div>

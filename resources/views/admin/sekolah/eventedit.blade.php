@@ -7,6 +7,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Tambah Events</h4>
+                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+                            <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
                             <form action="/eventupdate/{{ $row->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-row">
@@ -27,7 +29,7 @@
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="editor">Tanggal Event</label>
-                                        <input type="text" name="tanggalevent" class="form-control" id="inputPassword4"
+                                        <input type="date" name="tanggalevent" class="form-control" id="inputPassword4"
                                             value="{{ $row->tanggalevent }}" placeholder="">
                                     </div>
                                     <div class="form-group col-md-12">
@@ -56,6 +58,13 @@
 
     </div>
     </div>
+    <script>
+        config={
+            minDate:"today",
+        }
+        flatpickr("input[type=date]",config);
+     </script>
+    @include('admin.footeradmin')
     @include('admin.footeradmin')
 @endsection
 

@@ -244,7 +244,7 @@
                                 <a href="blog.html"><i class="far fa-clock"></i>{{$ngelu->created_at}}</a> <a
                                     href="blog.html"><i class="far fa-folder"></i>{{$ngelu->kategori}}</a>
                             </div>
-                            <h3 class="blog-title"><a href="blogdetail">{{ $ngelu->judul}}</a></h3><a class="link-btn" href="blogdetail">Baca Lebih
+                            <h3 class="blog-title"><a href="blogdetail/{{$ngelu->id}}">{{ $ngelu->judul}}</a></h3><a class="link-btn" href="blogdetail">Baca Lebih
                                 Detail<i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>

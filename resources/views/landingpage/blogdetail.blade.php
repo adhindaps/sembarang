@@ -19,6 +19,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
+                    @foreach ($data as $item)
+                        
+                    
                     <div class="as-blog blog-single">
                         <div class="blog-img"><img src="foto/bkk.jpg" alt="Blog Image"></div>
                         <div class="blog-content">
@@ -26,14 +29,7 @@
                                 <a href="blog.html"><i class="far fa-user"></i>Admin</a>
                                     <a href="blog.html"><i
                                         class="far fa-clock"></i>27 November 2022</a></div>
-                            <h2 class="blog-title">Pahlawanku Teladanku, Mengukir Karya Dengan Semangat Perjuangan Pahlawan</h2>
-                            <p>Momentum hari pahlawan tahun ini dilaksanakan dengan khidmat diseluruh lembaga pendidikan, tidak terkecuali SMKN 1 Dlanggu. Setiap tahun kita peringati dengan harapan kita bisa mengambil semangat dari jejak sejarah kepahlawanan yang telah berkorban jiwa dan raga demi terwujudnya kemerdekaan negeri ini. Banyak cerita dan tayangan dokumenter yang merekam keberanian nenek moyang kita melawan penjajah. Meski hanya berbekal bambu runcing, mereka berani menghadang pasukan yang bersenjata lengkap.
-
-                                Semangat heroisme dikota pahlawan Surabaya, seakan lekat dalam ingatan. Bung Tomo bersama rakyat Jawa timur,  tidak rela tentara penjajah kembali menduduki Surabaya. Dan tentara yang merupakan pemenang perang dunia harus menyerah kalah ditengah teriakan "Merdeka atau Mati". Para pejuang kemerdekaan Indonesia dengan gagah berani melawan tentara musuh, tidak akan mau menyerah pada siapapun. Mereka telah berjuang sampai titik darah penghabisan untuk kemerdekaan yang sesungguhnya dan bukan pemberian dari siapapun, melainkan berkat dan Rahmat Tuhan Yang Maha Esa.
-                                
-                                Pagi ini seluruh keluarga besar SMKN 1 Dlanggu, berdiri bersama untuk mengenang jasa para pahlawan dengan khidmat dalam upacara bendera. Seluruh rangkaian acara berjalan dengan lancar. Yang bertindak sebagai pembina upacara pada kesempatan ini yaitu, Pak Frans Umila wakil kepala sekolah urusan sarana prasarana. Dalam amanat yang dibacakan dari sambutan Menteri Sosial Republik Indonesia, beliau menyampaikan bahwa kita hari ini berada dalam perjuangan besar menaklukkan ancaman dan tantangan yang nyata didepan kita. Pemanasan global (Global warming) yang memicu beragam bencana alam, serta kelangkaan pangan, energi dan air bersih, perlu kita persiapkan dengan sungguh-sungguh.
-                                
-                                Dalam upacara kemarin dibacakan juga pesan-pesan para Pahlawan Nasional, diantaranya pesan dari Ki Hajar Dewantara, "Ing ngarso sung tuladha, Ing Madya Mangunkarso, Tut Wuri Handayani." Pesan Abdul Muis," Jika orang lain bisa,kita juga bisa. Mengapa pemuda-pemuda kita tidak bisa, kalau mereka mau berjuang". Pesan I Gusti Ngurah Rai," Kami berjanji dan sanggup bertempur terus hingga cita-cita tercapai." Pesan Pahlawan Supriyadi, "Kita yang berjuang jangan sekali-kali mengharapkan pangkat, kedudukan atau gaji yang tinggi". Pesan Pahlawan Soekarno," Bangsa yang besar adalah bangsa yang menghargai jasa pahlawannya".(Humas)</p>                
+                            <h2 class="blog-title">{!! $item->deskrpsi!!}</p>                
                         </div>
                         <div class="share-links clearfix">
                             <div class="row justify-content-between">
@@ -55,6 +51,7 @@
                             </div>
                         </div>
                     </div>
+                    @endforeach
                 </div>
                 <div class="col-xxl-4 col-lg-5">
                     <aside class="sidebar-area">                       

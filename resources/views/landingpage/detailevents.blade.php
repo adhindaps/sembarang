@@ -16,6 +16,7 @@
     </div>
     <section class="space">
         <div class="container">
+            @foreach ($data as $data )
             <div class="row">
                 <div class="col-xxl-9 col-lg-8">
                     <div class="event-details">
@@ -71,6 +72,7 @@
                     </aside>
                 </div>
             </div>
+            @endforeach
         </div>
     </section>
 

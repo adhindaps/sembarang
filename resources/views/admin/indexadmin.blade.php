@@ -126,7 +126,7 @@
                                 <img src="mpls/10.png" alt="user" class="rounded-circle"
                                     width="40">
                                 <span class="ml-2 d-none d-lg-inline-block"><span>Hallo,</span> <span
-                                        class="text-dark">Admin</span> <i data-feather="chevron-down"
+                                        class="text-dark">{{ Auth::user()->name }}</span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
@@ -253,8 +253,7 @@
                             </li>
                             <li class="sidebar-item"><a href="kategoriindex" class="sidebar-link"><span
                                 class="hide-menu">  Kategori Blog
-                            </span></a>
-                    </li>
+                            </span></a></li>
                             <li class="sidebar-item"><a href="eventindex" class="sidebar-link"><span
                                         class="hide-menu"> Event </span></a>
                             </li>
@@ -263,6 +262,25 @@
                             <li class="sidebar-item"><a href="patnerindex" class="sidebar-link"><span
                                             class="hide-menu"> Kerjasama </span></a>
                                 </li>
+                           
+                        </ul>
+                    </li>
+                    <li class="nav-small-cap"><span class="hide-menu">Fitur</span></li>
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="slider"
+                        aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                                class="hide-menu">Slider</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                            aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                                class="hide-menu">Footer</span></a>
+                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                            <li class="sidebar-item"><a href="footerindex" class="sidebar-link"><span
+                                        class="hide-menu"> Footer
+                                    </span></a>
+                            </li>
+                            <li class="sidebar-item"><a href="footerlinkindex" class="sidebar-link"><span
+                                class="hide-menu">  Footer Link
+                            </span></a></li>
+                           
                            
                         </ul>
                     </li>

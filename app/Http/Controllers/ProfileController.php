@@ -154,6 +154,20 @@ class ProfileController extends Controller
 
     public function eventstore(Request $request)
     {
+        $pesan = [
+            'required' => ':attribute Wajib di isi',
+            'min' => ':attribute Wajib di isi minimal : min karakter',
+            'max' => ':attribute Wajib di isi maximal : max karakter',
+
+        ];
+        $this->validate($request,[
+            'foto' => 'required',
+            'namaevent' => 'required|min:2|max:100',
+            'tempat' => 'required|min:2|max:100',
+            'tanggalevent' => 'required',
+            'jamevent' => 'required',
+            'deskripsi' => 'required',
+        ] , $pesan );
         if($request->hasFile('foto')){
             $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
         $data = Event::create([
@@ -178,6 +192,20 @@ class ProfileController extends Controller
 
     public function eventupdate($id, Request $request, Profile $event)
     {
+        $pesan = [
+            'required' => ':attribute Wajib di isi',
+            'min' => ':attribute Wajib di isi minimal : min karakter',
+            'max' => ':attribute Wajib di isi maximal : max karakter',
+
+        ];
+        $this->validate($request,[
+            'foto' => 'required',
+            'namaevent' => 'required|min:2|max:100',
+            'tempat' => 'required|min:2|max:100',
+            'tanggalevent' => 'required',
+            'jamevent' => 'required',
+            'deskripsi' => 'required',
+        ] , $pesan );
         $data = DB::table('events')->where('id',$id);
         if($request->hasFile('foto')){
             $pindah = $request->file('foto')->move(public_path().'\storage', $request->file('foto')->getClientOriginalName());
@@ -262,9 +290,37 @@ class ProfileController extends Controller
     {
         $data=Sambutan::find($request->id);
         $data->update($request->all());
-        return redirect('smbtnindex');
+        return redirect('smbtnguruindex');
     }
 
+    public function smbtnguruindex()
+    {
+        $data = Sambutan::where('id','=',1)->firstOrFail();
+        return view('admin.data.sambutanguru',compact('data'));
+    }
+
+    public function smbtngurustore(Request $request)
+    {
+        $this->validate($request, [
+            'nama' => 'required',
+            'deskripsi' => 'required',
+        ]);
+        $data = sudutecho::create([
+            'nama' => $request->nama,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        return redirect('smbtnguruindex');
+    
+    }
+
+    public function smbtnguruupdate(Request $request)
+    {
+        $data=Sambutan::find($request->id);
+        $data->update($request->all());
+        return redirect('smbtnguruindex');
+    }
+
+    
     
     
     public function aboutindex()
@@ -309,13 +365,13 @@ class ProfileController extends Controller
     public function slider()
     {
         $data = Slider::all();
-        return view('admin.slider', compact('data'));
+        return view('admin.fitur.slider', compact('data'));
     }
 
     public function slidercreate()
     {
         
-        return view('admin.slidercreate');
+        return view('admin.fitur.slidercreate');
     }
 
     public function sliderstore(Request $request)
@@ -359,8 +415,29 @@ class ProfileController extends Controller
             ]);
             return redirect()->route('wisata')->with('success', 'Data Berhasil Di Update');
         }
+        $data = Slider::findOrfail($id);
+        return view('admin.fitur.slideredit',compact('data'));
     }
 
+    public function sliderupdate($id,Request $request)
+    {
+        $data = DB::table('sliders')->where('id',$id);
+        if($request->hasFile('foto')){
+            $pindah = $request->file('foto')->move(public_path().'\storage', $request->file('foto')->getClientOriginalName());
+            $data = Slider::find($id)->update([
+               'judul' => $request->judul,
+               'deskripsi' => $request->deskripsi,
+               'foto' => $request->file('foto')->getClientOriginalName(),
+            ]);
+        return redirect('slider')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        return redirect('slider')->with('sukses','Updatedata!');
+    }
+    }
     public function destroy($id)
     {
         $data = Slider::find($id);

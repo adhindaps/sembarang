@@ -14,15 +14,30 @@
                               <label for="inputPassword4">Foto</label>
                               <img class="img mb-3" src="{{ asset('foto/' . $data->fotobk) }}" alt="" style="width: 100px;">
                               <input type="file" name="fotobk" class="form-control" id="fotobk" aria-describedby="emailHelp" value="{{ $data->fotobk }}">
+                              @error('fotobk')
+                              <div class="alert alert-danger" role="alert">
+                                  <strong>{{ $message }}</strong> 
+                              </div>
+                               @enderror
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Perusahaan</label>
                                 <input type="text" name="perusahaan" class="form-control" id="inputPassword4" value="{{ $data->perusahaan }}"  placeholder="">
-                              </div>
+                                @error('perusahaan')
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{ $message }}</strong> 
+                                </div>
+                                 @enderror
+                            </div>
                             <div class="form-group col-md-12">
                                 <label for="editor">Deskripsi</label>
                                 <textarea name="deskripsi" id="editor">{!!  $data->deskripsi !!}</textarea>
-                              </div>
+                                @error('deskripsi')
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{ $message }}</strong> 
+                                </div>
+                                 @enderror
+                            </div>
                           </div>
                           <div class="form-actions">
                             <div class="text-right">

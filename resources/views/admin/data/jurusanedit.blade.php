@@ -14,15 +14,30 @@
                               <label for="inputPassword4">Foto</label>
                               <img class="img mb-3" src="{{ asset('foto/' . $data->foto) }}" alt="" style="width: 100px;">
                               <input type="file" name="foto" class="form-control" id="foto" aria-describedby="emailHelp" value="{{ $data->foto }}">
+                              @error('foto')
+                              <div class="alert alert-danger" role="alert">
+                                  <strong>{{ $message }}</strong> 
+                              </div>
+                               @enderror
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Jurusan</label>
                                 <input type="text" name="jurusan" class="form-control" id="inputPassword4" value="{{ $data->jurusan }}"  placeholder="">
-                              </div>
+                                @error('jurusan')
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{ $message }}</strong> 
+                                </div>
+                                 @enderror
+                            </div>
                             <div class="form-group col-md-12">
                                 <label for="editor">Deskripsi</label>
                                 <textarea name="deskripsi" id="editor">{!!  $data->deskripsi !!}</textarea>
-                              </div>
+                                @error('deskripsi')
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{ $message }}</strong> 
+                                </div>
+                                 @enderror
+                            </div>
                           </div>
                           <div class="form-actions">
                             <div class="text-right">

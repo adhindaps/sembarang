@@ -13,6 +13,7 @@ use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\ExtraController;
 use App\Http\Controllers\Auth;
 use App\Models\Guru;
+use App\Models\Jurusan;
 use App\Models\Sejarah;
 
 /*
@@ -34,7 +35,6 @@ Route::get('/login', [LoginController::class, 'login'])->name('login')->middlewa
 Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
 Route::get('/logout',[LoginController::class, 'logout'])->name('logout');
 
-Route::get('/dashboard',[AdminController::class, 'dashboard'])->name('dashboard')->middleware('auth');
 Route::get('/siswapres',[AdminController::class, 'siswapres'])->name('siswapres');
 
 
@@ -62,7 +62,15 @@ Route::get('/bkkdetail/{id}',[LandingController::class, 'bkkdetail'])->name('bkk
 Route::get('/programkeahlian',[LandingController::class, 'programkeahlian'])->name('programkeahlian');
 
 
+Route::get('/dashboard',[AdminController::class, 'dashboard'])->name('dashboard')->middleware('auth');
+Route::get('/dashboard', function () {
+    $jumlahjurusan = Jurusan::count();
+    $jumlahguru = Guru::count();
+    //     $pesanandikirim = jualproduk::count();
+    //     $pesananditerima = jualproduk::count();
 
+    return view('admin.beranda', compact('jumlahjurusan' , 'jumlahguru'),);
+});
 
 Route::group(['middleware'],function (){
 
@@ -71,6 +79,7 @@ Route::get('/identitas',[ProfileController::class, 'identitas'])->name('identita
 Route::post('/store',[ProfileController::class, 'store'])->name('store');
 Route::post('/updateprofile',[ProfileController::class, 'updateprofile'])->name('updateprofile');
 
+//////////////////////////////////BLOG-ADMIN////////////////////////////////
 Route::get('/blogindex',[ProfileController::class, 'blogindex'])->name('blogindex')->middleware('auth');
 Route::get('/blogcreate',[ProfileController::class, 'blogcreate'])->name('blogcreate');
 Route::post('/blogstore',[ProfileController::class, 'blogstore'])->name('blogstore');
@@ -78,6 +87,7 @@ Route::get('/blogedit/{id}',[ProfileController::class, 'blogedit'])->name('bloge
 Route::post('/blogupdate/{id}',[ProfileController::class, 'blogupdate'])->name('blogupdate');
 Route::get('/deleteblog/{id}',[ProfileController::class, 'deleteblog'])->name('deleteblog');
 
+//////////////////////////////////KATEGORIBLOG-ADMIN////////////////////////////////
 Route::get('/kategoriindex',[ProfileController::class, 'kategoriindex'])->name('kategoriindex')->middleware('auth');
 Route::get('/kategoricreate',[ProfileController::class, 'kategoricreate'])->name('kategoricreate');
 Route::post('/kategoristore',[ProfileController::class, 'kategoristore'])->name('kategoristore');
@@ -85,6 +95,7 @@ Route::get('/kategoriedit/{id}',[ProfileController::class, 'kategoriedit'])->nam
 Route::post('/kategoriupdate/{id}',[ProfileController::class, 'kategoriupdate'])->name('kategoriupdate');
 Route::post('/deletekategori/{id}',[ProfileController::class, 'deletekategori'])->name('deletekategori');
 
+//////////////////////////////////EVENT-ADMIN////////////////////////////////
 Route::get('/eventindex', [ProfileController::class, 'index'])->name('eventindex')->middleware('auth');
 Route::get('/eventscreate', [ProfileController::class, 'create'])->name('eventscreate');
 Route::post('/eventstore',[ProfileController::class, 'eventstore'])->name('eventstore');
@@ -92,28 +103,33 @@ Route::get('/eventedit/{id}',[ProfileController::class, 'eventedit'])->name('eve
 Route::post('/eventupdate/{id}',[ProfileController::class, 'eventupdate'])->name('eventupdate');
 Route::get('/deleteevent/{id}',[ProfileController::class, 'deleteevent'])->name('deleteevent');
 
-
+//////////////////////////////////SAMBUTANGURU-ADMIN////////////////////////////////
 Route::get('/smbtnguruindex',[ProfileController::class, 'smbtnguruindex'])->name('smbtnguruindex')->middleware('auth');
 Route::post('/smbtngurustore',[ProfileController::class, 'smbtngurustore'])->name('smbtngurustore');
 Route::post('/smbtnguruupdate',[ProfileController::class, 'smbtnguruupdate'])->name('smbtnguruupdate');
 
+//////////////////////////////////SAMBUTANKEPALASEKOLAH-ADMIN////////////////////////////////
 Route::get('/smbtnindex',[ProfileController::class, 'smbtnindex'])->name('smbtnindex')->middleware('auth');
 Route::post('/smbtnstore',[ProfileController::class, 'smbtnstore'])->name('smbtnstore');
 Route::post('/smbtnupdate',[ProfileController::class, 'smbtnupdate'])->name('smbtnupdate');
 
+//////////////////////////////////ECHO-ADMIN////////////////////////////////
 Route::get('/echoindex',[ProfileController::class, 'echoindex'])->name('echoindex')->middleware('auth');
 Route::post('/echostore',[ProfileController::class, 'echostore'])->name('echostore');
 Route::post('/echoupdate',[ProfileController::class, 'echoupdate'])->name('echoupdate');
 
+//////////////////////////////////ABOUT-ADMIN////////////////////////////////
 Route::get('/aboutindex',[ProfileController::class, 'aboutindex'])->name('aboutindex')->middleware('auth');
 Route::post('/aboutstore',[ProfileController::class, 'aboutstore'])->name('aboutstore');
 Route::get('/aboutedit/{id}',[ProfileController::class, 'aboutedit'])->name('aboutedit');
 Route::post('/aboutupdate/{id}',[ProfileController::class, 'aboutupdate'])->name('aboutupdate');
 
+//////////////////////////////////VISI-ADMIN////////////////////////////////
 Route::get('/visiindex',[VisiController::class, 'visiindex'])->name('visiindex')->middleware('auth');
 Route::post('visistore',[VisiController::class, 'visistore']);
 Route::post('visiupdate',[VisiController::class, 'visiupdate']);
 
+//////////////////////////////////KERJASAMA-ADMIN////////////////////////////////
 Route::get('/patnerindex',[VisiController::class, 'patnerindex'])->name('patnerindex')->middleware('auth');
 Route::get('/patnercreate',[VisiController::class, 'patnercreate'])->name('patnercreate');
 Route::post('/patnerstore',[VisiController::class, 'patnerstore'])->name('patnerstore');
@@ -121,13 +137,14 @@ Route::get('/patneredit/{id}',[VisiController::class, 'patneredit'])->name('patn
 Route::post('/patnerupdate/{id}',[VisiController::class, 'patnerupdate'])->name('patnerupdate');
 Route::get('/deletepatner/{id}',[VisiController::class, 'deletepatner'])->name('deletepatner');
 
+//////////////////////////////////VIDEOPROFILE-ADMIN////////////////////////////////
 Route::get('/videoindex',[VisiController::class, 'videoindex'])->name('videoindex')->middleware('auth');
 Route::get('/videocreate',[VisiController::class, 'videocreate'])->name('videocreate');
 Route::post('/videostore',[VisiController::class, 'videostore'])->name('videostore');
 Route::get('/videoedit/{id}',[VisiController::class, 'videoedit'])->name('videoedit');
 Route::post('/videoupdate/{id}',[VisiController::class, 'videoupdate'])->name('videoupdate');
 
-
+//////////////////////////////////BKK-ADMIN////////////////////////////////
 Route::get('/bkkindex',[SejarahController::class, 'bkkindex'])->name('bkkindex')->middleware('auth');
 Route::get('/bkkcreate',[SejarahController::class, 'bkkcreate'])->name('bkkcreate');
 Route::post('/bkkstore',[SejarahController::class, 'bkkstore'])->name('bkkstore');
@@ -135,24 +152,29 @@ Route::get('/bkkedit/{id}',[SejarahController::class, 'bkkedit'])->name('bkkedit
 Route::post('/bkkupdate/{id}',[SejarahController::class, 'bkkupdate'])->name('bkkupdate');
 Route::get('/deletebkk/{id}',[SejarahController::class, 'bkkhapus'])->name('bkkhapus');
 
+//////////////////////////////////BEASISWA-ADMIN////////////////////////////////
 Route::get('/beasiswaindex',[SejarahController::class, 'beasiswaindex'])->name('beasiswaindex')->middleware('auth');
 Route::post('/beasiswastore',[SejarahController::class, 'beasiswastore'])->name('beasiswastore');
 Route::post('/beasiswaupdate',[SejarahController::class, 'beasiswaupdate'])->name('beasiswaupdate');
 
+//////////////////////////////////AXIO-ADMIN////////////////////////////////
 Route::get('/axioindex',[SejarahController::class, 'axioindex'])->name('axioindex')->middleware('auth');
 Route::post('/axiostore',[SejarahController::class, 'axiostore'])->name('axiostore');
 Route::post('/axioupdate',[SejarahController::class, 'axioupdate'])->name('axioupdate');
 
+//////////////////////////////////SILARAS-ADMIN////////////////////////////////
 Route::get('/silarasindex',[SejarahController::class, 'silarasindex'])->name('silarasindex')->middleware('auth');
 Route::post('/silarasstore',[SejarahController::class, 'silarasstore'])->name('silarasstore');
 Route::post('/silarasupdate',[SejarahController::class, 'silarasupdate'])->name('silarasupdate');
 
+//////////////////////////////////SEJARAH-ADMIN////////////////////////////////
 Route::get('/sejarahindex',[SejarahController::class, 'sejarahindex'])->name('sejarahindex')->middleware('auth');
 // Route::get('/sejarahcreate',[SejarahController::class, 'sejarahcreate'])->name('sejarahcreate');
 Route::post('/sejarahstore',[SejarahController::class, 'sejarahstore'])->name('sejarahstore');
 // Route::get('/sejarahedit/{id}',[SejarahController::class, 'sejarahedit']);
 Route::post('/updatesjr',[SejarahController::class, 'updatesjr'])->name('updatesjr');
 
+//////////////////////////////////JURUSAN-ADMIN////////////////////////////////
 Route::get('/jurusanindex',[JurusanController::class, 'jurusanindex'])->name('jurusanindex')->middleware('auth');
 Route::get('/jurusancreate',[JurusanController::class, 'jurusancreate'])->name('jurusancreate');
 Route::post('/jurusanstore',[JurusanController::class, 'jurusanstore'])->name('jurusanstore');
@@ -160,6 +182,7 @@ Route::get('/jurusanedit/{id}',[JurusanController::class, 'jurusanedit'])->name(
 Route::post('/jurusanupdate/{id}',[JurusanController::class, 'jurusanupdate'])->name('jurusanupdate');
 Route::get('/deletejurusan/{id}',[JurusanController::class, 'destroy'])->name('destroy');
 
+//////////////////////////////////KAJUR-ADMIN////////////////////////////////
 Route::get('/kajurindex',[JurusanController::class, 'kajurindex'])->name('kajurindex')->middleware('auth');
 Route::get('/kajurcreate',[JurusanController::class, 'kajurcreate'])->name('kajurcreate');
 Route::post('/kajurstore',[JurusanController::class, 'kajurstore'])->name('kajurstore');
@@ -167,6 +190,7 @@ Route::get('/kajuredit/{id}',[JurusanController::class, 'kajuredit'])->name('kaj
 Route::post('/kajurupdate/{id}',[JurusanController::class, 'kajurupdate'])->name('kajurupdate');
 Route::get('/deletekajur/{id}',[JurusanController::class, 'deletekajur'])->name('deletekajur');
 
+//////////////////////////////////GURU-ADMIN////////////////////////////////
 Route::get('/guruindex',[GuruController::class, 'guruindex'])->name('guruindex')->middleware('auth');
 Route::get('/gurucreate',[GuruController::class, 'gurucreate'])->name('gurucreate');
 Route::post('/gurustore',[GuruController::class, 'gurustore'])->name('gurustore');
@@ -174,11 +198,13 @@ Route::get('/guruedit/{id}',[GuruController::class, 'guruedit'])->name('guruedit
 Route::post('/guruupdate/{id}',[GuruController::class, 'guruupdate'])->name('guruupdate');
 Route::get('/deleteguru/{id}',[GuruController::class, 'destroy'])->name('destroy');
 
+//////////////////////////////////GALERI-ADMIN////////////////////////////////
 Route::get('/galeryindex',[GaleryController::class, 'galeryindex'])->name('galeryindex')->middleware('auth');
 Route::get('/galerycreate',[GaleryController::class, 'galerycreate'])->name('galerycreate');
 Route::post('/galerystore',[GaleryController::class, 'galerystore'])->name('galerystore');
 Route::get('/galerydelete/{id}',[GaleryController::class, 'deletegaleri'])->name('deletegaleri');
 
+//////////////////////////////////GALERIAXIO-ADMIN////////////////////////////////
 Route::get('/galeriaxioindex',[GaleryController::class, 'galeriaxioindex'])->name('galeriaxioindex')->middleware('auth');
 Route::get('/galeriaxiocreate',[GaleryController::class, 'galeriaxiocreate'])->name('galeriaxiocreate');
 Route::post('/galeriaxiostore',[GaleryController::class, 'galeriaxiostore'])->name('galeriaxiostore');
@@ -186,6 +212,7 @@ Route::get('/galeriaxioedit/{id}',[GaleryController::class, 'galeriaxioedit'])->
 Route::post('/galeriaxioupdate/{id}',[GaleryController::class, 'galeriaxioupdate'])->name('galeriaxioupdate');
 Route::get('/deletegaleriaxio/{id}',[GaleryController::class, 'destroy'])->name('destroy');
 
+//////////////////////////////////GALERIECHO-ADMIN////////////////////////////////
 Route::get('/galeriechoindex',[GaleryController::class, 'galeriechoindex'])->name('galeriechoindex')->middleware('auth');
 Route::get('/galeriechocreate',[GaleryController::class, 'galeriechocreate'])->name('galeriechocreate');
 Route::post('/galeriechostore',[GaleryController::class, 'galeriechostore'])->name('galeriechostore');
@@ -193,6 +220,7 @@ Route::get('/galeriechoedit/{id}',[GaleryController::class, 'galeriechoedit'])->
 Route::post('/galeriechoupdate/{id}',[GaleryController::class, 'galeriechoupdate'])->name('galeriechoupdate');
 Route::get('/deletegaleriecho/{id}',[GaleryController::class, 'destroy'])->name('destroy');
 
+//////////////////////////////////EXTRA-ADMIN////////////////////////////////
 Route::get('/extraindex',[ExtraController::class, 'extraindex'])->name('extraindex')->middleware('auth');
 Route::get('/extracreate',[ExtraController::class, 'extracreate'])->name('extracreate');
 Route::post('/extrastore',[ExtraController::class, 'extrastore'])->name('extrastore');
@@ -200,11 +228,29 @@ Route::get('/extraedit/{id}',[ExtraController::class, 'extraedit'])->name('extra
 Route::post('/extraupdate/{id}',[ExtraController::class, 'extraupdate'])->name('extraupdate');
 Route::get('/deleteextra/{id}',[ExtraController::class, 'destroy'])->name('destroy');
 
+//////////////////////////////////FOOTER-ADMIN////////////////////////////////
+Route::get('/footerindex',[ExtraController::class, 'footerindex'])->name('footerindex')->middleware('auth');
+Route::get('/footercreate',[ExtraController::class, 'footercreate'])->name('footercreate');
+Route::post('/footerstore',[ExtraController::class, 'footerstore'])->name('footerstore');
+Route::get('/footeredit/{id}',[ExtraController::class, 'footeredit'])->name('footeredit');
+Route::post('/footerupdate/{id}',[ExtraController::class, 'footerupdate'])->name('footerupdate');
+Route::get('/deletefooter/{id}',[ExtraController::class, 'destroy'])->name('destroy');
+
+//////////////////////////////////FOOTERLINK-ADMIN////////////////////////////////
+Route::get('/footerlinkindex',[ExtraController::class, 'footerlinkindex'])->name('footerlinkindex')->middleware('auth');
+Route::get('/footerlinkcreate',[ExtraController::class, 'footerlinkcreate'])->name('footerlinkcreate');
+Route::post('/footerlinkstore',[ExtraController::class, 'footerlinkstore'])->name('footerlinkstore');
+Route::get('/footerlinkedit/{id}',[ExtraController::class, 'footerlinkedit'])->name('footerlinkedit');
+Route::post('/footerlinkupdate/{id}',[ExtraController::class, 'footerlinkupdate'])->name('footerlinkupdate');
+Route::get('/deletefooterlink/{id}',[ExtraController::class, 'destroy'])->name('destroy');
+
+//////////////////////////////////SLIDER-ADMIN////////////////////////////////
 Route::get('/slider',[ProfileController::class, 'slider'])->name('slider')->middleware('auth');
 Route::get('/slidercreate',[ProfileController::class, 'slidercreate'])->name('slidercreate');
 Route::post('/sliderstore',[ProfileController::class, 'sliderstore'])->name('sliderstore');
 Route::get('/slideredit/{id}',[ProfileController::class, 'slideredit'])->name('slideredit');
 Route::post('/sliderupdate/{id}',[ProfileController::class, 'sliderupdate'])->name('sliderupdate');
 Route::get('/deleteslider/{id}',[ProfileController::class, 'destroy'])->name('destroy');
+
 
 });

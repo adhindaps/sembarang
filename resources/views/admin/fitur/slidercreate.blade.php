@@ -12,16 +12,22 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Foto</label>
-                                        <input type="file" id="foto" name="foto" class="form-control">
+                                        <input type="file" name="foto" class="form-control" id="foto"
+                                        aria-describedby="emailHelp" value="{{ $row->foto }}">
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Judul</label>
-                                        <input type="text" name="judul" class="form-control" id="inputPassword4"
+                                        <input type="text" name="judul" class="form-control" id="inputPassword4" {{ $row->judul }}
                                             placeholder="">
-                                    </div>
+                                            @error('judul')
+                                            <div class="alert alert-danger" role="alert">
+                                                <strong>{{ $message }}</strong> 
+                                            </div>
+                                             @enderror
+                                        </div>
                                     <div class="form-group col-md-12">
                                         <label for="editor">Deskripsi</label>
-                                        <textarea name="deskripsi" id="editor"></textarea>
+                                        <textarea name="deskripsi" id="editor" {!! $row->deskripsi !!}></textarea>
                                     </div>
 
                                     <div class="form-actions">

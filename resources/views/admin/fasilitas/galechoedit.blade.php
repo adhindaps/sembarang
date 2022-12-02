@@ -13,12 +13,22 @@
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Nama kegiatan</label>
                                 <input type="text" name="namakegiatan" class="form-control" id="inputPassword4" value="{{ $data->namakegiatan }}"  placeholder="">
-                              </div>
+                                @error('namakegiatan')
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{ $message }}</strong> 
+                                </div>
+                                 @enderror
+                            </div>
                               <div class="form-group col-md-12">
                                 <label for="inputPassword4">Foto</label>
                                 <img class="img mb-3" src="{{ asset('foto/' . $data->foto11) }}" alt="" style="width: 100px;">
                                 <input type="file" name="foto11" class="form-control" id="foto11" aria-describedby="emailHelp" value="{{ $data->foto11 }}">
-                              </div>
+                                @error('foto11')
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{ $message }}</strong> 
+                                </div>
+                                 @enderror
+                            </div>
                           </div>
                           <div class="form-actions">
                             <div class="text-right">

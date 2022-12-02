@@ -16,30 +16,60 @@
                                         <label for="inputPassword4">Foto</label>
                                         <input type="file" name="foto" class="form-control" id="foto"
                                             aria-describedby="emailHelp" value="{{ $row->foto }}">
-                                    </div>
+                                            @error('foto')
+                                            <div class="alert alert-danger" role="alert">
+                                                <strong>{{ $message }}</strong> 
+                                            </div>
+                                             @enderror
+                                        </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Nama Event</label>
                                         <input type="text" name="namaevent" class="form-control" id="inputPassword4"
                                         value="{{ $row->namaevent }}" placeholder="">
+                                        @error('namaevent')
+                                        <div class="alert alert-danger" role="alert">
+                                            <strong>{{ $message }}</strong> 
+                                        </div>
+                                         @enderror
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="editor">Tempat Event</label>
                                         <input type="text" name="tempat" class="form-control" id="inputPassword4"
                                             value="{{ $row->tempat }}" placeholder="">
-                                    </div>
+                                            @error('tempat')
+                                            <div class="alert alert-danger" role="alert">
+                                                <strong>{{ $message }}</strong> 
+                                            </div>
+                                             @enderror
+                                        </div>
                                     <div class="form-group col-md-12">
                                         <label for="editor">Tanggal Event</label>
                                         <input type="date" name="tanggalevent" class="form-control" id="inputPassword4"
                                             value="{{ $row->tanggalevent }}" placeholder="">
-                                    </div>
+                                            @error('tanggalevent')
+                                            <div class="alert alert-danger" role="alert">
+                                                <strong>{{ $message }}</strong> 
+                                            </div>
+                                             @enderror
+                                        </div>
                                     <div class="form-group col-md-12">
                                         <label for="editor">Jam Event</label>
                                         <input type="time" name="jamevent" class="form-control" id="inputPassword4"
                                         value="{{ $row->jamevent }}" placeholder="">
+                                        @error('jamevent')
+                                        <div class="alert alert-danger" role="alert">
+                                            <strong>{{ $message }}</strong> 
+                                        </div>
+                                         @enderror
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="editor">Deskripsi</label>
                                         <textarea name="deskripsi" id="editor">{!! $row->deskripsi !!}</textarea>
+                                        @error('deskripsi')
+                                        <div class="alert alert-danger" role="alert">
+                                            <strong>{{ $message }}</strong> 
+                                        </div>
+                                         @enderror
                                     </div>
 
                                     <div class="form-actions">

@@ -14,11 +14,21 @@
                             <div class="form-group col-md-12">
                               <label for="inputPassword4">Nama kegiatan</label>
                               <input type="text" name="namakegiatan" class="form-control" id="inputPassword4"  placeholder="">
+                              @error('namakegiatan')
+                              <div class="alert alert-danger" role="alert">
+                                  <strong>{{ $message }}</strong> 
+                              </div>
+                               @enderror
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Foto</label>
                                 <input type="file" id="foto1" name="foto1" class="form-control" >
-                              </div>
+                                @error('foto1')
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{ $message }}</strong> 
+                                </div>
+                                 @enderror
+                            </div>
                             
                           </div>
                           <div class="form-actions">

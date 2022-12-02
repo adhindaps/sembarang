@@ -28,17 +28,16 @@
                         <div class="widget widget_info">
                             
                             <div class="as-video">
-                                <img src="https://4.bp.blogspot.com/-hr6ko7FRlvY/VWByVK4DVgI/AAAAAAAAAWs/AAQ-yCBIMFg/s1600/DSC02781.JPG " alt="video"> 
-                                <a href="https://youtu.be/wbmQOyvitXU" class="play-btn popup-video"><i class="fas fa-play"></i></a>
+                                <img src="foto/{{ $data->fotoecho }}" alt="video"> 
+                                <a href="{{$data->link}}" class="play-btn popup-video"><i class="fas fa-play"></i></a>
                             </div>
                            
                             <h3 class="widget_title">Informasi</h3>
                             <div class="info-list">
                                 <ul>
-                                    <li><i class="fa-light fa-clock"></i> <strong>Buka: </strong><span>8:00 am - 5:00
-                                            pm</span></li>
-                                    <li><i class="fa-light fa-location-dot"></i> <strong>Lokasi: </strong><span>SMKN 1 Dlanggu</span></li>
-                                    <li><i class="fa-light fa-map"></i> <strong>Alamat: </strong><span>Jalan Jendral Ahmad Yani No.17, Kedunglengkong, Dlanggu, Jabaran, Pohkecik, Kec. Dlanggu, Kabupaten Mojokerto, Jawa Timur 61371</span></li>
+                                    <li><i class="fa-light fa-clock"></i> <strong>Buka: </strong><span>{{ $data->jam }}</span></li>
+                                    <li><i class="fa-light fa-location-dot"></i> <strong>Lokasi: </strong><span>{{$data->lokasi}}</span></li>
+                                    <li><i class="fa-light fa-map"></i> <strong>Alamat: </strong><span>{{$data->alamat}}</span></li>
                                 </ul>
                             </div>
                         </div>

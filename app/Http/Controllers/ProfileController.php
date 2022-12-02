@@ -11,6 +11,7 @@ use App\Models\blog;
 use App\Models\Kategoriblog;
 use App\Models\Event;
 use App\Models\Slider;
+use App\Models\visi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -21,10 +22,11 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function identitas()
+    public function identitas($id)
     {
+        // $visi = Visi::where('id',$id)->get();
         $data = Profile::where('id','=',1)->firstOrFail();
-        return view('admin.profile.identitas', compact(['data']));
+        return view('admin.profile.identitas', compact('data', 'visi'));
     }
 
     /**

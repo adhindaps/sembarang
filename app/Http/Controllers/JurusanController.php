@@ -171,4 +171,12 @@ class JurusanController extends Controller
         return redirect('kajurindex')->with('sukses','Updatedata!');
     }
     }
+
+    public function deletekajur($id)
+    {
+        $data = Kajur::find($id);
+        $data->delete();
+        return redirect()->route('kajurindex')->with('success', 'Data Berhasil Dihapus');
+    
+    }
 }

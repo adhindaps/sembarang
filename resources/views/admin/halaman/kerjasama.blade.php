@@ -7,6 +7,8 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">KERJASAMA</h4>
+                    <h6 class="card-subtitle"></h6>
+                    <a href="/patnercreate" type="button" class="btn btn-primary">Tambah+</a>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -30,6 +32,9 @@
                                     <td>  <img alt=" " src="foto/{{ $kerja->fotopatner }}"width="100px"> </td>
                                     <td><a href="/patneredit/{{ $kerja->id }}" class="btn btn-warning">
                                          <i class="fas fa-pencil-alt"></i></a>
+                                         <a href="#" class="btn btn-danger deletepatner"
+                                         data-id="{{ $kerja->id }}" data-patner="{{ $kerja->patner }}">
+                                         <i class=" fas fa-trash"></i></a>
                                 </td>
                                 </tr>
                                 @endforeach
@@ -44,13 +49,32 @@
 
 @include('admin.footeradmin')
 
+<script>
+    $('.deletepatner').click(function() {
+        var patnerid = $(this).attr('data-id');
+        var patner = $(this).attr('data-patner');
+        Swal.fire({
+            title: 'Apakah Kamu yakin?',
+            text: "Menghapus patner " + patner + "",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location = "/deletepatner/" + patnerid + ""
+                Swal.fire(
+                    'Terhapus!',
+                    'data ' + patner + ' terhapus',
+                    'success'
+                )
+            }
+        })
+    });
+</script>
+
 @endsection
 
-{{-- main js --}}
-{{-- <script>
-@if(Session::get('success'))
-toastr.success("{{ Session::get('success') }}")
-@endif
-</script> --}}
    
 

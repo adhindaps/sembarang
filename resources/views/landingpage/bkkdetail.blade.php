@@ -22,7 +22,7 @@
                 <div class="col-xl-5">
                     <div class="img-box8">
                         <div class="img1"><img
-                            src="{{ asset('1/yeye/html/acadu/demo/assets/img/normal/about_5_1.jpg') }}" alt="about">
+                            src="foto/{{ $data->fotobk }}" alt="about">
                         </div>
                         <div class="shape"><img
                             src="{{ asset('1/yeye/html/acadu/demo/assets/img/normal/about_shape_2.png') }}" alt="shape">
@@ -32,9 +32,9 @@
                 <div class="col-xl-7 ps-xl-5">
                     <div class="title-area mb-35"><span class="sub-title">
                             Lowongan pekerjaan</span>
-                        <h2 class="sec-title fw-semibold">AYOLA SUNRISE <br>MOJOKERTO</h2>
+                        <h2 class="sec-title fw-semibold">{{ $data->perusahaan }}</h2>
                     </div>
-                    <p class="mt-n2 mb-35">Dibutuhkan *segera* karyawan untuk Hotel AYOLA SUNRISE Mojokerto.</p>
+                    <p class="mt-n2 mb-35">{!! $data->deskripsi !!}</p>
                     <div class="checklist style3 mb-45">
                         <ul>
                             <li>Alumni SMK Jurusan Perhotelan atau Tata Boga.</li>

@@ -16,6 +16,9 @@
     </div>
     <section class="as-blog-wrapper blog-details space-top space-extra-bottom">
         <div class="container">
+            @foreach ($kj as $data)
+                
+            
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
                     <div class="as-blog blog-single">
@@ -47,6 +50,7 @@
                                 </ul>
                             </div>
                         </div>
+                        @endforeach
                         <div class="widget widget_info">
                             <h3 class="widget_title">Guru produktif</h3>
                             <br />

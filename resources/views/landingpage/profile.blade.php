@@ -40,19 +40,13 @@
                                 <li class="nav-item" role="presentation"><a class="nav-link" id="curriculam-tab"
                                         data-bs-toggle="tab" href="#curriculam" role="tab" aria-controls="curriculam"
                                         aria-selected="false"><i class="fa-regular fa-book"></i>Visi&Misi</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" id="instructor-tab"
-                                        data-bs-toggle="tab" href="#instructor" role="tab" aria-controls="instructor"
-                                        aria-selected="false"><i class="fa-regular fa-user"></i>Pimpinan</a></li>
-                                {{-- <li class="nav-item" role="presentation"><a class="nav-link" id="reviews-tab"
-                                        data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"
-                                        aria-selected="false"><i class="fa-regular fa-star-sharp"></i>Reviews</a></li> --}}
+
                             </ul>
                             <div class="tab-content" id="productTabContent">
                                 <div class="tab-pane fade show active" id="Coursedescription" role="tabpanel"
                                     aria-labelledby="description-tab">
                                     <div class="course-description">
                                         <h5 class="h5">Identitas Sekolah</h5>
-                                        {{-- <p>Berdiri Pada Tahun 2004</p><br/> --}}
                                         <p>
                                             <strong>Nama Sekolah     : </strong>{{ $data->nama }}<br/>
                                             <strong>Status              :</strong>{{ $data->status }}<br/>
@@ -73,28 +67,12 @@
                                 <div class="tab-pane fade" id="curriculam" role="tabpanel"
                                     aria-labelledby="curriculam-tab">
                                     <div class="course-curriculam">
-                                        {{-- <h5 class="h5">{{$vs->nama}}</h5> --}}
-                                        {{-- <p>{!! $vs->deskripsi !!}</p> --}}
+                                       {{-- <h5 class="h5">{{$vs->nama}}</h5> 
+                                     <p>{!! $vs->deskripsi !!}</p> --}}
                                             
                                     </div>
                                 </div>
                                 @endforeach
-                                <div class="tab-pane fade" id="instructor" role="tabpanel"
-                                    aria-labelledby="instructor-tab">
-                                    <div class="course-instructor">
-                                        <div class="course-description">
-                                            <h5 class="h5">Kepala Sekolah</h5>
-                                           
-                                            <p>Nama             :   Drs. Ladi,MM.<br/>
-                                               NIP              :   196509151989031013 </p>
-                                            <h5 class="h5">Wakil Kepala Sekolah</h5>
-                                            <p>Waka.Kurikulum        : NIZAR AGUS DIYARROCHMAN <br/>
-                                               Waka.Humas            : HUDDY ISWANTO <br/>
-                                               Waka.Kesiswaan        : SAMSUL HADI<br/>
-                                               Waka.Sarana Prasarana : FRANS UMILA<br/></p>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
                                     <div class="course-Reviews">
                                         <div class="as-comment-form">
@@ -130,46 +108,72 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- <div class="col-xxl-3 col-lg-4">
+                        <div class="col-xxl-3 col-lg-4">
                             <aside class="sidebar-area">
                                 <div class="widget widget_info">
-                                    <div class="as-video"><img src="https://4.bp.blogspot.com/-hr6ko7FRlvY/VWByVK4DVgI/AAAAAAAAAWs/AAQ-yCBIMFg/s1600/DSC02781.JPG " alt="video"> <a
-                                            href="https://www.youtube.com/watch?v=5y3o4Z5DFY4" class="play-btn popup-video"><i
-                                                class="fas fa-play"></i></a></div>
-                                    <h3 class="widget_title">Course Information</h3>
+                                    <div class="course-img"><img src="https://4.bp.blogspot.com/-hr6ko7FRlvY/VWByVK4DVgI/AAAAAAAAAWs/AAQ-yCBIMFg/s1600/DSC02781.JPG" width="150" alt="Course Image">
+                                    </div>
+                                    <h3 class="widget_title">Kepala Sekolah</h3>
                                     <div class="info-list">
                                         <ul>
-                                            <li><i class="fa-light fa-user"></i> <strong>Instructor: </strong><span>Kevin
+                                            <li><i class="fa-light fa-user"></i> <strong>Nama: </strong><span>Kevin
                                                     Perry</span></li>
-                                            <li><i class="fa-light fa-file"></i> <strong>Lessons: </strong><span>8</span></li>
-                                            <li><i class="fa-light fa-clock"></i> <strong>Duration: </strong><span>15h 30m
-                                                    36s</span></li>
-                                            <li><i class="fa-light fa-tag"></i> <strong>Course level:
-                                                </strong><span>Beginners</span></li>
-                                            <li><i class="fa-light fa-globe"></i> <strong>Language:
-                                                </strong><span>English</span></li>
-                                            <li><i class="fa-light fa-puzzle-piece"></i> <strong>Quizzes:
-                                                </strong><span>04</span></li>
+                                            <li><i class="fa-light fa-file"></i> <strong>NIP: </strong><span>8</span></li>
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="widget widget_info">
+                                    <h3 class="widget_title">Wakil Kepala Sekolah</h3>
+                                    <br />
+                                    <div class="col-xl-12">
+                                        <div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
+                                            <div class="col-md-4 col-lg-4">
+                                                <div class="team-box">
+                                                    <div class="team-img">
+                                                        <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
+                                                        <div class="as-social">
+                                                            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="team-content">
+                                                        <h3 class="team-title"><a href="team-details.html">Kevin Martin Ben</a></h3><span class="team-desig">Online Teacher</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="team-box">
+                                                    <div class="team-img">
+                                                        <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
+                                                        <div class="as-social">
+                                                            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="team-content">
+                                                        <h3 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h3><span class="team-desig">Online Teacher</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="team-box">
+                                                    <div class="team-img">
+                                                        <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
+                                                        <div class="as-social">
+                                                            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="team-content">
+                                                        <h3 class="team-title"><a href="team-details.html">Aiden Samuel Jabin</a></h3><span class="team-desig">Online Teacher</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </aside>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
     </section>
-    {{-- <div class="col-xxl-4 col-lg-5">
-        <aside class="sidebar-area">
-            <div class="widget widget_search">
-                <form class="search-form"><input type="text" placeholder="Search..."> <button
-                        type="submit"><i class="far fa-search"></i></button></form>
-            </div>
-            <div class="widget widget_search">
-                        <iframe src="jur/vid.sija.mp4"></iframe>
-            </div>
-           
-        </aside>
-    </div> --}}
 
 @include('landingpage.layout.footer')
 	<script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">

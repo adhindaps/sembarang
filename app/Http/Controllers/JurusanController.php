@@ -38,6 +38,17 @@ class JurusanController extends Controller
      */
     public function jurusanstore(Request $request)
     {
+        $pesan = [
+            'required' => ':attribute Wajib di isi',
+            'min' => ':attribute Wajib di isi minimal : min karakter',
+            'max' => ':attribute Wajib di isi maximal : max karakter',
+
+        ];
+        $this->validate($request,[
+            'foto' => 'required',
+            'jurusan' => 'required|min:2|max:100',
+            'deskripsi' => 'required|min:11|max:100',
+        ] , $pesan );
         if($request->hasFile('foto')){
             $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
         $data = Jurusan::create([
@@ -83,6 +94,17 @@ class JurusanController extends Controller
      */
     public function jurusanupdate($id, Request $request, Jurusan $jurusan)
     {
+        $pesan = [
+            'required' => ':attribute Wajib di isi',
+            'min' => ':attribute Wajib di isi minimal : min karakter',
+            'max' => ':attribute Wajib di isi maximal : max karakter',
+
+        ];
+        $this->validate($request,[
+            'foto' => 'required',
+            'jurusan' => 'required|min:2|max:100',
+            'deskripsi' => 'required|min:11|max:100',
+        ] , $pesan );
         $data = DB::table('jurusans')->where('id',$id);
         if($request->hasFile('foto')){
             $pindah = $request->file('foto')->move(public_path().'\storage', $request->file('foto')->getClientOriginalName());
@@ -152,6 +174,17 @@ class JurusanController extends Controller
 
     public function kajurupdate($id,Request $request)
     {
+        $pesan = [
+            'required' => ':attribute Wajib di isi',
+            'min' => ':attribute Wajib di isi minimal : min karakter',
+            'max' => ':attribute Wajib di isi maximal : max karakter',
+
+        ];
+        $this->validate($request,[
+            'fotokajur' => 'required',
+            'nama' => 'required|min:2|max:100',
+            'nip' => 'required|min:11|max:100',
+        ] , $pesan );
         $data = DB::table('kajurs')->where('id',$id);
         if($request->hasFile('fotokajur')){
             $pindah = $request->file('fotokajur')->move(public_path().'\storage', $request->file('fotokajur')->getClientOriginalName());

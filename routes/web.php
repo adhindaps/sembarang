@@ -13,6 +13,7 @@ use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\ExtraController;
 use App\Http\Controllers\Auth;
 use App\Models\Guru;
+use App\Models\Jurusan;
 use App\Models\Sejarah;
 
 /*
@@ -34,7 +35,6 @@ Route::get('/login', [LoginController::class, 'login'])->name('login')->middlewa
 Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
 Route::get('/logout',[LoginController::class, 'logout'])->name('logout');
 
-Route::get('/dashboard',[AdminController::class, 'dashboard'])->name('dashboard')->middleware('auth');
 Route::get('/siswapres',[AdminController::class, 'siswapres'])->name('siswapres');
 
 
@@ -62,7 +62,15 @@ Route::get('/bkkdetail/{id}',[LandingController::class, 'bkkdetail'])->name('bkk
 Route::get('/programkeahlian',[LandingController::class, 'programkeahlian'])->name('programkeahlian');
 
 
+Route::get('/dashboard',[AdminController::class, 'dashboard'])->name('dashboard')->middleware('auth');
+Route::get('/dashboard', function () {
+    $jumlahjurusan = Jurusan::count();
+    $jumlahguru = Guru::count();
+    //     $pesanandikirim = jualproduk::count();
+    //     $pesananditerima = jualproduk::count();
 
+    return view('admin.beranda', compact('jumlahjurusan' , 'jumlahguru'),);
+});
 
 Route::group(['middleware'],function (){
 
@@ -220,6 +228,22 @@ Route::get('/extraedit/{id}',[ExtraController::class, 'extraedit'])->name('extra
 Route::post('/extraupdate/{id}',[ExtraController::class, 'extraupdate'])->name('extraupdate');
 Route::get('/deleteextra/{id}',[ExtraController::class, 'destroy'])->name('destroy');
 
+//////////////////////////////////FOOTER-ADMIN////////////////////////////////
+Route::get('/footerindex',[ExtraController::class, 'footerindex'])->name('footerindex')->middleware('auth');
+Route::get('/footercreate',[ExtraController::class, 'footercreate'])->name('footercreate');
+Route::post('/footerstore',[ExtraController::class, 'footerstore'])->name('footerstore');
+Route::get('/footeredit/{id}',[ExtraController::class, 'footeredit'])->name('footeredit');
+Route::post('/footerupdate/{id}',[ExtraController::class, 'footerupdate'])->name('footerupdate');
+Route::get('/deletefooter/{id}',[ExtraController::class, 'destroy'])->name('destroy');
+
+//////////////////////////////////FOOTERLINK-ADMIN////////////////////////////////
+Route::get('/footerlinkindex',[ExtraController::class, 'footerlinkindex'])->name('footerlinkindex')->middleware('auth');
+Route::get('/footerlinkcreate',[ExtraController::class, 'footerlinkcreate'])->name('footerlinkcreate');
+Route::post('/footerlinkstore',[ExtraController::class, 'footerlinkstore'])->name('footerlinkstore');
+Route::get('/footerlinkedit/{id}',[ExtraController::class, 'footerlinkedit'])->name('footerlinkedit');
+Route::post('/footerlinkupdate/{id}',[ExtraController::class, 'footerlinkupdate'])->name('footerlinkupdate');
+Route::get('/deletefooterlink/{id}',[ExtraController::class, 'destroy'])->name('destroy');
+
 //////////////////////////////////SLIDER-ADMIN////////////////////////////////
 Route::get('/slider',[ProfileController::class, 'slider'])->name('slider')->middleware('auth');
 Route::get('/slidercreate',[ProfileController::class, 'slidercreate'])->name('slidercreate');
@@ -227,5 +251,6 @@ Route::post('/sliderstore',[ProfileController::class, 'sliderstore'])->name('sli
 Route::get('/slideredit/{id}',[ProfileController::class, 'slideredit'])->name('slideredit');
 Route::post('/sliderupdate/{id}',[ProfileController::class, 'sliderupdate'])->name('sliderupdate');
 Route::get('/deleteslider/{id}',[ProfileController::class, 'destroy'])->name('destroy');
+
 
 });

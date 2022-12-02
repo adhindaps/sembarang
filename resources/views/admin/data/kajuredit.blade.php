@@ -14,15 +14,30 @@
                               <label for="inputPassword4">Foto</label>
                               <img class="img mb-3" src="{{ asset('foto/' . $data->fotokajur) }}" alt="" style="width: 100px;">
                               <input type="file" name="fotokajur" class="form-control" id="fotokajur" aria-describedby="emailHelp" value="{{ $data->fotokajur }}">
+                              @error('fotokajur')
+                              <div class="alert alert-danger" role="alert">
+                                  <strong>{{ $message }}</strong> 
+                              </div>
+                               @enderror
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Nama</label>
                                 <input type="text" name="nama" class="form-control" id="inputPassword4" value="{{ $data->nama }}"  placeholder="">
+                                @error('nama')
+                              <div class="alert alert-danger" role="alert">
+                                  <strong>{{ $message }}</strong> 
                               </div>
+                               @enderror
+                            </div>
                               <div class="form-group col-md-12">
                                 <label for="inputPassword4">NIP</label>
                                 <input type="text" name="nip" class="form-control" id="inputPassword4" value="{{ $data->nip }}"  placeholder="">
-                              </div>
+                                @error('nip')
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{ $message }}</strong> 
+                                </div>
+                                 @enderror
+                            </div>
                               <div class="form-group col-md-12">
                                <label for="defaultFormControlInput" class="form-label">Jabatan</label>
                                <select class="form-control" name="id_jurusan">

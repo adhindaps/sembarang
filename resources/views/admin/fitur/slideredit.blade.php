@@ -7,22 +7,37 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Tambah Slider</h4>
-                            <form action="/sliderstore" method="POST" enctype="multipart/form-data">
+                            <form action="sliderupdate/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Foto</label>
                                         <input type="file" name="foto" class="form-control" id="foto"
-                                        aria-describedby="emailHelp" value="{{ $row->foto }}">
+                                        aria-describedby="emailHelp" value="{{ $data->foto }}">
+                                        @error('foto')
+                                        <div class="alert alert-danger" role="alert">
+                                            <strong>{{ $message }}</strong> 
+                                        </div>
+                                         @enderror
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Judul</label>
-                                        <input type="text" name="judul" class="form-control" id="inputPassword4" {{ $row->judul }}
+                                        <input type="text" name="judul" class="form-control" id="inputPassword4" value="{{ $data->judul }}"
                                             placeholder="">
-                                    </div>
+                                            @error('judul')
+                                            <div class="alert alert-danger" role="alert">
+                                                <strong>{{ $message }}</strong> 
+                                            </div>
+                                             @enderror
+                                        </div>
                                     <div class="form-group col-md-12">
                                         <label for="editor">Deskripsi</label>
-                                        <textarea name="deskripsi" id="editor" {!! $row->deskripsi !!}></textarea>
+                                        <textarea name="deskripsi" id="editor" {!! $data->deskripsi !!}></textarea>
+                                        @error('deskripsi')
+                                        <div class="alert alert-danger" role="alert">
+                                            <strong>{{ $message }}</strong> 
+                                        </div>
+                                         @enderror
                                     </div>
 
                                     <div class="form-actions">

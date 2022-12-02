@@ -110,6 +110,17 @@ class GaleryController extends Controller
     }
     public function galeriaxiostore(Request $request)
     {
+        $pesan = [
+            'required' => ':attribute Wajib di isi',
+            'min' => ':attribute Wajib di isi minimal : min karakter',
+            'max' => ':attribute Wajib di isi maximal : max karakter',
+
+        ];
+        $this->validate($request,[
+            'foto1' => 'required',
+            'namakegiatan' => 'required|min:2|max:100',
+           
+        ] , $pesan );
         if($request->hasFile('foto1')){
             $request->file('foto1')->move('foto/', $request->file('foto1')->getClientOriginalName());
         $data = GaleriAxio::create([
@@ -128,6 +139,17 @@ class GaleryController extends Controller
     }
     public function galeriaxioupdate($id,Request $request)
     {
+        $pesan = [
+            'required' => ':attribute Wajib di isi',
+            'min' => ':attribute Wajib di isi minimal : min karakter',
+            'max' => ':attribute Wajib di isi maximal : max karakter',
+
+        ];
+        $this->validate($request,[
+            'foto1' => 'required',
+            'namakegiatan' => 'required|min:2|max:100',
+           
+        ] , $pesan );
         $data = DB::table('galeri_axios')->where('id',$id);
         if($request->hasFile('foto1')){
             $pindah = $request->file('foto1')->move(public_path().'\storage', $request->file('foto1')->getClientOriginalName());
@@ -156,6 +178,17 @@ class GaleryController extends Controller
     }
     public function galeriechostore(Request $request)
     {
+        $pesan = [
+            'required' => ':attribute Wajib di isi',
+            'min' => ':attribute Wajib di isi minimal : min karakter',
+            'max' => ':attribute Wajib di isi maximal : max karakter',
+
+        ];
+        $this->validate($request,[
+            'foto11' => 'required',
+            'namakegiatan' => 'required|min:2|max:100',
+           
+        ] , $pesan );
         if($request->hasFile('foto11')){
             $request->file('foto11')->move('foto/', $request->file('foto11')->getClientOriginalName());
         $data = GaleriEcho::create([
@@ -174,6 +207,17 @@ class GaleryController extends Controller
     }
     public function galeriechoupdate($id,Request $request)
     {
+        $pesan = [
+            'required' => ':attribute Wajib di isi',
+            'min' => ':attribute Wajib di isi minimal : min karakter',
+            'max' => ':attribute Wajib di isi maximal : max karakter',
+
+        ];
+        $this->validate($request,[
+            'foto11' => 'required',
+            'namakegiatan' => 'required|min:2|max:100',
+           
+        ] , $pesan );
         $data = DB::table('galeri_echoes')->where('id',$id);
         if($request->hasFile('foto11')){
             $pindah = $request->file('foto11')->move(public_path().'\storage', $request->file('foto11')->getClientOriginalName());

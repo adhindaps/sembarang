@@ -13,15 +13,30 @@
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Foto</label>
                                         <input type="file" id="foto" name="foto" class="form-control">
+                                        @error('foto')
+                                        <div class="alert alert-danger" role="alert">
+                                            <strong>{{ $message }}</strong> 
+                                        </div>
+                                         @enderror
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Judul</label>
                                         <input type="text" name="judul" class="form-control" id="inputPassword4"
                                             placeholder="">
-                                    </div>
+                                            @error('judul')
+                                            <div class="alert alert-danger" role="alert">
+                                                <strong>{{ $message }}</strong> 
+                                            </div>
+                                             @enderror
+                                        </div>
                                     <div class="form-group col-md-12">
                                         <label for="editor">Deskripsi</label>
                                         <textarea name="deskripsi" id="editor"></textarea>
+                                        @error('deskripsi')
+                                        <div class="alert alert-danger" role="alert">
+                                            <strong>{{ $message }}</strong> 
+                                        </div>
+                                         @enderror
                                     </div>
 
                                     <div class="form-actions">

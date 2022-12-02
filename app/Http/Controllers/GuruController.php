@@ -37,6 +37,21 @@ class GuruController extends Controller
      */
     public function gurustore(Request $request)
     {
+        $pesan = [
+            'required' => ':attribute Wajib di isi',
+            'min' => ':attribute Wajib di isi minimal : min karakter',
+            'max' => ':attribute Wajib di isi maximal : max karakter',
+
+        ];
+        $this->validate($request,[
+            'fotoguru' => 'required',
+            'nama' => 'required|min:2|max:100',
+            'nip' => 'required|min:11|max:100',
+            'tmplahir' => 'required',
+            'tgllahir' => 'required',
+            'status' => 'required',
+            'jabatan' => 'required',
+        ] , $pesan );
         if($request->hasFile('fotoguru')){
             $request->file('fotoguru')->move('foto/', $request->file('fotoguru')->getClientOriginalName());
         $data = Guru::create([
@@ -86,6 +101,21 @@ class GuruController extends Controller
      */
     public function guruupdate($id,Request $request, Guru $guru)
     {
+        $pesan = [
+            'required' => ':attribute Wajib di isi',
+            'min' => ':attribute Wajib di isi minimal : min karakter',
+            'max' => ':attribute Wajib di isi maximal : max karakter',
+
+        ];
+        $this->validate($request,[
+            'fotoguru' => 'required',
+            'nama' => 'required|min:2|max:100',
+            'nip' => 'required|min:11|max:100',
+            'tmplahir' => 'required',
+            'tgllahir' => 'required',
+            'status' => 'required',
+            'jabatan' => 'required',
+        ] , $pesan );
         $data = DB::table('gurus')->where('id',$id);
         if($request->hasFile('fotoguru')){
             $pindah = $request->file('fotoguru')->move(public_path().'\storage', $request->file('fotoguru')->getClientOriginalName());

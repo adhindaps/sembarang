@@ -13,11 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('footers', function (Blueprint $table) {
+        Schema::create('footer_links', function (Blueprint $table) {
             $table->id();
-            $table->string('logo');
-            $table->string('namasekolah');
-            $table->text('deskripsi');
+            $table->string('halaman');
+            $table->string('link');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('footers');
+        Schema::dropIfExists('footer_links');
     }
 };

@@ -29,6 +29,7 @@ use App\Models\Sejarah;
 
 
 Route::get('/', [LandingController::class, 'index'])->name('index');
+Route::get('/footer', [LandingController::class, 'index'])->name('footer');
 
 
 Route::get('/login', [LoginController::class, 'login'])->name('login')->middleware('guest');
@@ -50,7 +51,7 @@ Route::get('/visi',[LandingController::class, 'visi'])->name('visi');
 Route::get('/dataguru',[LandingController::class, 'dataguru'])->name('dataguru');
 Route::get('/blog',[LandingController::class, 'blog'])->name('blog');
 Route::get('/events',[LandingController::class, 'events'])->name('events');
-Route::get('/detailevents/{id',[LandingController::class, 'detailevents'])->name('detailevents');
+Route::get('/detailevents/{id}',[LandingController::class, 'detailevents'])->name('detailevents');
 Route::get('/echo',[LandingController::class, 'echo'])->name('echo');
 Route::get('/blogdetail/{id}',[LandingController::class, 'blogdetail'])->name('blogdetail');
 Route::get('/extrakulikuler',[LandingController::class, 'extrakulikuler'])->name('extrakulikuler');

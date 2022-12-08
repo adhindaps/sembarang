@@ -20,8 +20,6 @@
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
                     @foreach ($data as $item)
-                        
-                    
                     <div class="as-blog blog-single">
                         <div class="blog-img"><img src="foto/bkk.jpg" alt="Blog Image"></div>
                         <div class="blog-content">

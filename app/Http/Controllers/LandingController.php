@@ -35,7 +35,7 @@ class LandingController extends Controller
         $patner=Patner::all();
         $vidio=Video::all();
         // $data=sejarah
-        return view('landingpage.index', compact('data','gakenek', 'sambutan', 'about', 'event', 'slider', 'patner', 'vidio'));
+        return view('landingpage.index','footer', compact('data','gakenek', 'sambutan', 'about', 'event', 'slider', 'patner', 'vidio'));
     }
 
     public function sija(Request $request)
@@ -125,10 +125,9 @@ class LandingController extends Controller
         $data = Beasiswa::where('id','=',1)->firstOrFail();
         return view('landingpage.beasiswa',compact('data'));
     }
-    public function bkk($id)
+    public function bkk(Request $request)
     {
-        $data=Bkk::where('id',$id)->get();
-        // dd($data);
+        $data=Bkk::all();
         return view('landingpage.bkk',compact('data'));
     }
     public function bkkdetail($id)

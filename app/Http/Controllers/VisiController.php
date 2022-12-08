@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\video;
 use App\Models\Patner;
+use App\Models\Fasilitas;
 use App\Models\visi;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -140,5 +141,61 @@ class VisiController extends Controller
         ]);
         return redirect('videoindex')->with('sukses','Updatedata!');
     }
+    }
+
+    public function fasilitasindex()
+    {
+        $data=Fasilitas::all();
+        return view('admin.fasilitas.fasilitas',compact('data'));
+    }
+
+    public function fasilitascreate()
+    {
+        $data=Fasilitas::all();
+        return view('admin.fasilitas.fasilitascreate',compact('data'));
+    }
+    public function fasilitasstore(Request $request)
+    {
+        if($request->hasFile('foto')){
+            $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
+        $data = Fasilitas::create([
+            'foto' => $request->file('foto')->getClientOriginalName(),
+            'nama' => $request->nama,
+        ]);
+        $data->foto = $request->file('foto')->getClientOriginalName();
+    }
+        return redirect()->route('fasilitasindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function fasilitasedit($id)
+    {
+        $data = Fasilitas::findOrfail($id);
+        return view('admin.fasilitas.fasilitasedit',compact('data'));
+    }
+
+    public function fasilitasupdate($id,Request $request)
+    {
+        $data = DB::table('fasilitas')->where('id',$id);
+        if($request->hasFile('foto')){
+            $pindah = $request->file('foto')->move(public_path().'\storage', $request->file('foto')->getClientOriginalName());
+            $data = Fasilitas::find($id)->update([
+                'foto' => $request->file('foto')->getClientOriginalName(),
+               'nama' => $request->nama,
+            ]);
+        return redirect('fasilitasindex')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
+            'nama' => $request->nama,
+        ]);
+        return redirect('fasilitasindex')->with('sukses','Updatedata!');
+    }
+    }
+
+    public function deletefasilitas($id)
+    {
+        $data = Fasilitas::find($id);
+        $data->delete();
+        return redirect()->route('fasilitasindex')->with('success', 'Data Berhasil Dihapus');
+    
     }
 }

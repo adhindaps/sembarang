@@ -7,12 +7,11 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">BURSA KERJA KHUSUS</h4>
-                    <a href="https://datatables.net/"></a></h6>
                     <h6 class="card-subtitle">
                         <a href="/bkkcreate" class="btn btn-primary" >Tambah </a></h6>
-                    <div class="table-responsive">
-                        <table id="zero_config" class="table table-striped table-bordered no-wrap">
-                            <thead>
+                   <div class="row">
+                    <table class="table table-bordered" id="id_table">
+                        <thead>
                                 <tr>
                                     <th >No</th>
                                     <th >Foto</th>
@@ -30,7 +29,7 @@
                                     <td scope="bk">{{ $no++ }}</td>
                                     <td> <img alt=" " src="foto/{{ $bk->fotobk }}"width="100px"></td>
                                     <td>{{ $bk->perusahaan }}</td>
-                                    <td style="word-break:break-all;">{!! $bk->deskripsi !!}</td>
+                                    <td style="word-break:break-word;">{!! $bk->deskripsi !!}</td>
                                     <td>
                                     <a href="/bkkedit/{{ $bk->id }}" class="btn btn-warning">
                                         <i class="fas fa-pencil-alt"></i></a>
@@ -49,6 +48,12 @@
 </div>
 </div>
 @include('admin.footeradmin')
+
+<script>
+    $(document).ready(function() {
+        $('#id_table').DataTable();
+    });
+</script>
 
 <script>
     $('.deletebkk').click(function() {

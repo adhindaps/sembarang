@@ -140,6 +140,38 @@ class ProfileController extends Controller
 
     }
 
+    public function kategoriindex()
+    {
+        $data=Kategoriblog::all();
+        return view('admin.blog.kategoriblog',compact('data'));
+    }
+
+    public function kategoricreate()
+    {
+        $data=Kategoriblog::all();
+        return view('admin.blog.kategoricreate',compact('data'));
+    }
+    public function kategoristore(Request $request)
+    {   $data = Kategoriblog::create([
+            'kategori' => $request->kategori,
+        ]);
+        return redirect()->route('kategoriindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function kategoriedit($id)
+    {
+        $data = Kategoriblog::findOrfail($id);
+        return view('admin.blog.kategoriedit',compact('data'));
+    }
+
+    public function kategoriupdate($id,Request $request)
+    {
+        $data=Kategoriblog::find($request->id);
+        $data->update($request->all());
+        return redirect('kategoriindex');
+    }
+
+
     public function index()
     {
         $data = Event::all();

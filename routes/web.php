@@ -15,6 +15,8 @@ use App\Http\Controllers\Auth;
 use App\Models\Guru;
 use App\Models\Jurusan;
 use App\Models\Sejarah;
+use App\Models\blog;
+use App\Models\Patner;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,10 +68,10 @@ Route::get('/dashboard',[AdminController::class, 'dashboard'])->name('dashboard'
 Route::get('/dashboard', function () {
     $jumlahjurusan = Jurusan::count();
     $jumlahguru = Guru::count();
-    //     $pesanandikirim = jualproduk::count();
-    //     $pesananditerima = jualproduk::count();
+    $jumlahberita = blog::count();
+    $jumlahmitra = Patner::count();
 
-    return view('admin.beranda', compact('jumlahjurusan' , 'jumlahguru'),);
+    return view('admin.beranda', compact('jumlahjurusan' , 'jumlahguru' , 'jumlahberita' , 'jumlahmitra'),);
 });
 
 Route::group(['middleware'],function (){
@@ -136,6 +138,14 @@ Route::post('/patnerstore',[VisiController::class, 'patnerstore'])->name('patner
 Route::get('/patneredit/{id}',[VisiController::class, 'patneredit'])->name('patneredit');
 Route::post('/patnerupdate/{id}',[VisiController::class, 'patnerupdate'])->name('patnerupdate');
 Route::get('/deletepatner/{id}',[VisiController::class, 'deletepatner'])->name('deletepatner');
+
+//////////////////////////////////Fasilitas-ADMIN////////////////////////////////
+Route::get('/fasilitasindex',[VisiController::class, 'fasilitasindex'])->name('fasilitasindex')->middleware('auth');
+Route::get('/fasilitascreate',[VisiController::class, 'fasilitascreate'])->name('fasilitascreate');
+Route::post('/fasilitasstore',[VisiController::class, 'fasilitasstore'])->name('fasilitasstore');
+Route::get('/fasilitasedit/{id}',[VisiController::class, 'fasilitasedit'])->name('fasilitasedit');
+Route::post('/fasilitasupdate/{id}',[VisiController::class, 'fasilitasupdate'])->name('fasilitasupdate');
+Route::get('/deletefasilitas/{id}',[VisiController::class, 'deletefasilitas'])->name('deletefasilitas');
 
 //////////////////////////////////VIDEOPROFILE-ADMIN////////////////////////////////
 Route::get('/videoindex',[VisiController::class, 'videoindex'])->name('videoindex')->middleware('auth');

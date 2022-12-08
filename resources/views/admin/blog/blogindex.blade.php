@@ -12,8 +12,9 @@
                     <h6 class="card-subtitle">
                       <a href="/blogcreate" class="btn btn-primary" >Tambah </a> 
                     </h6>
-                    <div class="table-responsive">
-                        <table class="table">
+                    <div class="row">
+                        <table class="table table-bordered" id="id_table">
+                           
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
@@ -34,7 +35,7 @@
                                     <th scope="row">{{ $no++ }}</th>
                                     <td>  <img alt=" " src="foto/{{ $row->foto }}"width="100px"> </td>
                                     <td>{{ $row->judul }}</td>
-                                    <td>{!! $row->deskripsi !!}</td>
+                                    <td style="word-break:break-all;">{!! $row->deskripsi !!}</td>
                                     <td>{{ $row->kategori->kategori }}</td>
                                     <td>{{ $row->created_at->format('D M Y')}}</td>
                                     <td>
@@ -55,7 +56,11 @@
     </div>
 </div>
 @include('admin.footeradmin')
-
+<script>
+    $(document).ready(function() {
+        $('#id_table').DataTable();
+    });
+</script>
 <script>
   $('.deleteblog').click(function() {
       var blogid = $(this).attr('data-id');

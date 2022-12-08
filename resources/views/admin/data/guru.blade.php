@@ -9,10 +9,8 @@
                     <h4 class="card-title">DATA GURU</h4>
                     <h6 class="card-subtitle">
                         <a href="/gurucreate" class="btn btn-primary" >Tambah </a> 
-                        <a href="https://datatables.net/"></a></h6>
-                    <div class="table-responsive">
-                        <table id="zero_config" class="table table-striped table-bordered no-wrap">
-                            <thead>
+                        <div class="row">
+                            <table class="table table-bordered" id="id_table"><thead>
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Foto</th>
@@ -58,6 +56,15 @@
 </div>
 
 @include('admin.footeradmin')
+
+
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#id_table').DataTable();
+    });
+</script>
 <script>
     $('.deleteguru').click(function() {
         var guruid = $(this).attr('data-id');

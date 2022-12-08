@@ -6,7 +6,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Tambah Slider</h4>
+                            <h4 class="card-title">Tambah Slider</h4>      
                             <form action="sliderupdate/{{ $data->id }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-row">

@@ -36,9 +36,9 @@
                 <div class="d-flex d-lg-flex d-md-block align-items-center">
                     <div>
                         <div class="d-inline-flex align-items-center">
-                            <h2 class="text-dark mb-1 font-weight-medium">236</h2>
+                            <h2 class="text-dark mb-1 font-weight-medium">{{ $jumlahguru }}</h2>
                             </div>
-                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Siswa Aktif</h6>
+                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Guru</h6>
                     </div>
                     <div class="ml-auto mt-md-3 mt-lg-0">
                         <span class="opacity-7 text-muted"><i data-feather="user-plus"></i></span>
@@ -65,9 +65,9 @@
                 <div class="d-flex d-lg-flex d-md-block align-items-center">
                     <div>
                         <div class="d-inline-flex align-items-center">
-                            <h2 class="text-dark mb-1 font-weight-medium">1538</h2>
+                            <h2 class="text-dark mb-1 font-weight-medium">{{ $jumlahberita }}</h2>
                            </div>
-                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Karyawan</h6>
+                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Berita</h6>
                     </div>
                     <div class="ml-auto mt-md-3 mt-lg-0">
                         <span class="opacity-7 text-muted"><i data-feather="file-plus"></i></span>
@@ -79,8 +79,8 @@
             <div class="card-body">
                 <div class="d-flex d-lg-flex d-md-block align-items-center">
                     <div>
-                        <h2 class="text-dark mb-1 font-weight-medium">{{ $jumlahguru }}</h2>
-                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Semua Guru</h6>
+                        <h2 class="text-dark mb-1 font-weight-medium">{{ $jumlahmitra }}</h2>
+                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Kerjasama</h6>
                     </div>
                     <div class="ml-auto mt-md-3 mt-lg-0">
                         <span class="opacity-7 text-muted"><i data-feather="globe"></i></span>

@@ -12,6 +12,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="mpls/10.png">
     <title>ADMIN-SMK N 1 DLANGGU</title>
     <!-- Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
     <link href="{{ asset('admin/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/assets/extra-libs/c3/c3.min.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/assets/libs/chartist/dist/chartist.min.css') }}" rel="stylesheet">
@@ -214,7 +216,7 @@
                         
                         
                         <li class="nav-small-cap"><span class="hide-menu">Fasilitas Sekolah</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="fasilitasindex"
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                     class="hide-menu">Fasilitas </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
@@ -222,6 +224,10 @@
                                             class="hide-menu"> Beasiswa
                                         </span></a>
                                 </li>
+                                <li class="sidebar-item"><a href="fasilitasindex" class="sidebar-link"><span
+                                    class="hide-menu">Fasilitas
+                                </span></a>
+                        </li>
                                 <li class="sidebar-item"><a href="axioindex" class="sidebar-link"><span
                                             class="hide-menu"> Axio
                                         </span></a>

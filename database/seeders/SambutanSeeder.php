@@ -24,8 +24,8 @@ class SambutanSeeder extends Seeder
             Website ini kami tujukan untuk seluruh guru, karyawan dan siswa serta masyarakat umum agar dapat mengakses seluruh informasi tentang profil, aktifitas/kegiatan serta fasilitas sekolah secara berkala dan update. Tentunya Website sekolah kami masih terdapat banyak kekurangan, oleh karena itu kepada seluruh civitas akademika dan masyarakat umum dapat memberikan saran dan kritik yang membangun demi kemajuan website ini lebih lanjut. Kami berharap Website ini dapat dijadikan wahana interaksi yang positif baik antar civitas akademika maupun masyarakat pada umumnya sehingga dapat menjalin silaturahmi yang erat disegala unsur sesuai dengan motto sekolah kita. 
             </p>',
             'nama'=>'Guru & Karyawan',
-            'katakata'=>'<p>Selamat datang di Website kami di Sekolah Menengah Kejuruan Negri 1 Dlanggu. 
-           Berikut Adalah Beberapa Guru yang ada di SMKN 1 DLANGGU
+            'katakata'=>'<p>Selamat datang di Website SMKN 1 DLANGGU. 
+           Berikut Adalah Beberapa Guru dan Karyawan yang ada di SMKN 1 DLANGGU
             </p>',
         ]);
     }

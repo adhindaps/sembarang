@@ -32,7 +32,8 @@
 <!--This page JavaScript -->
 
 <!--This page plugins -->
-
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="{{  asset('admin/assets/extra-libs/datatables.net/js/jquery.dataTables.min.js')  }}"></script>
 <script src="{{ asset('admin/dist/js/pages/datatable/datatable-basic.init.js') }}"></script>
 <script src="{{ asset('admin/assets/extra-libs/c3/d3.min.js') }}"></script>

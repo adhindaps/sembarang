@@ -11,8 +11,9 @@
                             </h6>
                             <a href="/jurusancreate" class="btn btn-primary">Tambah </a>
 
-                            <div class="table-responsive">
-                                <table class="table">
+                            <div class="row">
+                                <table class="table table-bordered" id="id_table">
+                                   
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
@@ -51,7 +52,11 @@
             </div>
 
             @include('admin.footeradmin')
-
+            <script>
+                $(document).ready(function() {
+                    $('#id_table').DataTable();
+                });
+            </script>
             <script>
                 $('.deletejurusan').click(function() {
                     var jurusanid = $(this).attr('data-id');

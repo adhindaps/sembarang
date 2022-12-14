@@ -53,6 +53,11 @@
             </div>
             @include('admin.footeradmin')
             <script>
+                $(document).ready(function() {
+                    $('#id_table').DataTable();
+                });
+            </script>
+            <script>
                 $('.deleteslider').click(function() {
                     var sliderid = $(this).attr('data-id');
                     var slider = $(this).attr('data-slider');

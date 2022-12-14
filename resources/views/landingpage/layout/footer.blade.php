@@ -159,12 +159,12 @@
                 <div class="col-lg-auto d-none d-lg-block">
                     <div class="footer-links">
                         <ul>
-                            <li>
+                            {{-- <li>
                                 <a href="about.html">Terms of Use</a>
                             </li>
                             <li>
                                 <a href="about.html">Privacy Environmental Policy</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </div>

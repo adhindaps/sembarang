@@ -37,7 +37,7 @@
                                                 <th scope="row">{{ $no++ }}</th>
                                                 <td> <img alt=" " src="foto/{{ $row->foto }}"width="100px"></td>
                                                 <td>{{ $row->judul }}</td>
-                                                <td>{!! $row->deskripsi !!}</td>
+                                                <td style="word-break:break-word;">{!! $row->deskripsi !!}</td>
                                                 <td>
                                                     <a href="/slideredit/{{ $row->id }}" class="btn btn-warning"><i
                                                             class="fas fa-pencil-alt"></i></a>
@@ -55,6 +55,11 @@
                 </div>
             </div>
             @include('admin.footeradmin')
+            <script>
+                $(document).ready(function() {
+                    $('#id_table').DataTable();
+                });
+            </script>
             <script>
                 $('.deleteslider').click(function() {
                     var sliderid = $(this).attr('data-id');

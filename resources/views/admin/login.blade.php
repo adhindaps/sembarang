@@ -58,6 +58,11 @@
                                         <label class="text-dark" >Email</label>
                                         <input class="form-control" name="email" type="text"
                                             placeholder="masukkan email">
+                                            @error('email')
+                                            <div class="alert alert-danger" role="alert">
+                                                <strong>{{ $message }}</strong> 
+                                            </div>
+                                             @enderror
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
@@ -65,6 +70,15 @@
                                         <label class="text-dark" >Password</label>
                                         <input class="form-control" name="password" type="password"
                                             placeholder="masukkan password">
+                                            @error('password')
+                                            <div class="alert alert-danger" role="alert">{{ $message }}
+                                            </div>
+                                             @enderror
+                                             @if (Session::has('password'))
+                                             <div>
+                                             <div class="alert alert-danger" role="alert">Sandi salah</div>
+                                            </div>
+                                            @endif
                                     </div>
                                 </div>
                                 <div class="col-lg-12 text-center">

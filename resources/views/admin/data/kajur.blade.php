@@ -11,9 +11,9 @@
                       </h6>
                       {{-- <a href="/jurusancreate" class="btn btn-primary" >Tambah </a>  --}}
 
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
+                      <div class="row">
+                        <table class="table table-bordered" id="id_table">
+                           <thead>
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Foto</th>
@@ -52,7 +52,11 @@
 </div>
 
 @include('admin.footeradmin')
-
+<script>
+    $(document).ready(function() {
+        $('#id_table').DataTable();
+    });
+</script>
 <script>
     $('.deletekajur').click(function() {
         var kajurid = $(this).attr('data-id');

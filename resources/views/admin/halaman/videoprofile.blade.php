@@ -7,9 +7,9 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">VIDEO PROFILE</h4>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
+                    <div class="row">
+                        <table class="table table-bordered" id="id_table">
+                              <thead>
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Judul</th>
@@ -43,7 +43,11 @@
 </div>
 
 @include('admin.footeradmin')
-
+<script>
+    $(document).ready(function() {
+        $('#id_table').DataTable();
+    });
+</script>
 @endsection
 
 {{-- main js --}}

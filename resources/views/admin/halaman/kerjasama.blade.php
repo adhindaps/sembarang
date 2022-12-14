@@ -9,9 +9,9 @@
                     <h4 class="card-title">KERJASAMA</h4>
                     <h6 class="card-subtitle"></h6>
                     <a href="/patnercreate" type="button" class="btn btn-primary">Tambah+</a>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
+                    <div class="row">
+                        <table class="table table-bordered" id="id_table">
+                               <thead>
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Nama</th>
@@ -48,7 +48,11 @@
 </div>
 
 @include('admin.footeradmin')
-
+<script>
+    $(document).ready(function() {
+        $('#id_table').DataTable();
+    });
+</script>
 <script>
     $('.deletepatner').click(function() {
         var patnerid = $(this).attr('data-id');

@@ -154,6 +154,14 @@ Route::post('/videostore',[VisiController::class, 'videostore'])->name('videosto
 Route::get('/videoedit/{id}',[VisiController::class, 'videoedit'])->name('videoedit');
 Route::post('/videoupdate/{id}',[VisiController::class, 'videoupdate'])->name('videoupdate');
 
+//////////////////////////////////PRESTASI-ADMIN////////////////////////////////
+Route::get('/prestasiindex',[VisiController::class, 'prestasiindex'])->name('prestasiindex')->middleware('auth');
+Route::get('/prestasicreate',[VisiController::class, 'prestasicreate'])->name('prestasicreate');
+Route::post('/prestasistore',[VisiController::class, 'prestasistore'])->name('prestasistore');
+Route::get('/prestasiedit/{id}',[VisiController::class, 'prestasiedit'])->name('prestasiedit');
+Route::post('/prestasiupdate/{id}',[VisiController::class, 'prestasiupdate'])->name('prestasiupdate');
+Route::get('/deletepres/{id}',[VisiController::class, 'prestasihapus'])->name('prestasihapus');
+
 //////////////////////////////////BKK-ADMIN////////////////////////////////
 Route::get('/bkkindex',[SejarahController::class, 'bkkindex'])->name('bkkindex')->middleware('auth');
 Route::get('/bkkcreate',[SejarahController::class, 'bkkcreate'])->name('bkkcreate');

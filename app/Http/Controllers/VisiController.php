@@ -6,6 +6,7 @@ use App\Models\video;
 use App\Models\Patner;
 use App\Models\Fasilitas;
 use App\Models\visi;
+use App\Models\Prestasi;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
@@ -197,5 +198,67 @@ class VisiController extends Controller
         $data->delete();
         return redirect()->route('fasilitasindex')->with('success', 'Data Berhasil Dihapus');
     
+    }
+
+    
+    public function prestasiindex()
+    {
+        $data=Prestasi::all();
+        return view('admin.profile.prestasi',compact('data'));
+    }
+
+    
+    public function prestasicreate()
+    {
+        return view('admin.profile.prestasicreate');
+    }
+
+    public function prestasistore(Request $request)
+    {
+        if($request->hasFile('fotopres')){
+            $request->file('fotopres')->move('foto/', $request->file('fotopres')->getClientOriginalName());
+        $data = Prestasi::create([
+            'fotopres' => $request->file('fotopres')->getClientOriginalName(),
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        $data->fotopres = $request->file('fotopres')->getClientOriginalName();
+    }
+        return redirect()->route('prestasiindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function prestasiedit($id)
+    {
+        $data = Prestasi::find($id);
+        $data = Prestasi::findOrfail($id);
+        return view('admin.profile.prestasiedit',compact('data'));
+    }
+
+    public function prestasiupdate($id,Request $request)
+    {
+        $data = DB::table('prestasis')->where('id',$id);
+        if($request->hasFile('fotopres')){
+            $pindah = $request->file('fotopres')->move(public_path().'\storage', $request->file('fotopres')->getClientOriginalName());
+            $data = Prestasi::find($id)->update([
+                'fotopres' => $request->file('fotopres')->getClientOriginalName(),
+               'judul' => $request->judul,
+               'deskripsi' => $request->deskripsi,
+              
+            ]);
+        return redirect('prestasiindex')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
+            'judul' => $request->judul,
+            'deskripsi' => $request->deskripsi,
+        ]);
+        return redirect('prestasiindex')->with('sukses','Updatedata!');
+    }
+    }
+
+    public function prestasihapus($id)
+    {
+        $data = Prestasi::find($id);
+        $data->delete();
+        return redirect('/prestasiindex');
     }
 }

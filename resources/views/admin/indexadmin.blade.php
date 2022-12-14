@@ -174,6 +174,8 @@
                                         class="hide-menu"> Identitas Sekolah  </span></a>
                             <li class="sidebar-item"><a href="sejarahindex" class="sidebar-link"><span
                                         class="hide-menu"> Sejarah Sekolah</span></a>
+                            <li class="sidebar-item"><a href="prestasiindex" class="sidebar-link"><span
+                                            class="hide-menu"> Prestasi Sekolah</span></a>
                             <li class="sidebar-item"><a href="visiindex" class="sidebar-link"><span
                                             class="hide-menu"> Visi & Misi</span></a>
                             <li class="sidebar-item"><a href="videoindex" class="sidebar-link"><span

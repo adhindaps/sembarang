@@ -33,6 +33,11 @@
     width: 300px !important;
 }
 
+.zz{
+    height: 500px !important;
+    width: 00px !important;
+}
+
 .overflow {
     overflow: hidden;
     text-overflow: ellipsis;

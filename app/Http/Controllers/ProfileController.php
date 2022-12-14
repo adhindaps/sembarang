@@ -79,7 +79,7 @@ class ProfileController extends Controller
      public function blogindex()
     {
         $data=blog::all();
-        return view('admin.blog.blogindex', compact(['data']));
+        return view('admin.blog.blogindex', compact('data'));
     }
 
     public function blogcreate()

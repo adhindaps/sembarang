@@ -20,7 +20,7 @@
             <div class="row">
                 <div class="col-xxl-9 col-lg-8">
                     <div class="event-details">
-                        <div class="event-img"><img src="foto/{{ $data->foto }}" alt="Event Image"></div>
+                        <div class="event-img"><img src="{{ asset('foto/' . $data->foto) }}" width="500" alt="Event Image"></div>
                         <h3 class="h3 mt-n2">{{ $data->namaevent }}</h3>
                         <p class="mb-30">{{ $data->deskripsi }}</p>
                     </div>

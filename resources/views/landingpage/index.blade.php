@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
-<!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:24:45 GMT -->
+<!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x XR&CO'2014, Wed, 09 Nov 2022 07:24:45 GMT -->
 @include('landingpage.layout.head')
 
 <body>
@@ -275,7 +275,7 @@
     <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/app.min.js') }}"></script>
     <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/main.js') }}"></script>
-    <!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:30:06 GMT -->
+    <!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x XR&CO'2014, Wed, 09 Nov 2022 07:30:06 GMT -->
 </body>
 
 </html>

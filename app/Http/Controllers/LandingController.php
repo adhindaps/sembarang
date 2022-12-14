@@ -17,7 +17,10 @@ use App\Models\Axio;
 use App\Models\Beasiswa;
 use App\Models\Bkk;
 use App\Models\Event;
+use App\Models\Footer;
+use App\Models\FooterLink;
 use App\Models\Kajur;
+use App\Models\Kategoriblog;
 use App\Models\Sambutan;
 use App\Models\Slider;
 use App\Models\Patner;
@@ -38,9 +41,16 @@ class LandingController extends Controller
         return view('landingpage.index','footer', compact('data','gakenek', 'sambutan', 'about', 'event', 'slider', 'patner', 'vidio'));
     }
 
+    public function footer(Request $request)
+    {
+        $data=FooterLink::all();
+        $footer=Footer::all();
+        return view('landingpage.layout.sija', compact('data', 'footer'));
+    }
+
     public function sija(Request $request)
     {
-        return view('landingpage.jurusan.sija');
+        return view('landingpage.jurusan.footer');
     }
 
     public function detail($id)
@@ -48,7 +58,7 @@ class LandingController extends Controller
         $data=Jurusan::where('id',$id)->get();
         $kj=Kajur::with('jurusan');
         $kajur=Kajur::find($id);
-        return view('landingpage.jurusan.detail',compact('data','kajur', 'kj'));
+        return view('landingpage.jurusan.detail',compact('data','kj','kajur'));
     }
 
     public function profile(Request $request)
@@ -81,7 +91,7 @@ class LandingController extends Controller
     public function blog(Request $request)
     {
         $data=blog::all();
-        return view('landingpage.blog', compact(['data']));
+        return view('landingpage.blog', compact('data'));
     }
     public function events(Request $request)
     {
@@ -91,7 +101,7 @@ class LandingController extends Controller
     public function detailevents($id)
     {
         $data=Event::where('id',$id)->get();
-        return view('landingpage.detailevents', compact(['data']));
+        return view('landingpage.detailevents', compact('data'));
     }
 
     public function echo(Request $request)
@@ -102,7 +112,9 @@ class LandingController extends Controller
     public function blogdetail($id)
     {
         $data=blog::where('id',$id)->get();
-        return view('landingpage.blogdetail', compact(['data']));
+        $kategori=Kategoriblog::all();
+        $blog=blog::latest()->get();
+        return view('landingpage.blogdetail', compact('data', 'kategori', 'blog'));
     }
     public function extrakulikuler(Request $request)
     {
@@ -133,7 +145,7 @@ class LandingController extends Controller
     public function bkkdetail($id)
     {
         $data=Bkk::where('id',$id)->get();
-        return view('landingpage.bkkdetail', compact(['data']));
+        return view('landingpage.bkkdetail', compact('data'));
     }
     public function programkeahlian(Request $request)
     {

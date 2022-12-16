@@ -78,8 +78,6 @@
     <br />
     <section class="" data-pos-for="#team-sec" data-sec-pos="bottom-half">
         @foreach ($vidio as $vid)
-            
-        @endforeach
         <div class="container">
             <div class="video-box">
                 <div class="overlay"></div><img alt="video" src="foto/{{ $vid->foto }}" width="2000">
@@ -90,6 +88,7 @@
                 </div>
             </div>
         </div>
+        @endforeach
         <div class="shape-mockup jump" data-left="6%" data-top="10%"><img alt="shapes"
                 src="{{ asset('1/yeye/html/acadu/demo/assets/img/shape/circle_5.png') }}"></div>
         <div class="shape-mockup jump-reverse" data-left="6%" data-top="11%"><img alt="shapes"

@@ -6,49 +6,78 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <form action="/beasiswaupdate" method="POST" enctype="multipart/form-data" >  
-                        @csrf
-                    <h4 class="card-title">Beasiswa sekolah</h4>
-                    <input type="text" value="{{$data->id}}" name="id" class="form-control" id="inputPassword4" placeholder="" hidden>
-
-                        <div class="form-row">
-                            <div class="form-group col-md-12">
-                              <label for="inputPassword4">Nama</label>
-                              <input type="text" value="{{$data->name}}" name="name" class="form-control" id="inputPassword4"  placeholder="">
-                            </div>
-                            <div class="form-group col-md-12">
-                                <label for="editor">Deskripsi</label>
-                                <textarea name="desk" id="editor">{!! $data->desk !!}</textarea>
-                              </div>
-                          </div>
-                          <div class="form-actions">
-                            <div class="text-right">
-                                <button type="submit" class="btn btn-info">Update</button>
-                             
-                            </div>
-                        </div>
-                    </form>
-                        </div>
+                    <h4 class="card-title">BEASISWA</h4>
+                    <h6 class="card-subtitle">
+                        <a href="/beasiswacreate" class="btn btn-primary" >Tambah </a></h6>
+                   <div class="row">
+                    <table class="table table-bordered" id="id_table">
+                        <thead>
+                                <tr>
+                                    <th >No</th>
+                                    <th >Juduk</th>
+                                    <th >Foto</th>
+                                    <th >Deskripsi</th>
+                                    <th >Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @php
+                                $no = 1;
+                            @endphp
+                            @foreach ($data as $bea)
+                                <tr>
+                                    <td scope="bea">{{ $no++ }}</td>
+                                    <td>{{ $bea->name }}</td>
+                                    <td> <img alt=" " src="foto/{{ $bea->foto }}"width="100px"></td>
+                                    <td style="word-break:break-word;">{!! $bea->desk !!}</td>
+                                    <td>
+                                    <a href="/beasiswaedit/{{ $bea->id }}" class="btn btn-warning">
+                                        <i class="fas fa-pencil-alt"></i></a>
+                                    <a href="#" class="btn btn-danger deletebeasiswa"
+                                        data-id="{{ $bea->id }}" data-beasiswa="{{ $bea->beasiswa }}">
+                                        <i class=" fas fa-trash"></i></a>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    </div>
-    </div>
-    
+</div>
+</div>
 @include('admin.footeradmin')
-@endsection
-
-@section('ck-editor')
-<script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
 
 <script>
-    ClassicEditor
-        .create( document.querySelector( '#editor' ) )
-        .catch( error => {
-            console.error( error );
-        } );
+    $(document).ready(function() {
+        $('#id_table').DataTable();
+    });
+</script>
+
+<script>
+    $('.deletebeasiswa').click(function() {
+        var beasiswaid = $(this).attr('data-id');
+        var beasiswa = $(this).attr('data-beasiswa');
+        Swal.fire({
+            title: 'Apakah Kamu yakin?',
+            text: "Menghapus beasiswa " + beasiswa + "",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location = "/deletebeasiswa/" + beasiswaid + ""
+                Swal.fire(
+                    'Terhapus!',
+                    'data ' + beasiswa + ' terhapus',
+                    'success'
+                )
+            }
+        })
+    });
 </script>
 
 @endsection

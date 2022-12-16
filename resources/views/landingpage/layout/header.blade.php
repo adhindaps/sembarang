@@ -77,7 +77,11 @@
                                                     <li>
                                                         <a href="sejarah">Sejarah Sekolah</a>
                                                     </li>
-                                                   <br/>                                                                                                
+                                                   <br/>           
+                                                   <li>
+                                                    <a href="prestasi">Prestasi Sekolah</a>
+                                                </li>
+                                               <br/>                                                                                                
                                                 </ul>
                                             </li>
                                     

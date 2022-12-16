@@ -99,16 +99,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 mb-5 mb-xl-0">
+                    @foreach ($sambutan as $gr)
                     <div class="title-area mb-30 text-center text-xl-start">
-
-                        <h2 class="sec-title fw-medium">Guru dan Karyawan</h2>
+                        <h2 class="sec-title fw-medium">{{ $gr->nama }}</h2>
                     </div>
-                    <p class="mb-30 text-center text-xl-start">Seamlessly target robust quality vectors and goals
-                        oriented architectures propriately enegdrages one-to-one resources after standardized scenarios
-                        adaptive experiences exceptional resources service depend lifestyle carefully</p>
+                    <p class="mb-30 text-center text-xl-start">{!! $gr->katakata !!}</p>
+                    @endforeach
                     <div class="text-center text-xl-start">
                         <a class="as-btn" href="/dataguru">Selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
                     </div>
+                  
                 </div>
                 <div class="col-xl-6">
 					<div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">

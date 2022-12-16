@@ -16,28 +16,45 @@
             </ul>
         </div>
     </div>
-    <section class="as-blog-wrapper blog-details space-top space-extra-bottom">
+    <section class="as-blog-wrapper space-top space-extra-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
-                    <div class="as-blog blog-single">
-                        {{-- <div class="blog-img">
-                        <img src="foto/g.jpeg" width="2500" alt="Blog Image">
-                    </div> --}}
+                    <div class="as-blog blog-single has-post-thumbnail">
+                        <div class="blog-img"><a href="blog-details.html"><img src="assets/img/blog/blog-s-1-1.jpg"
+                                    alt="Blog Image"></a></div>
                         <div class="blog-content">
-                            <div class="blog-meta">
-                            </div>
-                            <h2 class="blog-title">{{$data->name}}</h2>
-                            <p>{!! $data->desk !!}</p>
+                            <h2 class="blog-title"><a href="blog-details.html">Get Started React JS Tutorial For
+                                    Beginners</a></h2>
+                            <p class="blog-text">Uniquely pursue emerging experiences before liemerging content.
+                                Efficiently underwhelm customer directed total linkage after B2C synergy. Dynamically
+                                simplify superior human capital whereas efficient infrastructures generate business
+                                web-readiness after wireless outsourcing.</p>
                         </div>
-
                     </div>
+                    <div class="as-blog blog-single has-post-thumbnail">
+                        <div class="blog-img as-carousel" data-arrows="true" data-slide-show="1" data-fade="true"><a
+                                href="blog-details.html"><img src="assets/img/blog/blog-s-1-2.jpg"
+                                    alt="Blog Image"></a><a href="blog-details.html"><img
+                                    src="assets/img/blog/blog-s-1-3.jpg" alt="Blog Image"></a></div>
+                        <div class="blog-content">
+
+                            <h2 class="blog-title"><a href="blog-details.html">Get Started React JS Tutorial For
+                                    Beginners</a></h2>
+                            <p class="blog-text">Uniquely pursue emerging experiences before liemerging content.
+                                Efficiently underwhelm customer directed total linkage after B2C synergy. Dynamically
+                                simplify superior human capital whereas efficient infrastructures generate business
+                                web-readiness after wireless outsourcing.</p>
+
+                        </div>
+                    </div>
+                   
                 </div>
 
-                </aside>
             </div>
         </div>
-        </div>
+    </section>
+
         @include('landingpage.layout.footer')
         <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
         <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/app.min.js') }}"></script>

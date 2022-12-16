@@ -90,8 +90,10 @@ class LandingController extends Controller
     }
     public function blog(Request $request)
     {
+        $blog=blog::with('kategori');
         $data=blog::all();
-        return view('landingpage.blog', compact('data'));
+        $datakategori=Kategoriblog::all();
+        return view('landingpage.blog', compact('blog', 'data',  'datakategori'));
     }
     public function events(Request $request)
     {

@@ -44,7 +44,7 @@
                                     <li><i class="fa-light fa-phone"></i> <strong>Nip:
                                         </strong><span>{{ $kajur->nip }}</span>
                                     </li>
-                                    <li><i class="fa-light fa-calendar-days"></i> <strong>Setatus: </strong><span>{{ $kj->jurusan->jurusan }}</span>
+                                    <li><i class="fa-light fa-calendar-days"></i> <strong>Setatus: </strong><span>{{ $kajur->jurusan->jurusan }}</span>
                                     </li>
                                 </ul>
                             </div>

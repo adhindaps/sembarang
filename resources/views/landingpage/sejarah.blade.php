@@ -19,19 +19,71 @@
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
                     <div class="as-blog blog-single">
-                        <div class="blog-img">
+                        {{-- <div class="blog-img">
                             <img src="foto/{{ $data->fotosjr }}" width="1500" alt="Blog Image">
-                        </div>
+                        </div> --}}
                         <div class="blog-content">
-                            <div class="blog-meta">
-                                <a href="blog.html">
-
-                                    <a href="blog.html"></a>
-                            </div>
                             <h2 class="blog-title">{{$data->nama}}</h2>
                             <p>{!! $data->deskripsi !!}</p>
                         </div>
                     </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4">
+                    <aside class="sidebar-area">
+                        <div class="widget">
+                            <h3 class="widget_title">Berita Terbaru</h3>
+                            <div class="recent-post-wrap">
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="blog-details.html"><img
+                                                src="" alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta"><a href="blog.html"><i
+                                                    class="far fa-calendar"></i>tanggal</a></div>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">judul</a></h4>
+                                    </div>
+                                </div>
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="blog-details.html"><img
+                                                src="mpls/5.jpg" alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta"><a href="blog.html"><i
+                                                    class="far fa-calendar"></i>22/01/2022</a></div>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Ketiga</a></h4>
+                                    </div>
+                                </div>
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="blog-details.html"><img
+                                                src="mpls/5.jpg" alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta"><a href="blog.html"><i
+                                                    class="far fa-calendar"></i>22/01/2022</a></div>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Ketiga</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <div class="widget">
+                            <h4 class="widget_title">Gallery Posts</h4>
+                            <div class="sidebar-gallery">
+                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan1.jpg') }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan2.jpg') }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan3.jpg') }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                                <div class="gallery-thumb"><img class="gg"
+                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/gal-1-4.jpg') }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                                <div class="gallery-thumb"><img class="gg"
+                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/gal-1-5.jpg') }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                                <div class="gallery-thumb"><img class="gg"
+                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/gal-1-6.jpg') }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </div>

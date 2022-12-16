@@ -22,7 +22,7 @@
                     <div class="event-details">
                         <div class="event-img"><img src="{{ asset('foto/' . $data->foto) }}" width="500" alt="Event Image"></div>
                         <h3 class="h3 mt-n2">{{ $data->namaevent }}</h3>
-                        <p class="mb-30">{{ $data->deskripsi }}</p>
+                        <p class="mb-30">{!! $data->deskripsi !!}</p>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4">

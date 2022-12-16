@@ -20,35 +20,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
+                    @foreach ($data as $bs)
                     <div class="as-blog blog-single has-post-thumbnail">
-                        <div class="blog-img"><a href="blog-details.html"><img src="assets/img/blog/blog-s-1-1.jpg"
-                                    alt="Blog Image"></a></div>
+                        <img class="imgg" src="{{ asset('foto/'.$bs->foto) }}"alt="Blog Image">
+                        <br/>
                         <div class="blog-content">
-                            <h2 class="blog-title"><a href="blog-details.html">Get Started React JS Tutorial For
-                                    Beginners</a></h2>
-                            <p class="blog-text">Uniquely pursue emerging experiences before liemerging content.
-                                Efficiently underwhelm customer directed total linkage after B2C synergy. Dynamically
-                                simplify superior human capital whereas efficient infrastructures generate business
-                                web-readiness after wireless outsourcing.</p>
+                            <h2 class="blog-title">{{ $bs->name }}</h2>
+                            <p class="blog-text">{!! $bs->desk !!}</p>
                         </div>
                     </div>
-                    <div class="as-blog blog-single has-post-thumbnail">
-                        <div class="blog-img as-carousel" data-arrows="true" data-slide-show="1" data-fade="true"><a
-                                href="blog-details.html"><img src="assets/img/blog/blog-s-1-2.jpg"
-                                    alt="Blog Image"></a><a href="blog-details.html"><img
-                                    src="assets/img/blog/blog-s-1-3.jpg" alt="Blog Image"></a></div>
-                        <div class="blog-content">
-
-                            <h2 class="blog-title"><a href="blog-details.html">Get Started React JS Tutorial For
-                                    Beginners</a></h2>
-                            <p class="blog-text">Uniquely pursue emerging experiences before liemerging content.
-                                Efficiently underwhelm customer directed total linkage after B2C synergy. Dynamically
-                                simplify superior human capital whereas efficient infrastructures generate business
-                                web-readiness after wireless outsourcing.</p>
-
-                        </div>
+                    @endforeach
+                </div>
+                                    <div class="as-pagination">
+                        <ul>
+                            <li><a href="blog.html">1</a></li>
+                            <li><a href="blog.html">2</a></li>
+                            <li><a href="blog.html">3</a></li>
+                            <li><a href="blog.html"><i class="far fa-arrow-right"></i></a></li>
+                        </ul>
                     </div>
-                   
                 </div>
 
             </div>

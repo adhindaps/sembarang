@@ -26,7 +26,7 @@
                             <div class="blog-meta">
                                 <a href="blog.html"><i class="far fa-user"></i>Admin</a>
                                     <a href="blog.html"><i
-                                        class="far fa-clock"></i>27 November 2022</a></div>
+                                        class="far fa-clock"></i>{{ $item->created_at->format('D M Y') }}</a></div>
                             <h2 class="blog-title"> {{ $item->judul }}</h2> 
                             <p>{!! $item->deskripsi!!}</p>              
                         </div>
@@ -64,18 +64,9 @@
                                     <div class="media-img"><a href="blog-details.html"><img
                                                 src="{{ asset('foto/' . $bg->foto) }}" alt="Blog Image"></a></div>
                                     <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
+                                        <div class="recent-post-meta"><a href="/blogdetail/{{$row->id}}"><i
                                                     class="far fa-calendar"></i>{{ $bg->created_at->format('D M Y')}}</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">{{ $bg->judul }}</a></h4>
-                                    </div>
-                                </div>
-                                <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
-                                                src="mpls/5.jpg" alt="Blog Image"></a></div>
-                                    <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="far fa-calendar"></i>22/01/2022</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Ketiga</a></h4>
+                                        <h6 class="overflow1" class="post-title"><a class="text-inherit" href="/blogdetail/{{$row->id}}">{{ $bg->judul }}</a></h6>
                                     </div>
                                 </div>
                             </div>

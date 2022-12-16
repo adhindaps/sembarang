@@ -7,10 +7,10 @@
     @include('landingpage.layout.header')
     <div class="breadcumb-wrapper" data-bg-src="{{asset ('foto')}}">
         <div class="container z-index-common">
-            <h1 class="breadcumb-title">Detail Event</h1>
+            <h1 class="breadcumb-title">Detail Agenda</h1>
             <ul class="breadcumb-menu">
                 <li><a href="/">Beranda</a></li>
-                <li>Detail Event</li>
+                <li>Detail Agenda</li>
             </ul>
         </div>
     </div>
@@ -40,33 +40,17 @@
                         <div class="widget">
                             <h3 class="widget_title">Agenda Terbaru</h3>
                             <div class="recent-post-wrap">
+                                @foreach ($agenda as $bg)  
                                 <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
-                                                src="{{asset ('1/yeye/html/acadu/demo/assets/img/blog/recent-post-1-1.jpg')}}" alt="Blog Image"></a></div>
+                                    <div class="media-img"><a href="/detailevents/{{$bg->id}}"><img class="gg"
+                                                src="{{ asset('foto/' . $bg->foto) }}" alt="Blog Image"></a></div>
                                     <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="far fa-calendar"></i>05/03/2022</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Sosialisasi Pendaftaran Online PPDB</a></h4>
+                                        <div class="recent-post-meta"><a href="/detailevents/{{$bg->id}}"><i
+                                                    class="far fa-calendar"></i>{{ $bg->jamevent }}</a></div>
+                                        <h6 class="overflow1" class="post-title"><a class="text-inherit" href="/detailevents/{{$bg->id}}">{{ $bg->namaevent }}</a></h6>
                                     </div>
                                 </div>
-                                <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
-                                                src="{{asset ('1/yeye/html/acadu/demo/assets/img/blog/recent-post-1-2.jpg')}}" alt="Blog Image"></a></div>
-                                    <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="far fa-calendar"></i>07/03/2022</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Rekrutmen Operator Produksi PT.Sai</a></h4>
-                                    </div>
-                                </div>
-                                <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
-                                                src="{{asset ('1/yeye/html/acadu/demo/assets/img/blog/recent-post-1-3.jpg')}}" alt="Blog Image"></a></div>
-                                    <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="far fa-calendar"></i>08/03/2022</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Absensi Siswa Prakerin Gl.1</a></h4>
-                                    </div>
-                                </div>
+                                @endforeach 
                             </div>
                         </div>
                     </aside>

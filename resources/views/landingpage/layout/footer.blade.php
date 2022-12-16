@@ -23,28 +23,16 @@
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget style2">
                         <h3 class="widget_title">Link SMK</h3>
+                        @foreach ($footerlink as $fl)
                         <div class="menu-all-pages-container">
                             <ul class="menu">
                                 <li>
-                                    <a href="https://ppdbjatim.net/">PPDB JATIM</a>
-                                </li>
-                                <li>
-                                    <a href="http://psmk.kemdikbud.go.id">PSMK Kemdikbud</a>
-                                </li>
-                                <li>
-                                    <a href="http://pesertadidik.ditpsmk.net">Portal Subdit Peserta Didik</a>
-                                </li>
-                                <li>
-                                    <a href="http://pipsmk.ditpsmk.net">PIP SMK</a>
-                                </li>
-                                <li>
-                                    <a href="http://dapo.dikdasmen.kemdikbud.go.id">Dapodikdasmen</a>
-                                </li>
-                                <li>
-                                    <a href="http://infoptk.datadapodik.com/">Info Data PTK</a>
+                                    <a href="{!! $fl->link !!}">{{ $fl->halaman }}</a>
                                 </li>
                             </ul>
                         </div>
+                        <br/>
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-auto">

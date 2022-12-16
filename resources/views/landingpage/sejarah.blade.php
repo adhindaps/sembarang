@@ -31,39 +31,6 @@
                 <div class="col-xxl-3 col-lg-4">
                     <aside class="sidebar-area">
                         <div class="widget">
-                            <h3 class="widget_title">Berita Terbaru</h3>
-                            <div class="recent-post-wrap">
-                                <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
-                                                src="" alt="Blog Image"></a></div>
-                                    <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="far fa-calendar"></i>tanggal</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">judul</a></h4>
-                                    </div>
-                                </div>
-                                <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
-                                                src="mpls/5.jpg" alt="Blog Image"></a></div>
-                                    <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="far fa-calendar"></i>22/01/2022</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Ketiga</a></h4>
-                                    </div>
-                                </div>
-                                <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
-                                                src="mpls/5.jpg" alt="Blog Image"></a></div>
-                                    <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="far fa-calendar"></i>22/01/2022</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Ketiga</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-                        
-                        <div class="widget">
                             <h4 class="widget_title">Gallery Posts</h4>
                             <div class="sidebar-gallery">
                                 <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan1.jpg') }}"
@@ -83,6 +50,22 @@
                                         alt="Gallery Image" class="w-100"></div>
                             </div>
                         </div>
+                        @foreach ($blog as $bg)                  
+                        <div class="widget">
+                            <h3 class="widget_title">Berita Terbaru</h3>
+                            <div class="recent-post-wrap">
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="blog-details.html"><img
+                                                src="{{ asset('foto/' . $bg->foto) }}" alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta"><a href="/blogdetail/{{$bg->id}}"><i
+                                                    class="far fa-calendar"></i>{{ $bg->created_at->format('D M Y')}}</a></div>
+                                        <h6 class="overflow1" class="post-title"><a class="text-inherit" href="/blogdetail/{{$bg->id}}">{{ $bg->judul }}</a></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        @endforeach       
                     </aside>
                 </div>
             </div>

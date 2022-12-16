@@ -65,8 +65,7 @@
                 <form action="https://angfuzsoft.com/html/acadu/demo/mail.php" method="POST"
                     class="contact-form ajax-contact">
                     <div class="row">
-                        
-                        <div class="form-btn col-12 mt-10"><a href="mailto:martabaklawangasri@gmail.com" class="as-btn">Kirim Pesan< /a></div>
+                        <div class="form-btn col-12 mt-10"><a href="mailto:martabaklawangasri@gmail.com" class="as-btn">Kirim Pesan</a></div>
                     </div>
                     <p class="form-messages mb-0 mt-3"></p>
                 </form>

@@ -22,8 +22,8 @@
                 @foreach ($data as $haha) 
                 <div class="col-xl-5">
                     <div class="img-box8">
-                        <div class="img1"><img
-                            src="foto/{{ $haha->fotobk }}" alt="about">
+                        <div class="img1">
+                            <img src="{{ asset('foto/'.$haha->fotobk )}}" alt="about">
                         </div>
                         <div class="shape"><img
                             src="{{ asset('1/yeye/html/acadu/demo/assets/img/normal/about_shape_2.png') }}" alt="shape">

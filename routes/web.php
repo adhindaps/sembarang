@@ -52,7 +52,7 @@ Route::get('/visi',[LandingController::class, 'visi'])->name('visi');
 Route::get('/dataguru',[LandingController::class, 'dataguru'])->name('dataguru');
 Route::get('/blog',[LandingController::class, 'blog'])->name('blog');
 Route::get('/events',[LandingController::class, 'events'])->name('events');
-Route::get('/detailevents/{id',[LandingController::class, 'detailevents'])->name('detailevents');
+Route::get('/detailevents/{id}',[LandingController::class, 'detailevents'])->name('detailevents');
 Route::get('/echo',[LandingController::class, 'echo'])->name('echo');
 Route::get('/blogdetail/{id}',[LandingController::class, 'blogdetail'])->name('blogdetail');
 Route::get('/extrakulikuler',[LandingController::class, 'extrakulikuler'])->name('extrakulikuler');
@@ -62,6 +62,8 @@ Route::get('/beasiswa',[LandingController::class, 'beasiswa'])->name('beasiswa')
 Route::get('/bkk',[LandingController::class, 'bkk'])->name('bkk');
 Route::get('/bkkdetail/{id}',[LandingController::class, 'bkkdetail'])->name('bkkdetail');
 Route::get('/programkeahlian',[LandingController::class, 'programkeahlian'])->name('programkeahlian');
+Route::get('/prestasi',[LandingController::class, 'prestasi'])->name('prestasi');
+Route::get('/prestasidetail/{id}',[LandingController::class, 'prestasidetail'])->name('prestasidetail');
 
 
 Route::get('/dashboard',[AdminController::class, 'dashboard'])->name('dashboard')->middleware('auth');

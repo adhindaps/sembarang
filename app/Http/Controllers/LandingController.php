@@ -10,6 +10,7 @@ use App\Models\Galery;
 use App\Models\Extra;
 use App\Models\Guru;
 use App\Models\Profile;
+use App\Models\Prestasi;
 use App\Models\Sejarah;
 use App\Models\visi;
 use App\Models\sudutecho;
@@ -125,10 +126,9 @@ class LandingController extends Controller
         $data = Beasiswa::where('id','=',1)->firstOrFail();
         return view('landingpage.beasiswa',compact('data'));
     }
-    public function bkk($id)
+    public function bkk(Request $request)
     {
-        $data=Bkk::where('id',$id)->get();
-        // dd($data);
+        $data=Bkk::all();
         return view('landingpage.bkk',compact('data'));
     }
     public function bkkdetail($id)
@@ -145,5 +145,15 @@ class LandingController extends Controller
     {
         $data = Sejarah::where('id','=',1)->firstOrFail();
         return view('landingpage.sejarah',compact('data'));
+    }
+    public function prestasi(Request $request)
+    {
+        $data= Prestasi::all();
+        return view('landingpage.prestasi',compact('data'));
+    }
+    public function prestasidetail($id)
+    {
+        $data= Prestasi::where('id',$id)->get();
+        return view('landingpage.prestasidetail',compact('data'));
     }
 }

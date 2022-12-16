@@ -20,9 +20,9 @@
             <div class="row">
                 <div class="col-xxl-9 col-lg-8">
                     <div class="event-details">
-                        <div class="event-img"><img src="foto/{{ $data->foto }}" alt="Event Image"></div>
+                        <div class="event-img"><img src="{{ asset('foto/'.$data->foto) }}" alt="Event Image"></div>
                         <h3 class="h3 mt-n2">{{ $data->namaevent }}</h3>
-                        <p class="mb-30">{{ $data->deskripsi }}</p>
+                        <p class="mb-30">{!! $data->deskripsi !!}</p>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-lg-4">
@@ -32,7 +32,7 @@
                             <div class="info-list">
                                 <ul>
                                     <li><i class="fa-light fa-calendar-days"></i> <strong>Tanggal: </strong><span>{{ $data->tanggalevent }}</span></li>
-                                    <li><i class="fa-light fa-clock"></i> <strong>Waktu: </strong><span>{{ $data->jamevent }</span></li>
+                                    <li><i class="fa-light fa-clock"></i> <strong>Waktu: </strong><span>{{ $data->jamevent }}</span></li>
                                     <li><i class="fa-light fa-location-dot"></i> <strong>Lokasi: </strong><span>{{ $data->tempat }}</span></li>
                                 </ul>
                             </div>

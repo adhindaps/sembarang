@@ -48,29 +48,65 @@ class SejarahController extends Controller
 
     public function beasiswaindex()
     {
-        $data = Beasiswa::where('id','=',1)->firstOrFail();
+        $data=Beasiswa::all();
         return view('admin.fasilitas.beasiswaindex',compact('data'));
     }
+
+    
+    public function beasiswacreate()
+    {
+        return view('admin.fasilitas.beasiswacreate');
+    }
+
     public function beasiswastore(Request $request)
     {
-        $this->validate($request, [
-            'name' => 'required',
-            'desk' => 'required',
+        if($request->hasFile('foto')){
+            $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
+        $data = Beasiswa::create([
+            'name' => $request->name,
+            'foto' => $request->file('foto')->getClientOriginalName(),
+            'desk' => $request->desk,
         ]);
-        $data = Sejarah::create([
+        $data->foto = $request->file('foto')->getClientOriginalName();
+    }
+        return redirect()->route('beasiswaindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function beasiswaedit($id)
+    {
+        $data = Beasiswa::find($id);
+        $data = Beasiswa::findOrfail($id);
+        return view('admin.fasilitas.beasiswaedit',compact('data'));
+    }
+
+    public function beasiswaupdate($id,Request $request)
+    {
+        $data = DB::table('beasiswas')->where('id',$id);
+        if($request->hasFile('foto')){
+            $pindah = $request->file('foto')->move(public_path().'\storage', $request->file('foto')->getClientOriginalName());
+            $data = Beasiswa::find($id)->update([
+               'name' => $request->name,
+               'foto' => $request->file('foto')->getClientOriginalName(),
+               'desk' => $request->desk,
+              
+            ]);
+        return redirect('beasiswaindex')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
             'name' => $request->name,
             'desk' => $request->desk,
         ]);
-        return redirect('beasiswaindex');
-    
+        return redirect('beasiswaindex')->with('sukses','Updatedata!');
+    }
     }
 
-    public function beasiswaupdate(Request $request)
+    public function beasiswahapus($id)
     {
-        $data=Beasiswa::find($request->id);
-        $data->update($request->all());
-        return redirect('beasiswaindex');
+        $data = Beasiswa::find($id);
+        $data->delete();
+        return redirect('/beasiswaindex');
     }
+
     
     public function axioindex()
     {
@@ -163,10 +199,10 @@ class SejarahController extends Controller
     public function bkkupdate($id,Request $request)
     {
         $data = DB::table('bkks')->where('id',$id);
-        if($request->hasFile('fotobkk')){
-            $pindah = $request->file('fotobkk')->move(public_path().'\storage', $request->file('fotobkk')->getClientOriginalName());
+        if($request->hasFile('fotobk')){
+            $pindah = $request->file('fotobk')->move(public_path().'\storage', $request->file('fotobk')->getClientOriginalName());
             $data = Bkk::find($id)->update([
-                'fotobkk' => $request->file('fotobkk')->getClientOriginalName(),
+                'fotobk' => $request->file('fotobk')->getClientOriginalName(),
                'perusahaan' => $request->perusahaan,
                'deskripsi' => $request->deskripsi,
               

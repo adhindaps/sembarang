@@ -172,8 +172,11 @@ Route::get('/deletebkk/{id}',[SejarahController::class, 'bkkhapus'])->name('bkkh
 
 //////////////////////////////////BEASISWA-ADMIN////////////////////////////////
 Route::get('/beasiswaindex',[SejarahController::class, 'beasiswaindex'])->name('beasiswaindex')->middleware('auth');
+Route::get('/beasiswacreate',[SejarahController::class, 'beasiswacreate'])->name('beasiswacreate');
 Route::post('/beasiswastore',[SejarahController::class, 'beasiswastore'])->name('beasiswastore');
-Route::post('/beasiswaupdate',[SejarahController::class, 'beasiswaupdate'])->name('beasiswaupdate');
+Route::get('/beasiswaedit/{id}',[SejarahController::class, 'beasiswaedit'])->name('beasiswaedit');
+Route::post('/beasiswaupdate/{id}',[SejarahController::class, 'beasiswaupdate'])->name('beasiswaupdate');
+Route::get('/deletebeasiswa/{id}',[SejarahController::class, 'beasiswahapus'])->name('beasiswahapus');
 
 //////////////////////////////////AXIO-ADMIN////////////////////////////////
 Route::get('/axioindex',[SejarahController::class, 'axioindex'])->name('axioindex')->middleware('auth');

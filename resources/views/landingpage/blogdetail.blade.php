@@ -20,22 +20,23 @@
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
                     @foreach ($data as $item)
-                        
-                    
                     <div class="as-blog blog-single">
-                        <div class="blog-img"><img src="foto/bkk.jpg" alt="Blog Image"></div>
+                        <div class="blog-img"><img class="zz" src="{{ asset('foto/' . $item->foto) }}" alt="Blog Image"> </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <a href="blog.html"><i class="far fa-user"></i>Admin</a>
                                     <a href="blog.html"><i
-                                        class="far fa-clock"></i>27 November 2022</a></div>
-                            <h2 class="blog-title">{!! $item->deskrpsi!!}</p>                
+                                        class="far fa-clock"></i>{{ $item->created_at->format('D M Y') }}</a></div>
+                            <h2 class="blog-title"> {{ $item->judul }}</h2> 
+                            <p>{!! $item->deskripsi!!}</p>              
                         </div>
                         <div class="share-links clearfix">
                             <div class="row justify-content-between">
+                                {{-- @foreach ($kategori as $kg)
                                 <div class="col-md-auto"><span class="share-links-title">Tags:</span>
-                                    <div class="tagcloud"><a href="blog.html">Sosial</a> </div>
+                                    <div class="tagcloud"><a href="blog.html">{{ $kg->kategori->kategori }}</a> </div>
                                 </div>
+                                @endforeach --}}
                                 <div class="col-md-auto text-xl-end"><span class="share-links-title">Share:</span>
                                     <ul class="social-links">
                                         <li><a href="https://facebook.com/" target="_blank"><i
@@ -54,30 +55,23 @@
                     @endforeach
                 </div>
                 <div class="col-xxl-4 col-lg-5">
-                    <aside class="sidebar-area">                       
+                    <aside class="sidebar-area"> 
+                        @foreach ($blog as $bg)                  
                         <div class="widget">
                             <h3 class="widget_title">Berita Terbaru</h3>
                             <div class="recent-post-wrap">
                                 <div class="recent-post">
                                     <div class="media-img"><a href="blog-details.html"><img
-                                                src="mpls/4.jpg" alt="Blog Image"></a></div>
+                                                src="{{ asset('foto/' . $bg->foto) }}" alt="Blog Image"></a></div>
                                     <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="far fa-calendar"></i>22/01/2022</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Kedua</a></h4>
-                                    </div>
-                                </div>
-                                <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
-                                                src="mpls/5.jpg" alt="Blog Image"></a></div>
-                                    <div class="media-body">
-                                        <div class="recent-post-meta"><a href="blog.html"><i
-                                                    class="far fa-calendar"></i>22/01/2022</a></div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">MPLS Hari Ketiga</a></h4>
+                                        <div class="recent-post-meta"><a href="/blogdetail/{{$row->id}}"><i
+                                                    class="far fa-calendar"></i>{{ $bg->created_at->format('D M Y')}}</a></div>
+                                        <h6 class="overflow1" class="post-title"><a class="text-inherit" href="/blogdetail/{{$row->id}}">{{ $bg->judul }}</a></h6>
                                     </div>
                                 </div>
                             </div>
-                        </div>                      
+                        </div>  
+                        @endforeach                     
                     </aside>
                 </div>
             </div>

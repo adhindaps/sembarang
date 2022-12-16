@@ -16,28 +16,35 @@
             </ul>
         </div>
     </div>
-    <section class="as-blog-wrapper blog-details space-top space-extra-bottom">
+    <section class="as-blog-wrapper space-top space-extra-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
-                    <div class="as-blog blog-single">
-                        {{-- <div class="blog-img">
-                        <img src="foto/g.jpeg" width="2500" alt="Blog Image">
-                    </div> --}}
+                    @foreach ($data as $bs)
+                    <div class="as-blog blog-single has-post-thumbnail">
+                        <img class="imgg" src="{{ asset('foto/'.$bs->foto) }}"alt="Blog Image">
+                        <br/>
                         <div class="blog-content">
-                            <div class="blog-meta">
-                            </div>
-                            <h2 class="blog-title">{{$data->name}}</h2>
-                            <p>{!! $data->desk !!}</p>
+                            <h2 class="blog-title">{{ $bs->name }}</h2>
+                            <p class="blog-text">{!! $bs->desk !!}</p>
                         </div>
-
+                    </div>
+                    @endforeach
+                </div>
+                                    <div class="as-pagination">
+                        <ul>
+                            <li><a href="blog.html">1</a></li>
+                            <li><a href="blog.html">2</a></li>
+                            <li><a href="blog.html">3</a></li>
+                            <li><a href="blog.html"><i class="far fa-arrow-right"></i></a></li>
+                        </ul>
                     </div>
                 </div>
 
-                </aside>
             </div>
         </div>
-        </div>
+    </section>
+
         @include('landingpage.layout.footer')
         <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
         <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/app.min.js') }}"></script>

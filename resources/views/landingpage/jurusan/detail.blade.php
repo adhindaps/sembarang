@@ -16,10 +16,8 @@
     </div>
     <section class="as-blog-wrapper blog-details space-top space-extra-bottom">
         <div class="container">
-            @foreach ($kj as $data)
-                
-            
             <div class="row">
+                @foreach ($data as $data)
                 <div class="col-xxl-8 col-lg-7">
                     <div class="as-blog blog-single">
                         <img src="{{ asset('foto/' . $data->foto) }}" width="600px" alt="Image">
@@ -32,6 +30,7 @@
                         </div>
                     </div>
                 </div>
+                @endforeach
                 <div class="col-xxl-4 col-lg-5">
                     <aside class="sidebar-area">
                         <div class="widget widget_info">
@@ -45,13 +44,13 @@
                                     <li><i class="fa-light fa-phone"></i> <strong>Nip:
                                         </strong><span>{{ $kajur->nip }}</span>
                                     </li>
-                                    {{-- <li><i class="fa-light fa-calendar-days"></i> <strong>Setatus: </strong><span>{{ $kj->jurusan->jurusan }}</span> --}}
+                                    <li><i class="fa-light fa-calendar-days"></i> <strong>Setatus: </strong><span>{{ $kajur->jurusan->jurusan }}</span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        @endforeach
-                        <div class="widget widget_info">
+                   
+                        {{-- <div class="widget widget_info">
                             <h3 class="widget_title">Guru produktif</h3>
                             <br />
                             <div class="col-xl-12">
@@ -97,7 +96,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </aside>
                 </div>
             </div>

@@ -19,9 +19,6 @@
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
                     <div class="as-blog blog-single">
-                        {{-- <div class="blog-img">
-                        <img src="foto/g.jpeg" width="2500" alt="Blog Image">
-                    </div> --}}
                         <div class="blog-content">
                             <div class="blog-meta">
                             </div>

@@ -19,17 +19,8 @@
                 <div class="col-xxl-9 col-lg-8">
                     <div class="course-single">
                         <div class="course-single-top">
-                            <div class="course-img"><img src="https://4.bp.blogspot.com/-hr6ko7FRlvY/VWByVK4DVgI/AAAAAAAAAWs/AAQ-yCBIMFg/s1600/DSC02781.JPG" width="150" alt="Course Image">
-                            </div>
-                           
+                            <div class="course-img"><img src="https://4.bp.blogspot.com/-hr6ko7FRlvY/VWByVK4DVgI/AAAAAAAAAWs/AAQ-yCBIMFg/s1600/DSC02781.JPG" width="150" alt="Course Image"></div>
                             <h2 class="course-title">PROFILE SMK NEGERI 1 DLANGGU</h2>
-                            <div class="course-single-meta"> <a href="course.html"><i
-                                        class="fas fa-tags"></i> SMKN 1 DLANGGU </a> <a href="course.html"><i
-                                        class="far fa-clock"></i>04 April, 2022</a>
-                                <div class="course-rating">
-                                  
-                                </div>
-                            </div>
                         </div>
                         <div class="course-single-bottom">
                             <ul class="nav course-tab" id="courseTab" role="tablist">
@@ -67,8 +58,7 @@
                                 <div class="tab-pane fade" id="curriculam" role="tabpanel"
                                     aria-labelledby="curriculam-tab">
                                     <div class="course-curriculam">
-                                       {{-- <h5 class="h5">{{$vs->nama}}</h5> 
-                                     <p>{!! $vs->deskripsi !!}</p> --}}
+                                     <p>{!! $vs->deskripsi !!}</p> 
                                             
                                     </div>
                                 </div>
@@ -131,12 +121,10 @@
                                                 <div class="team-box">
                                                     <div class="team-img">
                                                         <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
-                                                        <div class="as-social">
-                                                            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                                        </div>
+
                                                     </div>
                                                     <div class="team-content">
-                                                        <h3 class="team-title"><a href="team-details.html">Kevin Martin Ben</a></h3><span class="team-desig">Online Teacher</span>
+                                                        <h6 class="team-title"><a href="team-details.html">Kevin Martin Ben</a></h6><span class="team-desig">Online Teacher</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -144,12 +132,10 @@
                                                 <div class="team-box">
                                                     <div class="team-img">
                                                         <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
-                                                        <div class="as-social">
-                                                            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                                        </div>
+
                                                     </div>
                                                     <div class="team-content">
-                                                        <h3 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h3><span class="team-desig">Online Teacher</span>
+                                                        <h6 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h6><span class="team-desig">Online Teacher</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -157,12 +143,10 @@
                                                 <div class="team-box">
                                                     <div class="team-img">
                                                         <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
-                                                        <div class="as-social">
-                                                            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                                        </div>
+
                                                     </div>
                                                     <div class="team-content">
-                                                        <h3 class="team-title"><a href="team-details.html">Aiden Samuel Jabin</a></h3><span class="team-desig">Online Teacher</span>
+                                                        <h6 class="team-title"><a href="team-details.html">Aiden Samuel Jabin</a></h6><span class="team-desig">Online Teacher</span>
                                                     </div>
                                                 </div>
                                             </div>

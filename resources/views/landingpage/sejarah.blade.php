@@ -19,19 +19,54 @@
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
                     <div class="as-blog blog-single">
-                        <div class="blog-img">
+                        {{-- <div class="blog-img">
                             <img src="foto/{{ $data->fotosjr }}" width="1500" alt="Blog Image">
-                        </div>
+                        </div> --}}
                         <div class="blog-content">
-                            <div class="blog-meta">
-                                <a href="blog.html">
-
-                                    <a href="blog.html"></a>
-                            </div>
                             <h2 class="blog-title">{{$data->nama}}</h2>
                             <p>{!! $data->deskripsi !!}</p>
                         </div>
                     </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4">
+                    <aside class="sidebar-area">
+                        <div class="widget">
+                            <h4 class="widget_title">Gallery Posts</h4>
+                            <div class="sidebar-gallery">
+                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan1.jpg') }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan2.jpg') }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan3.jpg') }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                                <div class="gallery-thumb"><img class="gg"
+                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/gal-1-4.jpg') }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                                <div class="gallery-thumb"><img class="gg"
+                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/gal-1-5.jpg') }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                                <div class="gallery-thumb"><img class="gg"
+                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/gal-1-6.jpg') }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                            </div>
+                        </div>
+                        @foreach ($blog as $bg)                  
+                        <div class="widget">
+                            <h3 class="widget_title">Berita Terbaru</h3>
+                            <div class="recent-post-wrap">
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="blog-details.html"><img
+                                                src="{{ asset('foto/' . $bg->foto) }}" alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta"><a href="/blogdetail/{{$bg->id}}"><i
+                                                    class="far fa-calendar"></i>{{ $bg->created_at->format('D M Y')}}</a></div>
+                                        <h6 class="overflow1" class="post-title"><a class="text-inherit" href="/blogdetail/{{$bg->id}}">{{ $bg->judul }}</a></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        @endforeach       
+                    </aside>
                 </div>
             </div>
         </div>

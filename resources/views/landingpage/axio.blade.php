@@ -43,6 +43,7 @@
                                 </a>
                             </div>
                         </div>
+                        
                         <div class="widget">
                             <h4 class="widget_title">Gallery Posts</h4>
                             <div class="sidebar-gallery">

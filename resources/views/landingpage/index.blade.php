@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
-<!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:24:45 GMT -->
+<!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x XR&CO'2014, Wed, 09 Nov 2022 07:24:45 GMT -->
 @include('landingpage.layout.head')
 
 <body>
@@ -111,15 +111,13 @@
                     </div>
                 </div>
                 <div class="col-xl-6">
-                    <div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
+					<div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
                         @foreach ($data as $yy)
-                        <div class="col-md-6 col-lg-4">
-                            <div class="team-box">
-                                <div class="team-img">
-                                    <img alt="Team"
-                                        src="{{ asset('guru/' . $yy->fotoguru) }}">
-                                  
-                                </div>
+						<div class="col-md-6 col-lg-4">
+							<div class="team-box">
+								<div class="team-img">
+									<img alt="Team" src="{{ asset('guru/' . $yy->fotoguru) }}">
+								</div>
                                 <div class="team-content">
                                     <h3 class="team-title">{{$yy->nama}}</h3><span
                                         class="team-desig">{{$yy->jabatan}}</span>
@@ -140,74 +138,24 @@
                 <h2 class="sec-title">Agenda<span class="text-theme fw-light">Sekolah</span></h2>
             </div>
             <div class="row">
+                @foreach ($event as $row )
                 <div class="col-xl-6">
                     <div class="event-card">
-                        <div class="event-card_img"><img
-                                src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}"
+                        <div class="event-card_img"><img class="yy"
+                                src="{{ asset('foto/' . $row->foto) }}"
                                 alt="event"></div>
                         <div class="event-card_content">
                             <div class="event-meta">
-                                <p><i class="fal fa-location-dot"></i>Aula</p>
-                                <p><i class="fa-light fa-calendar-days"></i>23 Desember 2022</p>
-                                <p><i class="fal fa-clock"></i>08:00 am - 10:00 am</p>
+                                <p><i class="fal fa-location-dot"></i>{{ $row->tempat }}</p>
+                                <p><i class="fa-light fa-calendar-days"></i>{{ $row->tanggalevent }}</p>
+                                <p><i class="fal fa-clock"></i>{{ $row->jamevent }}</p>
                             </div>
-                            <h3 class="event-card_title">Sosialisai Pendaftaran Online PPDB 2023</h3>
-                            <div class="event-card_bottom"><a href="detailevent" class="as-btn">Lihat Acara</a></div>
+                            <h3 class="event-card_title">{{ $row->namaevent }}</h3>
+                            <div class="event-card_bottom"><a href="/detailevents/{{$row->id}}" class="as-btn">Lihat Acara</a></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6">
-                    <div class="event-card">
-                        <div class="event-card_img"><img
-                                src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}"
-                                alt="event"></div>
-                        <div class="event-card_content">
-                            <div class="event-meta">
-                                <p><i class="fal fa-location-dot"></i>Gedung C</p>
-                                <p><i class="fa-light fa-calendar-days"></i>23 Desember 2022</p>
-                                <p><i class="fal fa-clock"></i>09:00 am - 11:00 am</p>
-                            </div>
-                            <h3 class="event-card_title">Pondok Romadhon</h3>
-                            <div class="event-card_bottom"><a href="detailevents" class="as-btn">Lihat Acara</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="event-card">
-                        <div class="event-card_img"><img
-                                src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_3.jpg') }}"
-                                alt="event"></div>
-                        <div class="event-card_content">
-                            <div class="event-meta">
-                                <p><i class="fal fa-location-dot"></i>Gedung C</p>
-                                <p><i class="fa-light fa-calendar-days"></i>12 Desember 2022</p>
-                                <p><i class="fal fa-clock"></i>10:00 am - 12:00 am</p>
-                            </div>
-                            <h3 class="event-card_title">Absensi Siswa Prakerin Gl.1</a></h3>
-                            <div class="event-card_bottom"><a href="detailevents" class="as-btn">Lihat Acara</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="event-card">
-                        <div class="event-card_img"><img
-                                src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_4.jpg') }}"
-                                alt="event"></div>
-                        <div class="event-card_content">
-                            <div class="event-meta">
-                                <p><i class="fal fa-location-dot"></i>Gedung C</p>
-                                <p><i class="fa-light fa-calendar-days"></i>23 Desember 2022</p>
-                                <p><i class="fal fa-clock"></i>06:00 am - 12:00 am</p>
-                            </div>
-                            <h3 class="event-card_title"><a href="detailevents">Rekrutmen Operator Produkdi
-                                    PT.Sai</a></h3>
-                            <div class="event-card_bottom"><a href="detailevents" class="as-btn">Lihat Acara</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="text-center mt-20 mt-xl-5">
                 <a href="events" class="as-btn">Semua Agenda Sekolah<i class="fas fa-arrow-right ms-2"></i></a>
@@ -241,7 +189,7 @@
                         <div class="blog-content">
                             <div class="blog-meta style2">
                                 <a href="blog.html"><i class="far fa-clock"></i>{{$ngelu->created_at}}</a> <a
-                                    href="blog.html"><i class="far fa-folder"></i>{{$ngelu->kategori}}</a>
+                                    href="blog.html"><i class="far fa-folder"></i>{{ $ngelu->kategori->kategori }}</a>
                             </div>
                             <h3 class="blog-title"><a href="blogdetail/{{$ngelu->id}}">{{ $ngelu->judul}}</a></h3>
                             <a class="link-btn" href="blogdetail">Baca Lebih
@@ -275,7 +223,7 @@
     <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/app.min.js') }}"></script>
     <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/main.js') }}"></script>
-    <!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:30:06 GMT -->
+    <!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x XR&CO'2014, Wed, 09 Nov 2022 07:30:06 GMT -->
 </body>
 
 </html>

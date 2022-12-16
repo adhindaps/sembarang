@@ -7,10 +7,10 @@
     @include('landingpage.layout.header')
     <div class="breadcumb-wrapper" data-bg-src="{{asset ('foto')}}">
         <div class="container z-index-common">
-            <h1 class="breadcumb-title"> Event</h1>
+            <h1 class="breadcumb-title"> Agenda</h1>
             <ul class="breadcumb-menu">
                 <li><a href="/">Beranda</a></li>
-                <li> Event</li>
+                <li> Agenda</li>
             </ul>
         </div>
     </div>

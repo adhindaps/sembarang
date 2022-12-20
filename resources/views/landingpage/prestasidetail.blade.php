@@ -26,7 +26,7 @@
                             <h2 class="course-title">{{ $prestasi->judul }}</h2>
                             <div class="course-single-meta"><a href="course.html">Admin<a href="course.html">
                                 <i class="fas fa-tags"></i>Web Development</a> <a href="course.html">
-                                <i class="far fa-clock"></i>04 April, 2022</a>
+                                <i class="far fa-clock"></i>{{ $prestasi->created_at->format('D M Y') }}</a>
                             </div>
                             <div class="course-description">
                                 <p>{!! $prestasi->deskripsi !!}</p>

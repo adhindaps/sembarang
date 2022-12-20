@@ -276,5 +276,12 @@ Route::get('/slideredit/{id}',[ProfileController::class, 'slideredit'])->name('s
 Route::post('/sliderupdate/{id}',[ProfileController::class, 'sliderupdate'])->name('sliderupdate');
 Route::get('/deleteslider/{id}',[ProfileController::class, 'destroy'])->name('destroy');
 
+//////////////////////////////////SOSIALMEDIA-ADMIN////////////////////////////////
+Route::get('/sosmedindex',[GuruController::class, 'sosmedindex'])->name('sosmedindex')->middleware('auth');
+Route::get('/sosmedcreate',[GuruController::class, 'sosmedcreate'])->name('sosmedcreate');
+Route::post('/sosmedstore',[GuruController::class, 'sosmedstore'])->name('sosmedstore');
+Route::get('/sosmededit/{id}',[GuruController::class, 'sosmededit'])->name('sosmededit');
+Route::post('/sosmedupdate/{id}',[GuruController::class, 'sosmedupdate'])->name('sosmedupdate');
+Route::get('/deletesosmed/{id}',[GuruController::class, 'sosmedhapus'])->name('sosmedhapus');
 
 });

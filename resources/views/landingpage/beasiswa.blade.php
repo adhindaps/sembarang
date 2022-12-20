@@ -20,25 +20,49 @@
         <div class="container">
             <div class="row">
                 <div class="col-xxl-8 col-lg-7">
-                    @foreach ($data as $bs)
                     <div class="as-blog blog-single has-post-thumbnail">
+                        @foreach ($data as $bs)
                         <img class="imgg" src="{{ asset('foto/'.$bs->foto) }}"alt="Blog Image">
                         <br/>
                         <div class="blog-content">
                             <h2 class="blog-title">{{ $bs->name }}</h2>
                             <p class="blog-text">{!! $bs->desk !!}</p>
                         </div>
+                        @endforeach
                     </div>
-                    @endforeach
+                
                 </div>
-                                    <div class="as-pagination">
-                        <ul>
-                            <li><a href="blog.html">1</a></li>
-                            <li><a href="blog.html">2</a></li>
-                            <li><a href="blog.html">3</a></li>
-                            <li><a href="blog.html"><i class="far fa-arrow-right"></i></a></li>
-                        </ul>
-                    </div>
+                <div class="col-xxl-3 col-lg-4">
+                    <aside class="sidebar-area">
+                        <div class="widget">
+                            <h4 class="widget_title">Gallery Posts</h4>
+                         
+                            <div class="sidebar-gallery">
+                                @foreach ($foto as $foto)   
+                                <div class="gallery-thumb"><img class="gg" src="foto/{{ $foto->fotokgt }}"
+                                        alt="Gallery Image" class="w-100"></div>
+                                        @endforeach  
+                            </div>   
+                        </div>
+                        <div class="widget">
+                            <h3 class="widget_title">Berita Terbaru</h3>
+                            <div class="recent-post-wrap">
+                                @foreach ($blog as $bg)          
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="blog-details.html"><img
+                                                src="{{ asset('foto/' . $bg->foto) }}" alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta"><a href="/blogdetail/{{$bg->id}}"><i
+                                                    class="far fa-calendar"></i>{{ $bg->created_at->format('D M Y')}}</a></div>
+                                        <h6 class="overflow1" class="post-title"><a class="text-inherit" href="/blogdetail/{{$bg->id}}">{{ $bg->judul }}</a></h6>
+                                    </div>
+                                </div>
+                                @endforeach 
+                            </div>
+                        </div>  
+                            
+                    </aside>
+                </div>
                 </div>
 
             </div>

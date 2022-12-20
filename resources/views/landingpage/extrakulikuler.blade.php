@@ -37,7 +37,7 @@
                         </div>
                         <div class="col-xl-7 ps-xl-5">
                             <br />
-                            <div class="title-area mb-35"><span class="sub-title">Tentang Paskibra</span>
+                            <div class="title-area mb-35"><span class="sub-title">{{ $ex->subjudul }}</span>
                                 <h2 class="sec-title fw-semibold">
                                     <td>{{ $ex->extra }}</td>
                                 </h2>

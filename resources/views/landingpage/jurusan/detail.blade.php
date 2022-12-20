@@ -26,7 +26,7 @@
                                 <a href="blog.html"><i class="far fa-book"></i>Study</a>
                             </div>
                             <h2 class="blog-title">{{ $data->jurusan }}</h2>
-                            <p>{{ $data->deskripsi }}</p>
+                            <p>{!! $data->deskripsi !!}</p>
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Guru;
+use App\Models\Sosmed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -155,4 +156,64 @@ class GuruController extends Controller
         return redirect()->route('guruindex')->with('success', 'Data Berhasil Dihapus');
     
     }
+
+    public function sosmedindex()
+    {
+        $data=Sosmed::all();
+        return view('admin.sosmed.sosmedindex',compact('data'));
+    }
+
+    
+    public function sosmedcreate()
+    {
+        return view('admin.sosmed.sosmedcreate');
+    }
+
+    public function sosmedstore(Request $request)
+    {
+        if($request->hasFile('icon')){
+            $request->file('icon')->move('foto/', $request->file('icon')->getClientOriginalName());
+        $data = Sosmed::create([
+            'icon' => $request->file('icon')->getClientOriginalName(),
+            'sosmed' => $request->sosmed,
+        ]);
+        $data->icon = $request->file('icon')->getClientOriginalName();
+    }
+        return redirect()->route('sosmedindex')->with('success', 'Data Berhasil Di Tambahkan');
+    }
+
+    public function sosmededit($id)
+    {
+        $data = Sosmed::find($id);
+        $data = Sosmed::findOrfail($id);
+        return view('admin.sosmed.sosmededit',compact('data'));
+    }
+
+    public function sosmedupdate($id,Request $request)
+    {
+        $data = DB::table('sosmeds')->where('id',$id);
+        if($request->hasFile('icon')){
+            $pindah = $request->file('icon')->move(public_path().'\storage', $request->file('icon')->getClientOriginalName());
+            $data = Sosmed::find($id)->update([
+               'icon' => $request->file('icon')->getClientOriginalName(),
+               'sosmed' => $request->sosmed,
+              
+            ]);
+        return redirect('sosmedindex')->with('sukses','Updatedata!');
+    }else{
+        $data->update([
+            'sosmed' => $request->sosmed,
+        ]);
+        return redirect('sosmedindex')->with('sukses','Updatedata!');
+    }
+    }
+
+
+    public function sosmedhapus($id)
+    {
+        $data = Sosmed::find($id);
+        $data->delete();
+        return redirect('/sosmedindex');
+    }
+
 }

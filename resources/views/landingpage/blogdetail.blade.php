@@ -64,9 +64,9 @@
                                     <div class="media-img"><a href="blog-details.html"><img
                                                 src="{{ asset('foto/' . $bg->foto) }}" alt="Blog Image"></a></div>
                                     <div class="media-body">
-                                        <div class="recent-post-meta"><a href="/blogdetail/{{$row->id}}"><i
+                                        <div class="recent-post-meta"><a href="/blogdetail/{{$bg->id}}"><i
                                                     class="far fa-calendar"></i>{{ $bg->created_at->format('D M Y')}}</a></div>
-                                        <h6 class="overflow1" class="post-title"><a class="text-inherit" href="/blogdetail/{{$row->id}}">{{ $bg->judul }}</a></h6>
+                                        <h6 class="overflow1" class="post-title"><a class="text-inherit" href="/blogdetail/{{$bg->id}}">{{ $bg->judul }}</a></h6>
                                     </div>
                                 </div>
                             </div>

@@ -270,7 +270,9 @@
                             <li class="sidebar-item"><a href="patnerindex" class="sidebar-link"><span
                                             class="hide-menu"> Kerjasama </span></a>
                                 </li>
-                           
+                            <li class="sidebar-item"><a href="sosmedindex" class="sidebar-link"><span
+                                    class="hide-menu"> Sosial Media </span></a>
+                        </li>
                         </ul>
                     </li>
                     <li class="nav-small-cap"><span class="hide-menu">Fitur</span></li>

@@ -19,11 +19,12 @@
     </div>
     <section class="as-blog-wrapper space-top space-extra-bottom">
         <div class="container">
-            <div class="row"> <div class="col-md-6 col-xl-4">
-                <div class="widget widget_search">
+            <div class="row"> 
+                <div class="col-md-6 col-xl-4">
+                {{-- <div class="widget widget_search">
                     <form class="search-form"><input type="text" placeholder="Search..."> <button type="submit"><i
                                 class="far fa-search"></i></button></form>
-                </div>
+                </div> --}}
             </div>
         </div>
         <div class="row">
@@ -44,6 +45,7 @@
                     </div>
                 </div>
             @endforeach
+            {{ $data->links('vendor.pagination.default') }}
         </div>
     </section>
 </body>

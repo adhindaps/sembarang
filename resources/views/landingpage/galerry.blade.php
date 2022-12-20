@@ -19,7 +19,7 @@
             <div class="row gy-4 masonary-active">
                 <div class="row">
                     @foreach ($data as $foto)
-                        <div class="col-md-3 col-xxl-auto filter-item">
+                        <div class="col-md-5 col-xxl-auto filter-item mb-xl-4">
                             <div class="gallery-card">
                                 <div class="gallery-img"><img class="pp"src="foto/{{ $foto->fotokgt }}"
                                         alt="gallery image"> <a href="foto/{{ $foto->fotokgt }}"
@@ -34,6 +34,7 @@
                 </div>
             </div>
         </div>
+        {{ $data->links('vendor.pagination.default') }}
     </div>
     @include('landingpage.layout.footer')
     <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>

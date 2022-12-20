@@ -47,21 +47,10 @@
                         <div class="widget">
                             <h4 class="widget_title">Gallery Posts</h4>
                             <div class="sidebar-gallery">
-                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan1.jpg') }}"
+                                @foreach ($galeri as $foto)   
+                                <div class="gallery-thumb"><img class="gg" src="foto/{{ $foto->foto1 }}"
                                         alt="Gallery Image" class="w-100"></div>
-                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan2.jpg') }}"
-                                        alt="Gallery Image" class="w-100"></div>
-                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan3.jpg') }}"
-                                        alt="Gallery Image" class="w-100"></div>
-                                <div class="gallery-thumb"><img class="gg"
-                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/gal-1-4.jpg') }}"
-                                        alt="Gallery Image" class="w-100"></div>
-                                <div class="gallery-thumb"><img class="gg"
-                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/gal-1-5.jpg') }}"
-                                        alt="Gallery Image" class="w-100"></div>
-                                <div class="gallery-thumb"><img class="gg"
-                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/gal-1-6.jpg') }}"
-                                        alt="Gallery Image" class="w-100"></div>
+                                @endforeach  
                             </div>
                         </div>
                     </aside>

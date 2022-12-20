@@ -33,8 +33,8 @@
                         <div class="widget">
                             <h4 class="widget_title">Gallery Posts</h4>
                             <div class="sidebar-gallery">
-                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan1.jpg') }}"
-                                        alt="Gallery Image" class="w-100"></div>
+                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan1.jpg') }}" style="width: 50px"
+                                        alt="Gallery Image"></div>
                                 <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan2.jpg') }}"
                                         alt="Gallery Image" class="w-100"></div>
                                 <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan3.jpg') }}"

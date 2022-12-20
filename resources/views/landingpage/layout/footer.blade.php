@@ -4,10 +4,13 @@
             <div class="row justify-content-between">
                 <div class="col-md-6 col-xl-3">
                     <div class="widget footer-widget style2">
-                        <div class="as-widget-about">
+                        <div class="as-widget-about text-white">
+                            @foreach ($footer as $footer )
                             <div id="about">
-                                <img src="http://www.smkn1dlanggu.sch.id/websmk/asset/logo/logo-footer.png" alt="smkn1dlanggu">
-                                SMKN 1 Dlanggu <br/> adalah Sekolah Menengah Kejuruan Negeri yang berbasis Teknologi dan Pariwisata untuk mencetak lulusan yang siap menjadi professional muda di bidang teknologi dan pariwisata, berjiwa religius, cinta tanah air serta berwirausaha. Dengan  dukungan sumber daya manusia pengajar yang berkuwalitas dan sarana prasarana yang lengkap demi menjawab kebutuhan dunia usaha dan industri Indonesia	</div>
+                                <img src="{{asset('foto'. $footer->logo )}}" alt="smkn1dlanggu">
+                                {{ $footer->namasekolah }}<br/>{!! $footer->deskripsi !!}
+                            </div>
+                            @endforeach
                             <div class="as-social">
                                 <a href="https://www.facebook.com/humassmkn1dlanggumojokerto/"><i
                                     class="fab fa-facebook-f"></i></a> 

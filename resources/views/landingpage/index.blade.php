@@ -192,7 +192,7 @@
                                     href="blog.html"><i class="far fa-folder"></i>{{ $ngelu->kategori->kategori }}</a>
                             </div>
                             <h3 class="blog-title"><a href="blogdetail/{{$ngelu->id}}">{{ $ngelu->judul}}</a></h3>
-                            <a class="link-btn" href="blogdetail">Baca Lebih
+                            <a class="link-btn" href="/blogdetail/{{$ngelu->id}}">Baca Lebih
                                 Detail<i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>

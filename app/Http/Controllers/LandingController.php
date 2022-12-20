@@ -69,7 +69,7 @@ class LandingController extends Controller
     public function profile(Request $request)
     {
         $data = Profile::where('id','=',1)->firstOrFail();
-        $visi = visi::where('id','=',1)->firstOrFail();
+        $visi = visi::all();
         $footerlink=FooterLink::all();
         $footer=Footer::all();
         return view('landingpage.profile', compact('data', 'visi', 'footer', 'footerlink'));

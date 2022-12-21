@@ -11,6 +11,8 @@ use App\Models\Extra;
 use App\Models\Guru;
 use App\Models\Profile;
 use App\Models\Prestasi;
+use App\Models\GaleriEcho;
+use App\Models\GaleriAxio;
 use App\Models\Sejarah;
 use App\Models\visi;
 use App\Models\sudutecho;
@@ -82,7 +84,7 @@ class LandingController extends Controller
     
     public function galerry(Request $request)
     {
-        $data=Galery::all();
+        $data=Galery::paginate(12);
         $footerlink=FooterLink::all();
         $footer=Footer::all();
         return view('landingpage.galerry',compact('data', 'footer', 'footerlink'));
@@ -105,7 +107,7 @@ class LandingController extends Controller
     public function blog(Request $request)
     {
         $blog=blog::with('kategori');
-        $data=blog::all();
+        $data=blog::paginate(12);
         $datakategori=Kategoriblog::all();
         $footerlink=FooterLink::all();
         $footer=Footer::all();
@@ -113,7 +115,7 @@ class LandingController extends Controller
     }
     public function events(Request $request)
     {
-        $data = Event::all();
+        $data = Event::paginate(12);
         $footerlink=FooterLink::all();
         $footer=Footer::all();
         return view('landingpage.events', compact('data', 'footer', 'footerlink'));
@@ -129,6 +131,7 @@ class LandingController extends Controller
 
     public function echo(Request $request)
     {
+        $galecho=GaleriEcho::all();
         $footerlink=FooterLink::all();
         $footer=Footer::all();
         $data = sudutecho::where('id','=',1)->firstOrFail();
@@ -163,11 +166,12 @@ class LandingController extends Controller
     public function silaras(Request $request)
     {
         $data=Silaras::where('id','=',1)->firstOrFail();
-        $blog=blog::latest()->limit(5)->get();
+        $agenda=Event::latest()->limit(4)->get();
+        $blog=blog::latest()->limit(4)->get();
         $foto=Galery::latest()->limit(6)->get();
         $footerlink=FooterLink::all();
         $footer=Footer::all();
-        return view('landingpage.silaras', compact('footer', 'footerlink','blog','data','foto'));
+        return view('landingpage.silaras', compact('footer', 'footerlink','blog','data','foto','agenda'));
     }
     public function beasiswa(Request $request)
     {
@@ -181,6 +185,7 @@ class LandingController extends Controller
     public function bkk(Request $request)
     {
         $data=Bkk::all();
+        $data=Bkk::paginate(12);
         $footerlink=FooterLink::all();
         $footer=Footer::all();
         return view('landingpage.bkk',compact('data', 'footer', 'footerlink'));
@@ -210,7 +215,7 @@ class LandingController extends Controller
     }
     public function prestasi(Request $request)
     {
-        $data= Prestasi::all();
+        $data= Prestasi::paginate(12);
         $footerlink=FooterLink::all();
         $footer=Footer::all();
         return view('landingpage.prestasi',compact('data', 'footer', 'footerlink'));

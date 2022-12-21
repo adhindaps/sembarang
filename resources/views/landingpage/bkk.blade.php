@@ -3,7 +3,7 @@
 <!-- Mirrored from angfuzsoft.com/html/acadu/demo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:32:21 GMT -->
 @include('landingpage.layout.head')
 
-<body>
+<body onmousedown="return:true">
     @include('landingpage.layout.header')
     <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
         <div class="container z-index-common">
@@ -26,9 +26,9 @@
                     <div class="container">
                         <div class="row">
                             @foreach ($data as $bk )
-                            <div class="col-xl-4 mb-20 mb-xl-0">
+                            <div class="col-xl-4 mb-20 mb-xl-4">
                                 <div class="cta-card"
-                                    data-bg-src="{{ asset('1/yeye/html/acadu/demo/assets/img/bg/course_bg_1.jpg')}}">
+                                    data-bg-src="/foto/bg1.jpg">
                                     <div class="title-area mb-40"><span class="sub-title"><i
                                                 class="fal fa-book me-2"></i>Lowongan Kerja</span>
                                         <h4 class="sec-title">{{ $bk->perusahaan }}</h4>
@@ -36,12 +36,14 @@
                                             class="fas fa-arrow-right ms-2"></i></a>
                                 </div>
                             </div>
+                            
                             @endforeach
                         </div>
                     </div>
                 </section>
             </div>
         </div>
+        {{ $data->links('vendor.pagination.default') }}
     </div>
 @include('landingpage.layout.footer')
 <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>

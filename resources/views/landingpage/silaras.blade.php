@@ -51,7 +51,7 @@
                                 @endforeach      
                             </div>
                         </div>  
-                   
+{{--                    
                         <div class="widget">
                             <h4 class="widget_title">Gallery Posts</h4>
                          
@@ -61,8 +61,23 @@
                                         alt="Gallery Image" class="w-100"></div>
                                         @endforeach  
                             </div>   
+                        </div> --}}
+                        <div class="widget">
+                            <h3 class="widget_title">Agenda Terbaru</h3>
+                            <div class="recent-post-wrap">
+                                @foreach ($agenda as $bg)  
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="/detailevents/{{$bg->id}}"><img class="gg"
+                                                src="{{ asset('foto/' . $bg->foto) }}" alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta"><a href="/detailevents/{{$bg->id}}"><i
+                                                    class="far fa-calendar"></i>{{ $bg->jamevent }}</a></div>
+                                        <h6 class="overflow1" class="post-title"><a class="text-inherit" href="/detailevents/{{$bg->id}}">{{ $bg->namaevent }}</a></h6>
+                                    </div>
+                                </div>
+                                @endforeach 
+                            </div>
                         </div>
-                       
                     </aside>
                 </div>
             </div>

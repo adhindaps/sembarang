@@ -6,10 +6,10 @@
 	@include('landingpage.layout.header')
     <div class="breadcumb-wrapper" data-bg-src="{{asset ('foto')}}">
         <div class="container z-index-common">
-            <h1 class="breadcumb-title"> Sudut Baca ECO</h1>
+            <h1 class="breadcumb-title"> Sudut Baca Echo</h1>
             <ul class="breadcumb-menu">
                 <li><a href="/">Beranda</a></li>
-                <li> Sudut Baca ECO</li>
+                <li> Sudut Baca Echo</li>
             </ul>
         </div>
     </div>
@@ -50,12 +50,11 @@
         <div class="container as-container3 z-index-common">
             <div class="row gx-10 as-carousel" data-lg-slide-show="5" data-md-slide-show="4" data-slide-show="6"
                 data-sm-slide-show="3" data-xs-slide-show="2">
-                @foreach ($galerieco as $eco)
+                @foreach ($galecho as $echo)
                 <div class="col-auto">
-                 
-                        <img alt="website" class="imgyeye" src="foto/{{ $eco->foto11 }}">
-
-                    
+                    <div class="insta-box">
+                        <img alt="website" class="imgyeye" src="foto/{{ $echo->foto11 }}"></a>
+                    </div>
                 </div>
                 @endforeach
             </div>

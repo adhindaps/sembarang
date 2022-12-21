@@ -35,16 +35,7 @@
                 </div>
                 @endforeach
             </div>
-            <div class="text-center mt-20 mt-xl-4">
-                <div class="as-pagination">
-                    <ul>
-                        <li><a href="blog.html">1</a></li>
-                        <li><a href="blog.html">2</a></li>
-                        <li><a href="blog.html">3</a></li>
-                        <li><a href="blog.html"><i class="far fa-arrow-right"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+            {{ $data->links('vendor.pagination.default') }}
         </div>
     </section>
 </body>

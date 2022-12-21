@@ -35,16 +35,6 @@
                 <div class="col-xxl-3 col-lg-4">
                     <aside class="sidebar-area">
                         <div class="widget">
-                            <h4 class="widget_title">Gallery Posts</h4>
-                         
-                            <div class="sidebar-gallery">
-                                @foreach ($foto as $foto)   
-                                <div class="gallery-thumb"><img class="gg" src="foto/{{ $foto->fotokgt }}"
-                                        alt="Gallery Image" class="w-100"></div>
-                                        @endforeach  
-                            </div>   
-                        </div>
-                        <div class="widget">
                             <h3 class="widget_title">Berita Terbaru</h3>
                             <div class="recent-post-wrap">
                                 @foreach ($blog as $bg)          

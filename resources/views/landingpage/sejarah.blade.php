@@ -32,28 +32,18 @@
                     <aside class="sidebar-area">
                         <div class="widget">
                             <h4 class="widget_title">Gallery Posts</h4>
+                         
                             <div class="sidebar-gallery">
-                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan1.jpg') }}" style="width: 50px"
-                                        alt="Gallery Image"></div>
-                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan2.jpg') }}"
-                                        alt="Gallery Image" class="w-100"></div>
-                                <div class="gallery-thumb"><img class="gg" src="{{ asset('foto/kegiatan3.jpg') }}"
-                                        alt="Gallery Image" class="w-100"></div>
-                                <div class="gallery-thumb"><img class="gg"
-                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/gal-1-4.jpg') }}"
-                                        alt="Gallery Image" class="w-100"></div>
-                                <div class="gallery-thumb"><img class="gg"
-                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/gal-1-5.jpg') }}"
-                                        alt="Gallery Image" class="w-100"></div>
-                                <div class="gallery-thumb"><img class="gg"
-                                        src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/gal-1-6.jpg') }}"
-                                        alt="Gallery Image" class="w-100"></div>
-                            </div>
+                                @foreach ($foto as $foto)   
+                                <div class="gallery-thumb"><img src="foto/{{ $foto->fotokgt }}"
+                                    width="100px"  alt="Gallery Image"></div>
+                                @endforeach  
+                            </div> 
                         </div>
-                        @foreach ($blog as $bg)                  
                         <div class="widget">
                             <h3 class="widget_title">Berita Terbaru</h3>
                             <div class="recent-post-wrap">
+                                @foreach ($blog as $bg)          
                                 <div class="recent-post">
                                     <div class="media-img"><a href="blog-details.html"><img
                                                 src="{{ asset('foto/' . $bg->foto) }}" alt="Blog Image"></a></div>
@@ -63,9 +53,10 @@
                                         <h6 class="overflow1" class="post-title"><a class="text-inherit" href="/blogdetail/{{$bg->id}}">{{ $bg->judul }}</a></h6>
                                     </div>
                                 </div>
+                                @endforeach 
                             </div>
                         </div>  
-                        @endforeach       
+                            
                     </aside>
                 </div>
             </div>

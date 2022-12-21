@@ -30,7 +30,7 @@
             @foreach ($data as $row)
                 <div class="col-md-6 col-xl-4">
                     <div class="blog-card">
-                        <img class="imgg" src="{{asset('foto/'.$row->foto )}}"width="100px" alt="Gambar">
+                        <img class="imgg" src="{{asset('foto/'.$row->foto )}}" width="100px" alt="Gambar">
                         <div class="blog-content">
                             <div class="blog-meta style2">
                                 <a href="blog.html"><i

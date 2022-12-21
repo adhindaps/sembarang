@@ -21,7 +21,7 @@
                 <div class="col-xxl-8 col-lg-7">
                     @foreach ($data as $item)
                     <div class="as-blog blog-single">
-                        <div class="blog-img"><img class="zz" src="{{ asset('foto/' . $item->foto) }}" alt="Blog Image"> </div>
+                        <div class="blog-img"><img class="zz" src="{{asset('foto/'.$item->foto )}}" alt="Blog Image"> </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <a href="blog.html"><i class="far fa-user"></i>Admin</a>

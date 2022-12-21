@@ -46,6 +46,21 @@
             </div>
         </div>
     </section>
+    <div class="bg-smoke" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
+        <div class="container as-container3 z-index-common">
+            <div class="row gx-10 as-carousel" data-lg-slide-show="5" data-md-slide-show="4" data-slide-show="6"
+                data-sm-slide-show="3" data-xs-slide-show="2">
+                @foreach ($galerieco as $eco)
+                <div class="col-auto">
+                 
+                        <img alt="website" class="imgyeye" src="foto/{{ $eco->foto11 }}">
+
+                    
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
 @include('landingpage.layout.footer')
 <script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
 </script>

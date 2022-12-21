@@ -53,7 +53,7 @@
                                             <strong>Email            :</strong>{{ $data->email }}<br/>
                                         </p>
                                     </div>
-                                </div>                                
+                                </div>                         
                                 @foreach ($visi as $vs)
                                 <div class="tab-pane fade" id="curriculam" role="tabpanel"
                                     aria-labelledby="curriculam-tab">
@@ -124,7 +124,7 @@
 
                                                     </div>
                                                     <div class="team-content">
-                                                        <h6 class="team-title"><a href="team-details.html">Kevin Martin Ben</a></h6><span class="team-desig">Online Teacher</span>
+                                                        <h6 class="team-title">Kevin Martin Ben</a></h6><span class="team-desig">Online Teacher</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -135,7 +135,7 @@
 
                                                     </div>
                                                     <div class="team-content">
-                                                        <h6 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h6><span class="team-desig">Online Teacher</span>
+                                                        <h6 class="team-title">Michael Dania Tin</a></h6><span class="team-desig">Online Teacher</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -146,7 +146,7 @@
 
                                                     </div>
                                                     <div class="team-content">
-                                                        <h6 class="team-title"><a href="team-details.html">Aiden Samuel Jabin</a></h6><span class="team-desig">Online Teacher</span>
+                                                        <h6 class="team-title">Aiden Samuel Jabin</a></h6><span class="team-desig">Online Teacher</span>
                                                     </div>
                                                 </div>
                                             </div>

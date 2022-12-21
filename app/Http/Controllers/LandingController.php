@@ -11,8 +11,6 @@ use App\Models\Extra;
 use App\Models\Guru;
 use App\Models\Profile;
 use App\Models\Prestasi;
-use App\Models\GaleriEcho;
-use App\Models\GaleriAxio;
 use App\Models\Sejarah;
 use App\Models\visi;
 use App\Models\sudutecho;

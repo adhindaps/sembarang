@@ -92,7 +92,7 @@ class ProfileController extends Controller
     public function blogstore(Request $request)
     {
         if($request->hasFile('foto')){
-            $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
+            $request->file('foto')->move('blog/', $request->file('foto')->getClientOriginalName());
         $data = blog::create([
             'foto' => $request->file('foto')->getClientOriginalName(),
             'judul' => $request->judul,
@@ -201,7 +201,7 @@ class ProfileController extends Controller
             'deskripsi' => 'required',
         ] , $pesan );
         if($request->hasFile('foto')){
-            $request->file('foto')->move('foto/', $request->file('foto')->getClientOriginalName());
+            $request->file('foto')->move('event/', $request->file('foto')->getClientOriginalName());
         $data = Event::create([
             'foto' => $request->file('foto')->getClientOriginalName(),
             'namaevent' => $request->namaevent,

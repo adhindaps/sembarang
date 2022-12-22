@@ -91,13 +91,13 @@
     </div>
     <!-- *************************************************************** -->
     <!-- End First Cards -->
-         <div class="row">
+         {{-- <div class="row">
                     <div class="col-lg-4 col-md-12">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Kompetensi Keahlian</h4>
                                 <div id="campaign-v2" class="mt-2" style="height:283px; width:100%;"></div>
-                                {{-- <ul class="list-style-none mb-0">
+                                <ul class="list-style-none mb-0">
                                     <li>
                                         <i class="fas fa-circle text-primary font-10 mr-2"></i>
                                         <span class="text-muted">SIJA</span>
@@ -113,7 +113,7 @@
                                         <span class="text-muted">MM</span>
                                         <span class="text-dark float-right font-weight-medium">7</span>
                                     </li>
-                                </ul> --}}
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -122,9 +122,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">kegiatan</h4>
                                 <div class="net-income mt-4 position-relative" style="height:294px;"></div>
-                                {{-- <ul class="list-inline text-center mt-5 mb-2">
-                                    <li class="list-inline-item text-muted font-italic">Banyak Kegiatan</li>
-                                </ul> --}}
+                          
                             </div>
                         </div>
                     </div>
@@ -132,9 +130,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title mb-4">Earning by Location</h4>
-                                {{-- <div class="" style="height:180px">
-                                    <div id="visitbylocate" style="height:100%"></div>
-                                </div> --}}
+                            
                                 <div class="row mb-3 align-items-center mt-1 mt-5">
                                     <div class="col-4 text-right">
                                         <span class="text-muted font-14">India</span>
@@ -236,8 +232,55 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
     <!-- *************************************************************** -->
+  
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-lg-3 border-right pr-0">
+                                <div class="card-body border-bottom">
+                                    <h4 class="card-title mt-2">Drag & Drop Event</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div id="calendar-events" class="">
+                                                <div class="calendar-events mb-3" data-class="bg-info"><i
+                                                        class="fa fa-circle text-info mr-2"></i>Event One</div>
+                                                <div class="calendar-events mb-3" data-class="bg-success"><i
+                                                        class="fa fa-circle text-success mr-2"></i> Event Two
+                                                </div>
+                                                <div class="calendar-events mb-3" data-class="bg-danger"><i
+                                                        class="fa fa-circle text-danger mr-2"></i>Event Three
+                                                </div>
+                                                <div class="calendar-events mb-3" data-class="bg-warning"><i
+                                                        class="fa fa-circle text-warning mr-2"></i>Event Four
+                                                </div>
+                                            </div>
+                                            <!-- checkbox -->
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input"
+                                                    id="drop-remove">
+                                                <label class="custom-control-label" for="drop-remove">Remove
+                                                    after drop</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="card-body b-l calender-sidebar">
+                                    <div id="calendar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-12">
             <div class="card">

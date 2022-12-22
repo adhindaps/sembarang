@@ -30,9 +30,36 @@
                                  @enderror
                             </div>
                             <div class="form-group col-md-12">
+                                <label for="inputPassword4">Judul</label>
+                                <input type="text" name="judul" class="form-control" id="inputPassword4" value="{{ $data->judul }}"  placeholder="">
+                                @error('judul')
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{ $message }}</strong> 
+                                </div>
+                                 @enderror
+                            </div>
+                            <div class="form-group col-md-12">
                                 <label for="editor">Deskripsi</label>
                                 <textarea name="deskripsi" id="editor">{!!  $data->deskripsi !!}</textarea>
                                 @error('deskripsi')
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{ $message }}</strong> 
+                                </div>
+                                 @enderror
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputPassword4">Alamat</label>
+                                <input type="text" name="alamat" class="form-control" id="inputPassword4" value="{{ $data->alamat }}"  placeholder="">
+                                @error('alamat')
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{ $message }}</strong> 
+                                </div>
+                                 @enderror
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="editor">Deskripsi Perusahaan</label>
+                                <textarea name="deskperusahaan" id="editor">{!!  $data->deskperusahaan !!}</textarea>
+                                @error('deskperusahaan')
                                 <div class="alert alert-danger" role="alert">
                                     <strong>{{ $message }}</strong> 
                                 </div>

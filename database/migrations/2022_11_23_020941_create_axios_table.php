@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('judul');
             $table->text('deskaxio');
+            $table->string('vidio');
             $table->timestamps();
         });
     }

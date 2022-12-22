@@ -24,8 +24,20 @@
                               <input type="text" name="perusahaan" class="form-control" id="inputPassword4"  placeholder="">
                             </div>
                             <div class="form-group col-md-12">
+                                <label for="inputPassword4">Judul</label>
+                                <input type="text" name="judul" class="form-control" id="inputPassword4"  placeholder="">
+                              </div>
+                            <div class="form-group col-md-12">
                                 <label for="editor">Deskripsi</label>
                                 <textarea name="deskripsi" id="editor"></textarea>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="inputPassword4">Alamat</label>
+                                <input type="text" name="alamat" class="form-control" id="inputPassword4"  placeholder="">
+                              </div>
+                            <div class="form-group col-md-12">
+                                <label for="editor">Deskripsi Perusahaan</label>
+                                <textarea name="deskperusahaan" id="editor"></textarea>
                               </div>
                           </div>
                           <div class="form-actions">

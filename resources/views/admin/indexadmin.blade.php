@@ -19,6 +19,7 @@
     <link href="{{ asset('admin/assets/libs/chartist/dist/chartist.min.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet" />
     <!-- Custom CSS -->
+    <link href="{{ asset('admin/assets/libs/fullcalendar/dist/fullcalendar.min.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="{{ asset('admin/dist/css/style.min.css') }}" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -134,11 +135,11 @@
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
                                 <a class="dropdown-item" href="profileadmin"><i data-feather="user"
                                         class="svg-icon mr-2 ml-1"></i>
-                                    My Profile</a>
+                                    Profil Saya</a>
                                
                                 <a class="dropdown-item" href="/logout"><i data-feather="power"
                                         class="svg-icon mr-2 ml-1"></i>
-                                    Logout</a>
+                                    Keluar</a>
                                
                             </div>
                         </li>

@@ -16,7 +16,10 @@
                                     <th >No</th>
                                     <th >Foto</th>
                                     <th >Perusahaan</th>
+                                    <th >Judul</th>
                                     <th >Deskripsi</th>
+                                    <th >Alamat</th>
+                                    <th >Deskripsi Perusahaan</th>
                                     <th >Aksi</th>
                                 </tr>
                             </thead>
@@ -29,7 +32,11 @@
                                     <td scope="bk">{{ $no++ }}</td>
                                     <td> <img alt=" " src="foto/{{ $bk->fotobk }}"width="100px"></td>
                                     <td>{{ $bk->perusahaan }}</td>
+                                    <td>{{ $bk->judul }}</td>
                                     <td style="word-break:break-word;">{!! $bk->deskripsi !!}</td>
+                                    <td>{{ $bk->alamat }}</td>
+                                    <td style="word-break:break-word;">{!! $bk->deskperusahaan !!}</td>
+                                    
                                     <td>
                                     <a href="/bkkedit/{{ $bk->id }}" class="btn btn-warning">
                                         <i class="fas fa-pencil-alt"></i></a>

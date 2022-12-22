@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('tgllahir');
             $table->string('status');
             $table->string('jabatan');
+            $table->string('subjabatan');
             $table->timestamps();
         });
     }

@@ -122,7 +122,7 @@ class GaleryController extends Controller
            
         ] , $pesan );
         if($request->hasFile('foto1')){
-            $request->file('foto1')->move('foto/', $request->file('foto1')->getClientOriginalName());
+            $request->file('foto1')->move('axio/', $request->file('foto1')->getClientOriginalName());
         $data = GaleriAxio::create([
             'namakegiatan' => $request->namakegiatan,
             'foto1' => $request->file('foto1')->getClientOriginalName(),
@@ -190,7 +190,7 @@ class GaleryController extends Controller
            
         ] , $pesan );
         if($request->hasFile('foto11')){
-            $request->file('foto11')->move('foto/', $request->file('foto11')->getClientOriginalName());
+            $request->file('foto11')->move('echo/', $request->file('foto11')->getClientOriginalName());
         $data = GaleriEcho::create([
             'namakegiatan' => $request->namakegiatan,
             'foto11' => $request->file('foto11')->getClientOriginalName(),

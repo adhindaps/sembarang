@@ -32,6 +32,7 @@ use App\Models\Patner;
 
 Route::get('/', [LandingController::class, 'index'])->name('index');
 Route::get('/footer', [LandingController::class, 'footer'])->name('footer');
+Route::get('/header', [LandingController::class, 'header'])->name('header');
 
 
 Route::get('/login', [LoginController::class, 'login'])->name('login')->middleware('guest');

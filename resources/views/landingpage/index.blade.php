@@ -116,7 +116,7 @@
 						<div class="col-md-6 col-lg-4">
 							<div class="team-box">
 								<div class="team-img">
-									<img alt="Team" src="{{ asset('guru/' . $yy->fotoguru) }}"  >
+									<img alt="Team" src="{{ asset('guru/' . $yy->fotoguru) }}" width="500px" >
 								</div>
                                 <div class="team-content">
                                     <h3 class="team-title">{{$yy->nama}}</h3><span

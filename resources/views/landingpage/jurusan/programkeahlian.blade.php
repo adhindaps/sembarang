@@ -24,7 +24,7 @@
                                     <h3 class="feature-grid_title">
                                         <td>{{ $row->jurusan }}</td>
                                     </h3>
-                                    <div class="overflow"class="feature-grid_text">
+                                    <div class="overflow"class=" text-white">
                                         <td>{!! $row->deskripsi !!}</td>
                                     </div>
                                     <div class="text-center mt-20 mt-xl-5">

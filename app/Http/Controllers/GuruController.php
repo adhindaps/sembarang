@@ -109,7 +109,6 @@ class GuruController extends Controller
 
         ];
         $this->validate($request,[
-            'fotoguru' => 'required',
             'nama' => 'required|min:2|max:100',
             'nip' => 'required|min:11|max:100',
             'tmplahir' => 'required',

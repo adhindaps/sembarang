@@ -10,7 +10,7 @@
             <h1 class="breadcumb-title"></h1>
             <ul class="breadcumb-menu">
                 <li><a href="/">Beranda</a></li>
-                <li></li>
+                <li><a href="/programkeahlian">Kembali</a></li>
             </ul>
         </div>
     </div>
@@ -23,7 +23,7 @@
                         <img src="{{ asset('foto/' . $data->foto) }}" width="600px" alt="Image">
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="blog.html"><i class="far fa-book"></i>Study</a>
+                                <a href="#"><i class="far fa-book"></i>Program Keahlian</a>
                             </div>
                             <h2 class="blog-title">{{ $data->jurusan }}</h2>
                             <p>{!! $data->deskripsi !!}</p>
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                    
-                        {{-- <div class="widget widget_info">
+                        <div class="widget widget_info">
                             <h3 class="widget_title">Guru produktif</h3>
                             <br />
                             <div class="col-xl-12">
@@ -96,7 +96,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> --}}
+                        </div>
                     </aside>
                 </div>
             </div>

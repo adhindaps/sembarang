@@ -20,16 +20,17 @@
             @foreach ($data as $pr )
                         <div class="col-md-6 col-lg-4 col-xxl-3">
                             <div class="course-box style4">
-                                <div class="course-img"><img src="foto/{{ $pr->fotopres }}" alt="course"> <span class="tag"></span></div>
+                                <div class="zz"><img src="foto/{{ $pr->fotopres }}" alt="course"> <span class="tag"></span></div>
                                 <div class="course-content">
                                     <div class="course-author">
-                                        <div class="author-info">
-                                            <a href="course.html" class="author-name">Admin</a></div>
+                                        <a href="#"><i class="far fa-user"></i>Admin</a>
                                     </div>
                                     <h3 class="course-title"><a href="prestasidetail/{{$pr->id}}">{{ $pr->judul }}</a></h3>
-                                    <div class="course-meta"><span><i class="fal fa-file"></i>Lesson 8</span> <span><i
-                                                class="fal fa-user"></i>Students 50</span> <span><i
-                                                class="fal fa-eye"></i>View: 12K</span></div>
+                                    <div class="overflow" class=" text-white">
+                                        <td>{!! $pr->deskripsi !!}</td>
+                                    </div>
+                                    <a class="link-btn" href="prestasidetail/{{$pr->id}}">Baca Lebih Detail<i
+                                        class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>

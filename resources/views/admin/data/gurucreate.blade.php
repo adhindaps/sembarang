@@ -13,11 +13,7 @@
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Foto</label>
                                 <input type="file" id="fotoguru" name="fotoguru" class="form-control" >
-                                @error('fotoguru')
-                                <div class="alert alert-danger" role="alert">
-                                    <strong>{{ $message }}</strong> 
-                                </div>
-                                 @enderror
+
                             </div>
                             <div class="form-group col-md-12">
                               <label for="inputPassword4">Nama</label>

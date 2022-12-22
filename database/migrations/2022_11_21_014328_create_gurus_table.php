@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('gurus', function (Blueprint $table) {
             $table->id();
-            $table->string('fotoguru');
+            $table->string('fotoguru')->nullable('default.jpg');
             $table->string('nama');
             $table->string('nip');
             $table->string('tmplahir');

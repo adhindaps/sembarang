@@ -14,11 +14,7 @@
                                 <label for="inputPassword4">Foto</label>
                                 <img class="img mb-3" src="{{ asset('foto/' . $data->fotoguru) }}" alt="" style="width: 100px;">
                                 <input type="file" name="fotoguru" class="form-control" id="fotoguru" aria-describedby="emailHelp" value="{{ $data->fotoguru }}">
-                                @error('jabatan')
-                                <div class="alert alert-danger" role="alert">
-                                    <strong>{{ $message }}</strong> 
-                                </div>
-                                 @enderror
+
                             </div>
                             <div class="form-group col-md-12">
                               <label for="inputPassword4">Nama</label>

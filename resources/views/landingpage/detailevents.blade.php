@@ -10,7 +10,7 @@
             <h1 class="breadcumb-title">Detail Agenda</h1>
             <ul class="breadcumb-menu">
                 <li><a href="/">Beranda</a></li>
-                <li>Detail Agenda</li>
+                <li><a href="/events">Kembali</a></li>
             </ul>
         </div>
     </div>

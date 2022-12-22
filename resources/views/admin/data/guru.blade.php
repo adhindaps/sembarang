@@ -20,6 +20,7 @@
                                     <th scope="col">Tgl Lahir</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Jabatan</th>
+                                    <th scope="col">Sub Jabatan</th>
                                     <th scope="text-right">Aksi</th>
                                 </tr>
                             </thead>
@@ -37,6 +38,7 @@
                                     <td>{!! $data->tgllahir !!}</td>
                                     <td>{{ $data->status }}</td>
                                     <td>{!! $data->jabatan !!}</td>
+                                    <td>{!! $data->subjabatan !!}</td>
                                     <td><a href="/guruedit/{{ $data->id }}" class="btn btn-warning">
                                         <i class="fas fa-pencil-alt"></i></a>
                                     

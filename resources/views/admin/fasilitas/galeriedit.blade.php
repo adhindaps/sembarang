@@ -21,7 +21,7 @@
                             </div>
                               <div class="form-group col-md-12">
                                 <label for="inputPassword4">Foto</label>
-                                <img class="img mb-3" src="{{ asset('foto/' . $data->foto1) }}" alt="" style="width: 100px;">
+                                <img class="img mb-3" src="{{ asset('axio/' . $data->foto1) }}" alt="" style="width: 100px;">
                                 <input type="file" name="foto1" class="form-control" id="foto1" aria-describedby="emailHelp" value="{{ $data->foto1 }}">
                                 @error('foto1')
                                 <div class="alert alert-danger" role="alert">

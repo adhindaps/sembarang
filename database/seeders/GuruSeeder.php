@@ -23,7 +23,8 @@ class GuruSeeder extends Seeder
             'tmplahir' => 'Pasuruan	',
             'tgllahir' => '24-Jan-1971',
             'status' => 'PNS',
-            'jabatan' => 'KEPALA SEKOLAH'
+            'jabatan' => 'KEPALA SEKOLAH',
+            'subjabatan' => 'KEPALA SEKOLAH'
         ]);
         DB::table('gurus')->insert([
             'fotoguru' => 'huddy.jpg',
@@ -32,7 +33,8 @@ class GuruSeeder extends Seeder
             'tmplahir' => 'Mojokerto	',
             'tgllahir' => '24-Jan-1971',
             'status' => 'PNS',
-            'jabatan' => 'WaKa Hummas'
+            'jabatan' => 'WaKa Hummas',
+            'subjabatan' => 'KEPALA SEKOLAH'
         ]);
         DB::table('gurus')->insert([
             'fotoguru' => 'frans.jpg',
@@ -41,7 +43,8 @@ class GuruSeeder extends Seeder
             'tmplahir' => 'Mojokerto	',
             'tgllahir' => '24-Jan-1971',
             'status' => 'PNS',
-            'jabatan' => 'WaKa Sarana Prasarana'
+            'jabatan' => 'WaKa Sarana Prasarana',
+            'subjabatan' => 'KEPALA SEKOLAH'
         ]);
         DB::table('gurus')->insert([
             'fotoguru' => 'nizar.jpg',
@@ -50,7 +53,8 @@ class GuruSeeder extends Seeder
             'tmplahir' => 'Mojokerto	',
             'tgllahir' => '24-Jan-1971',
             'status' => 'PNS',
-            'jabatan' => 'WaKa Kurikulum'
+            'jabatan' => 'WaKa Kurikulum',
+            'subjabatan' => 'KEPALA SEKOLAH'
         ]);
         DB::table('gurus')->insert([
             'fotoguru' => 'samsul.jpg',
@@ -59,7 +63,8 @@ class GuruSeeder extends Seeder
             'tmplahir' => 'Mojokerto	',
             'tgllahir' => '24-Jan-1971',
             'status' => 'PNS',
-            'jabatan' => 'WaKa Kurikulum'
+            'jabatan' => 'WaKa Kurikulum',
+            'subjabatan' => 'KEPALA SEKOLAH'
         ]);
         
     }

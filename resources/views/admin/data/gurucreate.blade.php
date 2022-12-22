@@ -70,6 +70,15 @@
                                 </div>
                                  @enderror
                             </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputPassword4"> Sub Jabatan</label>
+                                <input type="text" name="subjabatan" class="form-control" id="inputPassword4"  placeholder="">
+                                @error('subjabatan')
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{ $message }}</strong> 
+                                </div>
+                                 @enderror
+                            </div>
                           </div>
                           <div class="form-actions">
                             <div class="text-right">

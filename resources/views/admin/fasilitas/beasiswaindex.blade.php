@@ -14,7 +14,7 @@
                         <thead>
                                 <tr>
                                     <th >No</th>
-                                    <th >Juduk</th>
+                                    <th >Judul</th>
                                     <th >Foto</th>
                                     <th >Deskripsi</th>
                                     <th >Aksi</th>

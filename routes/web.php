@@ -74,12 +74,15 @@ Route::get('/dashboard', function () {
     $jumlahguru = Guru::count();
     $jumlahberita = blog::count();
     $jumlahmitra = Patner::count();
-
     return view('admin.beranda', compact('jumlahjurusan' , 'jumlahguru' , 'jumlahberita' , 'jumlahmitra'),);
+});
+Route::get('/profileadmin',[AdminController::class, 'profileadmin'])->name('profileadmin')->middleware('auth');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/gantipass', [AdminController::class, 'password'])->name('password');
+    Route::post('/changePasswordPosta', [AdminController::class, 'changePasswordPosta'])->name('changePasswordPosta');
 });
 
 Route::group(['middleware'],function (){
-
 //Profile Sekolah Admin
 Route::get('/identitas',[ProfileController::class, 'identitas'])->name('identitas')->middleware('auth');
 Route::post('/store',[ProfileController::class, 'store'])->name('store');

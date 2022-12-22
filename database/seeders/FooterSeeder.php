@@ -18,7 +18,7 @@ class FooterSeeder extends Seeder
     public function run()
     {
         DB::table('footers')->insert([
-            'logo' => 'smk.jpg',
+            'logo' => '10.png',
             'namasekolah' => 'SMK NEGERI 1 DLANGGU',
             'deskripsi' => '<p>adalah Sekolah Menengah Kejuruan Negeri yang berbasis Teknologi dan Pariwisata untuk mencetak lulusan yang siap menjadi professional muda 
             di bidang teknologi dan pariwisata, berjiwa religius, cinta tanah air serta berwirausaha. 

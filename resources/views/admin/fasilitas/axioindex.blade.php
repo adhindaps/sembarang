@@ -20,6 +20,10 @@
                                 <label for="editor">Deskripsi</label>
                                 <textarea name="deskaxio" id="editor">{!! $data->deskaxio !!}</textarea>
                               </div>
+                              <div class="form-group col-md-12">
+                                <label for="inputPassword4">Link Video</label>
+                                <input type="text" value="{{$data->vidio}}" name="vidio" class="form-control" id="inputPassword4"  placeholder="">
+                              </div>
                           </div>
                           <div class="form-actions">
                             <div class="text-right">

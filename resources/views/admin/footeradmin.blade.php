@@ -30,7 +30,8 @@
 <!--Custom JavaScript -->
 <script src="{{ asset('admin/dist/js/custom.min.js') }}"></script>
 <!--This page JavaScript -->
-
+<script src="{{  asset('admin/assets/libs/fullcalendar/dist/fullcalendar.min.js') }}"></script>
+<script src="{{  asset('admin/dist/js/pages/calendar/cal-init.js') }}"></script>
 <!--This page plugins -->
 <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>

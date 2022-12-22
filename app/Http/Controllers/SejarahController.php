@@ -118,10 +118,12 @@ class SejarahController extends Controller
         $this->validate($request, [
             'judul' => 'required',
             'deskaxio' => 'required',
+            'vidio'=>'required',
         ]);
         $data = Sejarah::create([
             'judul' => $request->judul,
             'deskaxio' => $request->deskaxio,
+            'vidio'=> $requrest->vidio,
         ]);
         return redirect('axioindex');
     
@@ -178,11 +180,14 @@ class SejarahController extends Controller
     public function bkkstore(Request $request)
     {
         if($request->hasFile('fotobk')){
-            $request->file('fotobk')->move('foto/', $request->file('fotobk')->getClientOriginalName());
+            $request->file('fotobk')->move('bkk/', $request->file('fotobk')->getClientOriginalName());
         $data = Bkk::create([
             'fotobk' => $request->file('fotobk')->getClientOriginalName(),
             'perusahaan' => $request->perusahaan,
+            'judul'=> $request->judul,
             'deskripsi' => $request->deskripsi,
+            'alamat'=> $request->alamat,
+            'deskperusahaan' => $request->deskperusahaan,
         ]);
         $data->fotobk = $request->file('fotobk')->getClientOriginalName();
     }
@@ -204,14 +209,19 @@ class SejarahController extends Controller
             $data = Bkk::find($id)->update([
                 'fotobk' => $request->file('fotobk')->getClientOriginalName(),
                'perusahaan' => $request->perusahaan,
+               'judul'=> $request->judul,
                'deskripsi' => $request->deskripsi,
-              
+               'alamat'=> $request->alamat,
+               'deskperusahaan' => $request->deskperusahaan,
             ]);
         return redirect('bkkindex')->with('sukses','Updatedata!');
     }else{
         $data->update([
             'perusahaan' => $request->perusahaan,
+            'judul'=> $request->judul,
             'deskripsi' => $request->deskripsi,
+            'alamat'=> $request->alamat,
+            'deskperusahaan' => $request->deskperusahaan,
         ]);
         return redirect('bkkindex')->with('sukses','Updatedata!');
     }

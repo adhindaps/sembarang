@@ -90,7 +90,8 @@ class LandingController extends Controller
         $footer=Footer::all();
         $sosmed=Sosmed::all();
         $email=Profile::all();
-        return view('landingpage.profile', compact('data', 'visi', 'footer', 'footerlink', 'sosmed', 'email'));
+        $foto=Guru::where('jabatan.kepala sekolah');
+        return view('landingpage.profile', compact('data', 'visi', 'footer', 'footerlink', 'sosmed', 'email', 'foto'));
         
     }
     
@@ -235,7 +236,9 @@ class LandingController extends Controller
         $footer=Footer::all();
         $sosmed=Sosmed::all();
         $email=Profile::all();
-        return view('landingpage.bkkdetail', compact('data', 'footer', 'footerlink', 'sosmed', 'email'));
+        $lowongan=Bkk::latest()->limit(6)->get();
+        $perusahaan=Bkk::where('id',$id)->get();
+        return view('landingpage.bkkdetail', compact('data', 'footer', 'footerlink', 'sosmed', 'email', 'lowongan', 'perusahaan'));
     }
     public function programkeahlian(Request $request)
     {

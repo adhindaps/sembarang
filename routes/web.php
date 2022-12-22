@@ -61,7 +61,7 @@ Route::get('/extrakulikuler',[LandingController::class, 'extrakulikuler'])->name
 Route::get('/axio',[LandingController::class, 'axio'])->name('axio');
 Route::get('/silaras',[LandingController::class, 'silaras'])->name('silaras');
 Route::get('/beasiswa',[LandingController::class, 'beasiswa'])->name('beasiswa');
-Route::get('/bkk',[LandingController::class, 'bkk'])->name('bkk');
+Route::get('/bkkk',[LandingController::class, 'bkk'])->name('bkk');
 Route::get('/bkkdetail/{id}',[LandingController::class, 'bkkdetail'])->name('bkkdetail');
 Route::get('/programkeahlian',[LandingController::class, 'programkeahlian'])->name('programkeahlian');
 Route::get('/prestasi',[LandingController::class, 'prestasi'])->name('prestasi');

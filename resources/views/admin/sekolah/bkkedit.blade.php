@@ -57,8 +57,8 @@
                                  @enderror
                             </div>
                             <div class="form-group col-md-12">
-                                <label for="editor">Deskripsi Perusahaan</label>
-                                <textarea name="deskperusahaan" id="editor">{!!  $data->deskperusahaan !!}</textarea>
+                                <label for="editor1">Deskripsi Perusahaan</label>
+                                <textarea name="deskperusahaan" id="editor1">{!!  $data->deskperusahaan !!}</textarea>
                                 @error('deskperusahaan')
                                 <div class="alert alert-danger" role="alert">
                                     <strong>{{ $message }}</strong> 
@@ -90,6 +90,14 @@
 <script>
     ClassicEditor
         .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor1' ) )
         .catch( error => {
             console.error( error );
         } );

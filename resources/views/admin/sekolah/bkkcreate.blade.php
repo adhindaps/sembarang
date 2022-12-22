@@ -36,8 +36,8 @@
                                 <input type="text" name="alamat" class="form-control" id="inputPassword4"  placeholder="">
                               </div>
                             <div class="form-group col-md-12">
-                                <label for="editor">Deskripsi Perusahaan</label>
-                                <textarea name="deskperusahaan" id="editor"></textarea>
+                                <label for="editor1">Deskripsi Perusahaan</label>
+                                <textarea name="deskperusahaan" id="editor1"></textarea>
                               </div>
                           </div>
                           <div class="form-actions">
@@ -61,9 +61,18 @@
 @section('ck-editor')
 <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
 
+
 <script>
     ClassicEditor
         .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor1' ) )
         .catch( error => {
             console.error( error );
         } );

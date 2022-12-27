@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-xxl-3 col-lg-4">
                     <aside class="sidebar-area">
-                        <div class="widget widget_info">
+                        {{-- <div class="widget widget_info">
                             <div class="as-video"><img
                                     src="{{ asset('1/yeye/html/acadu/demo/assets/img/widget/video_1.jpg') }}"
                                     alt="video">
@@ -42,14 +42,14 @@
                                     <i class="fas fa-play"></i>
                                 </a>
                             </div>
-                        </div>
+                        </div> --}}
                         
                         <div class="widget">
                             <h4 class="widget_title">Gallery Posts</h4>
                             <div class="sidebar-gallery">
                                 @foreach ($fotoaxio as $foto)   
-                                <div class="gallery-thumb"><img src="{{asset ('foto/'. $foto->foto1 )}}"
-                                    width="100px"  alt="Gallery Image"></div>
+                                <img class="gg" src="{{asset ('axio/'. $foto->foto1 )}}"
+                                    alt="Gallery Image">
                                 @endforeach  
                             </div>
                         </div>

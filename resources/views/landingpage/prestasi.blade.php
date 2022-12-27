@@ -20,7 +20,7 @@
             @foreach ($data as $pr )
                         <div class="col-md-6 col-lg-4 col-xxl-3">
                             <div class="course-box style4">
-                                <div class="zz"><img src="foto/{{ $pr->fotopres }}" alt="course"> <span class="tag"></span></div>
+                                <img class="aa" src="foto/{{ $pr->fotopres }}" alt="course">
                                 <div class="course-content">
                                     <div class="course-author">
                                         <a href="#"><i class="far fa-user"></i>Admin</a>

@@ -96,7 +96,16 @@ class GaleryController extends Controller
         $data = Galery::find($id);
         $data->delete();
         return redirect('galeryindex')->with('success', 'Data Berhasil Dihapus');
-    
+    }
+    public function deletegaleriaxio($id){
+        $data = GaleriAxio::find($id);
+        $data->delete();
+        return redirect('galeriaxioindex');
+    }
+    public function deletegaleriecho($id){
+        $data = GaleriEcho::find($id);
+        $data->delete();
+        return redirect('galeriechoindex');
     }
 
     public function galeriaxioindex()
@@ -146,7 +155,6 @@ class GaleryController extends Controller
 
         ];
         $this->validate($request,[
-            'foto1' => 'required',
             'namakegiatan' => 'required|min:2|max:100',
            
         ] , $pesan );
@@ -214,7 +222,6 @@ class GaleryController extends Controller
 
         ];
         $this->validate($request,[
-            'foto11' => 'required',
             'namakegiatan' => 'required|min:2|max:100',
            
         ] , $pesan );

@@ -6,25 +6,26 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Ubah Kajur</h4>
-                    <form action="/kajurupdate/{{ $data->id }}" method="POST" enctype="multipart/form-data" >  
+                    <h4 class="card-title"> Kajur</h4>
+                    <form action="/kajurstore" method="POST" enctype="multipart/form-data" >  
                         @csrf
                         <div class="form-row">
                             <div class="form-group col-md-12">
                               <label for="inputPassword4">Foto</label>
-                              <img class="img mb-3" src="{{ asset('foto/' . $data->fotokajur) }}" alt="" style="width: 100px;">
-                              <input type="file" name="fotokajur" class="form-control" id="fotokajur" aria-describedby="emailHelp" value="{{ $data->fotokajur }}">
+                              <input type="file" name="fotokajur" class="form-control" id="fotokajur" aria-describedby="emailHelp" value="">
+                              <i style="float: left;font-size:12px;color:red">ukuran Foto Harus 450px x 350 px</i>
+                             
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Nama</label>
-                                <input type="text" name="nama" class="form-control" id="inputPassword4" value="{{ $data->nama }}"  placeholder="">
+                                <input type="text" name="nama" class="form-control" id="inputPassword4" value=""  placeholder="">
                               </div>
                               <div class="form-group col-md-12">
                                 <label for="inputPassword4">NIP</label>
-                                <input type="text" name="nip" class="form-control" id="inputPassword4" value="{{ $data->nip }}"  placeholder="">
+                                <input type="text" name="nip" class="form-control" id="inputPassword4" value=""  placeholder="">
                               </div>
                               <div class="form-group col-md-12">
-                               <label for="exampleInputEmail1" class="form-label">Jabatan</label>
+                               <label for="exampleInputEmail1" class="form-label">Kajur</label>
                                <select class="form-control" name="id_jurusan">
                                 @foreach($datajurusan as $dj)
                                 <option value="{{ $dj->id }}" >
@@ -62,6 +63,6 @@
         .catch( error => {
             console.error( error );
         } );
-</script> --}}
+</script> 
 
-@endsection
+@endsection--}}

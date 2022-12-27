@@ -13,6 +13,7 @@
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Foto</label>
                                 <input type="file" id="fotobk" name="fotobk" class="form-control" >
+                                <i style="float: left;font-size:12px;color:red">ukuran Foto Harus 150px x 200 px</i>
                                 @error('fotobk')
                                 <div class="alert alert-danger" role="alert">
                                     <strong>{{ $message }}</strong> 

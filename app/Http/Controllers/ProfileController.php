@@ -139,7 +139,17 @@ class ProfileController extends Controller
         return redirect()->route('blogindex')->with('sukses','Deletedata!');
 
     }
+    public function deletekategori($id)
+    {
+        $count = blog::where('id_kategori', $id)->count();
+        if($count > 0) {
+            return back()->with('gagal', 'Status masih digunakan!');
+        }
 
+        $data=Kategoriblog::find($id);
+        $data->delete();
+        return redirect('kategoriindex');
+    }
     public function kategoriindex()
     {
         $data=Kategoriblog::all();
@@ -231,7 +241,6 @@ class ProfileController extends Controller
 
         ];
         $this->validate($request,[
-            'foto' => 'required',
             'namaevent' => 'required|min:2|max:100',
             'tempat' => 'required|min:2|max:100',
             'tanggalevent' => 'required',
@@ -281,11 +290,19 @@ class ProfileController extends Controller
             'fotoecho' => 'required',
             'judul' => 'required',
             'deskripsi' => 'required',
+            'link' => 'required',
+            'jam' => 'required',
+            'lokasi' => 'required',
+            'alamat' => 'required',
         ]);
         $data = sudutecho::create([
             'fotoecho' => $request->fotoecho,
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
+            'link' => $request->link,
+            'jam' => $request->jam,
+            'lokasi' => $request->lokasi,
+            'alamat' => $request->alamat,
         ]);
         return redirect('echoindex');
     
@@ -294,8 +311,30 @@ class ProfileController extends Controller
     public function echoupdate(Request $request)
     {
         $data=sudutecho::find($request->id);
-        $data->update($request->all());
-        return redirect('echoindex');
+        if ($request->hasfile('fotoecho')) {
+            $foto = $request->file('fotoecho')->getClientOriginalName();
+            $request->file('fotoecho')->move('foto/', $foto);
+            $data->update([
+                'judul' => $request->judul,
+                'fotoecho' => $request->file('fotoecho')->getClientOriginalName(),
+                'deskripsi' => $request->deskripsi,
+                'link' => $request->link,
+                'jam' => $request->jam,
+                'lokasi' => $request->lokasi,
+                'alamat' => $request->alamat,
+            ]);
+            return redirect()->route('echoindex')->with('success', 'Data Berhasil Di Update');
+        } else {
+            $data->update([
+                'judul' => $request->judul,
+                'deskripsi' => $request->deskripsi,
+                'link' => $request->link,
+                'jam' => $request->jam,
+                'lokasi' => $request->lokasi,
+                'alamat' => $request->alamat,
+            ]);
+            return redirect()->route('echoindex')->with('success', 'Data Berhasil Di Update');
+        }
     }
     
     public function smbtnindex()
@@ -308,10 +347,12 @@ class ProfileController extends Controller
     {
         $this->validate($request, [
             'judul' => 'required',
+            'fotokepsek'=> 'required',
             'sambutan' => 'required',
         ]);
-        $data = sudutecho::create([
+        $data = Sambutan::create([
             'judul' => $request->judul,
+            'fotokepsek' => $request->fotokepsek,
             'sambutan' => $request->sambutan,
         ]);
         return redirect('smbtnindex');
@@ -321,8 +362,22 @@ class ProfileController extends Controller
     public function smbtnupdate(Request $request)
     {
         $data=Sambutan::find($request->id);
-        $data->update($request->all());
-        return redirect('smbtnguruindex');
+        if ($request->hasfile('fotokepsek')) {
+            $foto = $request->file('fotokepsek')->getClientOriginalName();
+            $request->file('fotokepsek')->move('foto/', $foto);
+            $data->update([
+                'judul' => $request->judul,
+                'fotokepsek' => $request->file('fotokepsek')->getClientOriginalName(),
+                'sambutan' => $request->sambutan,
+            ]);
+            return redirect()->route('smbtnindex')->with('success', 'Data Berhasil Di Update');
+        } else {
+            $data->update([
+                'judul' => $request->judul,
+                'sambutan' => $request->sambutan,
+            ]);
+            return redirect()->route('smbtnindex')->with('success', 'Data Berhasil Di Update');
+        }
     }
 
     public function smbtnguruindex()
@@ -337,7 +392,7 @@ class ProfileController extends Controller
             'nama' => 'required',
             'deskripsi' => 'required',
         ]);
-        $data = sudutecho::create([
+        $data = sambutan::create([
             'nama' => $request->nama,
             'deskripsi' => $request->deskripsi,
         ]);
@@ -422,31 +477,6 @@ class ProfileController extends Controller
 
     public function slideredit(Request $request, $id)
     {
-        $this->validate($request, [
-            'id_kategori' => 'required|not_in:0',
-            'lokasi' => 'required',
-            'nama_destinasi_wisata' => 'required',
-            'deskripsi' => 'required',
-            'foto' =>'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048|dimensions:min_width=100,min_height=100,max_width=1000,max_height=1000',
-            ]);
-
-        $data = Slider::find($id);
-        if ($request->hasfile('foto')) {
-            $foto = $request->file('foto')->getClientOriginalName();
-            $request->file('foto')->move('foto/', $foto);
-            $data->update([
-                'judul' => $request->judul,
-                'deskripsi' => $request->deskripsi,
-                'foto' => $request->file('foto')->getClientOriginalName(),
-            ]);
-            return redirect()->route('wisata')->with('success', 'Data Berhasil Di Update');
-        } else {
-            $data->update([
-                'judul' => $request->judul,
-                'deskripsi' => $request->deskripsi,
-            ]);
-            return redirect()->route('wisata')->with('success', 'Data Berhasil Di Update');
-        }
         $data = Slider::findOrfail($id);
         return view('admin.fitur.slideredit',compact('data'));
     }

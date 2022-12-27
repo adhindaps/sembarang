@@ -54,7 +54,7 @@
                         <div class="recent-post-wrap">
                             @foreach ($lowongan as $bkk)
                                 <div class="recent-post">
-                                    <div class="media-img"><a href="/blogdetail/{{ $bkk->id }}"><img
+                                    <div class="media-img"><a href="/blogdetail/{{ $bkk->id }}"><img class="gg"
                                                 src="{{ asset('foto/' . $bkk->fotobk) }}" alt="Blog Image"></a></div>
                                     <div class="media-body">
                                         <div class="recent-post-meta"><i

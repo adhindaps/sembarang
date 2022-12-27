@@ -12,15 +12,19 @@
     <link rel="icon" type="image/png" sizes="16x16" href="mpls/10.png">
     <title>ADMIN-SMK N 1 DLANGGU</title>
     <!-- Custom CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
-    <link href="{{ asset('admin/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}"
+        rel="stylesheet">
     <link href="{{ asset('admin/assets/extra-libs/c3/c3.min.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/assets/libs/chartist/dist/chartist.min.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="{{ asset('admin/assets/libs/fullcalendar/dist/fullcalendar.min.css') }}" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+        integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> --}}
     <link href="{{ asset('admin/dist/css/style.min.css') }}" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -62,7 +66,8 @@
                         <a href="index.html">
                             <b class="logo-icon">
                                 <!-- Dark Logo icon -->
-                                <img src="foto/smk.jpeg" height="100" width="230" alt="homepage" class="dark-logo" />
+                                <img src="foto/smk.jpeg" height="100" width="230" alt="homepage"
+                                    class="dark-logo" />
                                 <!-- Light Logo icon -->
                                 <img src="foto/smk.jpeg" alt="homepage" class="light-logo" />
                             </b>
@@ -95,12 +100,12 @@
                     <!-- toggle and nav items -->
                     <!-- ============================================================== -->
                     <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
-                        
+
                         <!-- End Notification -->
                         <!-- ============================================================== -->
                         <!-- create new -->
                         <!-- ============================================================== -->
-                      
+
                     </ul>
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
@@ -126,21 +131,20 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <img src="mpls/10.png" alt="user" class="rounded-circle"
-                                    width="40">
+                                <img src="mpls/10.png" alt="user" class="rounded-circle" width="40">
                                 <span class="ml-2 d-none d-lg-inline-block"><span>Hallo,</span> <span
-                                        class="text-dark">{{ Auth::user()->name }}</span> <i data-feather="chevron-down"
-                                        class="svg-icon"></i></span>
+                                        class="text-dark">{{ Auth::user()->name }}</span> <i
+                                        data-feather="chevron-down" class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
                                 <a class="dropdown-item" href="profileadmin"><i data-feather="user"
                                         class="svg-icon mr-2 ml-1"></i>
                                     Profil Saya</a>
-                               
+
                                 <a class="dropdown-item" href="/logout"><i data-feather="power"
                                         class="svg-icon mr-2 ml-1"></i>
                                     Keluar</a>
-                               
+
                             </div>
                         </li>
                         <!-- ============================================================== -->
@@ -168,56 +172,62 @@
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Tentang Sekolah</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                            aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
-                                class="hide-menu"> Profile Sekolah </span></a>
-                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                            <li class="sidebar-item"><a href="identitas" class="sidebar-link"><span
-                                        class="hide-menu"> Identitas Sekolah  </span></a>
-                            <li class="sidebar-item"><a href="sejarahindex" class="sidebar-link"><span
-                                        class="hide-menu"> Sejarah Sekolah</span></a>
-                            <li class="sidebar-item"><a href="prestasiindex" class="sidebar-link"><span
+                                aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
+                                    class="hide-menu"> Profile Sekolah </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="identitas" class="sidebar-link"><span
+                                            class="hide-menu"> Identitas Sekolah </span></a>
+                                <li class="sidebar-item"><a href="sejarahindex" class="sidebar-link"><span
+                                            class="hide-menu"> Sejarah Sekolah</span></a>
+                                <li class="sidebar-item"><a href="prestasiindex" class="sidebar-link"><span
                                             class="hide-menu"> Prestasi Sekolah</span></a>
-                            <li class="sidebar-item"><a href="visiindex" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="visiindex" class="sidebar-link"><span
                                             class="hide-menu"> Visi & Misi</span></a>
-                            <li class="sidebar-item"><a href="videoindex" class="sidebar-link"><span
-                                                class="hide-menu"> Video Profile</span></a>
-                            <li class="sidebar-item"><a href="aboutindex" class="sidebar-link"><span
-                                                    class="hide-menu"> Keunggulan</span></a>
-                        </ul>
+                                <li class="sidebar-item"><a href="videoindex" class="sidebar-link"><span
+                                            class="hide-menu"> Video Profile</span></a>
+                                <li class="sidebar-item"><a href="aboutindex" class="sidebar-link"><span
+                                            class="hide-menu"> Keunggulan</span></a>
+                            </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="smbtnindex"
-                            aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
-                            class="hide-menu">Sambutan </span></a></li>
+                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                                    class="hide-menu">Sambutan </span></a></li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Data Sekolah</span></li>
-                        
+
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                            aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
-                                class="hide-menu">Data Guru</span></a>
-                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                            <li class="sidebar-item"><a href="smbtnguruindex" class="sidebar-link"><span
-                                        class="hide-menu"> Sambutan Guru </span></a>
-                            <li class="sidebar-item"><a href="guruindex" class="sidebar-link"><span
-                                        class="hide-menu"> Guru </span></a>
-                        </ul>
+                                aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
+                                    class="hide-menu">Data Guru</span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="smbtnguruindex" class="sidebar-link"><span
+                                            class="hide-menu"> Sambutan Guru </span></a>
+                                <li class="sidebar-item"><a href="guruindex" class="sidebar-link"><span
+                                            class="hide-menu"> Guru </span></a>
+                                <li class="sidebar-item"><a href="status" class="sidebar-link"><span
+                                            class="hide-menu"> Status</span></a>
+                                <li class="sidebar-item"><a href="jabatan" class="sidebar-link"><span
+                                            class="hide-menu"> Jabatan </span></a>
+                                <li class="sidebar-item"><a href="subjabatan" class="sidebar-link"><span
+                                            class="hide-menu"> Sub Jabatan</span></a>
+                            </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                            aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
-                                class="hide-menu">Program</span></a>
-                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                            <li class="sidebar-item"><a href="jurusanindex" class="sidebar-link"><span
-                                        class="hide-menu"> Keahlian </span></a>
-                            <li class="sidebar-item"><a href="kajurindex" class="sidebar-link"><span
-                                        class="hide-menu"> Kajur </span></a>
-                            <li class="sidebar-item"><a href="extraindex" class="sidebar-link"><span
+                                aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                                    class="hide-menu">Program</span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="jurusanindex" class="sidebar-link"><span
+                                            class="hide-menu"> Keahlian </span></a>
+                                <li class="sidebar-item"><a href="kajurindex" class="sidebar-link"><span
+                                            class="hide-menu"> Kajur </span></a>
+                                <li class="sidebar-item"><a href="extraindex" class="sidebar-link"><span
                                             class="hide-menu"> Extrakulikuler </span></a>
-                        </ul>
+                            </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/bkkindex"
-                            aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                     class="hide-menu">BKK</span></a></li>
-                        
-                        
+
+
                         <li class="nav-small-cap"><span class="hide-menu">Fasilitas Sekolah</span></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="fasilitasindex"
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
@@ -227,74 +237,74 @@
                                             class="hide-menu"> Beasiswa
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="fasilitasindex" class="sidebar-link"><span
-                                    class="hide-menu">Fasilitas
-                                </span></a>
-                        </li>
+                                {{-- <li class="sidebar-item"><a href="fasilitasindex" class="sidebar-link"><span
+                                            class="hide-menu">Fasilitas
+                                        </span></a>
+                                </li> --}}
                                 <li class="sidebar-item"><a href="axioindex" class="sidebar-link"><span
                                             class="hide-menu"> Axio
                                         </span></a>
                                 </li>
                                 <li class="sidebar-item"><a href="galeriaxioindex" class="sidebar-link"><span
-                                    class="hide-menu"> Galeri Axio
-                                </span></a>
+                                            class="hide-menu"> Galeri Axio
+                                        </span></a>
                                 </li>
                                 <li class="sidebar-item"><a href="silarasindex" class="sidebar-link"><span
                                             class="hide-menu"> SILARAS
                                         </span></a>
                                 </li>
                                 <li class="sidebar-item"><a href="echoindex" class="sidebar-link"><span
-                                    class="hide-menu"> Echo
-                                </span></a> </li>
+                                            class="hide-menu"> Echo
+                                        </span></a> </li>
                                 <li class="sidebar-item"><a href="galeriechoindex" class="sidebar-link"><span
-                                    class="hide-menu"> Galeri Echo
-                                </span></a>
+                                            class="hide-menu"> Galeri Echo
+                                        </span></a>
                                 </li>
                             </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                            aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
-                                class="hide-menu">Halaman </span></a>
-                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                            <li class="sidebar-item"><a href="blogindex" class="sidebar-link"><span
-                                        class="hide-menu"> Blog
-                                    </span></a>
-                            </li>
-                            <li class="sidebar-item"><a href="kategoriindex" class="sidebar-link"><span
-                                class="hide-menu">  Kategori Blog
-                            </span></a></li>
-                            <li class="sidebar-item"><a href="eventindex" class="sidebar-link"><span
-                                        class="hide-menu"> Event </span></a>
-                            </li>
-                            <li class="sidebar-item"><a href="galeryindex" class="sidebar-link"><span
-                                        class="hide-menu"> Galerry </span></a></li>
-                            <li class="sidebar-item"><a href="patnerindex" class="sidebar-link"><span
+                                aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                                    class="hide-menu">Halaman </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="blogindex" class="sidebar-link"><span
+                                            class="hide-menu"> Blog
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="kategoriindex" class="sidebar-link"><span
+                                            class="hide-menu"> Kategori Blog
+                                        </span></a></li>
+                                <li class="sidebar-item"><a href="eventindex" class="sidebar-link"><span
+                                            class="hide-menu"> Event </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="galeryindex" class="sidebar-link"><span
+                                            class="hide-menu"> Galerry </span></a></li>
+                                <li class="sidebar-item"><a href="patnerindex" class="sidebar-link"><span
                                             class="hide-menu"> Kerjasama </span></a>
                                 </li>
-                            <li class="sidebar-item"><a href="sosmedindex" class="sidebar-link"><span
-                                    class="hide-menu"> Sosial Media </span></a>
+                                {{-- <li class="sidebar-item"><a href="sosmedindex" class="sidebar-link"><span
+                                            class="hide-menu"> Sosial Media </span></a>
+                                </li> --}}
+                            </ul>
                         </li>
-                        </ul>
-                    </li>
-                    <li class="nav-small-cap"><span class="hide-menu">Fitur</span></li>
-                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="slider"
-                        aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
-                                class="hide-menu">Slider</span></a></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Fitur</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="slider"
+                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                                    class="hide-menu">Slider</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                            aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
-                                class="hide-menu">Footer</span></a>
-                        <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                            <li class="sidebar-item"><a href="footerindex" class="sidebar-link"><span
-                                        class="hide-menu"> Footer
-                                    </span></a>
-                            </li>
-                            <li class="sidebar-item"><a href="footerlinkindex" class="sidebar-link"><span
-                                class="hide-menu">  Footer Link
-                            </span></a></li>
-                           
-                           
-                        </ul>
-                    </li>
+                                aria-expanded="false"><i data-feather="box" class="feather-icon"></i><span
+                                    class="hide-menu">Footer</span></a>
+                            <ul aria-expanded="false" class="collapse  first-level base-level-line">
+                                <li class="sidebar-item"><a href="footerindex" class="sidebar-link"><span
+                                            class="hide-menu"> Footer
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="footerlinkindex" class="sidebar-link"><span
+                                            class="hide-menu"> Footer Link
+                                        </span></a></li>
+
+
+                            </ul>
+                        </li>
                         {{-- <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Fasilitas</span></li>
 
@@ -310,7 +320,7 @@
                         </li> --}}
 
                         <li class="list-divider"></li>
-                        
+
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -325,17 +335,17 @@
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
         <div class="page-wrapper">
-            
-            
+
+
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-           
-{{-- ck-editor --}}
-@yield('ck-editor')
+
+            {{-- ck-editor --}}
+            @yield('ck-editor')
 
 </body>
 

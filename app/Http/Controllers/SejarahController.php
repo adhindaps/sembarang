@@ -123,7 +123,7 @@ class SejarahController extends Controller
         $data = Sejarah::create([
             'judul' => $request->judul,
             'deskaxio' => $request->deskaxio,
-            'vidio'=> $requrest->vidio,
+            'vidio'=> $request->vidio,
         ]);
         return redirect('axioindex');
     

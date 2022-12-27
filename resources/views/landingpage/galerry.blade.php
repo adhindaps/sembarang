@@ -19,7 +19,7 @@
             <div class="row gy-4 masonary-active">
                 <div class="row">
                     @foreach ($data as $foto)
-                        <div class="col-md-5 col-xxl-auto filter-item mb-xl-4">
+                        <div class="col-md-3 col-xxl-auto filter-item mb-xl-2">
                             <div class="gallery-card">
                                 <div class="gallery-img"><img class="pp"src="foto/{{ $foto->fotokgt }}"
                                         alt="gallery image"><a href="foto/{{ $foto->fotokgt }}"

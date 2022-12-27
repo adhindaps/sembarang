@@ -27,6 +27,8 @@
                             <div class="form-group col-md-6">
                                 <label for="inputPassword4">NIP</label>
                             <input type="text" name="nip" class="form-control" id="inputPassword4"  placeholder="">
+                            <i style="float: left;font-size:12px;color:red">ukuran Foto Harus 200px x 200 px</i>
+                             
                             @error('nip')
                             <div class="alert alert-danger" role="alert">
                                 <strong>{{ $message }}</strong> 
@@ -54,8 +56,13 @@
                                 </div>
                                   <div class="form-group col-md-6">
                                       <label for="inputPassword4">Status</label>
-                                      <input type="text" name="status" class="form-control" id="inputPassword4"  placeholder="">
-                                      @error('status')
+                                      <select class="form-control" name="status_id">
+                                        @foreach ($status as $st )
+<option value="{{$st->id}}">{{$st->status}}</option>
+                                            
+                                        @endforeach
+                                      </select>
+                                      @error('status_id')
                                       <div class="alert alert-danger" role="alert">
                                           <strong>{{ $message }}</strong> 
                                       </div>
@@ -63,8 +70,13 @@
                                     </div>
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Jabatan</label>
-                                <input type="text" name="jabatan" class="form-control" id="inputPassword4"  placeholder="">
-                                @error('jabatan')
+                                <select class="form-control" name="jabatan_id">
+                                    @foreach ($jabatan as $jt )
+                                    <option value="{{$jt->id}}">{{$jt->jabatan}}</option>
+                                                                                
+                                                                            @endforeach
+                                </select>
+                                @error('jabatan_id')
                                 <div class="alert alert-danger" role="alert">
                                     <strong>{{ $message }}</strong> 
                                 </div>
@@ -72,12 +84,17 @@
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4"> Sub Jabatan</label>
-                                <input type="text" name="subjabatan" class="form-control" id="inputPassword4"  placeholder="">
-                                @error('subjabatan')
+                                <select class="form-control" name="subjabatan_id">
+                                    @foreach ($subjabatan as $stb )
+<option value="{{$stb->id}}">{{$stb->subjabatan}}</option>
+                                            
+                                        @endforeach
+                                </select>
+                                {{-- @error('subjabatan')
                                 <div class="alert alert-danger" role="alert">
                                     <strong>{{ $message }}</strong> 
                                 </div>
-                                 @enderror
+                                 @enderror --}}
                             </div>
                           </div>
                           <div class="form-actions">

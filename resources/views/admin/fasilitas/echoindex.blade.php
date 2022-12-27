@@ -16,6 +16,7 @@
                                 <label for="inputPassword4">Foto</label>
                                 <img class="img mb-3" src="foto/{{ $data->fotoecho }}" alt="" style="width: 100px;">
                                  <input type="file" name="fotoecho" class="form-control" id="fotoecho" aria-describedby="emailHelp" value="{{ $data->fotoecho }}">
+                                 <i style="float: left;font-size:12px;color:red">ukuran Foto Harus 350px x 700px</i>
                               </div>
                             <div class="form-group col-md-12">
                               <label for="inputPassword4">Judul</label>
@@ -26,7 +27,7 @@
                                 <textarea name="deskripsi" id="editor">{!! $data->deskripsi !!}</textarea>
                               </div>
                               <div class="form-group col-md-12">
-                                <label for="inputPassword4">Link</label>
+                                <label for="inputPassword4">Link YouTube</label>
                                 <input type="text" value="{{$data->link}}" name="link" class="form-control" id="inputPassword4"  placeholder="">
                               </div>
                               <div class="form-group col-md-12">

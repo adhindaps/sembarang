@@ -13,7 +13,7 @@
                       <a href="/extracreate" class="btn btn-primary" >Tambah </a> 
 
                       <div class="row">
-                        <table class="table table-bordered" id="id_table">
+                        <table class="table table-bordered" id="id_table" style="border-right: 1px solid #E5E7E9">
                                <thead>
                                 <tr>
                                     <th scope="col">#</th>
@@ -36,7 +36,7 @@
                                     <td>  <img alt=" " src="foto/{{ $ex->logo }}"width="100px"> </td>
                                     <td>{{ $ex->subjudul }}</td>
                                     <td>{{ $ex->extra }}</td>
-                                    <td>{!! $ex->deskripsi !!}</td>
+                                    <td  style="word-break:break-word;">{!! $ex->deskripsi !!}</td>
                                     <td>
                                     <a href="/extraedit/{{ $ex->id }}" class="btn btn-warning">
                                         <i class="fas fa-pencil-alt"></i></a>

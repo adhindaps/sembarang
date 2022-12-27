@@ -19,11 +19,19 @@
             @foreach ($data as $data )
             <div class="row">
                 <div class="col-xxl-9 col-lg-8">
-                    <div class="event-details">
-                        <div class="event-img"><img src="{{ asset('foto/' . $data->foto) }}" width="500" alt="Event Image"></div>
-                        <h3 class="h3 mt-n2">{{ $data->namaevent }}</h3>
-                        <p class="mb-30">{!! $data->deskripsi !!}</p>
+                    <div class="as-blog blog-single">
+                       
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <div class="blog-img"><img class="zz" src="{{asset('foto/'.$data->foto)}}" alt="Blog Image"> </div>
+                                <a href="#"><i class="far fa-user"></i>Admin</a>
+                                <a href="#"><i class="far fa-clock"></i>{{ $data->created_at}}</a>
+                            </div>
+                            <h2 class="blog-title"> {{ $data->judul }}</h2> 
+                            <p>{!! $data->deskripsi!!}</p>              
+                        </div>
                     </div>
+
                 </div>
                 <div class="col-xxl-3 col-lg-4">
                     <aside class="sidebar-area">

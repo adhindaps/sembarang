@@ -14,6 +14,8 @@
                               <label for="inputPassword4">Foto</label>
                               <img class="img mb-3" src="{{ asset('foto/' . $data->fotobk) }}" alt="" style="width: 100px;">
                               <input type="file" name="fotobk" class="form-control" id="fotobk" aria-describedby="emailHelp" value="{{ $data->fotobk }}">
+                              <i style="float: left;font-size:12px;color:red">Abaikan Jika Tidak Merubah Foto</i>
+                              
                               @error('fotobk')
                               <div class="alert alert-danger" role="alert">
                                   <strong>{{ $message }}</strong> 

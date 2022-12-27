@@ -49,7 +49,7 @@ class ExtraController extends Controller
             'fotoex' => 'required',
             'logo' => 'required',
             'subjudul' => 'required|min:2|max:100',
-            'extra' => 'required|min:11|max:100',
+            'extra' => 'required',
             'deskripsi' => 'required',
         ] , $pesan );
 
@@ -113,10 +113,8 @@ class ExtraController extends Controller
 
         ];
         $this->validate($request,[
-            'fotoex' => 'required',
-            'logo' => 'required',
             'subjudul' => 'required|min:2|max:100',
-            'extra' => 'required|min:11|max:100',
+            'extra' => 'required|max:100',
             'deskripsi' => 'required',
         ] , $pesan );
 
@@ -149,7 +147,7 @@ class ExtraController extends Controller
     {
         $data = Extra::find($id);
         $data->delete();
-        return redirect()->route('guruindex')->with('success', 'Data Berhasil Dihapus');
+        return redirect()->route('extraindex')->with('success', 'Data Berhasil Dihapus');
     
     }
 
@@ -198,7 +196,6 @@ class ExtraController extends Controller
 
         ];
         $this->validate($request,[
-            'logo' => 'required',
             'namasekolah' => 'required|min:2|max:100',
             'deskripsi' => 'required',
         ] , $pesan );
@@ -224,6 +221,10 @@ class ExtraController extends Controller
         $data=FooterLink::all();
         return view('admin.fitur.footerlink',compact('data'));
     }
+    public function footercreate()
+    {
+        return view('admin.fitur.footerlinkcreate');
+    }
     public function footerlinkstore(Request $request)
     {
         $data = FooterLink::create([
@@ -245,5 +246,12 @@ class ExtraController extends Controller
         $data->update($request->all());
         return redirect('footerlinkindex');
     }
+    public function footerhapus($id)
+    {
+        $data = FooterLink::find($id);
+        $data->delete();
+        return redirect()->route('footerlinkindex')->with('success', 'Data Berhasil Dihapus');
     
+    }
+
 }

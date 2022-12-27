@@ -101,9 +101,8 @@ class JurusanController extends Controller
 
         ];
         $this->validate($request,[
-            'foto' => 'required',
             'jurusan' => 'required|min:2|max:100',
-            'deskripsi' => 'required|min:11|max:100',
+            'deskripsi' => 'required',
         ] , $pesan );
         $data = DB::table('jurusans')->where('id',$id);
         if($request->hasFile('foto')){
@@ -181,13 +180,13 @@ class JurusanController extends Controller
 
         ];
         $this->validate($request,[
-            'fotokajur' => 'required',
+           
             'nama' => 'required|min:2|max:100',
-            'nip' => 'required|min:11|max:100',
+            'nip' => 'required',
         ] , $pesan );
         $data = DB::table('kajurs')->where('id',$id);
         if($request->hasFile('fotokajur')){
-            $pindah = $request->file('fotokajur')->move(public_path().'\storage', $request->file('fotokajur')->getClientOriginalName());
+            $pindah = $request->file('fotokajur')->move('foto/', $request->file('fotokajur')->getClientOriginalName());
             $data = kajur::find($id)->update([
                 'fotokajur' => $request->file('fotokajur')->getClientOriginalName(),
                'nama' => $request->nama,

@@ -52,13 +52,13 @@ Route::get('/kontak',[LandingController::class, 'kontak'])->name('kontak');
 Route::get('/profile',[LandingController::class, 'profile'])->name('profile');
 Route::get('/visi',[LandingController::class, 'visi'])->name('visi');
 Route::get('/dataguru',[LandingController::class, 'dataguru'])->name('dataguru');
-Route::get('/blog',[LandingController::class, 'blog'])->name('blog');
+Route::get('/blogg',[LandingController::class, 'blog'])->name('blog');
 Route::get('/events',[LandingController::class, 'events'])->name('events');
 Route::get('/detailevents/{id}',[LandingController::class, 'detailevents'])->name('detailevents');
-Route::get('/echo',[LandingController::class, 'echo'])->name('echo');
+Route::get('/echoo',[LandingController::class, 'echo'])->name('echo');
 Route::get('/blogdetail/{id}',[LandingController::class, 'blogdetail'])->name('blogdetail');
 Route::get('/extrakulikuler',[LandingController::class, 'extrakulikuler'])->name('extrakulikuler');
-Route::get('/axio',[LandingController::class, 'axio'])->name('axio');
+Route::get('/axioo',[LandingController::class, 'axio'])->name('axio');
 Route::get('/silaras',[LandingController::class, 'silaras'])->name('silaras');
 Route::get('/beasiswa',[LandingController::class, 'beasiswa'])->name('beasiswa');
 Route::get('/bkkk',[LandingController::class, 'bkk'])->name('bkk');
@@ -102,7 +102,7 @@ Route::get('/kategoricreate',[ProfileController::class, 'kategoricreate'])->name
 Route::post('/kategoristore',[ProfileController::class, 'kategoristore'])->name('kategoristore');
 Route::get('/kategoriedit/{id}',[ProfileController::class, 'kategoriedit'])->name('kategoriedit');
 Route::post('/kategoriupdate/{id}',[ProfileController::class, 'kategoriupdate'])->name('kategoriupdate');
-Route::post('/deletekategori/{id}',[ProfileController::class, 'deletekategori'])->name('deletekategori');
+Route::get('/deletekategori/{id}',[ProfileController::class, 'deletekategori'])->name('deletekategori');
 
 //////////////////////////////////EVENT-ADMIN////////////////////////////////
 Route::get('/eventindex', [ProfileController::class, 'index'])->name('eventindex')->middleware('auth');
@@ -226,6 +226,27 @@ Route::get('/guruedit/{id}',[GuruController::class, 'guruedit'])->name('guruedit
 Route::post('/guruupdate/{id}',[GuruController::class, 'guruupdate'])->name('guruupdate');
 Route::get('/deleteguru/{id}',[GuruController::class, 'destroy'])->name('destroy');
 
+Route::get('/status',[GuruController::class, 'status'])->name('status')->middleware('auth');
+Route::get('/statustambah',[GuruController::class, 'statustambah'])->name('statustambah');
+Route::post('/statusstore',[GuruController::class, 'statusstore'])->name('statusstore');
+Route::get('/statusedit/{id}',[GuruController::class, 'statusedit'])->name('statusedit');
+Route::post('/statusupdate/{id}',[GuruController::class, 'statusupdate'])->name('statusupdate');
+Route::get('/deletestatus/{id}',[GuruController::class, 'deletestatus'])->name('deletestatus');
+
+Route::get('/jabatan',[GuruController::class, 'jabatan'])->name('jabatan')->middleware('auth');
+Route::get('/jabatantambah',[GuruController::class, 'jabatantambah'])->name('jabatantambah');
+Route::post('/jabatanstore',[GuruController::class, 'jabatanstore'])->name('jabatanstore');
+Route::get('/jabatanedit/{id}',[GuruController::class, 'jabatanedit'])->name('jabatanedit');
+Route::post('/jabatanupdate/{id}',[GuruController::class, 'jabatanupdate'])->name('jabatanupdate');
+Route::get('/deletejabatan/{id}',[GuruController::class, 'deletejabatan'])->name('deletejabatan');
+
+Route::get('/subjabatan',[GuruController::class, 'subjabatan'])->name('subjabatan')->middleware('auth');
+Route::get('/subjabatantambah',[GuruController::class, 'subjabatantambah'])->name('subjabatantambah');
+Route::post('/subjabatanstore',[GuruController::class, 'subjabatanstore'])->name('subjabatanstore');
+Route::get('/subjabatanedit/{id}',[GuruController::class, 'subjabatanedit'])->name('subjabatanedit');
+Route::post('/subjabatanupdate/{id}',[GuruController::class, 'subjabatanupdate'])->name('subjabatanupdate');
+Route::get('/deletesubjabatan/{id}',[GuruController::class, 'deletesubjabatan'])->name('deletesubjabatan');
+
 //////////////////////////////////GALERI-ADMIN////////////////////////////////
 Route::get('/galeryindex',[GaleryController::class, 'galeryindex'])->name('galeryindex')->middleware('auth');
 Route::get('/galerycreate',[GaleryController::class, 'galerycreate'])->name('galerycreate');
@@ -238,7 +259,7 @@ Route::get('/galeriaxiocreate',[GaleryController::class, 'galeriaxiocreate'])->n
 Route::post('/galeriaxiostore',[GaleryController::class, 'galeriaxiostore'])->name('galeriaxiostore');
 Route::get('/galeriaxioedit/{id}',[GaleryController::class, 'galeriaxioedit'])->name('galeriaxioedit');
 Route::post('/galeriaxioupdate/{id}',[GaleryController::class, 'galeriaxioupdate'])->name('galeriaxioupdate');
-Route::get('/deletegaleriaxio/{id}',[GaleryController::class, 'destroy'])->name('destroy');
+Route::get('/deletegaleriaxio/{id}',[GaleryController::class, 'deletegaleriaxio'])->name('deletegaleriaxio');
 
 //////////////////////////////////GALERIECHO-ADMIN////////////////////////////////
 Route::get('/galeriechoindex',[GaleryController::class, 'galeriechoindex'])->name('galeriechoindex')->middleware('auth');
@@ -246,7 +267,7 @@ Route::get('/galeriechocreate',[GaleryController::class, 'galeriechocreate'])->n
 Route::post('/galeriechostore',[GaleryController::class, 'galeriechostore'])->name('galeriechostore');
 Route::get('/galeriechoedit/{id}',[GaleryController::class, 'galeriechoedit'])->name('galeriechoedit');
 Route::post('/galeriechoupdate/{id}',[GaleryController::class, 'galeriechoupdate'])->name('galeriechoupdate');
-Route::get('/deletegaleriecho/{id}',[GaleryController::class, 'destroy'])->name('destroy');
+Route::get('/deletegaleriecho/{id}',[GaleryController::class, 'deletegaleriecho'])->name('deletegaleriecho');
 
 //////////////////////////////////EXTRA-ADMIN////////////////////////////////
 Route::get('/extraindex',[ExtraController::class, 'extraindex'])->name('extraindex')->middleware('auth');
@@ -270,7 +291,7 @@ Route::get('/footerlinkcreate',[ExtraController::class, 'footerlinkcreate'])->na
 Route::post('/footerlinkstore',[ExtraController::class, 'footerlinkstore'])->name('footerlinkstore');
 Route::get('/footerlinkedit/{id}',[ExtraController::class, 'footerlinkedit'])->name('footerlinkedit');
 Route::post('/footerlinkupdate/{id}',[ExtraController::class, 'footerlinkupdate'])->name('footerlinkupdate');
-Route::get('/deletefooterlink/{id}',[ExtraController::class, 'destroy'])->name('destroy');
+Route::get('/deletefooterlink/{id}',[ExtraController::class, 'footerhapus'])->name('footerhapus');
 
 //////////////////////////////////SLIDER-ADMIN////////////////////////////////
 Route::get('/slider',[ProfileController::class, 'slider'])->name('slider')->middleware('auth');

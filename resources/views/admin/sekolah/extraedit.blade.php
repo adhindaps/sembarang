@@ -14,6 +14,8 @@
                               <label for="inputPassword4">Foto</label>
                               <img class="img mb-3" src="{{ asset('foto/' . $data->fotoex) }}" alt="" style="width: 100px;">
                               <input type="file" name="fotoex" class="form-control" id="fotoex" aria-describedby="emailHelp" value="{{ $data->fotoex }}">
+                              <i style="float: left;font-size:12px;color:red">Abaikan Jika Tidak Merubah Foto</i>
+                             
                               @error('fotoex')
                               <div class="alert alert-danger" role="alert">
                                   <strong>{{ $message }}</strong> 
@@ -24,6 +26,8 @@
                                 <label for="inputPassword4">Logo</label>
                                 <img class="img mb-3" src="{{ asset('foto/' . $data->logo) }}" alt="" style="width: 100px;">
                                 <input type="file" name="logo" class="form-control" id="logo" aria-describedby="emailHelp" value="{{ $data->logo }}">
+                                <i style="float: left;font-size:12px;color:red">Abaikan Jika Tidak Merubah Foto</i>
+                             
                                 @error('logo')
                                 <div class="alert alert-danger" role="alert">
                                     <strong>{{ $message }}</strong> 

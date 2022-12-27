@@ -31,7 +31,7 @@
             @foreach ($data as $row)
                 <div class="col-md-6 col-xl-4">
                     <div class="blog-card">
-                        <img class="imgg" src="{{asset('foto/'.$row->foto )}}" width="100px" alt="Gambar">
+                        <img class="imgg" src="{{asset('blog/'.$row->foto )}}" width="100px" alt="Gambar">
                         <div class="blog-content">
                             <div class="blog-meta style2">
                                 <a href="#"><i
@@ -39,10 +39,13 @@
                                 <a href="#"><i class="far fa-folder"></i>{{ $row->kategori->kategori }}</a>
                             </div>
                             <h6 class="overflow1" class="blog-title">{{ $row->judul }}</h6>
-                            <a class="link-btn" href="/blogdetail/{{$row->id}}">Baca Lebih Detail<i
-                                    class="fas fa-arrow-right"></i></a>
+                            <a class="link-btn" href="/blogdetail/{{$row->id}}">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
+                            <br/>
+                            <br/>
                         </div>
                     </div>
+                    <br/>
+                    <br/>
                 </div>
             @endforeach
             {{ $data->links('vendor.pagination.default') }}

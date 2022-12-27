@@ -45,7 +45,7 @@
                             <div class="recent-post-wrap">
                                 @foreach ($blog as $bg)          
                                 <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
+                                    <div class="media-img"><a href="blog-details.html"><img class="gg"
                                                 src="{{ asset('foto/' . $bg->foto) }}" alt="Blog Image"></a></div>
                                     <div class="media-body">
                                         <div class="recent-post-meta"><a href="/blogdetail/{{$bg->id}}"><i

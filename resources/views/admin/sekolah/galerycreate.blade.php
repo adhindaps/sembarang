@@ -16,8 +16,10 @@
                               </div>
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Foto</label>
-                                <input type="file" id="fotokgt" name="fotokgt" class="form-control" >
-                              </div>
+                             <input type="file" id="fotokgt" name="fotokgt" class="form-control" >
+                             <i style="float: left;font-size:12px;color:red">ukuran Foto Harus 300px x 300 px</i>
+                             
+                            </div>
                           </div>
                           <div class="form-actions">
                             <div class="text-right">

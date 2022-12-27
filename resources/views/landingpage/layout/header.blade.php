@@ -22,9 +22,9 @@
                             <li>
                                 @foreach ($sosmed as $sos )
                                 <div class="header-social">
-                                    <a href="{{ $sos->sosmed }}"><i class="fab fa-instagram "width="100px"></i></a>
-                                     <a href="https://twitter.com/HumasSMKN1DLG"><i class="fab fa-twitter"></i></a>
-                                      
+                                    <a href="{{ $sos->sosmed }}"><i class="{{$sos->foto}}"></i></a>
+                                    <a href="https://www.facebook.com/humassmkn1dlanggumojokerto"><i class="fab fa-facebook-f"></i></a>
+                                     <a href="https://twitter.com/HumasSMKN1DLG"><i class="fab fa-twitter"></i></a>                                    
                                        <a href="https://www.instagram.com/humas_smkn1dlanggu/"><i class="fab fa-instagram"></i></a>
                                         <a href="https://www.youtube.com/channel/UC9l3e9tfY3P-grNXww2Mz_A"><i class="fab fa-youtube"></i></a>
                                 </div>
@@ -67,7 +67,7 @@
                                                     </li>
                                                     <br/>
                                                     <li>
-                                                        <a href="http://lsp.smkn1dlanggu.sch.id/#">LSP</a>
+                                                        <a href="http://lsp.smkn1dlanggu.sch.id/#" target="_blank">LSP</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -83,7 +83,7 @@
                                                     </li>
                                                    <br/>           
                                                    <li>
-                                                    <a href="prestasi">Prestasi Sekolah</a>
+                                                    <a href="prestasi">Prestasi</a>
                                                    </li>
                                                    <br/>  
                                                    <li>
@@ -93,7 +93,7 @@
                                             </li>
                                     
                                             <li>
-                                                <a href="bkk">BKK</a>
+                                                <a href="bkkk">BKK</a>
                                             </li>
                                             <li>
                                                 <a href="kontak">Kontak</a>

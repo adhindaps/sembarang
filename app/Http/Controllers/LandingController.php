@@ -22,6 +22,8 @@ use App\Models\Footer;
 use App\Models\FooterLink;
 use App\Models\GaleriAxio;
 use App\Models\GaleriEcho;
+use App\Models\Jabatan;
+use App\Models\Subjabatan;
 use App\Models\Kajur;
 use App\Models\Kategoriblog;
 use App\Models\Sambutan;
@@ -29,12 +31,15 @@ use App\Models\Slider;
 use App\Models\Patner;
 use App\Models\Silaras;
 use App\Models\Sosmed;
+use App\Models\Status;
 use App\Models\Video;
 
 class LandingController extends Controller
 {
     public function index(){
         $data=Guru::all();
+        $jabatan=Guru::with( 'subjabatan');
+        $status=Subjabatan::all();
         $gakenek=blog::all();
         $sambutan=Sambutan::all();
         $about=About::all();
@@ -47,7 +52,7 @@ class LandingController extends Controller
         $sosmed=Sosmed::all();
         $email=Profile::all();
         // $data=sejarah
-        return view('landingpage.index', compact('data','gakenek', 'sambutan', 'about', 'event', 'slider', 'patner', 'vidio', 'footer', 'footerlink', 'sosmed', 'email'));
+        return view('landingpage.index', compact('data','jabatan', 'status', 'gakenek', 'sambutan', 'about', 'event', 'slider', 'patner', 'vidio', 'footer', 'footerlink', 'sosmed', 'email'));
     }
 
     public function header(Request $request)
@@ -78,7 +83,8 @@ class LandingController extends Controller
         $footer=Footer::all();
         $sosmed=Sosmed::all();
         $email=Profile::all();
-        return view('landingpage.jurusan.detail',compact('data','kj','kajur', 'footer', 'footerlink', 'sosmed', 'email'));
+        $guru=Guru::with('subjabatan')->where('subjabatan_id','=',$id)->get();
+        return view('landingpage.jurusan.detail',compact('data','kj','kajur', 'footer', 'footerlink', 'sosmed', 'email','guru'));
     }
 
     public function profile(Request $request)
@@ -90,8 +96,9 @@ class LandingController extends Controller
         $footer=Footer::all();
         $sosmed=Sosmed::all();
         $email=Profile::all();
-        $foto=Guru::where('jabatan.kepala sekolah');
-        return view('landingpage.profile', compact('data', 'visi', 'footer', 'footerlink', 'sosmed', 'email', 'foto'));
+        $kepalasekolah=Guru::with('subjabatan')->where('jabatan_id','=',2)->firstOrFail();
+        $foto=Guru::with('subjabatan')->where('jabatan_id','=',1)->get();
+        return view('landingpage.profile', compact('data', 'visi', 'footer', 'footerlink', 'sosmed', 'email', 'foto','kepalasekolah'));
         
     }
     
@@ -119,9 +126,13 @@ class LandingController extends Controller
         $footerlink=FooterLink::all();
         $footer=Footer::all();
         $data=Guru::all();
+        $jabatan=Guru::with('jabatan', 'status', 'subjabatan');
+      
+        $status=Status::all();
+        // $subjabatan=Guru::with('subjabatan');
         $sosmed=Sosmed::all();
         $email=Profile::all();
-        return view('landingpage.dataguru',compact('data', 'footer', 'footerlink', 'sosmed', 'email'));
+        return view('landingpage.dataguru',compact('data', 'footer', 'footerlink', 'jabatan', 'status',  'sosmed', 'email'));
     }
     public function blog(Request $request)
     {

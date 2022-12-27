@@ -9,10 +9,10 @@
                     <h4 class="card-title">KAJUR</h4>
                     <h6 class="card-subtitle">
                       </h6>
-                      {{-- <a href="/jurusancreate" class="btn btn-primary" >Tambah </a>  --}}
+                      <a href="/kajurcreate" class="btn btn-primary" >Tambah </a> 
 
                       <div class="row">
-                        <table class="table table-bordered" id="id_table">
+                        <table class="table table-bordered" id="id_table" style="border-right: 1px solid #E5E7E9">
                            <thead>
                                 <tr>
                                     <th scope="col">#</th>
@@ -30,7 +30,7 @@
                             @foreach ($data as $jur)
                                 <tr>
                                     <th scope="jur">{{ $no++ }}</th>
-                                    <td>  <img alt=" " src="{{ asset('foto/lila.jpg')}}"width="100px"> </td>
+                                    <td>  <img alt=" " src="foto/{{ $jur->fotokajur}} "width="100px"> </td>
                                     <td>{{ $jur->nama }}</td>
                                     <td>{{ $jur->nip }}</td>
                                     <td>{{ $jur->jurusan->jurusan }}</td>
@@ -47,7 +47,6 @@
                     </div>
                 </div>
             </div>
-    
 </div>
 </div>
 

@@ -12,9 +12,10 @@
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Foto</label>
-                                <img class="img mb-3" src="{{ asset('foto/' . $data->fotoguru) }}" alt="" style="width: 100px;">
+                                <img class="img mb-3" src="{{ asset('guru/' . $data->fotoguru) }}" alt="" style="width: 100px;">
                                 <input type="file" name="fotoguru" class="form-control" id="fotoguru" aria-describedby="emailHelp" value="{{ $data->fotoguru }}">
-
+                                <i style="float: left;font-size:12px;color:red">Abaikan Jika Tidak Merubah Foto</i>
+                             
                             </div>
                             <div class="form-group col-md-12">
                               <label for="inputPassword4">Nama</label>
@@ -54,30 +55,33 @@
                                 </div>
                                   <div class="form-group col-md-6">
                                       <label for="inputPassword4">Status</label>
-                                      <input type="text" name="status" class="form-control" id="inputPassword4" value="{{ $data->status }}" placeholder="">
-                                      @error('status')
-                                      <div class="alert alert-danger" role="alert">
-                                          <strong>{{ $message }}</strong> 
-                                      </div>
-                                       @enderror
+                                      <select class="form-control" name="status_id">
+                                        @foreach($guru as $dj)
+                                        <option value="{{ $dj->id }}" @if ($data->status->id == $dj->id) selected @endif>
+                                        {{ $dj->status }}
+                                    </option>
+                                    @endforeach
+                                       </select>
                                     </div>
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Jabatan</label>
-                                <input type="text" name="jabatan" class="form-control" id="inputPassword4" value="{{ $data->jabatan }}" placeholder="">
-                                @error('jabatan')
-                                <div class="alert alert-danger" role="alert">
-                                    <strong>{{ $message }}</strong> 
-                                </div>
-                                 @enderror
+                                <select class="form-control" name="jabatan_id">
+                                    @foreach($jabatan as $dj)
+                                    <option value="{{ $dj->id }}" @if ($data->jabatan->id == $dj->id) selected @endif>
+                                    {{ $dj->jabatan }}
+                                </option>
+                                @endforeach
+                                   </select>
                             </div>
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Sub Jabatan</label>
-                                <input type="text" name="subjabatan" class="form-control" id="inputPassword4" value="{{ $data->subjabatan }}" placeholder="">
-                                @error('subjabatan')
-                                <div class="alert alert-danger" role="alert">
-                                    <strong>{{ $message }}</strong> 
-                                </div>
-                                 @enderror
+                                <select class="form-control" name="subjabatan_id">
+                                    @foreach($subjabatan as $dj)
+                                    <option value="{{ $dj->id }}" @if ($data->subjabatan->id == $dj->id) selected @endif>
+                                    {{ $dj->subjabatan }}
+                                </option>
+                                @endforeach
+                                   </select>
                             </div>
                           </div>
                           <div class="form-actions">

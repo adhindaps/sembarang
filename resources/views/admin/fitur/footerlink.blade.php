@@ -9,7 +9,7 @@
                             <h4 class="card-title">Footer Link </h4>
                             <h6 class="card-subtitle">
                             </h6>
-                            {{-- <a href="/slidercreate" type="button" class="btn btn-primary">Tambah+</a> --}}
+                            <a href="/footercreate" type="button" class="btn btn-primary">Tambah+</a> 
                             <div class="row">
 
                                 @if ($message = Session::get('success'))
@@ -39,6 +39,9 @@
                                                 <td>
                                                     <a href="/footerlinkedit/{{ $footer->id }}" class="btn btn-warning"><i
                                                             class="fas fa-pencil-alt"></i></a>
+                                                              <a href="#" class="btn btn-danger deletefooterlink"
+                                        data-id="{{ $footer->id }}" data-footerlink="{{ $footer->footerlink }}">
+                                        <i class=" fas fa-trash"></i></a>
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -56,12 +59,12 @@
                 });
             </script>
             <script>
-                $('.deleteslider').click(function() {
-                    var sliderid = $(this).attr('data-id');
-                    var slider = $(this).attr('data-slider');
+                $('.deletefooterlink').click(function() {
+                    var footerlinkid = $(this).attr('data-id');
+                    var footerlink = $(this).attr('data-footerlink');
                     Swal.fire({
                         title: 'Apakah Kamu yakin?',
-                        text: "Menghapus slider " + slider + "",
+                        text: "Menghapus footerlink " + footerlink + "",
                         icon: 'warning',
                         showCancelButton: true,
                         confirmButtonColor: '#3085d6',
@@ -69,10 +72,10 @@
                         confirmButtonText: 'Ya, hapus!'
                     }).then((result) => {
                         if (result.isConfirmed) {
-                            window.location = "/deleteslider/" + sliderid + ""
+                            window.location = "/deletefooterlink/" + footerlinkid + ""
                             Swal.fire(
                                 'Terhapus!',
-                                'data ' + slider + ' terhapus',
+                                'data ' + footerlink + ' terhapus',
                                 'success'
                             )
                         }

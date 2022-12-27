@@ -34,9 +34,15 @@
 }
 
 .zz{
-    height: 300px !important;
-    width: 00px !important;
+    height: 350px !important;
+    width: 700px !important;
 }
+
+.aa{
+    height: 200px !important;
+    width: 360px !important;
+}
+
 
 .overflow {
     overflow: hidden;
@@ -49,8 +55,9 @@
 .overflow1 {
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     display: -webkit-box;
 }
+
 

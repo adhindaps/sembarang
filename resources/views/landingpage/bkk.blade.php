@@ -31,7 +31,7 @@
                                     data-bg-src="/foto/bg1.jpg">
                                     <div class="title-area mb-40"><span class="sub-title"><i
                                                 class="fal fa-book me-2"></i>Lowongan Kerja</span>
-                                        <h4 class="sec-title">{{ $bk->perusahaan }}</h4>
+                                        <h5bkk class="overflow1" class="sec-title">{{ $bk->perusahaan }}</h5bkk>
                                     </div><a href="bkkdetail/{{$bk->id}}" class="as-btn">Selengkapnya<i
                                             class="fas fa-arrow-right ms-2"></i></a>
                                 </div>

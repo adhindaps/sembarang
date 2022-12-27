@@ -7,7 +7,7 @@
                         <div class="as-widget-about text-white">
                             @foreach ($footer as $footer )
                             <div id="about">
-                                <img src="{{asset('foto'. $footer->logo )}}" alt="smkn1dlanggu">
+                                <img src="{{asset('foto/'. $footer->logo )}}" width="100px">
                                 {{ $footer->namasekolah }}<br/>{!! $footer->deskripsi !!}
                             </div>
                             @endforeach
@@ -44,7 +44,7 @@
                         <div class="menu-all-pages-container">
                             <ul class="menu">
                                 <li>
-                                    <a href="axio">Class Axio</a>
+                                    <a href="axioo">Class Axio</a>
                                 </li>
                                 <li>
                                     <a href="beasiswa">Beasiswa</a>
@@ -53,7 +53,7 @@
                                     <a href="silaras">Layanan SILARAS</a>
                                 </li>
                                 <li>
-                                    <a href="echo">Sudut Baca Echo</a>
+                                    <a href="echoo">Sudut Baca Echo</a>
                                 </li>
                             </ul>
                         </div>
@@ -65,7 +65,7 @@
                         <div class="menu-all-pages-container">
                             <ul class="menu">
                                 <li>
-                                    <a href="blog">Blog</a>
+                                    <a href="blogg">Blog</a>
                                 </li>
                                 <li>
                                     <a href="events">Events</a>
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-auto">
+                {{-- <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget">
                         <h3 class="widget_title">Resources</h3>
                         <div id="donutchart" style="width: 200px; height: 140px; float:left; margin: 0 5px 5px 5px;">
@@ -130,7 +130,7 @@
                     </div>
                     
              
-                <div class="col-md-6 col-xl-3">
+                <div class="col-md-6 col-xl-3"> --}}
                     <div class="widget footer-widget style2">
                         {{-- <h3 class="widget_title">Get in touch!</h3>
                         <form class="newsletter-widget">

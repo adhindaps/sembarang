@@ -10,7 +10,8 @@
                     <h6 class="card-subtitle">
                         <a href="/gurucreate" class="btn btn-primary" >Tambah </a> 
                         <div class="row">
-                            <table class="table table-bordered" id="id_table"><thead>
+                            <table class="table table-bordered" id="id_table" style="border-right: 1px solid #E5E7E9">
+                                <thead>
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Foto</th>
@@ -36,9 +37,9 @@
                                     <td>{!! $data->nip !!}</td>
                                     <td>{{ $data->tmplahir }}</td>
                                     <td>{!! $data->tgllahir !!}</td>
-                                    <td>{{ $data->status }}</td>
-                                    <td>{!! $data->jabatan !!}</td>
-                                    <td>{!! $data->subjabatan !!}</td>
+                                    <td>{{ $data->status->status }}</td>
+                                    <td>{!! $data->jabatan->jabatan !!}</td>
+                                    <td>{!! $data->subjabatan->subjabatan !!}</td>
                                     <td><a href="/guruedit/{{ $data->id }}" class="btn btn-warning">
                                         <i class="fas fa-pencil-alt"></i></a>
                                     

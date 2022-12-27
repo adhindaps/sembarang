@@ -40,7 +40,7 @@
                             <div class="recent-post-wrap">
                                 @foreach ($blog as $bg)   
                                 <div class="recent-post">
-                                    <div class="media-img"><a href="blog-details.html"><img
+                                    <div class="media-img"><a href="blog-details.html"><img class="gg"
                                                 src="{{ asset('foto/' . $bg->foto) }}" alt="Blog Image"></a></div>
                                     <div class="media-body">
                                         <div class="recent-post-meta"><a href="/blogdetail/{{$bg->id}}"><i
@@ -51,17 +51,6 @@
                                 @endforeach      
                             </div>
                         </div>  
-{{--                    
-                        <div class="widget">
-                            <h4 class="widget_title">Gallery Posts</h4>
-                         
-                            <div class="sidebar-gallery">
-                                @foreach ($foto as $foto)   
-                                <div class="gallery-thumb"><img class="gg" src="foto/{{ $foto->fotokgt }}"
-                                        alt="Gallery Image" class="w-100"></div>
-                                        @endforeach  
-                            </div>   
-                        </div> --}}
                         <div class="widget">
                             <h3 class="widget_title">Agenda Terbaru</h3>
                             <div class="recent-post-wrap">

@@ -28,14 +28,15 @@
                                 <tr>
                                     <th scope="data">{{ $no++ }}</th>
                                     <td>{{ $data->namakegiatan }}</td>
-                                    <td>  <img alt=" " src="foto/{{ $data->foto1 }}"width="100px" > </td>
+                                    <td>  <img alt=" " src="axio/{{ $data->foto1 }}"width="100px" > </td>
                                     <td><a href="/galeriaxioedit/{{ $data->id }}" class="btn btn-warning">
                                         <i class="fas fa-pencil-alt"></i></a>
+
                                     
-                                        {{-- <a href="#" class="btn btn-danger deleteguru"
+                                        <a href="#" class="btn btn-danger deleteguru"
                                         data-id="{{ $data->id }}"
-                                        data-guru="{{ $data->guru }}">
-                                        <i class=" fas fa-trash"></i></a> --}}
+                                        data-axio="{{ $data->namakegiatan }}">
+                                        <i class=" fas fa-trash"></i></a>
                                     </td>
                                 </tr>
                                 @endforeach
@@ -52,10 +53,10 @@
 <script>
     $('.deleteguru').click(function() {
         var guruid = $(this).attr('data-id');
-        var guru = $(this).attr('data-guru');
+        var guru = $(this).attr('data-axio');
         Swal.fire({
             title: 'Apakah Kamu yakin?',
-            text: "Menghapus guru " + guru + "",
+            text: "Menghapus Galeri Axio " + guru + "",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
@@ -63,7 +64,7 @@
             confirmButtonText: 'Ya, hapus!'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location = "/deleteguru/" + guruid + ""
+                window.location = "/deletegaleriaxio/" + guruid + ""
                 Swal.fire(
                     'Terhapus!',
                     'data ' + guru + ' terhapus',

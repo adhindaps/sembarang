@@ -14,6 +14,8 @@
                               <label for="inputPassword4">Foto</label>
                               <img class="img mb-3" src="{{ asset('foto/' . $data->fotobk) }}" alt="" style="width: 100px;">
                               <input type="file" name="fotobk" class="form-control" id="fotobk" aria-describedby="emailHelp" value="{{ $data->fotobk }}">
+                              <i style="float: left;font-size:12px;color:red">Abaikan Jika Tidak Merubah Foto</i>
+                              
                               @error('fotobk')
                               <div class="alert alert-danger" role="alert">
                                   <strong>{{ $message }}</strong> 
@@ -57,8 +59,8 @@
                                  @enderror
                             </div>
                             <div class="form-group col-md-12">
-                                <label for="editor">Deskripsi Perusahaan</label>
-                                <textarea name="deskperusahaan" id="editor">{!!  $data->deskperusahaan !!}</textarea>
+                                <label for="editor1">Deskripsi Perusahaan</label>
+                                <textarea name="deskperusahaan" id="editor1">{!!  $data->deskperusahaan !!}</textarea>
                                 @error('deskperusahaan')
                                 <div class="alert alert-danger" role="alert">
                                     <strong>{{ $message }}</strong> 
@@ -90,6 +92,14 @@
 <script>
     ClassicEditor
         .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor1' ) )
         .catch( error => {
             console.error( error );
         } );

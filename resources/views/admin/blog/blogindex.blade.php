@@ -33,7 +33,7 @@
                             @foreach ($data as $row)
                                 <tr>
                                     <th scope="row">{{ $no++ }}</th>
-                                    <td>  <img alt=" " src="foto/{{ $row->foto }}"width="100px"> </td>
+                                    <td>  <img alt=" " src="blog/{{ $row->foto }}"width="100px"> </td>
                                     <td>{{ $row->judul }}</td>
                                     <td style="word-break:break-all;">{!! $row->deskripsi !!}</td>
                                     <td>{{ $row->kategori->kategori }}</td>

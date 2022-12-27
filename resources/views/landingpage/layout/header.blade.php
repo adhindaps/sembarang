@@ -3,28 +3,32 @@
         <div class="container">
             <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
                 <div class="col-auto d-none d-lg-block">
+                    @foreach ($email as $ee)
                     <div class="header-links">
                         <ul>
                             <li>
-                                <i class="fas fa-envelope"></i><b>Email:</b> <a href="mailto:smkdlanggu@gmail.com">smkdlanggu@gmail.com</a>
+                                <i class="fas fa-envelope"></i><b>Email:</b> <a href="mailto:{{ $ee->email }}">{{ $ee->email }}</a>
                             </li>
                             <li>
-                                <i class="fas fa-phone"></i><b>Telepon:</b> <a href="tel:+256214203215">256 214 203 215</a>
+                                <i class="fas fa-phone"></i><b>Telepon:</b> <a href="tel:{{ $ee->no }}5">{{ $ee->no }}</a>
                             </li>
                         </ul>
                     </div>
+                    @endforeach
                 </div>
                 <div class="col-auto">
                     <div class="header-links">
                         <ul>
                             <li>
+                                @foreach ($sosmed as $sos )
                                 <div class="header-social">
-                                    <a href="https://www.facebook.com/humassmkn1dlanggumojokerto/"><i class="fab fa-facebook-f"></i></a>
-                                     <a href="https://twitter.com/HumasSMKN1DLG"><i class="fab fa-twitter"></i></a>
-                                      
+                                    <a href="{{ $sos->sosmed }}"><i class="{{$sos->foto}}"></i></a>
+                                    <a href="https://www.facebook.com/humassmkn1dlanggumojokerto"><i class="fab fa-facebook-f"></i></a>
+                                     <a href="https://twitter.com/HumasSMKN1DLG"><i class="fab fa-twitter"></i></a>                                    
                                        <a href="https://www.instagram.com/humas_smkn1dlanggu/"><i class="fab fa-instagram"></i></a>
                                         <a href="https://www.youtube.com/channel/UC9l3e9tfY3P-grNXww2Mz_A"><i class="fab fa-youtube"></i></a>
                                 </div>
+                                @endforeach
                             </li>
                            
                         </ul>
@@ -63,7 +67,7 @@
                                                     </li>
                                                     <br/>
                                                     <li>
-                                                        <a href="http://lsp.smkn1dlanggu.sch.id/#">LSP</a>
+                                                        <a href="http://lsp.smkn1dlanggu.sch.id/#" target="_blank">LSP</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -79,14 +83,17 @@
                                                     </li>
                                                    <br/>           
                                                    <li>
-                                                    <a href="prestasi">Prestasi Sekolah</a>
-                                                </li>
-                                               <br/>                                                                                                
+                                                    <a href="prestasi">Prestasi</a>
+                                                   </li>
+                                                   <br/>  
+                                                   <li>
+                                                    <a href="dataguru">Data Guru & Karyawan</a>
+                                                   </li>                                                                                               
                                                 </ul>
                                             </li>
                                     
                                             <li>
-                                                <a href="bkk">BKK</a>
+                                                <a href="bkkk">BKK</a>
                                             </li>
                                             <li>
                                                 <a href="kontak">Kontak</a>

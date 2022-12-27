@@ -100,35 +100,42 @@
                         </div>
                         <div class="col-xxl-3 col-lg-4">
                             <aside class="sidebar-area">
+
                                 <div class="widget widget_info">
-                                    <div class="course-img"><img src="https://4.bp.blogspot.com/-hr6ko7FRlvY/VWByVK4DVgI/AAAAAAAAAWs/AAQ-yCBIMFg/s1600/DSC02781.JPG" width="150" alt="Course Image">
+                                   
+    
+                                    <div class="course-img"><img src="{{asset('guru/'. $kepalasekolah->fotoguru )}}" width="150" alt="Course Image">
                                     </div>
                                     <h3 class="widget_title">Kepala Sekolah</h3>
                                     <div class="info-list">
                                         <ul>
-                                            <li><i class="fa-light fa-user"></i> <strong>Nama: </strong><span>Kevin
-                                                    Perry</span></li>
-                                            <li><i class="fa-light fa-file"></i> <strong>NIP: </strong><span>8</span></li>
+                                            <li><i class="fa-light fa-user"></i> <strong>Nama: </strong><span>{{ $kepalasekolah->nama }}</span></li>
+                                            <li><i class="fa-light fa-file"></i> <strong>NIP: </strong><span>{!! $kepalasekolah->nip !!}</span></li>
                                         </ul>
                                     </div>
+                                   
                                 </div>
+                               
                                 <div class="widget widget_info">
                                     <h3 class="widget_title">Wakil Kepala Sekolah</h3>
                                     <br />
                                     <div class="col-xl-12">
                                         <div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
+                                            @foreach ($foto as $waka)
                                             <div class="col-md-4 col-lg-4">
                                                 <div class="team-box">
                                                     <div class="team-img">
-                                                        <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
+                                                        <img class="yy" alt="Team" src="{{asset('guru/'. $kepalasekolah->fotoguru )}}">
 
                                                     </div>
                                                     <div class="team-content">
-                                                        <h6 class="team-title">Kevin Martin Ben</a></h6><span class="team-desig">Online Teacher</span>
+                                                        <h6 class="team-title">{{ $waka->nama }}</a></h6><span class="team-desig">{!! $waka->subjabatan->subjabatan !!}</span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-lg-4">
+                                            
+                                            @endforeach
+                                            {{-- <div class="col-md-6 col-lg-4">
                                                 <div class="team-box">
                                                     <div class="team-img">
                                                         <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
@@ -149,7 +156,7 @@
                                                         <h6 class="team-title">Aiden Samuel Jabin</a></h6><span class="team-desig">Online Teacher</span>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>

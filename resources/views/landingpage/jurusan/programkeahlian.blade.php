@@ -21,11 +21,12 @@
                                     <img alt=" " src="foto/{{ $row->foto }}"width="100px" alt="icon">
                                     <br />
                                     <br />
-                                    <h3 class="feature-grid_title">
+                                    <h3 class="feature-grid_title text-black">
                                         <td>{{ $row->jurusan }}</td>
                                     </h3>
-                                    <div class="overflow"class="feature-grid_text">
-                                        <td>{!! $row->deskripsi !!}</td>
+                                    <div class="overflow" >
+                                        {{-- <td style="color: white">{!! $row->deskripsi !!}</td> --}}
+                                        <p style="color:white">{!! $row->deskripsi !!}</p>
                                     </div>
                                     <div class="text-center mt-20 mt-xl-5">
                                         <a href="/detail/{{ $row->id }}" class="as-btn">selengkapnya<i

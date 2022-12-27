@@ -10,7 +10,7 @@
             <h1 class="breadcumb-title"></h1>
             <ul class="breadcumb-menu">
                 <li><a href="/">Beranda</a></li>
-                <li></li>
+                <li><a href="/programkeahlian">Kembali</a></li>
             </ul>
         </div>
     </div>
@@ -23,7 +23,7 @@
                         <img src="{{ asset('foto/' . $data->foto) }}" width="600px" alt="Image">
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="blog.html"><i class="far fa-book"></i>Study</a>
+                                <a href="#"><i class="far fa-book"></i>Program Keahlian</a>
                             </div>
                             <h2 class="blog-title">{{ $data->jurusan }}</h2>
                             <p>{!! $data->deskripsi !!}</p>
@@ -34,7 +34,7 @@
                 <div class="col-xxl-4 col-lg-5">
                     <aside class="sidebar-area">
                         <div class="widget widget_info">
-                            <a><img class="imgenduk" alt="Team" src="{{ asset('foto/lila.jpg')}}"></a>
+                            <a><img class="yy" alt="Team" src="{{ asset('foto/'. $kajur->fotokajur )}}"></a>
                             <h3 class="widget_title">Ketua Jurusan</h3>
                             <div class="info-list">
                                 <ul>
@@ -50,53 +50,33 @@
                             </div>
                         </div>
                    
-                        {{-- <div class="widget widget_info">
+                        <div class="widget widget_info">
                             <h3 class="widget_title">Guru produktif</h3>
                             <br />
+                                
                             <div class="col-xl-12">
+
                                 <div class="row as-carousel" data-md-slide-show="2" data-slide-show="2">
+                            @foreach ($guru as $g )
+
                                     <div class="col-md-4 col-lg-4">
                                         <div class="team-box">
                                             <div class="team-img">
-                                                <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
-                                                <div class="as-social">
-                                                    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                                </div>
+                                                <img class="yy" alt="Team" src="{{asset('guru/'. $g->fotoguru )}}">
                                             </div>
                                             <div class="team-content">
-                                                <h3 class="team-title"><a href="team-details.html">Kevin Martin Ben</a></h3><span class="team-desig">Online Teacher</span>
+                                                <h3 class="team-title">{{$g->nama}}</h3><span class="team-desig">{{$g->subjabatan->subjabatan}}</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-lg-4">
-                                        <div class="team-box">
-                                            <div class="team-img">
-                                                <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
-                                                <div class="as-social">
-                                                    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="team-title"><a href="team-details.html">Michael Dania Tin</a></h3><span class="team-desig">Online Teacher</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-4">
-                                        <div class="team-box">
-                                            <div class="team-img">
-                                                <img class="yy" alt="Team" src="{{ asset('1/yeye/html/acadu/demo/assets/img/event/event_1_2.jpg') }}">
-                                                <div class="as-social">
-                                                    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="team-content">
-                                                <h3 class="team-title"><a href="team-details.html">Aiden Samuel Jabin</a></h3><span class="team-desig">Online Teacher</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
+                            @endforeach
+                                   
                                 </div>
+
                             </div>
-                        </div> --}}
+
+                        </div>
                     </aside>
                 </div>
             </div>

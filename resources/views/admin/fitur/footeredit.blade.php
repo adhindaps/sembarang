@@ -12,13 +12,10 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">logo</label>
+                                        <img class="img mb-3" src="{{ asset('foto/' . $data->logo) }}" alt="" style="width: 100px;">
                                         <input type="file" name="logo" class="form-control" id="logo"
                                         aria-describedby="emailHelp" value="{{ $data->logo }}">
-                                        @error('logo')
-                                        <div class="alert alert-danger" role="alert">
-                                            <strong>{{ $message }}</strong> 
-                                        </div>
-                                         @enderror
+                                       
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Nama Sekolah</label>

@@ -10,7 +10,7 @@
                     <h6 class="card-subtitle"></h6>
                     <a href="/patnercreate" type="button" class="btn btn-primary">Tambah+</a>
                     <div class="row">
-                        <table class="table table-bordered" id="id_table">
+                        <table class="table table-bordered" id="id_table" style="border-right: 1px solid #E5E7E9">
                                <thead>
                                 <tr>
                                     <th scope="col">#</th>

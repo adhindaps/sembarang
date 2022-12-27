@@ -14,8 +14,11 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Foto</label>
+                                        <img class="img mb-3" src="{{ asset('event/' . $row->foto) }}" alt="" style="width: 100px;">
                                         <input type="file" name="foto" class="form-control" id="foto"
                                             aria-describedby="emailHelp" value="{{ $row->foto }}">
+                                            <i style="float: left;font-size:12px;color:red">Abaikan Jika Tidak Merubah Foto</i>
+                                
                                             @error('foto')
                                             <div class="alert alert-danger" role="alert">
                                                 <strong>{{ $message }}</strong> 

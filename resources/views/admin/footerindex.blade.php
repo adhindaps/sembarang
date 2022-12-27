@@ -34,8 +34,8 @@
                                     <td>
                                       <a href="/footeredit/{{ $row->id }}" class="btn btn-warning">
                                           <i class="fas fa-pencil-alt"></i></a>
-                                      <a href="#" class="btn btn-danger deletefooter"
-                                          data-id="{{ $row->id }}" data-footer="{{ $row->footer }}">
+                                      <a href="#" class="btn btn-danger deletefooterlink"
+                                          data-id="{{ $row->id }}" data-footerlink="{{ $row->footerlink }}">
                                           <i class=" fas fa-trash"></i></a>
                                       </td>
                                 </tr>
@@ -48,15 +48,15 @@
         </div>
     </div>
 </div>
-@include('admin.footeradmin')
+@include('admin.footerlinkadmin')
 
 <script>
-  $('.deletefooter').click(function() {
-      var footerid = $(this).attr('data-id');
-      var footer = $(this).attr('data-footer');
+  $('.deletefooterlink').click(function() {
+      var footerlinkid = $(this).attr('data-id');
+      var footerlink = $(this).attr('data-footerlink');
       Swal.fire({
           title: 'Apakah Kamu yakin?',
-          text: "Menghapus footer " + footer + "",
+          text: "Menghapus footerlink " + footerlink + "",
           icon: 'warning',
           showCancelButton: true,
           confirmButtonColor: '#3085d6',
@@ -64,10 +64,10 @@
           confirmButtonText: 'Ya, hapus!'
       }).then((result) => {
           if (result.isConfirmed) {
-              window.location = "/deletefooter/" + footerid + ""
+              window.location = "/deletefooterlink/" + footerlinkid + ""
               Swal.fire(
                   'Terhapus!',
-                  'data ' + footer + ' terhapus',
+                  'data ' + footerlink + ' terhapus',
                   'success'
               )
           }

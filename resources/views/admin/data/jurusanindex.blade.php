@@ -12,7 +12,7 @@
                             <a href="/jurusancreate" class="btn btn-primary">Tambah </a>
 
                             <div class="row">
-                                <table class="table table-bordered" id="id_table">
+                                <table class="table table-bordered" id="id_table" style="border-right: 1px solid #E5E7E9">
                                    
                                     <thead>
                                         <tr>

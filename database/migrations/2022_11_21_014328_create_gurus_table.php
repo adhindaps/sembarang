@@ -15,14 +15,14 @@ return new class extends Migration
     {
         Schema::create('gurus', function (Blueprint $table) {
             $table->id();
-            $table->string('fotoguru');
+            $table->string('fotoguru')->default('def.jpg');
             $table->string('nama');
             $table->string('nip');
             $table->string('tmplahir');
             $table->string('tgllahir');
-            $table->string('status');
-            $table->string('jabatan');
-            $table->string('subjabatan');
+            $table->string('status_id')->nullable();
+            $table->string('jabatan_id')->nullable();
+            $table->string('subjabatan_id')->nullable();
             $table->timestamps();
         });
     }

@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <h4 class="card-title">VIDEO PROFILE</h4>
                     <div class="row">
-                        <table class="table table-bordered" id="id_table">
+                        <table class="table table-bordered" id="id_table" style="border-right: 1px solid #E5E7E9">
                               <thead>
                                 <tr>
                                     <th scope="col">#</th>

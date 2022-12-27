@@ -31,18 +31,21 @@
             @foreach ($data as $row)
                 <div class="col-md-6 col-xl-4">
                     <div class="blog-card">
-                        <img class="imgg" src="{{asset('foto/'.$row->foto )}}" width="100px" alt="Gambar">
+                        <img class="imgg" src="{{asset('blog/'.$row->foto )}}" width="100px" alt="Gambar">
                         <div class="blog-content">
                             <div class="blog-meta style2">
-                                <a href="blog.html"><i
+                                <a href="#"><i
                                         class="fa-light fa-calendar-days"></i>{{$row->created_at}}</a>
-                                <a href="blog.html"><i class="far fa-folder"></i>{{ $row->kategori->kategori }}</a>
+                                <a href="#"><i class="far fa-folder"></i>{{ $row->kategori->kategori }}</a>
                             </div>
-                            <h3 class="blog-title"><a href="/blogdetail/{{$row->id}}">{{ $row->judul }}</a></h3>
-                            <a class="link-btn" href="/blogdetail/{{$row->id}}">Baca Lebih Detail<i
-                                    class="fas fa-arrow-right"></i></a>
+                            <h6 class="overflow1" class="blog-title">{{ $row->judul }}</h6>
+                            <a class="link-btn" href="/blogdetail/{{$row->id}}">Baca Lebih Detail<i class="fas fa-arrow-right"></i></a>
+                            <br/>
+                            <br/>
                         </div>
                     </div>
+                    <br/>
+                    <br/>
                 </div>
             @endforeach
             {{ $data->links('vendor.pagination.default') }}

@@ -24,13 +24,13 @@
                     <div class="team-grid">
                         <div class="team-img"><img class="imgg" src="guru/{{ $data->fotoguru }}" alt="Team"></div>
                         <div class="team-content">
-                            <h3 class="team-title"><a href="team-details.html">{{ $data->nama }}</a></h3><span
-                                class="team-desig">{!! $data->jabatan !!}</span>
+                            <h3 class="team-title text-black">{{ $data->nama }}</h3><span
+                                class="team-desig">{!! $data->subjabatan->subjabatan!!}</span>
                         </div>
                         <div class="team-info">
                             <span>NIP: {{ $data->nip }}</span> 
                             <span class="line"></span> 
-                            <span>{{ $data->status }}</span>
+                            <span>{{ $data->status->status }}</span>
                         </div>
                     </div>
                 </div>

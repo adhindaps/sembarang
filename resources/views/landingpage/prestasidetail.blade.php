@@ -10,7 +10,7 @@
             <h1 class="breadcumb-title">Prestasi Detail</h1>
             <ul class="breadcumb-menu">
                 <li><a href="/">Beranda</a></li>
-                <li>Prestasi Detail</li>
+                <li><a href="/prestasi">kembali</a></li>
             </ul>
         </div>
     </div>
@@ -21,45 +21,31 @@
                     <div class="course-single">
                         @foreach ($data as $prestasi )
                         <div class="course-single-top">
-                            <div class="rr"><img src="{{ asset('foto/'.$prestasi->fotopres )}}" alt="Course Image">
-                            </div>
+                            <div><img src="{{ asset('foto/'.$prestasi->fotopres )}}" width="450px" alt="Course Image"></div>
+                            <br/>
                             <h2 class="course-title">{{ $prestasi->judul }}</h2>
-                            <div class="course-single-meta"><a href="course.html">Admin<a href="course.html">
-                                <i class="fas fa-tags"></i>Web Development</a> <a href="course.html">
-                                <i class="far fa-clock"></i>{{ $prestasi->created_at->format('D M Y') }}</a>
-                            </div>
-                            <div class="course-description">
-                                <p>{!! $prestasi->deskripsi !!}</p>
-                </div>
+                            <p>{!! $prestasi->deskripsi !!}</p>
                         </div>
                     </div>
                  </div>
                  @endforeach
                 <div class="col-xxl-3 col-lg-4">
                     <aside class="sidebar-area">
-                        <div class="widget widget_info">
-                            <div class="as-video"><img src="assets/img/widget/video_1.jpg" alt="video"> <a
-                                    href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i
-                                        class="fas fa-play"></i></a></div><span class="h4 course-price">$90.00 <span
-                                    class="tag">25% Off</span></span> <a href="cart.html" class="as-btn">Add To Cart</a>
-                            <a href="cart.html" class="as-btn style4">Buy Now</a>
-                            <h3 class="widget_title">Course Information</h3>
-                            <div class="info-list">
-                                <ul>
-                                    <li><i class="fa-light fa-user"></i> <strong>Instructor: </strong><span>Kevin
-                                            Perry</span></li>
-                                    <li><i class="fa-light fa-file"></i> <strong>Lessons: </strong><span>8</span></li>
-                                    <li><i class="fa-light fa-clock"></i> <strong>Duration: </strong><span>15h 30m
-                                            36s</span></li>
-                                    <li><i class="fa-light fa-tag"></i> <strong>Course level:
-                                        </strong><span>Beginners</span></li>
-                                    <li><i class="fa-light fa-globe"></i> <strong>Language:
-                                        </strong><span>English</span></li>
-                                    <li><i class="fa-light fa-puzzle-piece"></i> <strong>Quizzes:
-                                        </strong><span>04</span></li>
-                                </ul>
-                            </div><a href="https://www.linkedin.com/" class="as-btn style5 mt-35 mb-0"><i
-                                    class="far fa-share-nodes me-2"></i>Share This Course</a>
+                        <div class="widget">
+                            <h3 class="widget_title">Agenda Terbaru</h3>
+                            <div class="recent-post-wrap">
+                                @foreach ($agenda as $blog)  
+                                <div class="recent-post">
+                                    <div class="media-img"><a href="/blogdetail/{{$blog->id}}"><img class="gg"
+                                                src="{{ asset('foto/' . $blog->foto) }}" alt="Blog Image"></a></div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta"><a href=""><i
+                                                    class="far fa-calendar"></i>{{ $blog->created_at}}</a></div>
+                                        <h6 class="overflow1" class="post-title"><a class="text-inherit" href="/blogdetail/{{$blog->id}}"></a></h6>
+                                    </div>
+                                </div>
+                                @endforeach 
+                            </div>
                         </div>
                     </aside>
                 </div>

@@ -12,7 +12,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Foto</label>
-                                        <img class="img mb-3" src="{{ asset('foto/' . $data->foto) }}" alt=""
+                                        <img class="img mb-3" src="{{ asset('blog/' . $data->foto) }}" alt=""
                                             style="width: 100px;">
                                         <input type="file" name="foto" class="form-control" id="foto"
                                             aria-describedby="emailHelp" value="{{ $data->foto }}">

@@ -26,7 +26,7 @@
                             @foreach ($data as $data)
                                 <tr>
                                     <td scope="data">{{ $no++ }}</td>
-                                    <td><img alt=" " src="foto/{{ $data->icon }}"width="100px"></td>
+                                    <td><img alt="icon" src="foto/{{ $data->icon }}"width="100px"></td>
                                     <td>{{ $data->sosmed }}</td>
                                     <td>
                                     <a href="/sosmededit/{{ $data->id }}" class="btn btn-warning">

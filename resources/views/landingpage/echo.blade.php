@@ -18,7 +18,9 @@
             <div class="row">
                 <div class="col-xxl-9 col-lg-8">
                     <div class="event-details">
-                        <div class="event-img"><img src="foto/ecooooooo.jpg" alt="foto"></div>
+                        <img  class="zz" src="foto/{{ $data->fotoecho }}" alt="foto">
+                        <br/>
+                        <br/>
                         <h3 class="h3 mt-n2">{{$data->judul}}</h3>
                         <p class="mb-30">{!! $data->deskripsi !!}</p>
                     </div>
@@ -28,7 +30,7 @@
                         <div class="widget widget_info">
                             
                             <div class="as-video">
-                                <img src="foto/{{ $data->fotoecho }}" alt="video"> 
+                                <img src="foto/{{ $data->fotoecho }}" width="200px" alt="video"> 
                                 <a href="{{$data->link}}" class="play-btn popup-video"><i class="fas fa-play"></i></a>
                             </div>
                            
@@ -41,25 +43,22 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="widget">
+                            <h4 class="widget_title">Gallery Echo</h4>
+                            <div class="sidebar-gallery">
+                                @foreach ($galerieco as $echo)
+                                <img class="gg" src="{{asset ('echo/'. $echo->foto11 )}}"
+                                    alt="Gallery Image">
+                                @endforeach  
+                            </div>
+                        </div>
                     </aside>
                 </div>
             </div>
         </div>
     </section>
-    <div class="bg-smoke" data-pos-for=".footer-wrapper" data-sec-pos="bottom-half">
-        <div class="container as-container3 z-index-common">
-            <div class="row gx-10 as-carousel" data-lg-slide-show="5" data-md-slide-show="4" data-slide-show="6"
-                data-sm-slide-show="3" data-xs-slide-show="2">
-                @foreach ($galecho as $echo)
-                <div class="col-auto">
-                    <div class="insta-box">
-                        <img alt="website" class="imgyeye" src="foto/{{ $echo->foto11 }}"></a>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
+    
+
 @include('landingpage.layout.footer')
 <script src="{{asset ('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js')}}">
 </script>

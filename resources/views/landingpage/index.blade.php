@@ -16,7 +16,7 @@
                 <div class="container z-index-common">
                     <div class="hero-style8">
                         <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">{{ $sl->judul }}</h1>
-                        <p class="hero-text" data-ani="slideinup" data-ani-delay="0.6s">{!! $sl->deskripsi !!}</p>
+                        <p class="hero-text text-white" data-ani="slideinup" data-ani-delay="0.6s"></p>
 
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                 <div class="col-xl-6">
                     <div class="img-box5">
                         <div class="img1"><img
-                                src="{{ asset('foto/team.png')}}"
+                                src="{{ asset('foto/'. $bp->fotokepsek )}}"
                                 alt="about"></div>
                         <div class="shape">
                             <img
@@ -116,11 +116,11 @@
 						<div class="col-md-6 col-lg-4">
 							<div class="team-box">
 								<div class="team-img">
-									<img alt="Team" src="{{ asset('guru/' . $yy->fotoguru) }}"  >
+									<img alt="Team" src="{{ asset('guru/' . $yy->fotoguru) }}" width="500px" >
 								</div>
                                 <div class="team-content">
                                     <h3 class="team-title">{{$yy->nama}}</h3><span
-                                        class="team-desig">{{$yy->jabatan}}</span>
+                                        class="team-desig">{{$yy->subjabatan->subjabatan}}</span>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +184,7 @@
                 @foreach ($gakenek as $ngelu)
                 <div class="col-md-6 col-xl-4">
                     <div class="blog-card">
-                        <img class="imgg" src="foto/{{ $ngelu->foto }}"
+                        <img class="imgg" src="blog/{{ $ngelu->foto }}"
                             alt="ab.png">
                         <div class="blog-content">
                             <div class="blog-meta style2">

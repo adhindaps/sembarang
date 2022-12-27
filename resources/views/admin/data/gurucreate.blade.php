@@ -13,6 +13,7 @@
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Foto</label>
                                 <input type="file" id="fotoguru" name="fotoguru" class="form-control" >
+                                <i style="float: left;font-size:11px;color:red">Abaikan jika tidak merubah foto</i>
                                 @error('fotoguru')
                                 <div class="alert alert-danger" role="alert">
                                     <strong>{{ $message }}</strong> 

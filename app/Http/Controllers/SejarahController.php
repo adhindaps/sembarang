@@ -42,8 +42,22 @@ class SejarahController extends Controller
     public function updatesjr(Request $request, Sejarah $sejarah)
     {
         $data=Sejarah::find($request->id);
-        $data->update($request->all());
-        return redirect('sejarahindex');
+        if ($request->hasfile('fotosjr')) {
+            $foto = $request->file('fotosjr')->getClientOriginalName();
+            $request->file('fotosjr')->move('foto/', $foto);
+            $data->update([
+                'fotosjr' => $request->file('fotosjr')->getClientOriginalName(),
+                'nama' => $request->nama,
+                'deskripsi' => $request->deskripsi,
+            ]);
+            return redirect()->route('sejarahindex')->with('success', 'Data Berhasil Di Update');
+        } else {
+            $data->update([
+                'nama' => $request->nama,
+                'deskripsi' => $request->deskripsi,
+            ]);
+            return redirect()->route('sejarahindex')->with('success', 'Data Berhasil Di Update');
+        }
     }
 
     public function beasiswaindex()

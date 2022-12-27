@@ -294,8 +294,22 @@ class ProfileController extends Controller
     public function echoupdate(Request $request)
     {
         $data=sudutecho::find($request->id);
-        $data->update($request->all());
-        return redirect('echoindex');
+        if ($request->hasfile('fotoecho')) {
+            $foto = $request->file('fotoecho')->getClientOriginalName();
+            $request->file('fotoecho')->move('foto/', $foto);
+            $data->update([
+                'fotoecho' => $request->file('fotoecho')->getClientOriginalName(),
+                'judul' => $request->judul,
+                'deskripsi' => $request->deskripsi,
+            ]);
+            return redirect()->route('echoindex')->with('success', 'Data Berhasil Di Update');
+        } else {
+            $data->update([
+                'judul' => $request->judul,
+                'deskripsi' => $request->deskripsi,
+            ]);
+            return redirect()->route('echoindex')->with('success', 'Data Berhasil Di Update');
+        }
     }
     
     public function smbtnindex()
@@ -308,21 +322,37 @@ class ProfileController extends Controller
     {
         $this->validate($request, [
             'judul' => 'required',
+            'fotokepsek' =>'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048|dimensions:min_width=100,min_height=100,max_width=1000,max_height=1000',
             'sambutan' => 'required',
         ]);
         $data = sudutecho::create([
             'judul' => $request->judul,
+            'fotokepsek' => $request->fotokepsek,
             'sambutan' => $request->sambutan,
         ]);
         return redirect('smbtnindex');
-    
     }
 
     public function smbtnupdate(Request $request)
     {
         $data=Sambutan::find($request->id);
-        $data->update($request->all());
-        return redirect('smbtnguruindex');
+        if ($request->hasfile('fotokepsek')) {
+            $foto = $request->file('fotokepsek')->getClientOriginalName();
+            $request->file('fotokepsek')->move('foto/', $foto);
+            $data->update([
+                'judul' => $request->judul,
+                'fotokepsek' => $request->file('fotokepsek')->getClientOriginalName(),
+                'sambutan' => $request->sambutan,
+            ]);
+            return redirect()->route('smbtnindex')->with('success', 'Data Berhasil Di Update');
+        } else {
+            $data->update([
+                'judul' => $request->judul,
+                'sambutan' => $request->sambutan,
+            ]);
+            return redirect()->route('smbtnindex')->with('success', 'Data Berhasil Di Update');
+        }
+      
     }
 
     public function smbtnguruindex()

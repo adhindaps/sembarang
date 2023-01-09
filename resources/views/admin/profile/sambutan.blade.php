@@ -20,7 +20,9 @@
                                 <label for="inputPassword4">Foto</label>
                                 <img class="img mb-3" src="foto/{{ $data->fotokepsek }}" alt="" style="width: 100px;">
                                  <input type="file" name="fotokepsek" class="form-control" id="fotokepsek" aria-describedby="emailHelp" value="{{ $data->fotokepsek }}">
-                              </div>
+                                 <i style="float: left;font-size:12px;color:red">ukuran Foto Harus 200px x 200 px</i>
+                             
+                                </div>
                             <div class="form-group col-md-12">
                                 <label for="editor">Deskripsi</label>
                                 <textarea name="sambutan" id="editor">{!! $data->sambutan !!}</textarea>

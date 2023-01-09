@@ -15,7 +15,7 @@
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Nama</th>
-                                    <th scope="col">Link</th>
+                                    <th scope="col">Link Web</th>
                                     <th scope="col">Foto</th>
                                     <th scope="text-right">Aksi</th>
                                 </tr>

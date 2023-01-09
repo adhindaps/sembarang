@@ -14,6 +14,8 @@
                                         <label for="inputPassword4">Foto</label>
                                         <input type="file" name="foto" class="form-control" id="foto"
                                         aria-describedby="emailHelp" value="">
+                                        <i style="float: left;font-size:12px;color:red">ukuran Foto Harus 1000px x 500 px</i>
+                             
                                     </div>
                                     <div class="form-group col-md-12">
                                         <label for="inputPassword4">Judul</label>

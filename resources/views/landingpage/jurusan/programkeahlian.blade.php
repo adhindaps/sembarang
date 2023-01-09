@@ -24,9 +24,8 @@
                                     <h3 class="feature-grid_title text-black">
                                         <td>{{ $row->jurusan }}</td>
                                     </h3>
-                                    <div class="overflow" >
-                                        {{-- <td style="color: white">{!! $row->deskripsi !!}</td> --}}
-                                        <p style="color:white">{!! $row->deskripsi !!}</p>
+                                    <div class="overflow tambahan" >
+                                        <p>{!! $row->deskripsi !!}</p>
                                     </div>
                                     <div class="text-center mt-20 mt-xl-5">
                                         <a href="/detail/{{ $row->id }}" class="as-btn">selengkapnya<i
@@ -112,7 +111,7 @@
     </section>
     @include('landingpage.layout.footer')
     <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
-    <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/app.min.js') }}"></script>
+    {{-- <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/app.min.js') }}"></script> --}}
     <script src="{{ asset('1/yeye/html/acadu/demo/assets/js/main.js') }}"></script>
     <!-- Mirrored from angfuzsoft.com/html/acadu/demo/index-6.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 07:30:06 GMT -->
 </body>

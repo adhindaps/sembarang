@@ -22,7 +22,9 @@
                               <div class="form-group col-md-12">
                                 <label for="inputPassword4">Foto</label>
                                 <input type="file" name="fotopatner" class="form-control" id="fotopatner" aria-describedby="emailHelp">
-                              </div>
+                                <i style="float: left;font-size:12px;color:red">ukuran Foto Harus 150px x 500 px</i>
+                             
+                            </div>
                           </div>
                           <div class="form-actions">
                             <div class="text-right">

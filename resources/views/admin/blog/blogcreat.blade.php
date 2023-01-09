@@ -13,7 +13,9 @@
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Foto</label>
                                 <input type="file" id="foto" name="foto" class="form-control" >
-                              </div>
+                                <i style="float: left;font-size:12px;color:red">ukuran Foto Harus 350px x 700 px</i>
+                             
+                            </div>
                             <div class="form-group col-md-12">
                               <label for="inputPassword4">Judul</label>
                               <input type="text" name="judul" class="form-control" id="inputPassword4"  placeholder="">

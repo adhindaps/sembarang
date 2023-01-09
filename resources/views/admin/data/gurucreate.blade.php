@@ -13,7 +13,7 @@
                             <div class="form-group col-md-12">
                                 <label for="inputPassword4">Foto</label>
                                 <input type="file" id="fotoguru" name="fotoguru" class="form-control" >
-                                <i style="float: left;font-size:11px;color:red">Abaikan jika tidak merubah foto</i>
+                                <i style="float: left;font-size:12px;color:red">ukuran Foto Harus 200px x 200 px</i>
                                 @error('fotoguru')
                                 <div class="alert alert-danger" role="alert">
                                     <strong>{{ $message }}</strong> 
@@ -33,8 +33,7 @@
                             <div class="form-group col-md-6">
                                 <label for="inputPassword4">NIP</label>
                             <input type="text" name="nip" class="form-control" id="inputPassword4"  placeholder="">
-                            <i style="float: left;font-size:12px;color:red">ukuran Foto Harus 200px x 200 px</i>
-                             
+                            
                             @error('nip')
                             <div class="alert alert-danger" role="alert">
                                 <strong>{{ $message }}</strong> 
